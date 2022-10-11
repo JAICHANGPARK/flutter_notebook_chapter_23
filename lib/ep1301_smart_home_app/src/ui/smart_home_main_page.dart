@@ -14,20 +14,29 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
-              height: 54,
-              width: 54,
-              decoration: BoxDecoration(
-                border: Border.all(),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(Icons.apps_outlined),
-            ),
-            Expanded(child: Placeholder()),
-            CircleAvatar(
-              radius: 27,
-              
+            Row(
+              children: [
+                Container(
+                  height: 54,
+                  width: 54,
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(Icons.apps_outlined),
+                ),
+                Expanded(child: Column(
+                  children: [
+                    
+                  ],
+                )),
+                CircleAvatar(
+                  radius: 27,
+
+                )
+              ],
             )
+
           ],
         ),
       ),
