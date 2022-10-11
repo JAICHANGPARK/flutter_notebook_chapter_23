@@ -15,9 +15,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         child: Column(
           children: [
             Container(
-              height: 64,
-              width: 64,
-              decoration: BoxDecoration(border: Border.all(), shape: BoxShape.circle),
+              height: 54,
+              width: 54,
+              decoration: BoxDecoration(
+                border: Border.all(),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.apps_outlined),
+            ),
+            Expanded(child: Placeholder()),
+            CircleAvatar(
+              radius: 27,
+              
             )
           ],
         ),
@@ -27,11 +36,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           height: 72,
           child: Row(
             children: [
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
-              Expanded(child: Placeholder()),
+              const Expanded(child: Placeholder()),
+              const Expanded(child: Placeholder()),
+              const Expanded(child: Placeholder()),
+              const Expanded(child: Placeholder()),
+              const Expanded(child: Placeholder()),
             ],
           ),
         ),
