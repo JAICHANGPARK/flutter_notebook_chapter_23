@@ -28,8 +28,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Expanded(
                   child: Column(
                     children: [
-                      Text("Hello, Dreamwalker"),
-                      SizedBox(height: 4,),
+                      Text(
+                        "Hello, Dreamwalker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
                       Text("Monday, 19 August 2022")
                     ],
                   ),
