@@ -15,11 +15,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(
-                left: 16,
-                right: 16,
-                top: 16
-              ),
+              padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
               child: Row(
                 children: [
                   Container(
@@ -36,7 +32,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       children: [
                         Text(
                           "Hello, Dreamwalker",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
                         SizedBox(
                           height: 4,
