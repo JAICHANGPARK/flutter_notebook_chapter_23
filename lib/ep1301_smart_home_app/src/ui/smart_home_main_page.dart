@@ -11,10 +11,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 64,
+              width: 64,
+              decoration: BoxDecoration(border: Border.all(), shape: BoxShape.circle),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
