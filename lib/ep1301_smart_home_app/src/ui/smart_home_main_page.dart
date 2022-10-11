@@ -16,6 +16,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
 
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
