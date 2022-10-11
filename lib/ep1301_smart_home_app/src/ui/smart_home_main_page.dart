@@ -14,38 +14,42 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 54,
-                  width: 54,
-                  decoration: BoxDecoration(
-                    border: Border.all(),
-                    shape: BoxShape.circle,
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+                top: 16
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    height: 54,
+                    width: 54,
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(Icons.apps_outlined),
                   ),
-                  child: const Icon(Icons.apps_outlined),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text(
-                        "Hello, Dreamwalker",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text(
+                          "Hello, Dreamwalker",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                         ),
-                      ),
-                      SizedBox(
-                        height: 4,
-                      ),
-                      Text("Monday, 19 August 2022")
-                    ],
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("Monday, 19 August 2022")
+                      ],
+                    ),
                   ),
-                ),
-                CircleAvatar(
-                  radius: 27,
-                )
-              ],
+                  CircleAvatar(
+                    radius: 27,
+                  )
+                ],
+              ),
             )
           ],
         ),
