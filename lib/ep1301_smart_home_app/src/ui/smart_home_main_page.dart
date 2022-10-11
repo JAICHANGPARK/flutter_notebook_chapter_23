@@ -25,18 +25,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                   child: const Icon(Icons.apps_outlined),
                 ),
-                Expanded(child: Column(
-                  children: [
-                    
-                  ],
-                )),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text("Hello, Dreamwalker"),
+                      SizedBox(height: 4,),
+                      Text("Monday, 19 August 2022")
+                    ],
+                  ),
+                ),
                 CircleAvatar(
                   radius: 27,
-
                 )
               ],
             )
-
           ],
         ),
       ),
