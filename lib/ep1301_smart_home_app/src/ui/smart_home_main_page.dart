@@ -29,7 +29,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                   Expanded(
                     child: Column(
-                      children: [
+                      children: const [
                         Text(
                           "Hello, Dreamwalker",
                           style: TextStyle(
