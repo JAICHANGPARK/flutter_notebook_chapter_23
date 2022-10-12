@@ -54,14 +54,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
+        child: SizedBox(
           height: 80,
           child: Row(
             children: [
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.home_outlined,),
+                  icon: const Icon(
+                    Icons.home_outlined,
+                  ),
                   iconSize: 32,
                   color: Colors.blueAccent,
                 ),
@@ -69,7 +71,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.pie_chart_outline,),
+                  icon: const Icon(
+                    Icons.pie_chart_outline,
+                  ),
                   iconSize: 32,
                   color: Colors.grey,
                 ),
@@ -77,7 +81,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               Expanded(
                 child: FloatingActionButton(
                   onPressed: () {},
-                  child: Icon(
+                  child: const Icon(
                     Icons.add,
                   ),
                 ),
@@ -85,7 +89,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.mic_none_outlined,
                   ),
                   iconSize: 32,
@@ -95,7 +99,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.settings_outlined,
                   ),
                   iconSize: 32,
