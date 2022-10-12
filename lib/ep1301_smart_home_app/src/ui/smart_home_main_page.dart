@@ -63,16 +63,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   onPressed: () {},
                   icon: Icon(Icons.home_outlined),
                   iconSize: 32,
+                  color: Colors.blueAccent,
                 ),
               ),
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.home_outlined),
+                  icon: Icon(Icons.pie_chart_outline),
                   iconSize: 32,
+                  color: Colors.grey,
                 ),
               ),
-               Expanded(
+              Expanded(
                   child: FloatingActionButton(
                 onPressed: () {},
                 child: Icon(
