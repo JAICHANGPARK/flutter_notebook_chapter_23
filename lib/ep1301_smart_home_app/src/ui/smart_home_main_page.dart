@@ -61,9 +61,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(16),
               ),
+              padding: EdgeInsets.all(16),
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,9 +81,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             "It's pretty cloudy in outside.",
                           ),
                         ],
+                      ),
+                      CircleAvatar(
+                        child: Icon(Icons.cloud_outlined),
                       )
                     ],
-                  )
+                  ),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             )
