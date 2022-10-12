@@ -44,7 +44,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       ],
                     ),
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 27,
                   )
                 ],
@@ -58,7 +58,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           height: 72,
           child: Row(
             children: [
-              const Expanded(child: Placeholder()),
+               Expanded(
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.home_outlined),
+                ),
+              ),
               const Expanded(child: Placeholder()),
               const Expanded(child: Placeholder()),
               const Expanded(child: Placeholder()),
