@@ -11,8 +11,6 @@
 <img src="https://cdn.dribbble.com/userupload/3772683/file/original-af4799a6c5239b4028fe72063ae07ec0.png?compress=1&resize=1024x768" width="400px"/>
 
 
-
-
 A new Flutter project.
 
 ## Getting Started
