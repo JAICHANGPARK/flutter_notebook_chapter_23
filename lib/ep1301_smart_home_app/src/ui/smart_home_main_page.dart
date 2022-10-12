@@ -83,9 +83,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                       const CircleAvatar(
+                        backgroundColor: Colors.white,
                         child: Icon(Icons.cloud_outlined),
                       )
                     ],
+                  ),
+                  const SizedBox(
+                    height: 16,
                   ),
                   Expanded(
                       child: Row(
@@ -140,7 +144,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 16,),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
