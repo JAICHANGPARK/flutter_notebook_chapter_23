@@ -81,8 +81,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   Icons.add,
                 ),
               )),
-              const Expanded(child: Placeholder()),
-              const Expanded(child: Placeholder()),
+              Expanded(
+                  child: FloatingActionButton(
+                    onPressed: () {},
+                    child: Icon(
+                      Icons.mic_none,
+                    ),
+                  )),
+              Expanded(
+                  child: FloatingActionButton(
+                    onPressed: () {},
+                    child: Icon(
+                      Icons.settings_outlined,
+                    ),
+                  )),
             ],
           ),
         ),
