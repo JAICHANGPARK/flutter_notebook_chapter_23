@@ -123,7 +123,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     ],
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
                                 Expanded(
@@ -151,7 +151,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     ],
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
                                 Expanded(
@@ -190,7 +190,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Rooms",
                             style: TextStyle(
                               fontSize: 24,
@@ -202,11 +202,33 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.grey,
                             ),
-                            child: Text(
+                            child: const Text(
                               "See all",
                             ),
                           )
                         ],
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(left: 16),
+                      height: 64,
+                      color: Colors.blue,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            margin: EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            child: Center(child: Text('Test')),
+                          );
+                        },
+                        itemCount: 10,
                       ),
                     )
                   ],
