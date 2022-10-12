@@ -61,7 +61,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.home_outlined),
+                  icon: Icon(Icons.home_outlined,),
                   iconSize: 32,
                   color: Colors.blueAccent,
                 ),
@@ -69,32 +69,39 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               Expanded(
                 child: IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.pie_chart_outline),
+                  icon: Icon(Icons.pie_chart_outline,),
                   iconSize: 32,
                   color: Colors.grey,
                 ),
               ),
               Expanded(
-                  child: FloatingActionButton(
-                onPressed: () {},
-                child: Icon(
-                  Icons.add,
+                child: FloatingActionButton(
+                  onPressed: () {},
+                  child: Icon(
+                    Icons.add,
+                  ),
                 ),
-              )),
+              ),
               Expanded(
-                  child: FloatingActionButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.mic_none,
-                    ),
-                  )),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.mic_none_outlined,
+                  ),
+                  iconSize: 32,
+                  color: Colors.grey,
+                ),
+              ),
               Expanded(
-                  child: FloatingActionButton(
-                    onPressed: () {},
-                    child: Icon(
-                      Icons.settings_outlined,
-                    ),
-                  )),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.settings_outlined,
+                  ),
+                  iconSize: 32,
+                  color: Colors.grey,
+                ),
+              ),
             ],
           ),
         ),
