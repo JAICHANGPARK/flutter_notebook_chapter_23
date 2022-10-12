@@ -248,7 +248,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                     ),
-                    GridView.builder(
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: GridView.builder(
                         shrinkWrap: true,
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16),
@@ -257,7 +259,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             color: Colors.pink,
                           );
                         },
-                    itemCount: 10,
+                        itemCount: 10,
+                      ),
                     ),
                   ],
                 ),
