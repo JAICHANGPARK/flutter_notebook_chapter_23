@@ -50,6 +50,40 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   )
                 ],
               ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Container(
+              margin: EdgeInsets.all(16),
+              height: 160,
+              decoration: BoxDecoration(
+                color: Colors.grey[100],
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "20 ℃",
+                            style: TextStyle(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "It's pretty cloudy in outside.",
+                          ),
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
