@@ -188,10 +188,17 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Row(
                       children: [
                         Text(
-                          "Room",
+                          "Rooms",
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                         TextButton(
                           onPressed: () {},
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.grey,
+                          ),
                           child: Text(
                             "See all",
                           ),
