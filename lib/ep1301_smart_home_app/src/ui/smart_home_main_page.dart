@@ -212,7 +212,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Container(
                       margin: const EdgeInsets.only(left: 16),
                       height: 64,
-                      color: Colors.blue,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -225,7 +224,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               ),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            child: Center(child: Text('Test')),
+                            child: Center(child: Text('TestTest')),
                           );
                         },
                         itemCount: 10,
