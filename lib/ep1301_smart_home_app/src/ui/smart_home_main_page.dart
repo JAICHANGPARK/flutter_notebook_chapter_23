@@ -58,14 +58,27 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
           height: 72,
           child: Row(
             children: [
-               Expanded(
+              Expanded(
                 child: IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.home_outlined),
+                  iconSize: 32,
                 ),
               ),
-              const Expanded(child: Placeholder()),
-              const Expanded(child: Placeholder()),
+              Expanded(
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.home_outlined),
+                  iconSize: 32,
+                ),
+              ),
+               Expanded(
+                  child: FloatingActionButton(
+                onPressed: () {},
+                child: Icon(
+                  Icons.add,
+                ),
+              )),
               const Expanded(child: Placeholder()),
               const Expanded(child: Placeholder()),
             ],
