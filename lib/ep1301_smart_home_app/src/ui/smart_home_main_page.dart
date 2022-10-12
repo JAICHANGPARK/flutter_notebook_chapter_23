@@ -55,7 +55,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 72,
+          height: 80,
           child: Row(
             children: [
               Expanded(
