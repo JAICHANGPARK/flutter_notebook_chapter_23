@@ -229,7 +229,36 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         },
                         itemCount: 10,
                       ),
-                    )
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Text(
+                            "Devices",
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    GridView.builder(
+                        shrinkWrap: true,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            color: Colors.pink,
+                          );
+                        },
+                    itemCount: 10,
+                    ),
                   ],
                 ),
               ),
