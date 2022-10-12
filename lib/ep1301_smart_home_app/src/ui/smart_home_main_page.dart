@@ -51,17 +51,17 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               height: 160,
               decoration: BoxDecoration(
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(16),
               ),
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   Row(
@@ -69,7 +69,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "20 ℃",
                             style: TextStyle(
@@ -82,12 +82,27 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ),
                         ],
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         child: Icon(Icons.cloud_outlined),
                       )
                     ],
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(
+                      child: Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text("18 km/h"),
+                            Text("Wind velocity"),
+                          ],
+                        ),
+                      ),
+                      const Expanded(child: Placeholder()),
+                      const Expanded(child: Placeholder()),
+                    ],
+                  )),
                 ],
               ),
             )
