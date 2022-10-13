@@ -10,6 +10,16 @@ class SmartLightingPage extends StatefulWidget {
 class _SmartLightingPageState extends State<SmartLightingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Column(
+          children: [
+            Text("Smart Ligthing"),
+            Text("Living room")
+          ],
+        ),
+      ),
+    );
   }
 }
