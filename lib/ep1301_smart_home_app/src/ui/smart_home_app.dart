@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1301_smart_home_app/src/ui/smart_home_main_page.dart';
+import 'package:flutter_notebook_chapter_23/ep1301_smart_home_app/src/ui/smart_lighting_page.dart';
 import 'package:go_router/go_router.dart';
 
 class SmartHomeApp extends StatelessWidget {
@@ -11,6 +12,10 @@ class SmartHomeApp extends StatelessWidget {
         path: "/",
         builder: (context, index) => const SmartHomeMainPage(),
       ),
+      GoRoute(
+        path: "/light",
+        builder: (context, index) => const SmartLightingPage(),
+      ),
     ],
   );
 
@@ -19,8 +24,8 @@ class SmartHomeApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: _router,
       theme: ThemeData.light(
-        // useMaterial3: true
-      ),
+          // useMaterial3: true
+          ),
     );
   }
 }
