@@ -264,11 +264,43 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Expanded(child: Placeholder()),
-                                Divider(),
+                                Expanded(
+                                    child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 8,
+                                      right: 0,
+                                      bottom: 0,
+                                      top: 8,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          CircleAvatar(
+                                            backgroundColor: Colors.grey[200],
+                                            foregroundColor: Colors.black,
+                                            child: const Icon(Icons.sunny),
+                                          ),
+                                          const SizedBox(
+                                            height: 8,
+                                          ),
+                                          const Text(
+                                            "Smart Lighting",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                          const Text("2 Lamps")
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                )),
+                                const Divider(),
                                 SwitchListTile.adaptive(
-                                  title: Text(""),
+                                  title: const Text("On"),
                                   value: false,
                                   onChanged: (b) {},
                                 )
