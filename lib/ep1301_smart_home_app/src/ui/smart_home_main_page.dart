@@ -271,45 +271,46 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
-                                    child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 8,
-                                      right: 0,
-                                      bottom: 0,
-                                      top: 8,
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                          CircleAvatar(
-                                            backgroundColor: Colors.grey[200],
-                                            foregroundColor: Colors.black,
-                                            child: const Icon(Icons.sunny),
-                                          ),
-                                          const SizedBox(
-                                            height: 8,
-                                          ),
-                                          const Text(
-                                            "Smart Lighting",
-                                            style: TextStyle(
-                                              fontSize: 16,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 8,
+                                        right: 0,
+                                        bottom: 0,
+                                        top: 8,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            CircleAvatar(
+                                              backgroundColor: Colors.grey[200],
+                                              foregroundColor: Colors.black,
+                                              child: const Icon(Icons.sunny),
                                             ),
-                                          ),
-                                          const Text("2 Lamps")
-                                        ],
+                                            const SizedBox(
+                                              height: 8,
+                                            ),
+                                            const Text(
+                                              "Smart Lighting",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                              ),
+                                            ),
+                                            const Text("2 Lamps")
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                    Positioned(
-                                      right: 8,
-                                      top: 8,
-                                      child: Icon(
-                                        Icons.wifi,
-                                        color: Colors.grey,
-                                      ),
-                                    )
-                                  ],
-                                )),
+                                      const Positioned(
+                                        right: 8,
+                                        top: 8,
+                                        child: Icon(
+                                          Icons.wifi,
+                                          color: Colors.grey,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
                                 const Divider(),
                                 const _SwitchTile(),
                               ],
