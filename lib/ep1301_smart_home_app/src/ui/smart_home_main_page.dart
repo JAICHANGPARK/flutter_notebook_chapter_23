@@ -253,19 +253,27 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       child: GridView.builder(
                         shrinkWrap: true,
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 16,
-                          mainAxisSpacing: 16,
-                          childAspectRatio: 6/8
-                        ),
+                            crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: 7 / 8),
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
-                                color: index % 2 == 1 ? Colors.grey[100] : Colors.white,
-                                border: Border.all(
-                                  color: Colors.grey,
-                                ),
-                                borderRadius: BorderRadius.circular(8)),
+                              color: index % 2 == 1 ? Colors.grey[100] : Colors.white,
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Divider(),
+                                SwitchListTile.adaptive(
+                                  title: Text(""),
+                                  value: false,
+                                  onChanged: (b) {},
+                                )
+                              ],
+                            ),
                           );
                         },
                         itemCount: 10,
