@@ -303,7 +303,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   ],
                                 )),
                                 const Divider(),
-
+                                _SwitchTile(),
                               ],
                             ),
                           );
@@ -388,13 +388,17 @@ class _SwitchTile extends StatefulWidget {
 
 class _SwitchTileState extends State<_SwitchTile> {
   bool _flag = false;
+
   @override
   Widget build(BuildContext context) {
-    return  SwitchListTile.adaptive(
-      title: const Text("On"),
-      value: false,
-      onChanged: (b) {},
+    return SwitchListTile.adaptive(
+      title: Text(_flag ? "On" : "Off"),
+      value: _flag,
+      onChanged: (b) {
+        setState(() {
+          _flag = b;
+        });
+      },
     );
   }
 }
-
