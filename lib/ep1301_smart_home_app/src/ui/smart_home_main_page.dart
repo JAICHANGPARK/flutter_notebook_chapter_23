@@ -237,8 +237,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          const Text(
+                        children: const [
+                          Text(
                             "Devices",
                             style: TextStyle(
                               fontSize: 24,
@@ -256,10 +256,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           crossAxisCount: 2,
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
+                          childAspectRatio: 6/8
                         ),
                         itemBuilder: (context, index) {
                           return Container(
-                            color: Colors.pink,
+                            decoration: BoxDecoration(
+                                color: index % 2 == 1 ? Colors.grey[100] : Colors.white,
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                                borderRadius: BorderRadius.circular(8)),
                           );
                         },
                         itemCount: 10,
