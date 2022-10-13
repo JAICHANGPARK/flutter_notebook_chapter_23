@@ -216,21 +216,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            margin: EdgeInsets.only(right: 16, top: 8, bottom: 8),
-                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.grey,
                               ),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            child: Center(child: Text('TestTest')),
+                            child: const Center(child: Text('TestTest')),
                           );
                         },
                         itemCount: 10,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Padding(
@@ -252,8 +252,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       padding: const EdgeInsets.all(16.0),
                       child: GridView.builder(
                         shrinkWrap: true,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16),
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 16,
+                        ),
                         itemBuilder: (context, index) {
                           return Container(
                             color: Colors.pink,
