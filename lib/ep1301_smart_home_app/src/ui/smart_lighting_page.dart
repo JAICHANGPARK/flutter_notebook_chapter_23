@@ -11,14 +11,26 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
         title: Column(
           children: [
             Text("Smart Ligthing"),
-            Text("Living room")
+            Text("Living room"),
           ],
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.more_horiz,
+            ),
+          )
+        ],
       ),
     );
   }
