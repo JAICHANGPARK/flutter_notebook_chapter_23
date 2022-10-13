@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({Key? key}) : super(key: key);
@@ -259,61 +260,66 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           childAspectRatio: 7 / 8,
                         ),
                         itemBuilder: (context, index) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: index % 2 == 1 ? Colors.grey[100] : Colors.white,
-                              border: Border.all(
-                                color: Colors.grey,
-                              ),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        left: 8,
-                                        right: 0,
-                                        bottom: 0,
-                                        top: 8,
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                          children: [
-                                            CircleAvatar(
-                                              backgroundColor: Colors.grey[200],
-                                              foregroundColor: Colors.black,
-                                              child: const Icon(Icons.sunny),
-                                            ),
-                                            const SizedBox(
-                                              height: 8,
-                                            ),
-                                            const Text(
-                                              "Smart Lighting",
-                                              style: TextStyle(
-                                                fontSize: 16,
-                                              ),
-                                            ),
-                                            const Text("2 Lamps")
-                                          ],
-                                        ),
-                                      ),
-                                      const Positioned(
-                                        right: 8,
-                                        top: 8,
-                                        child: Icon(
-                                          Icons.wifi,
-                                          color: Colors.grey,
-                                        ),
-                                      )
-                                    ],
-                                  ),
+                          return GestureDetector(
+                            onTap: () {
+                              context.push("/light");
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: index % 2 == 1 ? Colors.grey[100] : Colors.white,
+                                border: Border.all(
+                                  color: Colors.grey,
                                 ),
-                                const Divider(),
-                                const _SwitchTile(),
-                              ],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 8,
+                                          right: 0,
+                                          bottom: 0,
+                                          top: 8,
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              CircleAvatar(
+                                                backgroundColor: Colors.grey[200],
+                                                foregroundColor: Colors.black,
+                                                child: const Icon(Icons.sunny),
+                                              ),
+                                              const SizedBox(
+                                                height: 8,
+                                              ),
+                                              const Text(
+                                                "Smart Lighting",
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                ),
+                                              ),
+                                              const Text("2 Lamps")
+                                            ],
+                                          ),
+                                        ),
+                                        const Positioned(
+                                          right: 8,
+                                          top: 8,
+                                          child: Icon(
+                                            Icons.wifi,
+                                            color: Colors.grey,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  const Divider(),
+                                  const _SwitchTile(),
+                                ],
+                              ),
                             ),
                           );
                         },
