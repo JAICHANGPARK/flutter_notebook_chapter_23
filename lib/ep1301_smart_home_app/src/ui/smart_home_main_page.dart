@@ -299,11 +299,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           const Text("2 Lamps")
                                         ],
                                       ),
+                                    ),
+                                    Positioned(
+                                      right: 8,
+                                      top: 8,
+                                      child: Icon(
+                                        Icons.wifi,
+                                        color: Colors.grey,
+                                      ),
                                     )
                                   ],
                                 )),
                                 const Divider(),
-                                _SwitchTile(),
+                                const _SwitchTile(),
                               ],
                             ),
                           );
