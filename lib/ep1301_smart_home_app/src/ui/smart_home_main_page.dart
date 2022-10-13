@@ -253,7 +253,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       child: GridView.builder(
                         shrinkWrap: true,
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: 7 / 8),
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 16,
+                          childAspectRatio: 7 / 8,
+                        ),
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
@@ -299,11 +303,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   ],
                                 )),
                                 const Divider(),
-                                SwitchListTile.adaptive(
-                                  title: const Text("On"),
-                                  value: false,
-                                  onChanged: (b) {},
-                                )
+
                               ],
                             ),
                           );
@@ -378,3 +378,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
     );
   }
 }
+
+class _SwitchTile extends StatefulWidget {
+  const _SwitchTile({Key? key}) : super(key: key);
+
+  @override
+  State<_SwitchTile> createState() => _SwitchTileState();
+}
+
+class _SwitchTileState extends State<_SwitchTile> {
+  bool _flag = false;
+  @override
+  Widget build(BuildContext context) {
+    return  SwitchListTile.adaptive(
+      title: const Text("On"),
+      value: false,
+      onChanged: (b) {},
+    );
+  }
+}
+
