@@ -59,10 +59,10 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
           ),
           Container(
             margin: EdgeInsets.all(16),
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             decoration: BoxDecoration(
-              color: Colors.blueGrey[100],
-              borderRadius: BorderRadius.circular(4),
+              color: Colors.blueGrey[50],
+              borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
               children: [
