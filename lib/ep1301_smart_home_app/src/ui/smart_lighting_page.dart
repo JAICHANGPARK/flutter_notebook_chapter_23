@@ -12,8 +12,8 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
   bool condition = true;
   String _deviceType = "Panasonic Smart Lighting";
 
-  Color pickerColor = Color(0xff443a49);
-  Color currentColor = Color(0xff443a49);
+  Color pickerColor = const Color(0xff443a49);
+  Color currentColor = const Color(0xff443a49);
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
       ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 32,
           ),
           Container(
@@ -52,7 +52,7 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
                   color: Colors.grey[300]!,
                 ),
                 borderRadius: BorderRadius.circular(24)),
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             child: DropdownButton<String>(
               underline: Container(),
               items: const [
@@ -74,21 +74,21 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
             ),
           ),
           Container(
-            margin: EdgeInsets.all(16),
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            margin: const EdgeInsets.all(16),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             decoration: BoxDecoration(
               color: Colors.blueGrey[50],
               borderRadius: BorderRadius.circular(8),
             ),
             child: Row(
               children: [
-                Text(
+                const Text(
                   'Device condition',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Text(condition ? "On" : "Off"),
                 Switch(
                     value: condition,
