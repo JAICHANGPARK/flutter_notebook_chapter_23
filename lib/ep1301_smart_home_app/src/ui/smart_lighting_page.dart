@@ -130,14 +130,17 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
             ),
           ),
           Slider(
-              value: _slider,
-              min: 0.0,
-              max: 100,
-              onChanged: (d) {
-                setState(() {
-                  _slider = d;
-                });
-              })
+            value: _slider,
+            min: 0.0,
+            max: 100,
+            onChanged: (d) {
+              setState(() {
+                _slider = d;
+              });
+            },
+          ),
+          Text("Schedule time"),
+
         ],
       ),
     );
