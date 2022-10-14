@@ -8,6 +8,8 @@ class SmartLightingPage extends StatefulWidget {
 }
 
 class _SmartLightingPageState extends State<SmartLightingPage> {
+  bool condition = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +44,9 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
                   color: Colors.grey[300]!,
                 ),
                 borderRadius: BorderRadius.circular(24)),
+            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             child: DropdownButton<String>(
+              underline: Container(),
               items: const [
                 DropdownMenuItem(
                   child: Text("Panasonic Smart Lighting"),
@@ -51,6 +55,21 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
               ],
               onChanged: (Object? value) {},
               value: "Panasonic Smart Lighting",
+            ),
+          ),
+          Container(
+            child: Row(
+              children: [
+                Text('Device condition'),
+                Text(condition ? "On" : "Off"),
+                Switch(
+                    value: condition,
+                    onChanged: (b) {
+                      setState(() {
+                        condition = b;
+                      });
+                    })
+              ],
             ),
           )
         ],
