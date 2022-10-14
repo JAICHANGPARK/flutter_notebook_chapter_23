@@ -36,6 +36,9 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
       ),
       body: Column(
         children: [
+          SizedBox(
+            height: 32,
+          ),
           Container(
             height: 38,
             // width: 200,
