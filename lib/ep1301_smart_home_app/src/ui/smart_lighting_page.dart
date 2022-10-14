@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class SmartLightingPage extends StatefulWidget {
   const SmartLightingPage({Key? key}) : super(key: key);
@@ -10,6 +11,9 @@ class SmartLightingPage extends StatefulWidget {
 class _SmartLightingPageState extends State<SmartLightingPage> {
   bool condition = true;
   String _deviceType = "Panasonic Smart Lighting";
+
+  Color pickerColor = Color(0xff443a49);
+  Color currentColor = Color(0xff443a49);
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +104,11 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
             height: 300,
             width: 300,
             color: Colors.blue,
-          )
+            child: ColorPicker(
+              pickerColor: pickerColor,
+              onColorChanged: (Color value) {},
+            ),
+          ),
         ],
       ),
     );
