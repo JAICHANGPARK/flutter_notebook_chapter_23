@@ -32,6 +32,25 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
           )
         ],
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 38,
+            width: 400,
+            decoration: BoxDecoration(),
+            child: DropdownButton<String>(
+              items: [
+                DropdownMenuItem(
+                  child: Text("Panasonic Smart Lighting"),
+                  value: "Panasonic Smart Lighting",
+                ),
+              ],
+              onChanged: (Object? value) {},
+              value: "Panasonic Smart Lighting",
+            ),
+          )
+        ],
+      ),
     );
   }
 }
