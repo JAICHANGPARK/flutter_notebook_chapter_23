@@ -15,6 +15,8 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
   Color pickerColor = const Color(0xff443a49);
   Color currentColor = const Color(0xff443a49);
 
+  double _slider = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,7 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
         elevation: 0,
         title: Column(
           children: const [
-            Text("Smart Ligthing"),
+            Text("Smart Lighting"),
             Text("Living room"),
           ],
         ),
@@ -100,15 +102,42 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
               ],
             ),
           ),
-          Container(
-            height: 300,
-            width: 300,
-            color: Colors.blue,
-            child: ColorPicker(
-              pickerColor: pickerColor,
-              onColorChanged: (Color value) {},
+          ColorPicker(
+            pickerColor: pickerColor,
+            onColorChanged: (Color value) {
+              setState(() {
+                pickerColor = value;
+              });
+            },
+            displayThumbColor: false,
+            hexInputBar: false,
+            enableAlpha: false,
+            paletteType: PaletteType.hueWheel,
+            portraitOnly: true,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(
+                  Icons.sunny,
+                ),
+                Text(
+                  "${_slider.toStringAsFixed(0)}%",
+                )
+              ],
             ),
           ),
+          Slider(
+              value: _slider,
+              min: 0.0,
+              max: 100,
+              onChanged: (d) {
+                setState(() {
+                  _slider = d;
+                });
+              })
         ],
       ),
     );
