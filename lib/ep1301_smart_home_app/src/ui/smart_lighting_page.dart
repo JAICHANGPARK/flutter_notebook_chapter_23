@@ -95,6 +95,11 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
                     })
               ],
             ),
+          ),
+          Container(
+            height: 300,
+            width: 300,
+            color: Colors.blue,
           )
         ],
       ),
