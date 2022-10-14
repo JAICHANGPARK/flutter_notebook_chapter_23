@@ -18,9 +18,9 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
         foregroundColor: Colors.black,
         elevation: 0,
         title: Column(
-          children: [
-            const Text("Smart Ligthing"),
-            const Text("Living room"),
+          children: const [
+            Text("Smart Ligthing"),
+            Text("Living room"),
           ],
         ),
         actions: [
@@ -36,10 +36,14 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
         children: [
           Container(
             height: 38,
-            width: 400,
-            decoration: BoxDecoration(),
+            // width: 200,
+            decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+                borderRadius: BorderRadius.circular(24)),
             child: DropdownButton<String>(
-              items: [
+              items: const [
                 DropdownMenuItem(
                   child: Text("Panasonic Smart Lighting"),
                   value: "Panasonic Smart Lighting",
