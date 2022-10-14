@@ -9,6 +9,7 @@ class SmartLightingPage extends StatefulWidget {
 
 class _SmartLightingPageState extends State<SmartLightingPage> {
   bool condition = true;
+  String _deviceType = "Panasonic Smart Lighting";
 
   @override
   Widget build(BuildContext context) {
@@ -55,9 +56,17 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
                   child: Text("Panasonic Smart Lighting"),
                   value: "Panasonic Smart Lighting",
                 ),
+                DropdownMenuItem(
+                  child: Text("Panasonic Smart Lighting2"),
+                  value: "Panasonic Smart Lighting2",
+                ),
               ],
-              onChanged: (Object? value) {},
-              value: "Panasonic Smart Lighting",
+              onChanged: (value) {
+                setState(() {
+                  _deviceType = value ?? "";
+                });
+              },
+              value: _deviceType,
             ),
           ),
           Container(
