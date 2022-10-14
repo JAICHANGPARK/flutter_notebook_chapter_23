@@ -19,14 +19,14 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
         elevation: 0,
         title: Column(
           children: [
-            Text("Smart Ligthing"),
-            Text("Living room"),
+            const Text("Smart Ligthing"),
+            const Text("Living room"),
           ],
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.more_horiz,
             ),
           )
