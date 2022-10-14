@@ -58,9 +58,21 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
             ),
           ),
           Container(
+            margin: EdgeInsets.all(16),
+            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+            decoration: BoxDecoration(
+              color: Colors.blueGrey[100],
+              borderRadius: BorderRadius.circular(4),
+            ),
             child: Row(
               children: [
-                Text('Device condition'),
+                Text(
+                  'Device condition',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Spacer(),
                 Text(condition ? "On" : "Off"),
                 Switch(
                     value: condition,
