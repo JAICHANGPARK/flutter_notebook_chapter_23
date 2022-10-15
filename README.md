@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1301
+### EP1305
+
+- Ecommerce App
+- by Emmanuel Edokpa
+- https://dribbble.com/shots/19638735-Ecommerce-App
+
+<img src="https://cdn.dribbble.com/userupload/3793994/file/original-2c929bda0d6cdc64d9cdf27846f64113.jpg?compress=1&resize=1200x900" width="400px"/>
+
+### EP1301-1304
 
 - Homby - Smart Home App
 - by Raafi G
