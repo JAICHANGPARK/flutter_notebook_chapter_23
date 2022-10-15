@@ -13,6 +13,25 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: IndexedStack(
+          index: _pageIndex,
+          children: [
+            Center(
+              child: Text(_pageIndex.toString()),
+            ),
+            Center(
+              child: Text(_pageIndex.toString()),
+            ),
+            Center(
+              child: Text(_pageIndex.toString()),
+            ),
+            Center(
+              child: Text(_pageIndex.toString()),
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIndex,
         onTap: (idx) {
@@ -22,7 +41,6 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
         },
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.blue,
-
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite"),
