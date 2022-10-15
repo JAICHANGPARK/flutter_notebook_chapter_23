@@ -7,7 +7,7 @@ class EcommerceApp extends StatelessWidget {
   final _router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => EcommerceMainPage(),
+      builder: (context, state) => const EcommerceMainPage(),
     ),
   ], initialLocation: "/");
 
@@ -15,6 +15,7 @@ class EcommerceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: _router,
+
     );
   }
 }
