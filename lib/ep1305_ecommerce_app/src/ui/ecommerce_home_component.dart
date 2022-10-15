@@ -16,6 +16,22 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
           Container(
             height: 100,
             color: Colors.blue,
+          ),
+          Container(
+            height: 84,
+            color: Colors.red,
+          ),
+          Container(
+            height: 72,
+            color: Colors.green,
+          ),
+          Container(
+            height: 300,
+            color: Colors.orange,
+          ),
+          Container(
+            height: 300,
+            color: Colors.indigo,
           )
         ],
       ),
