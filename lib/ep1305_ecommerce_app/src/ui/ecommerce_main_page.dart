@@ -20,6 +20,9 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
             _pageIndex = idx;
           });
         },
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.blue,
+
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite"),
