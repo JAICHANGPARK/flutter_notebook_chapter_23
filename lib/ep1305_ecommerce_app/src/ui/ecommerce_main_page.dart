@@ -10,6 +10,15 @@ class EcommerceMainPage extends StatefulWidget {
 class _EcommerceMainPageState extends State<EcommerceMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite"),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications_none), label: "Notifications"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite"),
+        ],
+      ),
+    );
   }
 }
