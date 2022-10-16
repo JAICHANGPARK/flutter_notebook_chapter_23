@@ -16,6 +16,27 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
           Container(
             height: 100,
             color: Colors.blue,
+            child: Row(
+              children: [
+                Column(
+                  children: [
+                    Text("Hello Dreamwalker,"),
+                    Text("What one you buying today?"),
+                  ],
+                ),
+                Spacer(),
+                Container(
+                  height: 48,
+                  width: 48,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
           Container(
             height: 84,
