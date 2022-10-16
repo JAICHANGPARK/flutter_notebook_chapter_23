@@ -22,15 +22,24 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
+                  children: const [
+                    Text(
                       "Hello Dreamwalker,",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 12,
                     ),
-                    const Text("What one you buying today?"),
+                    Text(
+                      "What one you buying today?",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey,
+                      ),
+                    ),
                   ],
                 ),
                 const Spacer(),
@@ -43,8 +52,8 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                       shape: BoxShape.circle,
                     ),
                     child: Stack(
-                      children: [
-                        const Positioned(
+                      children: const [
+                        Positioned(
                           left: 0,
                           right: 0,
                           bottom: 0,
@@ -54,7 +63,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                             size: 28,
                           ),
                         ),
-                        const Positioned(
+                        Positioned(
                             right: 4,
                             top: 4,
                             child: CircleAvatar(
