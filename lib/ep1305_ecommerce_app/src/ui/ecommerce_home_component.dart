@@ -14,11 +14,12 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
       child: Column(
         children: [
           Container(
-            height: 100,
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             color: Colors.blue,
             child: Row(
               children: [
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Hello Dreamwalker,"),
                     Text("What one you buying today?"),
