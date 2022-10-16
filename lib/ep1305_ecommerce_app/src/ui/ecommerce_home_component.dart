@@ -151,8 +151,12 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                     ),
                     borderRadius: BorderRadius.circular(32),
                   ),
-                  margin: EdgeInsets.only(right: 8),
-                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  margin: EdgeInsets.only(
+                    right: 12,
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                  ),
                   child: Row(
                     children: [
                       Icon(
