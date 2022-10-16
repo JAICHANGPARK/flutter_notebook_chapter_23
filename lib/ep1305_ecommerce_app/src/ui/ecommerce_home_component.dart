@@ -16,7 +16,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
           Container(
             margin: const EdgeInsets.symmetric(
               horizontal: 16,
-              vertical: 8,
+              vertical: 16,
             ),
             child: Row(
               children: [
@@ -48,7 +48,9 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                   width: 48,
                   child: Container(
                     decoration: BoxDecoration(
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
                       shape: BoxShape.circle,
                     ),
                     child: Stack(
@@ -82,8 +84,14 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
             ),
           ),
           Container(
-            height: 84,
-            color: Colors.red,
+            height: 64,
+            // color: Colors.red,
+            margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(32)
+
+            ),
           ),
           Container(
             height: 72,
