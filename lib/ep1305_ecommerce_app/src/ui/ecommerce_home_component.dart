@@ -18,6 +18,25 @@ class EcommerceHomeComponent extends StatefulWidget {
 }
 
 class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
+  List<EcommerceMenu> _menuItems = [
+    EcommerceMenu(
+      iconData: Icons.phone_android,
+      title: "All",
+    ),
+    EcommerceMenu(
+      iconData: Icons.settings_display,
+      title: "Computers",
+    ),
+    EcommerceMenu(
+      iconData: Icons.headphones,
+      title: "Headsets",
+    ),
+    EcommerceMenu(
+      iconData: Icons.phone_android_sharp,
+      title: "SmartPhone",
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
