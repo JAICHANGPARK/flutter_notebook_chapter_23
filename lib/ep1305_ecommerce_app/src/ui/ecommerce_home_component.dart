@@ -14,24 +14,26 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            color: Colors.blue,
+            margin: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8,
+            ),
             child: Row(
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Hello Dreamwalker,",
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
-                    Text("What one you buying today?"),
+                    const Text("What one you buying today?"),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   height: 48,
                   width: 48,
@@ -42,16 +44,27 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                     ),
                     child: Stack(
                       children: [
-                        Positioned(
-                          child: Icon(Icons.shopping_bag_outlined),
+                        const Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 0,
+                          child: Icon(
+                            Icons.shopping_bag_outlined,
+                            size: 28,
+                          ),
                         ),
-                        Positioned(child: CircleAvatar(
-                          radius: 8,
-                          backgroundColor: Colors.red,
-                          child: Text("2", style: TextStyle(
-                            fontSize: 10
-                          ),),
-                        ))
+                        const Positioned(
+                            right: 4,
+                            top: 4,
+                            child: CircleAvatar(
+                              radius: 8,
+                              backgroundColor: Colors.red,
+                              child: Text(
+                                "2",
+                                style: TextStyle(fontSize: 10),
+                              ),
+                            ))
                       ],
                     ),
                   ),
