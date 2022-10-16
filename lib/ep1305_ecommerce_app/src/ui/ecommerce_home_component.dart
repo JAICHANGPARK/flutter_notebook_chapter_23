@@ -84,13 +84,23 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
             ),
           ),
           Container(
-            height: 64,
+            height: 58,
             // color: Colors.red,
-            margin: EdgeInsets.only(left: 16, right: 16, bottom: 16),
+            margin: EdgeInsets.only(
+              left: 16,
+              right: 16,
+              bottom: 16,
+            ),
             decoration: BoxDecoration(
               color: Colors.grey[200],
-              borderRadius: BorderRadius.circular(32)
-
+              borderRadius: BorderRadius.circular(32),
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                icon: Icon(
+                  Icons.search,
+                ),
+              ),
             ),
           ),
           Container(
