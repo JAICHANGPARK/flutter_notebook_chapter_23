@@ -86,7 +86,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
           Container(
             height: 58,
             // color: Colors.red,
-            margin: EdgeInsets.only(
+            margin: const EdgeInsets.only(
               left: 16,
               right: 16,
               bottom: 16,
@@ -95,8 +95,8 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(32),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 16),
-            child: Center(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: const Center(
               child: TextField(
                 decoration: InputDecoration(
                     icon: Icon(
