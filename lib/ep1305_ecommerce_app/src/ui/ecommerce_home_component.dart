@@ -139,6 +139,12 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
           Container(
             height: 72,
             color: Colors.green,
+            child: ListView.builder(
+              itemCount: _menuItems.length,
+              itemBuilder: (context, index) {
+                return Container();
+              },
+            ),
           ),
           Container(
             height: 300,
