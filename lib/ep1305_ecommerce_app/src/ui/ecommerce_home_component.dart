@@ -1,5 +1,15 @@
 import 'package:flutter/material.dart';
 
+class EcommerceMenu {
+  IconData? iconData;
+  String? title;
+
+  EcommerceMenu({
+    this.iconData,
+    this.title,
+  });
+}
+
 class EcommerceHomeComponent extends StatefulWidget {
   const EcommerceHomeComponent({Key? key}) : super(key: key);
 
