@@ -95,11 +95,15 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(32),
             ),
-            child: TextField(
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.search,
-                ),
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Center(
+              child: TextField(
+                decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.search,
+                    ),
+                    border: InputBorder.none,
+                    hintText: "Search products"),
               ),
             ),
           ),
