@@ -137,8 +137,9 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
             ),
           ),
           Container(
-            height: 64,
-            color: Colors.green,
+            margin: EdgeInsets.only(left: 16),
+            height: 54,
+            // color: Colors.green,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: _menuItems.length,
@@ -146,7 +147,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                 return Container(
                   decoration: BoxDecoration(
                     border: Border.all(),
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(32),
 
                   ),
                   margin: EdgeInsets.only(right: 8),
@@ -156,6 +157,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                       Icon(
                         _menuItems[index].iconData,
                       ),
+                      SizedBox(width: 12,),
                       Text(
                         _menuItems[index].title ?? "-",
                       )
