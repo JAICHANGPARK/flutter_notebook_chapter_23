@@ -21,7 +21,13 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Hello Dreamwalker,"),
+                    Text(
+                      "Hello Dreamwalker,",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 12,
+                    ),
                     Text("What one you buying today?"),
                   ],
                 ),
@@ -33,6 +39,20 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                     decoration: BoxDecoration(
                       border: Border.all(),
                       shape: BoxShape.circle,
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          child: Icon(Icons.shopping_bag_outlined),
+                        ),
+                        Positioned(child: CircleAvatar(
+                          radius: 8,
+                          backgroundColor: Colors.red,
+                          child: Text("2", style: TextStyle(
+                            fontSize: 10
+                          ),),
+                        ))
+                      ],
                     ),
                   ),
                 )
