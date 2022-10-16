@@ -146,9 +146,10 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
               itemBuilder: (context, index) {
                 return Container(
                   decoration: BoxDecoration(
-                    border: Border.all(),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
                     borderRadius: BorderRadius.circular(32),
-
                   ),
                   margin: EdgeInsets.only(right: 8),
                   padding: EdgeInsets.symmetric(horizontal: 16),
@@ -157,7 +158,9 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                       Icon(
                         _menuItems[index].iconData,
                       ),
-                      SizedBox(width: 12,),
+                      SizedBox(
+                        width: 12,
+                      ),
                       Text(
                         _menuItems[index].title ?? "-",
                       )
