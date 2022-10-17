@@ -218,6 +218,18 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                                   color: Colors.grey[200],
                                   borderRadius: BorderRadius.circular(7),
                                 ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      child: IconButton(
+                                        icon: Icon(
+                                          Icons.favorite_border,
+                                        ), onPressed: () {  },
+                                      ),
+                                    ),
+                                    Positioned(child: Image.network(""))
+                                  ],
+                                ),
                               ),
                             ),
                             SizedBox(
