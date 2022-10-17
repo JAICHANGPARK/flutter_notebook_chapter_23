@@ -215,9 +215,13 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                             Expanded(
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.grey[100],
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(7),
                                 ),
                               ),
+                            ),
+                            SizedBox(
+                              height: 6,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
