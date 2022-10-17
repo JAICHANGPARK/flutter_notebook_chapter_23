@@ -221,13 +221,23 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                                 child: Stack(
                                   children: [
                                     Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      top: 0,
+                                      child: Image.network(
+                                          "https://www.nicepng.com/png/detail/323-3239013_beats-solo3-wireless-on-ear-headphones-beats-solo.png"),
+                                    ),
+                                    Positioned(
+                                      right: 0,
+                                      top: 0,
                                       child: IconButton(
                                         icon: Icon(
                                           Icons.favorite_border,
-                                        ), onPressed: () {  },
+                                        ),
+                                        onPressed: () {},
                                       ),
                                     ),
-                                    Positioned(child: Image.network(""))
                                   ],
                                 ),
                               ),
