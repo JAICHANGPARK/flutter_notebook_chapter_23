@@ -18,7 +18,7 @@ class EcommerceHomeComponent extends StatefulWidget {
 }
 
 class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
-  List<EcommerceMenu> _menuItems = [
+  final List<EcommerceMenu> _menuItems = [
     EcommerceMenu(
       iconData: Icons.phone_android,
       title: "All",
@@ -72,7 +72,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                   ],
                 ),
                 const Spacer(),
-                Container(
+                SizedBox(
                   height: 48,
                   width: 48,
                   child: Container(
@@ -137,8 +137,8 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(left: 16),
-            height: 54,
+            margin: const EdgeInsets.only(left: 16),
+            height: 50,
             // color: Colors.green,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -151,10 +151,10 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                     ),
                     borderRadius: BorderRadius.circular(32),
                   ),
-                  margin: EdgeInsets.only(
+                  margin: const EdgeInsets.only(
                     right: 12,
                   ),
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 16,
                   ),
                   child: Row(
@@ -162,7 +162,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                       Icon(
                         _menuItems[index].iconData,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 12,
                       ),
                       Text(
@@ -176,7 +176,63 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
           ),
           Container(
             height: 300,
+            margin: EdgeInsets.only(top: 8),
             color: Colors.orange,
+            padding: EdgeInsets.only(
+              right: 16,
+              left: 16,
+            ),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Trending sales",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text("See all"),
+                    )
+                  ],
+                ),
+                Expanded(
+                    child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Expanded(child: Container()),
+                            Column(
+                              children: [
+                                Text("Beats solo3"),
+                                Text("Winning Beats sound"),
+                                Row(
+                                  children: [
+                                    Text("\$199.99"),
+                                    CircleAvatar(
+                                      child: Icon(
+                                        Icons.add,
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(child: Placeholder()),
+                  ],
+                )),
+              ],
+            ),
           ),
           Container(
             height: 300,
