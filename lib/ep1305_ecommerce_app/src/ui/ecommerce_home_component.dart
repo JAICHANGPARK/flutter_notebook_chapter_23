@@ -205,14 +205,21 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                   children: [
                     Expanded(
                       child: Container(
+                        padding: EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(child: Container()),
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Beats solo3"),
                                 Text("Winning Beats sound"),
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text("\$199.99"),
                                     CircleAvatar(
