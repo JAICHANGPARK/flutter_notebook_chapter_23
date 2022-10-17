@@ -175,10 +175,10 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
             ),
           ),
           Container(
-            height: 300,
-            margin: EdgeInsets.only(top: 8),
+            height: 320,
+            margin: const EdgeInsets.only(top: 8),
             color: Colors.orange,
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               right: 16,
               left: 16,
             ),
@@ -187,7 +187,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Trending sales",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -196,7 +196,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Text("See all"),
+                      child: const Text("See all"),
                     )
                   ],
                 ),
@@ -205,27 +205,34 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                   children: [
                     Expanded(
                       child: Container(
-                        padding: EdgeInsets.all(8),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.all(8),
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Container()),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                ),
+                              ),
+                            ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                const Text(
                                   "Beats solo3",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 15,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 6,
                                 ),
-                                Text(
+                                const Text(
                                   "Winning Beats sound",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -234,8 +241,13 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                                 ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text("\$199.99"),
+                                  children: const [
+                                    Text(
+                                      "\$199.99",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     CircleAvatar(
                                       child: Icon(
                                         Icons.add,
@@ -249,7 +261,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                         ),
                       ),
                     ),
-                    Expanded(child: Placeholder()),
+                    const Expanded(child: Placeholder()),
                   ],
                 )),
               ],
