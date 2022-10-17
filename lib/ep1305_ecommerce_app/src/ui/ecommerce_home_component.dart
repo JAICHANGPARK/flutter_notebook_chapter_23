@@ -216,8 +216,22 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Beats solo3"),
-                                Text("Winning Beats sound"),
+                                Text(
+                                  "Beats solo3",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 6,
+                                ),
+                                Text(
+                                  "Winning Beats sound",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
