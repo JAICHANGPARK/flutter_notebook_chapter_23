@@ -140,7 +140,6 @@ class _SmartLightingPageState extends State<SmartLightingPage> {
             },
           ),
           Text("Schedule time"),
-
         ],
       ),
     );
