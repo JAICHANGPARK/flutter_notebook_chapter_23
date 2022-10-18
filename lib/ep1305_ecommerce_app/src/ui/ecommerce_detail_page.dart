@@ -14,45 +14,74 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    shape: BoxShape.circle,
-                    border: Border.all(),
-                  ),
-                  child: IconButton(
-                    icon: const Icon(
-                      Icons.arrow_back,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Row(
+                children: [
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      border: Border.all(),
                     ),
-                    onPressed: () {},
-                  ),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text("Product details"),
-                  ),
-                ),
-                Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    shape: BoxShape.circle,
-                    border: Border.all(),
-                  ),
-                  child: IconButton(
-                    icon: const Icon(
-                      Icons.arrow_back,
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.arrow_back,
+                      ),
+                      onPressed: () {},
                     ),
-                    onPressed: () {},
                   ),
-                ),
-
-              ],
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        "Product details",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 48,
+                    width: 48,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Stack(
+                        children: const [
+                          Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            top: 0,
+                            child: Icon(
+                              Icons.shopping_bag_outlined,
+                              size: 28,
+                            ),
+                          ),
+                          Positioned(
+                              right: 4,
+                              top: 4,
+                              child: CircleAvatar(
+                                radius: 8,
+                                backgroundColor: Colors.red,
+                                child: Text(
+                                  "2",
+                                  style: TextStyle(fontSize: 10),
+                                ),
+                              ))
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
             const Expanded(child: Placeholder()),
             const Divider(
