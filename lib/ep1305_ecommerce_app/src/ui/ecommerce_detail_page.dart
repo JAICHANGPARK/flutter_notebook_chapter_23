@@ -85,21 +85,41 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               ),
             ),
             Expanded(
-                child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    height: 300,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 300,
-                    color: Colors.red,
-                  ),
-                  Divider(),
-                ],
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 300,
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      height: 300,
+                      color: Colors.red,
+                    ),
+                    Divider(),
+                    Text("Promo code"),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(),
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: TextField(),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "Apply code",
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-            )),
+            ),
             const Divider(
               height: 0,
               color: Colors.black,
