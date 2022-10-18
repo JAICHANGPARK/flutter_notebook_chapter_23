@@ -41,10 +41,22 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.blue,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Favorite"),
-          BottomNavigationBarItem(icon: Icon(Icons.notifications_none), label: "Notifications"),
-          BottomNavigationBarItem(icon: Icon(Icons.perm_identity), label: "Profile"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_border),
+            label: "Favorite",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications_none),
+            label: "Notifications",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.perm_identity),
+            label: "Profile",
+          ),
         ],
       ),
     );
