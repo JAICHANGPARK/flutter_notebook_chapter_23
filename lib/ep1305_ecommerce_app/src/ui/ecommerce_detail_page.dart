@@ -13,12 +13,19 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
     return Scaffold(
       body: Column(
         children: [
+          Expanded(child: Placeholder()),
           Divider(
             height: 0,
             color: Colors.black,
           ),
           Container(
             height: 72,
+            decoration: BoxDecoration(color: Colors.white),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.lightBlue,
+              ),
+            ),
           )
         ],
       ),
