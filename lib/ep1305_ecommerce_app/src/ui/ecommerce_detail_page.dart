@@ -33,7 +33,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       onPressed: () {},
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Product details",
