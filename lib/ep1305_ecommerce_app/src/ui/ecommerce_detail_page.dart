@@ -31,7 +31,27 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     onPressed: () {},
                   ),
                 ),
-                Expanded(child: Text("Product details")),
+                Expanded(
+                  child: Center(
+                    child: Text("Product details"),
+                  ),
+                ),
+                Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.circle,
+                    border: Border.all(),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(
+                      Icons.arrow_back,
+                    ),
+                    onPressed: () {},
+                  ),
+                ),
+
               ],
             ),
             const Expanded(child: Placeholder()),
