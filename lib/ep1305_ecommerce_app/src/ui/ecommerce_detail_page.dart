@@ -39,6 +39,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         "Product details",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 20,
                         ),
                       ),
                     ),
