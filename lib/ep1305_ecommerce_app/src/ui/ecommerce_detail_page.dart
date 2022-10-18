@@ -87,6 +87,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       height: 300,
