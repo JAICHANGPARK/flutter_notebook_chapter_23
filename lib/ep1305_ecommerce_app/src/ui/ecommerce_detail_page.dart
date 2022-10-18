@@ -97,26 +97,30 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       height: 300,
                       color: Colors.red,
                     ),
-                    Divider(),
-                    Text("Promo code"),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(),
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: TextField(),
+                    const Divider(),
+                    Column(
+                      children: [
+                        const Text("Promo code"),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(),
                           ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Apply code",
-                            ),
-                          )
-                        ],
-                      ),
-                    )
+                          child: Row(
+                            children: [
+                              const Expanded(
+                                child: TextField(),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: const Text(
+                                  "Apply code",
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
