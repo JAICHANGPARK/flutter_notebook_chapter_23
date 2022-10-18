@@ -98,28 +98,38 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       color: Colors.red,
                     ),
                     const Divider(),
-                    Column(
-                      children: [
-                        const Text("Promo code"),
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "Promo code",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16
+                            ),
                           ),
-                          child: Row(
-                            children: [
-                              const Expanded(
-                                child: TextField(),
-                              ),
-                              TextButton(
-                                onPressed: () {},
-                                child: const Text(
-                                  "Apply code",
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                            ),
+                            child: Row(
+                              children: [
+                                const Expanded(
+                                  child: TextField(),
                                 ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text(
+                                    "Apply code",
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
