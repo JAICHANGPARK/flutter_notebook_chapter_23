@@ -105,10 +105,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         children: [
                           const Text(
                             "Promo code",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
+                          SizedBox(
+                            height: 8,
                           ),
                           Container(
                             decoration: BoxDecoration(
