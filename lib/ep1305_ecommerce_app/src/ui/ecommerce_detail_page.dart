@@ -94,7 +94,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       color: Colors.blue,
                     ),
                     Container(
-                      height: 300,
+                      height: 250,
                       color: Colors.red,
                     ),
                     const Divider(),
