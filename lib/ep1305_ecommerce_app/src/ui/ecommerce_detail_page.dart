@@ -18,20 +18,22 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
               Container(
                 height: 48,
                 width: 48,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   shape: BoxShape.circle,
+                  border: Border.all(),
                 ),
                 child: IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_back,
                   ),
                   onPressed: () {},
                 ),
-              )
+              ),
+              Expanded(child: Text("Product details")),
             ],
           ),
-          Expanded(child: Placeholder()),
+          const Expanded(child: Placeholder()),
           const Divider(
             height: 0,
             color: Colors.black,
