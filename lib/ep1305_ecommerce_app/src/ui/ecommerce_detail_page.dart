@@ -13,27 +13,45 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
     return Scaffold(
       body: Column(
         children: [
+          Row(
+            children: [
+              Container(
+                height: 48,
+                width: 48,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: IconButton(
+                  icon: Icon(
+                    Icons.arrow_back,
+                  ),
+                  onPressed: () {},
+                ),
+              )
+            ],
+          ),
           Expanded(child: Placeholder()),
-          Divider(
+          const Divider(
             height: 0,
             color: Colors.black,
           ),
           Container(
             height: 80,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
             ),
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.lightBlue,
                 borderRadius: BorderRadius.circular(36),
               ),
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 18,
               ),
               child: Row(
-                children: [
+                children: const [
                   Icon(
                     Icons.lock,
                     color: Colors.white,
@@ -52,6 +70,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     "\$549.00",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                 ],
