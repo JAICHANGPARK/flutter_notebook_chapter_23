@@ -285,7 +285,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     Expanded(
@@ -489,7 +489,7 @@ class _EcommerceHomeComponentState extends State<EcommerceHomeComponent> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 12,
                         ),
                         Expanded(
