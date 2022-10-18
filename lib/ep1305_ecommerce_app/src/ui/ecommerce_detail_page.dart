@@ -84,7 +84,22 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 ],
               ),
             ),
-            const Expanded(child: Placeholder()),
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 300,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 300,
+                    color: Colors.red,
+                  ),
+                  Divider(),
+                ],
+              ),
+            )),
             const Divider(
               height: 0,
               color: Colors.black,
