@@ -19,11 +19,15 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
             color: Colors.black,
           ),
           Container(
-            height: 72,
-            decoration: BoxDecoration(color: Colors.white),
+            height: 80,
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.lightBlue,
+
               ),
             ),
           )
