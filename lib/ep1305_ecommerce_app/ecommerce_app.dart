@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1305_ecommerce_app/src/ui/ecommerce_detail_page.dart';
 import 'package:flutter_notebook_chapter_23/ep1305_ecommerce_app/src/ui/ecommerce_main_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,13 +10,16 @@ class EcommerceApp extends StatelessWidget {
       path: "/",
       builder: (context, state) => const EcommerceMainPage(),
     ),
+    GoRoute(
+      path: '/detail',
+      builder: (context, state) => const EcommerceDetailPage(),
+    )
   ], initialLocation: "/");
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: _router,
-
     );
   }
 }
