@@ -29,12 +29,31 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                 color: Colors.lightBlue,
                 borderRadius: BorderRadius.circular(36),
               ),
+              padding: EdgeInsets.symmetric(
+                horizontal: 18,
+              ),
               child: Row(
                 children: [
-                  Icon(Icons.lock),
-                  Text("Add item to bag"),
+                  Icon(
+                    Icons.lock,
+                    color: Colors.white,
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    "Add item to bag",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                   Spacer(),
-                  Text("\$549.00"),
+                  Text(
+                    "\$549.00",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ),
