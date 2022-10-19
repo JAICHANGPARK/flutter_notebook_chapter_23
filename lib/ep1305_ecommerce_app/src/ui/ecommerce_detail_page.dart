@@ -95,10 +95,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       child: Stack(
                         children: [
                           Positioned(
-                              right: 8,
-                              top: 8,
+                              right: 16,
+                              top: 16,
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 4,
+                                  vertical: 4,
+                                ),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(16),
@@ -108,11 +111,15 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                     CircleAvatar(
                                       radius: 8,
                                     ),
-                                    SizedBox(width: 4,),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     CircleAvatar(
                                       radius: 8,
                                     ),
-                                    SizedBox(width: 4,),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     CircleAvatar(
                                       radius: 8,
                                     ),
@@ -120,8 +127,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                 ),
                               )),
                           Positioned(
-                              right: 8,
-                              bottom: 8,
+                              right: 16,
+                              bottom: 16,
                               child: Container(
                                 padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                 child: Row(
@@ -130,36 +137,34 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                       width: 4,
                                       height: 18,
                                       decoration: BoxDecoration(
-                                        color: Colors.lightBlue,
-                                        borderRadius: BorderRadius.circular(4)
-                                      ),
+                                          color: Colors.lightBlue, borderRadius: BorderRadius.circular(4)),
                                     ),
-                                    SizedBox(width: 4,),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     Container(
                                       width: 4,
                                       height: 18,
-                                      decoration: BoxDecoration(
-                                          color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(4)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
                                     ),
-                                    SizedBox(width: 4,),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     Container(
                                       width: 4,
                                       height: 18,
-                                      decoration: BoxDecoration(
-                                          color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(4)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
                                     ),
-                                    SizedBox(width: 4,),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     Container(
                                       width: 4,
                                       height: 18,
-                                      decoration: BoxDecoration(
-                                          color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(4)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
                                     ),
                                   ],
                                 ),
