@@ -196,17 +196,26 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Container(
                       height: 250,
                       color: Colors.red,
+                      padding: EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("AirPods Max"),
+                                  Text("AirPods Max", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18
+                                  ),),
                                   Row(
                                     children: [
                                       Icon(Icons.star),
                                       Text("4.8"),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
                                       Text("193 reviews"),
                                     ],
                                   ),
