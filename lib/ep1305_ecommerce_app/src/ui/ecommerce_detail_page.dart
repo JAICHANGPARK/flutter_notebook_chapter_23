@@ -295,12 +295,14 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             decoration: BoxDecoration(
                               border: Border.all(),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 8),
                             child: Row(
                               children: [
                                 const Expanded(
                                   child: TextField(
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
+                                      hintText: "Enter promo code"
                                     ),
                                   ),
                                 ),
