@@ -92,6 +92,16 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Container(
                       height: 300,
                       color: Colors.blue,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                              child: Container(
+                            child: Row(
+                              children: [],
+                            ),
+                          ))
+                        ],
+                      ),
                     ),
                     Container(
                       height: 250,
