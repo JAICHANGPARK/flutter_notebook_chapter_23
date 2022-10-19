@@ -194,7 +194,6 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       ),
                     ),
                     Container(
-                      height: 250,
                       padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -208,7 +207,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                     "AirPods Max",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18,
+                                      fontSize: 20,
                                     ),
                                   ),
                                   const SizedBox(
@@ -235,6 +234,34 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                 icon: const Icon(Icons.favorite),
                                 color: Colors.red,
                               )
+                            ],
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                          Row(
+                            children: [
+                              Text(
+                                "\$549.99",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.remove_circle_outline),
+                                color: Colors.blueAccent,
+                              ),
+                              Text("1"),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.add_circle),
+                                color: Colors.blueAccent,
+                              ),
                             ],
                           )
                         ],
