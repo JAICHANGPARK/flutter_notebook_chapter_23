@@ -91,20 +91,34 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                   children: [
                     Container(
                       height: 300,
-                      color: Colors.blue,
+                      color: Colors.grey[100],
                       child: Stack(
                         children: [
                           Positioned(
+                              right: 8,
+                              top: 8,
                               child: Container(
                                 padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(16)
+                                  borderRadius: BorderRadius.circular(16),
                                 ),
-                            child: Row(
-                              children: [],
-                            ),
-                          ))
+                                child: Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 8,
+                                    ),
+                                    SizedBox(width: 4,),
+                                    CircleAvatar(
+                                      radius: 8,
+                                    ),
+                                    SizedBox(width: 4,),
+                                    CircleAvatar(
+                                      radius: 8,
+                                    ),
+                                  ],
+                                ),
+                              ))
                         ],
                       ),
                     ),
