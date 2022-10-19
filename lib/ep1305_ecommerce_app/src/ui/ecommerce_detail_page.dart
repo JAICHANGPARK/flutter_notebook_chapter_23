@@ -95,6 +95,13 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       child: Stack(
                         children: [
                           Positioned(
+                            left: 24,
+                            right: 24,
+                            top: 24,
+                            bottom: 24,
+                            child: Image.network("https://www.nicepng.com/png/detail/323-3239013_beats-solo3-wireless-on-ear-headphones-beats-solo.png"),
+                          ),
+                          Positioned(
                             right: 16,
                             top: 16,
                             child: Container(
