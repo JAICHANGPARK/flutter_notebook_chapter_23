@@ -241,6 +241,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                           ),
                           Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
                               Text(
@@ -256,7 +259,12 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                 icon: Icon(Icons.remove_circle_outline),
                                 color: Colors.blueAccent,
                               ),
-                              Text("1"),
+                              Text(
+                                "1",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               IconButton(
                                 onPressed: () {},
                                 icon: Icon(Icons.add_circle),
@@ -269,7 +277,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                     const Divider(),
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
