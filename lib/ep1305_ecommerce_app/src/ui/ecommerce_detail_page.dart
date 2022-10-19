@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class EcommerceDetailPage extends StatefulWidget {
   const EcommerceDetailPage({Key? key}) : super(key: key);
@@ -30,7 +31,9 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                       icon: const Icon(
                         Icons.arrow_back,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        context.pop();
+                      },
                     ),
                   ),
                   const Expanded(
