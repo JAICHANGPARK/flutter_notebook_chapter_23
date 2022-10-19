@@ -118,6 +118,35 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                     ),
                                   ],
                                 ),
+                              )),
+                          Positioned(
+                              right: 8,
+                              bottom: 8,
+                              child: Container(
+                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 3,
+                                      height: 24,
+                                      decoration: BoxDecoration(
+                                        color: Colors.lightBlue
+                                      ),
+                                    ),
+                                    SizedBox(width: 4,),
+                                    Container(
+                                      width: 3,
+                                      height: 24,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey
+                                      ),
+                                    ),
+                                    SizedBox(width: 4,),
+                                    CircleAvatar(
+                                      radius: 8,
+                                    ),
+                                  ],
+                                ),
                               ))
                         ],
                       ),
