@@ -298,7 +298,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             child: Row(
                               children: [
                                 const Expanded(
-                                  child: TextField(),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      
+                                    ),
+                                  ),
                                 ),
                                 TextButton(
                                   onPressed: () {},
