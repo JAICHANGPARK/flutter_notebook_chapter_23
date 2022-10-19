@@ -99,7 +99,8 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             right: 24,
                             top: 24,
                             bottom: 24,
-                            child: Image.network("https://www.nicepng.com/png/detail/323-3239013_beats-solo3-wireless-on-ear-headphones-beats-solo.png"),
+                            child: Image.network(
+                                "https://www.nicepng.com/png/detail/323-3239013_beats-solo3-wireless-on-ear-headphones-beats-solo.png"),
                           ),
                           Positioned(
                             right: 16,
@@ -195,6 +196,32 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     Container(
                       height: 250,
                       color: Colors.red,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("AirPods Max"),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star),
+                                      Text("4.8"),
+                                      Text("193 reviews"),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.favorite),
+                                color: Colors.red,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                     const Divider(),
                     Padding(
