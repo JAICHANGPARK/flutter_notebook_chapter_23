@@ -96,6 +96,11 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                         children: [
                           Positioned(
                               child: Container(
+                                padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(16)
+                                ),
                             child: Row(
                               children: [],
                             ),
