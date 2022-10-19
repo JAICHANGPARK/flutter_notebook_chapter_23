@@ -300,7 +300,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                 const Expanded(
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      
+                                      border: InputBorder.none,
                                     ),
                                   ),
                                 ),
