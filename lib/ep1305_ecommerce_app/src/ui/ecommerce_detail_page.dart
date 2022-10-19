@@ -106,7 +106,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             right: 16,
                             top: 16,
                             child: Container(
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 4,
                                 vertical: 4,
                               ),
@@ -115,7 +115,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: Row(
-                                children: [
+                                children: const [
                                   CircleAvatar(
                                     radius: 8,
                                   ),
@@ -139,7 +139,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                             right: 16,
                             bottom: 16,
                             child: Container(
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 4,
                                 vertical: 4,
                               ),
@@ -153,7 +153,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
                                   Container(
@@ -164,7 +164,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
                                   Container(
@@ -175,7 +175,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4,
                                   ),
                                   Container(
@@ -195,8 +195,7 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                     ),
                     Container(
                       height: 250,
-                      color: Colors.red,
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -205,13 +204,22 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("AirPods Max", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18
-                                  ),),
+                                  const Text(
+                                    "AirPods Max",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
                                   Row(
-                                    children: [
-                                      Icon(Icons.star),
+                                    children: const [
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
                                       Text("4.8"),
                                       SizedBox(
                                         width: 8,
@@ -221,10 +229,10 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.favorite),
+                                icon: const Icon(Icons.favorite),
                                 color: Colors.red,
                               )
                             ],
