@@ -127,23 +127,39 @@ class _EcommerceDetailPageState extends State<EcommerceDetailPage> {
                                 child: Row(
                                   children: [
                                     Container(
-                                      width: 3,
-                                      height: 24,
+                                      width: 4,
+                                      height: 18,
                                       decoration: BoxDecoration(
-                                        color: Colors.lightBlue
+                                        color: Colors.lightBlue,
+                                        borderRadius: BorderRadius.circular(4)
                                       ),
                                     ),
                                     SizedBox(width: 4,),
                                     Container(
-                                      width: 3,
-                                      height: 24,
+                                      width: 4,
+                                      height: 18,
                                       decoration: BoxDecoration(
-                                          color: Colors.grey
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(4)
                                       ),
                                     ),
                                     SizedBox(width: 4,),
-                                    CircleAvatar(
-                                      radius: 8,
+                                    Container(
+                                      width: 4,
+                                      height: 18,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    ),
+                                    SizedBox(width: 4,),
+                                    Container(
+                                      width: 4,
+                                      height: 18,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(4)
+                                      ),
                                     ),
                                   ],
                                 ),
