@@ -65,7 +65,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
               child: Align(
                 alignment: Alignment.bottomCenter,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     IconButton(
@@ -75,7 +75,9 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       color: Colors.blueGrey[400],
                     ),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -83,7 +85,9 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       color: Colors.blueGrey[400],
                     ),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -91,12 +95,24 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       color: Colors.blueGrey[400],
                     ),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
                         Icons.menu_book,
-                      ),  color: Colors.blueGrey[400],
+                      ),
+                      color: Colors.blueGrey[400],
+                    ),
+                    Container(
+                      height: 52,
+                      width: 52,
+                      margin: EdgeInsets.only(bottom: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        shape: BoxShape.circle,
+                      ),
                     )
                   ],
                 ),
