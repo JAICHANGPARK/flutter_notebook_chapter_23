@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'src/ui/templates_home_page.dart';
 
 class FormsTemplatesApp extends StatelessWidget {
-   FormsTemplatesApp({
+  FormsTemplatesApp({
     super.key,
   });
 
@@ -18,6 +18,9 @@ class FormsTemplatesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: ThemeData.light(
+        useMaterial3: true,
+      ),
       routerConfig: _router,
     );
   }
