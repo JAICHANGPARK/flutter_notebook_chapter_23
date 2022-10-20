@@ -19,15 +19,21 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
             backgroundColor: Color.fromRGBO(30, 41, 59, 1),
             leading: Icon(
               Icons.menu,
+              color: Colors.white,
             ),
             destinations: [
               NavigationRailDestination(
-                icon: Icon(Icons.home),
-                label: Text("Home"),
-              ),
+                  icon: Icon(
+                    Icons.home_work_outlined,
+                  ),
+                  label: Text("Home"),
+                  padding: EdgeInsets.symmetric(vertical: 8)),
               NavigationRailDestination(
                 icon: Icon(Icons.mail),
                 label: Text("Home"),
+                padding: EdgeInsets.symmetric(
+                  vertical: 8,
+                ),
               ),
             ],
             selectedIndex: _selectedIndex,
