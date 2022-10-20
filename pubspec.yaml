@@ -14,7 +14,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.5
-  go_router: ^5.1.0
+  go_router: ^5.1.1
   flutter_colorpicker: any
 
 dev_dependencies:
