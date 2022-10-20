@@ -16,12 +16,20 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
       body: Row(
         children: [
           NavigationRail(
-            backgroundColor: Color.fromRGBO(30, 41, 59, 1),
+            backgroundColor: const Color.fromRGBO(30, 41, 59, 1),
             leading: Icon(
               Icons.menu,
-              color: Colors.white,
+              color: Colors.blueGrey[400]!,
             ),
-            destinations: [
+            unselectedIconTheme: IconThemeData(
+              color: Colors.blueGrey[400],
+            ),
+            onDestinationSelected: (idx) {
+              setState(() {
+                _selectedIndex = idx;
+              });
+            },
+            destinations: const [
               NavigationRailDestination(
                   icon: Icon(
                     Icons.home_work_outlined,
@@ -30,7 +38,23 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                   padding: EdgeInsets.symmetric(vertical: 8)),
               NavigationRailDestination(
                 icon: Icon(Icons.mail),
-                label: Text("Home"),
+                label: Text("mail"),
+                padding: EdgeInsets.symmetric(
+                  vertical: 8,
+                ),
+              ),
+              NavigationRailDestination(
+                icon: Icon(Icons.chat),
+                label: Text("chat"),
+                padding: EdgeInsets.symmetric(
+                  vertical: 8,
+                ),
+              ),
+              NavigationRailDestination(
+                icon: Icon(
+                  Icons.description,
+                ),
+                label: Text("description"),
                 padding: EdgeInsets.symmetric(
                   vertical: 8,
                 ),
@@ -38,7 +62,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
             ],
             selectedIndex: _selectedIndex,
           ),
-          Expanded(child: Placeholder()),
+          const Expanded(child: Placeholder()),
         ],
       ),
     );
