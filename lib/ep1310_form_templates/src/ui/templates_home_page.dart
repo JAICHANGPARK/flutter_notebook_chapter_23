@@ -61,6 +61,44 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
               ),
             ],
             selectedIndex: _selectedIndex,
+            trailing: Expanded(
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.settings,
+                      ),
+                      color: Colors.blueGrey[400],
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.timer,
+                      ),
+                      color: Colors.blueGrey[400],
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.notifications,
+                      ),
+                      color: Colors.blueGrey[400],
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.menu_book,
+                      ),  color: Colors.blueGrey[400],
+                    )
+                  ],
+                ),
+              ),
+            ),
           ),
           const Expanded(child: Placeholder()),
         ],
