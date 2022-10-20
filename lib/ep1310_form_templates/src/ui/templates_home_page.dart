@@ -16,6 +16,10 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
       body: Row(
         children: [
           NavigationRail(
+            backgroundColor: Color.fromRGBO(30, 41, 59, 1),
+            leading: Icon(
+              Icons.menu,
+            ),
             destinations: [
               NavigationRailDestination(
                 icon: Icon(Icons.home),
@@ -24,7 +28,6 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
               NavigationRailDestination(
                 icon: Icon(Icons.mail),
                 label: Text("Home"),
-
               ),
             ],
             selectedIndex: _selectedIndex,
