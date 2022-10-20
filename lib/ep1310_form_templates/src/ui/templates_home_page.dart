@@ -59,6 +59,8 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                   vertical: 8,
                 ),
               ),
+
+
             ],
             selectedIndex: _selectedIndex,
             trailing: Expanded(
@@ -113,7 +115,8 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                         color: Colors.blueGrey,
                         shape: BoxShape.circle,
                       ),
-                    )
+                    ),
+
                   ],
                 ),
               ),
