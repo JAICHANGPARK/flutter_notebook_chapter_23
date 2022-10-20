@@ -75,6 +75,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       color: Colors.blueGrey[400],
                     ),
+                    SizedBox(height: 8,),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -82,6 +83,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       color: Colors.blueGrey[400],
                     ),
+                    SizedBox(height: 8,),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
@@ -89,6 +91,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       color: Colors.blueGrey[400],
                     ),
+                    SizedBox(height: 8,),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
