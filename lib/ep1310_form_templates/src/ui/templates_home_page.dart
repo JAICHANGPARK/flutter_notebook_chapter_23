@@ -70,37 +70,37 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.settings,
                       ),
                       color: Colors.blueGrey[400],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.timer,
                       ),
                       color: Colors.blueGrey[400],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.notifications,
                       ),
                       color: Colors.blueGrey[400],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.menu_book,
                       ),
                       color: Colors.blueGrey[400],
@@ -108,8 +108,8 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                     Container(
                       height: 52,
                       width: 52,
-                      margin: EdgeInsets.only(bottom: 8),
-                      decoration: BoxDecoration(
+                      margin: const EdgeInsets.only(bottom: 8),
+                      decoration: const BoxDecoration(
                         color: Colors.blueGrey,
                         shape: BoxShape.circle,
                       ),
