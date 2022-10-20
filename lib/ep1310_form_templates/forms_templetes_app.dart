@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+import 'src/ui/templates_home_page.dart';
 
 class FormsTemplatesApp extends StatelessWidget {
-  const FormsTemplatesApp({
+   FormsTemplatesApp({
     super.key,
   });
 
+  final _router = GoRouter(routes: [
+    GoRoute(
+      path: "/",
+      builder: (context, state) => TemplatesHomePage(),
+    ),
+  ]);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
+    return MaterialApp.router(
+      routerConfig: _router,
     );
   }
 }
