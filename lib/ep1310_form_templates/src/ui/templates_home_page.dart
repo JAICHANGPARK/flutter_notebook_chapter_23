@@ -24,20 +24,46 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
             unselectedIconTheme: IconThemeData(
               color: Colors.blueGrey[400],
             ),
+            useIndicator: false,
             onDestinationSelected: (idx) {
               setState(() {
                 _selectedIndex = idx;
               });
             },
-            destinations: const [
-              NavigationRailDestination(
+            destinations: [
+              const NavigationRailDestination(
                   icon: Icon(
                     Icons.home_work_outlined,
                   ),
                   label: Text("Home"),
                   padding: EdgeInsets.symmetric(vertical: 8)),
               NavigationRailDestination(
-                icon: Icon(Icons.mail),
+                icon: SizedBox(
+                  height: 32,
+                  width: 32,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        child: Center(
+                          child: Icon(Icons.mail),
+                        ),
+                      ),
+                      Positioned(
+                        right: 0,
+                        top: 0,
+                        child: CircleAvatar(
+                          radius: 8,
+                          backgroundColor: Colors.red,
+                          foregroundColor: Colors.white,
+                          child: Text(
+                            "2",
+                            style: TextStyle(fontSize: 12),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 label: Text("mail"),
                 padding: EdgeInsets.symmetric(
                   vertical: 8,
@@ -59,8 +85,6 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                   vertical: 8,
                 ),
               ),
-
-
             ],
             selectedIndex: _selectedIndex,
             trailing: Expanded(
@@ -116,7 +140,6 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                         shape: BoxShape.circle,
                       ),
                     ),
-
                   ],
                 ),
               ),
