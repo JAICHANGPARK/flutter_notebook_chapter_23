@@ -15,13 +15,13 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: globalKey,
-      drawer: Drawer(),
+      drawer: const Drawer(),
       body: Row(
         children: [
           NavigationRail(
             backgroundColor: const Color.fromRGBO(30, 41, 59, 1),
             leading: IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: Colors.white,
               ),
@@ -149,7 +149,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                       ),
                       child: Stack(
                         children: [
-                          Positioned(
+                          const Positioned(
                             bottom: 0,
                             right: 0,
                             child: CircleAvatar(
