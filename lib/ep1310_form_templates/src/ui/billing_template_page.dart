@@ -70,6 +70,27 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                         const Text("\$00.00"),
                       ],
                     ),
+                    Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Start Free Trial",
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green,
+                          foregroundColor: Colors.white,
+                          textStyle: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white,
+                          ),
+                          elevation: 0,
+                          minimumSize: Size(300, 48),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
