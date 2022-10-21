@@ -9,10 +9,13 @@ class TemplatesHomePage extends StatefulWidget {
 
 class _TemplatesHomePageState extends State<TemplatesHomePage> {
   int _selectedIndex = 0;
+  GlobalKey<ScaffoldState> globalKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: globalKey,
+      drawer: Drawer(),
       body: Row(
         children: [
           NavigationRail(
@@ -23,7 +26,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                 color: Colors.white,
               ),
               onPressed: () {
-                
+                globalKey.currentState!.openDrawer();
               },
             ),
             unselectedIconTheme: IconThemeData(
