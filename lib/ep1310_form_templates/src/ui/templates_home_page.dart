@@ -15,6 +15,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.grey[300],
       key: globalKey,
       drawer: const Drawer(),
@@ -100,69 +101,71 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
             trailing: Expanded(
               child: Align(
                 alignment: Alignment.bottomCenter,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.settings,
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.settings,
+                        ),
+                        color: Colors.blueGrey[400],
                       ),
-                      color: Colors.blueGrey[400],
-                    ),
-                    const SizedBox(
-                      height: 8,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.timer,
+                      const SizedBox(
+                        height: 8,
                       ),
-                      color: Colors.blueGrey[400],
-                    ),
-                    const SizedBox(
-                      height: 8,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.notifications,
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.timer,
+                        ),
+                        color: Colors.blueGrey[400],
                       ),
-                      color: Colors.blueGrey[400],
-                    ),
-                    const SizedBox(
-                      height: 8,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.menu_book,
+                      const SizedBox(
+                        height: 8,
                       ),
-                      color: Colors.blueGrey[400],
-                    ),
-                    Container(
-                      height: 52,
-                      width: 52,
-                      margin: const EdgeInsets.only(bottom: 16, top: 16),
-                      decoration: const BoxDecoration(
-                        color: Colors.blueGrey,
-                        shape: BoxShape.circle,
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.notifications,
+                        ),
+                        color: Colors.blueGrey[400],
                       ),
-                      child: Stack(
-                        children: const [
-                          Positioned(
-                            bottom: 0,
-                            right: 0,
-                            child: CircleAvatar(
-                              radius: 8,
-                              backgroundColor: Colors.green,
-                            ),
-                          )
-                        ],
+                      const SizedBox(
+                        height: 8,
                       ),
-                    ),
-                  ],
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.menu_book,
+                        ),
+                        color: Colors.blueGrey[400],
+                      ),
+                      Container(
+                        height: 52,
+                        width: 52,
+                        margin: const EdgeInsets.only(bottom: 16, top: 16),
+                        decoration: const BoxDecoration(
+                          color: Colors.blueGrey,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Stack(
+                          children: const [
+                            Positioned(
+                              bottom: 0,
+                              right: 0,
+                              child: CircleAvatar(
+                                radius: 8,
+                                backgroundColor: Colors.green,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
