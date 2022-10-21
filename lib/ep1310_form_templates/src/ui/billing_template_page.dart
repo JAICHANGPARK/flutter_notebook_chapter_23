@@ -70,8 +70,11 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                         const Text("\$00.00"),
                       ],
                     ),
-                    Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"),
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: ElevatedButton(
