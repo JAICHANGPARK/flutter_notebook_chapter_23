@@ -134,10 +134,22 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                     Container(
                       height: 52,
                       width: 52,
-                      margin: const EdgeInsets.only(bottom: 8),
+                      margin: const EdgeInsets.only(bottom: 16),
                       decoration: const BoxDecoration(
                         color: Colors.blueGrey,
                         shape: BoxShape.circle,
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            bottom: 0,
+                            right: 0,
+                            child: CircleAvatar(
+                              radius: 8,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ],
