@@ -15,6 +15,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[300],
       key: globalKey,
       drawer: const Drawer(),
       body: Row(
