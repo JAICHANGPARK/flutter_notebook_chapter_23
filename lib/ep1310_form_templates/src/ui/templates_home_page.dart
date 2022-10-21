@@ -42,7 +42,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                   height: 32,
                   width: 32,
                   child: Stack(
-                    children: [
+                    children: const [
                       Positioned(
                         child: Center(
                           child: Icon(Icons.mail),
@@ -64,19 +64,19 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                     ],
                   ),
                 ),
-                label: Text("mail"),
-                padding: EdgeInsets.symmetric(
+                label: const Text("mail"),
+                padding: const EdgeInsets.symmetric(
                   vertical: 8,
                 ),
               ),
-              NavigationRailDestination(
+              const NavigationRailDestination(
                 icon: Icon(Icons.chat),
                 label: Text("chat"),
                 padding: EdgeInsets.symmetric(
                   vertical: 8,
                 ),
               ),
-              NavigationRailDestination(
+              const NavigationRailDestination(
                 icon: Icon(
                   Icons.description,
                 ),
