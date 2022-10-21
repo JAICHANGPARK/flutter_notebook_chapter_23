@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1310_form_templates/src/ui/billing_template_page.dart';
 
 class TemplatesHomePage extends StatefulWidget {
   const TemplatesHomePage({Key? key}) : super(key: key);
@@ -168,7 +169,21 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
           Expanded(
               child: IndexedStack(
             index: _selectedIndex,
-            children: [],
+            children: [
+              const BillingTemplatePage(),
+              Center(
+                child: Text("$_selectedIndex"),
+              ),
+              Center(
+                child: Text("$_selectedIndex"),
+              ),
+              Center(
+                child: Text("$_selectedIndex"),
+              ),
+              Center(
+                child: Text("$_selectedIndex"),
+              ),
+            ],
           )),
         ],
       ),
