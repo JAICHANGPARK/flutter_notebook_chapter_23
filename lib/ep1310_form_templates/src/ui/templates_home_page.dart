@@ -17,9 +17,14 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
         children: [
           NavigationRail(
             backgroundColor: const Color.fromRGBO(30, 41, 59, 1),
-            leading: Icon(
-              Icons.menu,
-              color: Colors.blueGrey[400]!,
+            leading: IconButton(
+              icon: Icon(
+                Icons.menu,
+                color: Colors.white,
+              ),
+              onPressed: () {
+                
+              },
             ),
             unselectedIconTheme: IconThemeData(
               color: Colors.blueGrey[400],
