@@ -134,7 +134,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                     Container(
                       height: 52,
                       width: 52,
-                      margin: const EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16, top: 16),
                       decoration: const BoxDecoration(
                         color: Colors.blueGrey,
                         shape: BoxShape.circle,
