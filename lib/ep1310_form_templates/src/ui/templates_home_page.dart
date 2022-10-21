@@ -148,8 +148,8 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
                         shape: BoxShape.circle,
                       ),
                       child: Stack(
-                        children: [
-                          const Positioned(
+                        children: const [
+                          Positioned(
                             bottom: 0,
                             right: 0,
                             child: CircleAvatar(
@@ -165,7 +165,11 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
               ),
             ),
           ),
-          const Expanded(child: Placeholder()),
+          Expanded(
+              child: IndexedStack(
+            index: _selectedIndex,
+            children: [],
+          )),
         ],
       ),
     );
