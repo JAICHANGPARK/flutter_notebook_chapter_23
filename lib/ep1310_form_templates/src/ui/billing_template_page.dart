@@ -48,30 +48,30 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text("Due in 30 days"),
-                        const Text("\$99.95"),
+                      children: const [
+                        Text("Due in 30 days"),
+                        Text("\$99.95"),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text("Annual Saving"),
-                        const Text("\$12.95"),
+                      children: const [
+                        Text("Annual Saving"),
+                        Text("\$12.95"),
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       color: Colors.grey,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text("Due Today"),
-                        const Text("\$00.00"),
+                      children: const [
+                        Text("Due Today"),
+                        Text("\$00.00"),
                       ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16),
                       child: Text(
                           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"),
                     ),
@@ -79,18 +79,18 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "Start Free Trial",
                         ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.green,
                           foregroundColor: Colors.white,
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             fontSize: 15,
                             color: Colors.white,
                           ),
                           elevation: 0,
-                          minimumSize: Size(300, 48),
+                          minimumSize: const Size(300, 48),
                         ),
                       ),
                     )
