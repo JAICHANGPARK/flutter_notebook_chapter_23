@@ -25,14 +25,14 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Billing",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(vertical: 12),
                       child: TextField(
                         decoration: InputDecoration(
@@ -49,10 +49,27 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Due in 30 days"),
-                        Text("\$99.95"),
+                        const Text("Due in 30 days"),
+                        const Text("\$99.95"),
                       ],
-                    )
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text("Annual Saving"),
+                        const Text("\$12.95"),
+                      ],
+                    ),
+                    Divider(
+                      color: Colors.grey,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text("Due Today"),
+                        const Text("\$00.00"),
+                      ],
+                    ),
                   ],
                 ),
               ),
