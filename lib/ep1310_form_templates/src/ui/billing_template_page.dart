@@ -168,13 +168,22 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Payment Details'),
-                    TextField(
-                      decoration: InputDecoration(
-                        labelText: "Credit Card Number",
-                        icon: Icon(
-                          Ionicons.logo_bitcoin,
+                    Text(
+                      'Payment Details',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          labelText: "Credit Card Number",
+                          prefixIcon: Icon(
+                            Ionicons.logo_bitcoin,
+                          ),
+                          border: OutlineInputBorder(),
+                          enabledBorder: OutlineInputBorder(),
                         ),
                       ),
                     )
