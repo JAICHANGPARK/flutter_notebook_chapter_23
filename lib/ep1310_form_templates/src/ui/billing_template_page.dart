@@ -224,18 +224,36 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       ],
                     ),
                     Container(
+                      margin: EdgeInsets.symmetric(vertical: 12),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.green[100],
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(Icons.thumb_up),
-                          Text("Autosaved"),
+                          Icon(
+                            Icons.thumb_up,
+                            color: Colors.green,
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Autosaved",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.green,
+                            ),
+                          ),
                         ],
                       ),
-                    )
+                    ),
+                    const Text(
+                      'Billing Address',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
                   ],
                 ),
               ),
