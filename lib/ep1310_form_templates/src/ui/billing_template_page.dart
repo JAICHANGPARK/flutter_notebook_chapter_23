@@ -21,7 +21,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
               surfaceTintColor: Colors.white,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -49,15 +49,40 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
-                        Text("Due in 30 days"),
-                        Text("\$99.95"),
+                        Text(
+                          "Due in 30 days",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "\$99.95",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
+                    ),
+                    SizedBox(
+                      height: 16,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
-                        Text("Annual Saving"),
-                        Text("\$12.95"),
+                        Text(
+                          "Annual Saving",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
+                          ),
+                        ),
+                        Text(
+                          "\$12.95",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
+                          ),
+                        ),
                       ],
                     ),
                     const Divider(
