@@ -135,18 +135,27 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                 ),
               ),
             ),
-            Text.rich(TextSpan(children: [
+            Text.rich(
               TextSpan(
-                text: "By continuing, you are agreening to our",
+                children: [
+                  TextSpan(
+                    text: "By continuing, you are agreening to our ",
+                  ),
+                  TextSpan(
+                    text: "Subscriber Terms ",
+                    style: TextStyle(
+                      color: Colors.green,
+                    ),
+                    recognizer: _longPressRecognizer,
+                  ),
+                  TextSpan(
+                    text: "You will be automatically charged at the end of the Trial Period. "
+                        "including any applicable taxes.",
+                  ),
+                ],
               ),
-              TextSpan(
-                text: "Subscriber Terms",
-                style: TextStyle(
-                  color: Colors.green,
-                ),
-                recognizer: _longPressRecognizer,
-              )
-            ]))
+              textAlign: TextAlign.center,
+            )
           ],
         ),
       ),
@@ -159,6 +168,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
     super.initState();
     _longPressRecognizer = LongPressGestureRecognizer()..onLongPress = _handlePress;
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
@@ -168,5 +178,11 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
 
   late LongPressGestureRecognizer _longPressRecognizer;
 
-  void _handlePress() {}
+  void _handlePress() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Clicked Terms'),
+      ),
+    );
+  }
 }
