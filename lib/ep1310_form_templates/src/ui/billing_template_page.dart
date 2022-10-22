@@ -93,7 +93,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       children: const [
                         Text("Due Today", style: TextStyle(
                           fontWeight: FontWeight.bold,
-
+                            fontSize: 16
                         ),),
                         Text("\$00.00",
                           style: TextStyle(
