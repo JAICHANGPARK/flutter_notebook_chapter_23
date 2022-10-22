@@ -174,8 +174,9 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       'Payment Details',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
+
                     const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 12),
+                      padding: EdgeInsets.fromLTRB(0,24,0,8),
                       child: TextField(
                         decoration: InputDecoration(
                           labelText: "Credit Card Number",
@@ -186,6 +187,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                           enabledBorder: OutlineInputBorder(),
                           suffixIcon: Icon(Icons.clear),
                         ),
+                        keyboardType: TextInputType.number,
                       ),
                     ),
                     Row(
@@ -198,6 +200,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                             enabledBorder: OutlineInputBorder(),
                           ),
                           keyboardType: TextInputType.number,
+
                         )),
                         const Expanded(
                             child: Padding(
