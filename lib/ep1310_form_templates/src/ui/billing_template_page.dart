@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class BillingTemplatePage extends StatefulWidget {
   const BillingTemplatePage({Key? key}) : super(key: key);
@@ -169,6 +170,14 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                 child: Column(
                   children: [
                     Text('Payment Details'),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Credit Card Number",
+                        icon: Icon(
+                          Ionicons.logo_bitcoin,
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
