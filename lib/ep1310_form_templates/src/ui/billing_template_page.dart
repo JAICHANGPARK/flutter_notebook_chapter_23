@@ -135,26 +135,43 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                 ),
               ),
             ),
-            Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: "By continuing, you are agreening to our ",
-                  ),
-                  TextSpan(
-                    text: "Subscriber Terms ",
-                    style: TextStyle(
-                      color: Colors.green,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "By continuing, you are agreening to our ",
                     ),
-                    recognizer: _longPressRecognizer,
-                  ),
-                  TextSpan(
-                    text: "You will be automatically charged at the end of the Trial Period. "
-                        "including any applicable taxes.",
-                  ),
-                ],
+                    TextSpan(
+                      text: "Subscriber Terms ",
+                      style: TextStyle(
+                        color: Colors.green,
+                      ),
+                      recognizer: _longPressRecognizer,
+                    ),
+                    TextSpan(
+                      text: "You will be automatically charged at the end of the Trial Period. "
+                          "including any applicable taxes.",
+                    ),
+                  ],
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
+            ),
+            Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              surfaceTintColor: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                child: Column(
+                  children: [
+                    Text('Payment Details'),
+                  ],
+                ),
+              ),
             )
           ],
         ),
