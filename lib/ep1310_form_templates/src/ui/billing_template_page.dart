@@ -64,7 +64,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       ],
                     ),
                     SizedBox(
-                      height: 16,
+                      height: 8,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -91,8 +91,15 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
-                        Text("Due Today"),
-                        Text("\$00.00"),
+                        Text("Due Today", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+
+                        ),),
+                        Text("\$00.00",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),),
                       ],
                     ),
                     const Padding(
