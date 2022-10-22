@@ -175,7 +175,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                     const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 16),
+                      padding: EdgeInsets.symmetric(vertical: 12),
                       child: TextField(
                         decoration: InputDecoration(
                           labelText: "Credit Card Number",
@@ -190,9 +190,34 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                     ),
                     Row(
                       children: [
-                        Expanded(child: TextField()),
-                        Expanded(child: TextField()),
-                        Expanded(child: TextField()),
+                        Expanded(
+                            child: TextField(
+                          decoration: InputDecoration(
+                            labelText: "Month",
+                            border: OutlineInputBorder(),
+                            enabledBorder: OutlineInputBorder(),
+                          ),
+                        )),
+                        Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: TextField(
+
+                          decoration: InputDecoration(
+                            labelText: "Year",
+                              border: OutlineInputBorder(),
+                              enabledBorder: OutlineInputBorder(),
+                          ),
+                        ),
+                            )),
+                        Expanded(
+                            child: TextField(
+                          decoration: InputDecoration(
+                            labelText: "CVV",
+                            border: OutlineInputBorder(),
+                            enabledBorder: OutlineInputBorder(),
+                          ),
+                        )),
                       ],
                     )
                   ],
