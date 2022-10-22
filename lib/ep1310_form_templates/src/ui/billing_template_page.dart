@@ -175,7 +175,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
                       child: TextField(
                         decoration: InputDecoration(
                           labelText: "Credit Card Number",
