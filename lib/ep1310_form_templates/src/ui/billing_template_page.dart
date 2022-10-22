@@ -227,7 +227,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       margin: EdgeInsets.symmetric(vertical: 12),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: Colors.green[100],
+                        color: Colors.green[50],
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Row(
@@ -236,6 +236,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                           Icon(
                             Icons.thumb_up,
                             color: Colors.green,
+                            size: 16,
                           ),
                           SizedBox(
                             width: 8,
