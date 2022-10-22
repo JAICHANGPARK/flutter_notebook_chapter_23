@@ -15,7 +15,7 @@ class _TemplatesHomePageState extends State<TemplatesHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+      // resizeToAvoidBottomInset: false,
       backgroundColor: Colors.green[50],
       key: globalKey,
       drawer: const Drawer(),
