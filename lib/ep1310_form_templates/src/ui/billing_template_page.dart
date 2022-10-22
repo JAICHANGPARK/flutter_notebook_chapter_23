@@ -65,7 +65,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
                     Row(
@@ -141,17 +141,17 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
               child: Text.rich(
                 TextSpan(
                   children: [
-                    TextSpan(
+                    const TextSpan(
                       text: "By continuing, you are agreening to our ",
                     ),
                     TextSpan(
                       text: "Subscriber Terms ",
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.green,
                       ),
                       recognizer: _longPressRecognizer,
                     ),
-                    TextSpan(
+                    const TextSpan(
                       text: "You will be automatically charged at the end of the Trial Period. "
                           "including any applicable taxes.",
                     ),
@@ -166,16 +166,16 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
               ),
               surfaceTintColor: Colors.white,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Payment Details',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16),
                       child: TextField(
                         decoration: InputDecoration(
                           labelText: "Credit Card Number",
@@ -184,8 +184,16 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                           ),
                           border: OutlineInputBorder(),
                           enabledBorder: OutlineInputBorder(),
+                          suffixIcon: Icon(Icons.clear),
                         ),
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Expanded(child: TextField()),
+                        Expanded(child: TextField()),
+                        Expanded(child: TextField()),
+                      ],
                     )
                   ],
                 ),
@@ -215,7 +223,7 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
 
   void _handlePress() {
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
+      const SnackBar(
         content: Text('Clicked Terms'),
       ),
     );
