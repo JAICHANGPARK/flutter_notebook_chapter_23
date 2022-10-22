@@ -190,33 +190,35 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                     ),
                     Row(
                       children: [
-                        Expanded(
+                        const Expanded(
                             child: TextField(
                           decoration: InputDecoration(
                             labelText: "Month",
                             border: OutlineInputBorder(),
                             enabledBorder: OutlineInputBorder(),
                           ),
+                          keyboardType: TextInputType.number,
                         )),
-                        Expanded(
+                        const Expanded(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: TextField(
-
-                          decoration: InputDecoration(
-                            labelText: "Year",
+                          padding: EdgeInsets.all(8.0),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: "Year",
                               border: OutlineInputBorder(),
                               enabledBorder: OutlineInputBorder(),
+                            ),
+                            keyboardType: TextInputType.number,
                           ),
-                        ),
-                            )),
-                        Expanded(
+                        )),
+                        const Expanded(
                             child: TextField(
                           decoration: InputDecoration(
                             labelText: "CVV",
                             border: OutlineInputBorder(),
                             enabledBorder: OutlineInputBorder(),
                           ),
+                          keyboardType: TextInputType.number,
                         )),
                       ],
                     )
