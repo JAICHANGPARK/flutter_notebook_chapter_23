@@ -115,9 +115,6 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: const Text(
-                          "Start Free Trial",
-                        ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.green,
                           foregroundColor: Colors.white,
@@ -128,12 +125,22 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                           elevation: 0,
                           minimumSize: const Size(300, 48),
                         ),
+                        child: const Text(
+                          "Start Free Trial",
+                        ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
-            )
+            ),
+            Text.rich(TextSpan(
+              children: [
+                TextSpan(
+                  text: 
+                )
+              ]
+            ))
           ],
         ),
       ),
