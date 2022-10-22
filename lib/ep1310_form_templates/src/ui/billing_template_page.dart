@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class BillingTemplatePage extends StatefulWidget {
@@ -134,16 +135,38 @@ class _BillingTemplatePageState extends State<BillingTemplatePage> {
                 ),
               ),
             ),
-            Text.rich(TextSpan(
-              children: [
-                TextSpan(
-                  text: 
-                )
-              ]
-            ))
+            Text.rich(TextSpan(children: [
+              TextSpan(
+                text: "By continuing, you are agreening to our",
+              ),
+              TextSpan(
+                text: "Subscriber Terms",
+                style: TextStyle(
+                  color: Colors.green,
+                ),
+                recognizer: _longPressRecognizer,
+              )
+            ]))
           ],
         ),
       ),
     );
   }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _longPressRecognizer = LongPressGestureRecognizer()..onLongPress = _handlePress;
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _longPressRecognizer.dispose();
+    super.dispose();
+  }
+
+  late LongPressGestureRecognizer _longPressRecognizer;
+
+  void _handlePress() {}
 }
