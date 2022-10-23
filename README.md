@@ -2,7 +2,16 @@
 
 ## S26
 
-### EP1310
+### EP1313-
+
+- A new look for the UFC
+- by Giorgi J. for Ascended
+- https://dribbble.com/shots/19713317-A-new-look-for-the-UFC
+
+<img src="https://cdn.dribbble.com/userupload/3858410/file/original-e962ece67a644f6bbee470084475696d.png?compress=1&resize=1200x900" width="400px"/>
+
+
+### EP1310-1312
 
 - Material Me — Material You Design system & 💬 Forms templates
 - by Felix
