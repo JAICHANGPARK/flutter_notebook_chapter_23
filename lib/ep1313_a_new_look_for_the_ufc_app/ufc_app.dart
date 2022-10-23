@@ -11,6 +11,8 @@ class NewUfcApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp.router(
+      routerConfig: _router,
+    );
   }
 }
