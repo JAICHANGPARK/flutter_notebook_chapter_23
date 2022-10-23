@@ -54,12 +54,15 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                 height: 100,
                 color: Colors.pink,
               ),
+              SizedBox(
+                height: 16,
+              ),
               Expanded(
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16),
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     child: Text(
                       "WATCH EMBEDDED SERIES",
                       style: TextStyle(
@@ -78,6 +81,32 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                           child: Container(
                             height: 64,
                             color: Colors.red,
+                          ),
+                        ),
+                        Positioned(
+                          right: 32,
+                          bottom: 64,
+                          child: Container(
+                            width: 140,
+                            height: 140,
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                border: Border.all(
+                                  color: Colors.red,
+                                )),
+                          ),
+                        ),
+                        Positioned(
+                          left: 0,
+                          bottom: 24,
+                          top: 16,
+                          child: Container(
+                            width: MediaQuery.of(context).size.width / 1.7,
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                border: Border.all(
+                                  color: Colors.red,
+                                )),
                           ),
                         )
                       ],
