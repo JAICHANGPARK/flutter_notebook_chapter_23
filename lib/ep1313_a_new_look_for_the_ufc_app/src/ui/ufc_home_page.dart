@@ -84,16 +84,37 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                           ),
                         ),
                         Positioned(
-                          right: 32,
-                          bottom: 64,
-                          child: Container(
-                            width: 140,
-                            height: 140,
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
+                          right: -32,
+                          bottom: 140,
+                          child: Transform.rotate(
+                            angle: -0.2,
+                            child: Container(
+                              width: 140,
+                              height: 140,
+                              decoration: BoxDecoration(
+                                color: Colors.green,
                                 border: Border.all(
                                   color: Colors.red,
-                                )),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          right: 24,
+                          bottom: 72,
+                          child: Transform.rotate(
+                            angle: -0.2,
+                            child: Container(
+                              width: 140,
+                              height: 140,
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                border: Border.all(
+                                  color: Colors.red,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
                         Positioned(
