@@ -11,6 +11,21 @@ class NewUfcHomePage extends StatefulWidget {
 class _NewUfcHomePageState extends State<NewUfcHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Container(
+                  child: Text("Logo"),
+                ),
+                IconButton(onPressed: onPressed, icon: icon)
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
