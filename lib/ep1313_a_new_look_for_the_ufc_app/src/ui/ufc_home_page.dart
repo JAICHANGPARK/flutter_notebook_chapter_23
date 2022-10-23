@@ -16,11 +16,12 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   child: Text("Logo"),
                 ),
-                IconButton(onPressed: onPressed, icon: icon)
+                IconButton(onPressed: (){}, icon: Icon(Icons.menu))
               ],
             )
           ],
