@@ -239,6 +239,11 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                             width: MediaQuery.of(context).size.width / 1.7,
                             decoration: BoxDecoration(
                               color: Colors.blue,
+                              image: const DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2016/11/20/10/42/boxing-1842466_960_720.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                               border: Border.all(
                                 color: Colors.red,
                               ),
