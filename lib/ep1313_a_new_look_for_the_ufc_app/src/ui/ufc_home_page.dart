@@ -137,7 +137,6 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
               ),
               Container(
                 height: 100,
-                color: Colors.pink,
                 child: Row(
                   children: [
                     Expanded(
@@ -150,11 +149,8 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                         decoration: BoxDecoration(
                           gradient: RadialGradient(
                             colors: [
-
-
-                              Color.fromRGBO(208, 9, 8, 0.1),
-                              Color.fromRGBO(208, 9, 8, 0.7),
-                              Color.fromRGBO(208, 9, 8, 0.8),
+                                
+                              Colors.white.withOpacity(0.1),
                               Color.fromRGBO(208, 9, 8, 1),
                             ],
                           ),
@@ -167,6 +163,8 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                   ],
                 ),
               ),
+              Divider(color: Colors.grey,
+              height: 0),
               SizedBox(
                 height: 16,
               ),
