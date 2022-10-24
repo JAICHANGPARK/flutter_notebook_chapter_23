@@ -154,7 +154,9 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
 
                               Color.fromRGBO(190, 6, 7, 1),
                               Color.fromRGBO(208, 9, 8, 1),
+                              Color.fromRGBO(174, 4, 4, 1),
                             ],
+                            radius: 1
                           ),
                         ),
                         child: Center(
