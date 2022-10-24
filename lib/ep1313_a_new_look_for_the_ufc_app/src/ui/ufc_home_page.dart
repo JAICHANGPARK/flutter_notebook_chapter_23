@@ -26,8 +26,8 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                     Container(
                       child: Image.network(
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
-                        width: 84,
-                        color: Colors.red,
+                        width: 64,
+                        color: Color.fromRGBO(208, 9, 8, 1),
                       ),
                       // SvgPicture.network(
                       //   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg",
@@ -67,6 +67,29 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                       child: Image.network(
                         "https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg",
                         fit: BoxFit.cover,
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      bottom: 0,
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.black.withOpacity(0.2)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("2 Champinship bouts"),
+                            Text("Sat, Oct 22"),
+                            Text("10:00 PM +04"),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.location_on,
+                                ),
+                                Text("Arab Emirates / Yas Island")
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ],
