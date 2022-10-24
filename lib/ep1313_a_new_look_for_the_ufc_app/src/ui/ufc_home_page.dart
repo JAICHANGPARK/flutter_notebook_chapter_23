@@ -27,7 +27,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                       child: Image.network(
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
                         width: 64,
-                        color: Color.fromRGBO(208, 9, 8, 1),
+                        color: const Color.fromRGBO(208, 9, 8, 1),
                       ),
                       // SvgPicture.network(
                       //   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg",
@@ -75,11 +75,11 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.black.withOpacity(0.2),
                         ),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "2 Champinship bouts",
                               style: TextStyle(
                                 color: Color.fromRGBO(188, 160, 101, 1),
@@ -87,39 +87,39 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                                 fontSize: 18,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
-                            Text(
+                            const Text(
                               "Sat, Oct 22",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
-                            Text(
+                            const Text(
                               "10:00 PM +04",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.location_on,
                                   color: Colors.white,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
-                                Text(
+                                const Text(
                                   "Arab Emirates / Yas Island",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -139,40 +139,36 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                 height: 84,
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Center(
-                        child: Text('View Card', style: TextStyle(
-                          fontSize: 18
-                        ),),
+                        child: Text(
+                          'View Card',
+                          style: TextStyle(fontSize: 18),
+                        ),
                       ),
                     ),
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
-                          gradient: RadialGradient(
-                            colors: [
-
-                              Color.fromRGBO(190, 6, 7, 1),
-                              Color.fromRGBO(208, 9, 8, 1),
-                              Color.fromRGBO(174, 4, 4, 1),
-                            ],
-                            radius: 1
-                          ),
+                        decoration: const BoxDecoration(
+                          gradient: RadialGradient(colors: [
+                            Color.fromRGBO(190, 6, 7, 1),
+                            Color.fromRGBO(208, 9, 8, 1),
+                            Color.fromRGBO(174, 4, 4, 1),
+                          ], radius: 1),
                         ),
-                        child: Center(
-                          child: Text('ORDER PPV', style: TextStyle(
-                              fontSize: 18,
-                            color: Colors.white
-                          ),),
+                        child: const Center(
+                          child: Text(
+                            'ORDER PPV',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
-              Divider(color: Colors.grey,
-              height: 0),
-              SizedBox(
+              const Divider(color: Colors.grey, height: 0),
+              const SizedBox(
                 height: 16,
               ),
               Expanded(
