@@ -88,7 +88,9 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                                 fontSize: 18,
                               ),
                             ),
-                            SizedBox(height: 8,),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Text(
                               "Sat, Oct 22",
                               style: TextStyle(
@@ -96,21 +98,35 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                                 color: Colors.white,
                               ),
                             ),
-                            SizedBox(height: 8,),
-                            Text("10:00 PM +04",  style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),),
-                            SizedBox(height: 16,),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "10:00 PM +04",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Row(
                               children: [
                                 Icon(
                                   Icons.location_on,
-                                ),
-                                Text("Arab Emirates / Yas Island",  style: TextStyle(
-                                  fontWeight: FontWeight.bold,
                                   color: Colors.white,
-                                ),)
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "Arab Emirates / Yas Island",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                )
                               ],
                             )
                           ],
