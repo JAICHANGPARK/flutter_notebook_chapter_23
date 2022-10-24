@@ -54,7 +54,14 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      child: Image.network("https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg"),
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 0,
+                      child: Image.network(
+                        "https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg",
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ],
                 ),
