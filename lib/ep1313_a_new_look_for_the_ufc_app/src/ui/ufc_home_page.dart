@@ -73,19 +73,41 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                       left: 0,
                       bottom: 0,
                       child: Container(
-                        decoration: BoxDecoration(color: Colors.black.withOpacity(0.2)),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withOpacity(0.2),
+                        ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("2 Champinship bouts"),
-                            Text("Sat, Oct 22"),
-                            Text("10:00 PM +04"),
+                            Text(
+                              "2 Champinship bouts",
+                              style: TextStyle(
+                                color: Color.fromRGBO(188, 160, 101, 1),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Text(
+                              "Sat, Oct 22",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Text("10:00 PM +04",  style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),),
                             Row(
                               children: [
                                 Icon(
                                   Icons.location_on,
                                 ),
-                                Text("Arab Emirates / Yas Island")
+                                Text("Arab Emirates / Yas Island",  style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),)
                               ],
                             )
                           ],
