@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class NewUfcHomePage extends StatefulWidget {
   const NewUfcHomePage({Key? key}) : super(key: key);
@@ -23,8 +24,8 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      child: const Text(
-                        "Logo",
+                      child: SvgPicture.network(
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
                       ),
                     ),
                     IconButton(
