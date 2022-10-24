@@ -16,6 +16,9 @@ dependencies:
   flutter_colorpicker: any
 
   ionicons: any
+  flutter_svg: any
+
+
 
 dev_dependencies:
   flutter_test:
