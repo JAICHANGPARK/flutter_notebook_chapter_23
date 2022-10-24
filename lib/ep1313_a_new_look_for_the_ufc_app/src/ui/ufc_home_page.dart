@@ -150,10 +150,14 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                         decoration: BoxDecoration(
                           gradient: RadialGradient(
                             colors: [
-                              Colors.white,
-                              Color.
-                            ]
-                          )
+
+
+                              Color.fromRGBO(208, 9, 8, 0.1),
+                              Color.fromRGBO(208, 9, 8, 0.7),
+                              Color.fromRGBO(208, 9, 8, 0.8),
+                              Color.fromRGBO(208, 9, 8, 1),
+                            ],
+                          ),
                         ),
                         child: Center(
                           child: Text('View Card'),
