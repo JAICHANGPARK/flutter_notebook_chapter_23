@@ -136,12 +136,14 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                 ),
               ),
               Container(
-                height: 100,
+                height: 84,
                 child: Row(
                   children: [
                     Expanded(
                       child: Center(
-                        child: Text('View Card'),
+                        child: Text('View Card', style: TextStyle(
+                          fontSize: 18
+                        ),),
                       ),
                     ),
                     Expanded(
@@ -149,14 +151,17 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                         decoration: BoxDecoration(
                           gradient: RadialGradient(
                             colors: [
-                                
-                              Colors.white.withOpacity(0.1),
+
+                              Color.fromRGBO(190, 6, 7, 1),
                               Color.fromRGBO(208, 9, 8, 1),
                             ],
                           ),
                         ),
                         child: Center(
-                          child: Text('View Card'),
+                          child: Text('ORDER PPV', style: TextStyle(
+                              fontSize: 18,
+                            color: Colors.white
+                          ),),
                         ),
                       ),
                     ),
