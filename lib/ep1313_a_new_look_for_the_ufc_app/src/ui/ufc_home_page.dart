@@ -136,7 +136,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                 ),
               ),
               Container(
-                height: 84,
+                height: 78,
                 child: Row(
                   children: [
                     const Expanded(
@@ -232,16 +232,17 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                           ),
                         ),
                         Positioned(
-                          left: 0,
+                          left: 16,
                           bottom: 24,
-                          top: 16,
+                          top: 32,
                           child: Container(
                             width: MediaQuery.of(context).size.width / 1.7,
                             decoration: BoxDecoration(
-                                color: Colors.blue,
-                                border: Border.all(
-                                  color: Colors.red,
-                                )),
+                              color: Colors.blue,
+                              border: Border.all(
+                                color: Colors.red,
+                              ),
+                            ),
                           ),
                         )
                       ],
