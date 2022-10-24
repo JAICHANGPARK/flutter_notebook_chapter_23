@@ -73,7 +73,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                       bottom: 0,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withOpacity(0.3),
                         ),
                         padding: const EdgeInsets.all(16),
                         child: Column(
@@ -88,38 +88,40 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                               ),
                             ),
                             const SizedBox(
-                              height: 8,
+                              height: 12,
                             ),
                             const Text(
                               "Sat, Oct 22",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
+                                fontSize: 15
                               ),
                             ),
                             const SizedBox(
-                              height: 8,
+                              height: 12,
                             ),
                             const Text(
                               "10:00 PM +04",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
+                                  fontSize: 15
                               ),
                             ),
                             const SizedBox(
                               height: 16,
                             ),
                             Row(
-                              children: [
-                                const Icon(
+                              children: const [
+                                Icon(
                                   Icons.location_on,
                                   color: Colors.white,
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 8,
                                 ),
-                                const Text(
+                                Text(
                                   "Arab Emirates / Yas Island",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
