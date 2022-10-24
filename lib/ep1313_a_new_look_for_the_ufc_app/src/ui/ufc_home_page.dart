@@ -194,7 +194,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                           bottom: 0,
                           child: Container(
                             height: 64,
-                            color: Colors.red,
+                            color: Color.fromRGBO(208, 9, 8, 1),
                             child: Align(
                               alignment: Alignment.centerRight,
                               child: Image.network(
