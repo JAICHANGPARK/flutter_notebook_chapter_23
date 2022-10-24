@@ -248,6 +248,14 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                                 color: Colors.red,
                               ),
                             ),
+                            child: Center(
+                              child: CircleAvatar(
+                                radius: 38,
+                                backgroundColor: Colors.white.withOpacity(0.6),
+                                child: Icon(Icons.play_arrow, color:   Color.fromRGBO(208, 9, 8, 1),
+                                size: 42,),
+                              ),
+                            ),
                           ),
                         )
                       ],
