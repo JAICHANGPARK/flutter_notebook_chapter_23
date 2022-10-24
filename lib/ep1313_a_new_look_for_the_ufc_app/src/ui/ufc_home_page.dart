@@ -195,6 +195,14 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                           child: Container(
                             height: 64,
                             color: Colors.red,
+                            child: Align(
+                              alignment: Alignment.centerRight,
+                              child: Image.network(
+                                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
+                                width: 84,
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         ),
                         Positioned(
@@ -227,6 +235,11 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                                 border: Border.all(
                                   color: Colors.red,
                                 ),
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/03/14/10/07/muay-thai-2142472__340.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
@@ -252,8 +265,11 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                               child: CircleAvatar(
                                 radius: 38,
                                 backgroundColor: Colors.white.withOpacity(0.6),
-                                child: Icon(Icons.play_arrow, color:   Color.fromRGBO(208, 9, 8, 1),
-                                size: 42,),
+                                child: const Icon(
+                                  Icons.play_arrow,
+                                  color: Color.fromRGBO(208, 9, 8, 1),
+                                  size: 42,
+                                ),
                               ),
                             ),
                           ),
