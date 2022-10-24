@@ -26,6 +26,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                     Container(
                       child: SvgPicture.network(
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
+                        width: 120,
                       ),
                     ),
                     IconButton(
@@ -50,6 +51,13 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
               Container(
                 height: 240,
                 color: Colors.red,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      child: Image.network("https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg"),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 height: 100,
