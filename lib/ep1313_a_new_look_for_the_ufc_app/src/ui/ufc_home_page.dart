@@ -54,9 +54,8 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                   ),
                 ),
               ),
-              Container(
+              SizedBox(
                 height: 240,
-                color: Colors.red,
                 child: Stack(
                   children: [
                     Positioned(
@@ -139,6 +138,30 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
               Container(
                 height: 100,
                 color: Colors.pink,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Center(
+                        child: Text('View Card'),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: RadialGradient(
+                            colors: [
+                              Colors.white,
+                              Color.
+                            ]
+                          )
+                        ),
+                        child: Center(
+                          child: Text('View Card'),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 16,
