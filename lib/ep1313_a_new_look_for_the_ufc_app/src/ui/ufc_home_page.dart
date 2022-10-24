@@ -24,10 +24,16 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      child: SvgPicture.network(
+                      child: Image.network(
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
-                        width: 120,
+                        width: 84,
+                        color: Colors.red,
                       ),
+                      // SvgPicture.network(
+                      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg",
+                      //   width: 120,
+                      //   color: Colors.red,
+                      // ),
                     ),
                     IconButton(
                       onPressed: () {},
