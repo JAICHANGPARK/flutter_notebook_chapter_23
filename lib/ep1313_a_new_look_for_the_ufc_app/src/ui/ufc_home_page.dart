@@ -160,7 +160,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStat
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
-  const                   ),
+                    ),
                   ),
                   Expanded(
                     child: Stack(

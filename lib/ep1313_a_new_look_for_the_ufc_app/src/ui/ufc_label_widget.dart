@@ -7,7 +7,7 @@ class UfcLabelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 64,
-      padding: EdgeInsets.only(right: 16),
+      padding: const EdgeInsets.only(right: 16),
       color: const Color.fromRGBO(208, 9, 8, 1),
       child: Align(
         alignment: Alignment.centerRight,

@@ -25,9 +25,36 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                 height: 540,
                 color: Colors.blue,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Lightweight Champion"),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                        child: Stack(
+                      children: [
+                        Positioned(
+                            left: 16,
+                            right: 16,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("DREAMWALKER"),
+                                Text(
+                                  "\"DO BRONX\"",
+                                ),
+                              ],
+                            )),
+                        Positioned(
+                          left: 0,
+                          top: 32,
+                          bottom: 0,
+                          child: Image.network(
+                            "https://cdn.pixabay.com/photo/2019/08/04/06/06/boxing-4383119_960_720.jpg",
+                            width: 200,
+                            fit: BoxFit.fitHeight,
+                          ),
+                        )
+                      ],
+                    )),
                     UfcLabelWidget(),
                   ],
                 ),
