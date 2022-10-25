@@ -11,6 +11,12 @@ class UfcDetailPage extends StatefulWidget {
 class _UfcDetailPageState extends State<UfcDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
