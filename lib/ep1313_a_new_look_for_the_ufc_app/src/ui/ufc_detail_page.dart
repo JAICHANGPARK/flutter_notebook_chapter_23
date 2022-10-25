@@ -80,7 +80,28 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                               fit: BoxFit.fitHeight,
                             ),
                           ),
-                        )
+                        ),
+                        Positioned(
+                            left: 0,
+                            bottom: 0,
+                            child: Container(
+                              padding: EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                              ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Record",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+                                  ),
+                                  Text(
+                                    "33-8-0",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+                                  )
+                                ],
+                              ),
+                            ))
                       ],
                     )),
                     UfcLabelWidget(),
