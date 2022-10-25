@@ -41,47 +41,47 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                       ),
                     ),
                     Expanded(
-                        child: Stack(
-                      children: [
-                        Positioned(
-                          left: 16,
-                          right: 16,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
-                              Text(
-                                "DREAMWALKER",
-                                style: TextStyle(
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.w900,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 16,
+                            right: 16,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: const [
+                                Text(
+                                  "DREAMWALKER",
+                                  style: TextStyle(
+                                    fontSize: 28,
+                                    fontWeight: FontWeight.w900,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                "\"DO BRONX\"",
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.grey,
+                                Text(
+                                  "\"DO BRONX\"",
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Positioned(
-                          left: 0,
-                          top: 32,
-                          bottom: 0,
-                          child: Transform(
-                            alignment: Alignment.center,
-                            transform: Matrix4.rotationY(pi),
-                            child: Image.network(
-                              "https://cdn.pixabay.com/photo/2019/08/04/06/06/boxing-4383119_960_720.jpg",
-                              width: 300,
-                              fit: BoxFit.fitHeight,
+                              ],
                             ),
                           ),
-                        ),
-                        Positioned(
+                          Positioned(
+                            left: 0,
+                            top: 32,
+                            bottom: 0,
+                            child: Transform(
+                              alignment: Alignment.center,
+                              transform: Matrix4.rotationY(pi),
+                              child: Image.network(
+                                "https://cdn.pixabay.com/photo/2019/08/04/06/06/boxing-4383119_960_720.jpg",
+                                width: 300,
+                                fit: BoxFit.fitHeight,
+                              ),
+                            ),
+                          ),
+                          Positioned(
                             left: 0,
                             bottom: 0,
                             child: Container(
@@ -106,16 +106,39 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                   Text(
                                     "33-8-0",
                                     style: TextStyle(
-
                                       fontSize: 18,
                                       color: Colors.white,
                                     ),
                                   )
                                 ],
                               ),
-                            ))
-                      ],
-                    )),
+                            ),
+                          ),
+                          Positioned(
+                            right: 16,
+                            top: 0,
+                            bottom: 0,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Most Finishes"),
+                                Text(
+                                  "19",
+                                ),
+                                Text("Most Submissions"),
+                                Text(
+                                  "19",
+                                ),
+                                Text("Most Bounuses"),
+                                Text(
+                                  "19",
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                     const UfcLabelWidget(),
                   ],
                 ),
