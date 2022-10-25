@@ -31,7 +31,14 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: Text("Lightweight Champion"),
+                      child: Text(
+                        "Lightweight Champion",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Color.fromRGBO(188, 160, 101, 1),
+                        ),
+                      ),
                     ),
                     Expanded(
                         child: Stack(
