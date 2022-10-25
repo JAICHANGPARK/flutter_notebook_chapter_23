@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1313_a_new_look_for_the_ufc_app/src/ui/ufc_appbar_widget.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
@@ -19,32 +20,7 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStat
           padding: const EdgeInsets.only(top: 16),
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      child: Image.network(
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
-                        width: 64,
-                        color: const Color.fromRGBO(208, 9, 8, 1),
-                      ),
-                      // SvgPicture.network(
-                      //   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg",
-                      //   width: 120,
-                      //   color: Colors.red,
-                      // ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.menu,
-                      ),
-                    )
-                  ],
-                ),
-              ),
+              const UfcAppBarWidget(),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 16),
                 child: Text(
