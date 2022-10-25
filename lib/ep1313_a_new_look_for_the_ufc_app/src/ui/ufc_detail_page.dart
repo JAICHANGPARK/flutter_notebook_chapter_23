@@ -52,8 +52,8 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                               Text(
                                 "DREAMWALKER",
                                 style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w900,
                                 ),
                               ),
                               Text(
@@ -106,7 +106,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                   Text(
                                     "33-8-0",
                                     style: TextStyle(
-                             
+
                                       fontSize: 18,
                                       color: Colors.white,
                                     ),
