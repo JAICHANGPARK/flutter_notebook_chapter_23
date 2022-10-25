@@ -25,11 +25,14 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
               Container(
                 margin: EdgeInsets.only(top: 24),
                 height: 540,
-                color: Colors.blue,
+                color: Colors.white,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Lightweight Champion"),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text("Lightweight Champion"),
+                    ),
                     Expanded(
                         child: Stack(
                       children: [
