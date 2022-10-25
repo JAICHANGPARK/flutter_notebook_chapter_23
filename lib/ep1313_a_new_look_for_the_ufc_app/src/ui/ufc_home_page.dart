@@ -8,7 +8,7 @@ class NewUfcHomePage extends StatefulWidget {
   State<NewUfcHomePage> createState() => _NewUfcHomePageState();
 }
 
-class _NewUfcHomePageState extends State<NewUfcHomePage> {
+class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
