@@ -21,16 +21,16 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
           padding: const EdgeInsets.only(top: 16),
           child: Column(
             children: [
-              UfcAppBarWidget(),
+              const UfcAppBarWidget(),
               Container(
-                margin: EdgeInsets.only(top: 24),
+                margin: const EdgeInsets.only(top: 24),
                 height: 540,
                 color: Colors.white,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(16.0),
+                    const Padding(
+                      padding: EdgeInsets.all(16.0),
                       child: Text(
                         "Lightweight Champion",
                         style: TextStyle(
@@ -85,26 +85,34 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                             left: 0,
                             bottom: 0,
                             child: Container(
-                              padding: EdgeInsets.all(16),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(16),
+                              decoration: const BoxDecoration(
                                 color: Colors.black,
                               ),
                               child: Column(
-                                children: [
+                                children: const [
                                   Text(
                                     "Record",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                   Text(
                                     "33-8-0",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                    ),
                                   )
                                 ],
                               ),
                             ))
                       ],
                     )),
-                    UfcLabelWidget(),
+                    const UfcLabelWidget(),
                   ],
                 ),
               ),
