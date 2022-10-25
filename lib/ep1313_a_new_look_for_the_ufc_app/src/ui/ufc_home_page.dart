@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class NewUfcHomePage extends StatefulWidget {
   const NewUfcHomePage({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class NewUfcHomePage extends StatefulWidget {
   State<NewUfcHomePage> createState() => _NewUfcHomePageState();
 }
 
-class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStateMixin{
+class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,85 +57,82 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStat
               ),
               SizedBox(
                 height: 240,
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      top: 0,
-                      child: Image.network(
-                        "https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg",
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    Positioned(
-                      left: 0,
-                      bottom: 0,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.3),
+                child: GestureDetector(
+                  onTap: () {
+                    context.push("/detail");
+                  },
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        top: 0,
+                        child: Image.network(
+                          "https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg",
+                          fit: BoxFit.cover,
                         ),
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              "2 Champinship bouts",
-                              style: TextStyle(
-                                color: Color.fromRGBO(188, 160, 101, 1),
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 12,
-                            ),
-                            const Text(
-                              "Sat, Oct 22",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                fontSize: 15
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 12,
-                            ),
-                            const Text(
-                              "10:00 PM +04",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                  fontSize: 15
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 16,
-                            ),
-                            Row(
-                              children: const [
-                                Icon(
-                                  Icons.location_on,
-                                  color: Colors.white,
+                      ),
+                      Positioned(
+                        left: 0,
+                        bottom: 0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(0.3),
+                          ),
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "2 Champinship bouts",
+                                style: TextStyle(
+                                  color: Color.fromRGBO(188, 160, 101, 1),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
                                 ),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Text(
-                                  "Arab Emirates / Yas Island",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                              ),
+                              const SizedBox(
+                                height: 12,
+                              ),
+                              const Text(
+                                "Sat, Oct 22",
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),
+                              ),
+                              const SizedBox(
+                                height: 12,
+                              ),
+                              const Text(
+                                "10:00 PM +04",
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),
+                              ),
+                              const SizedBox(
+                                height: 16,
+                              ),
+                              Row(
+                                children: const [
+                                  Icon(
+                                    Icons.location_on,
                                     color: Colors.white,
                                   ),
-                                )
-                              ],
-                            )
-                          ],
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text(
+                                    "Arab Emirates / Yas Island",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Container(
