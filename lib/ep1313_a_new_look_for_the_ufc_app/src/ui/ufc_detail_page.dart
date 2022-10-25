@@ -37,17 +37,29 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                         child: Stack(
                       children: [
                         Positioned(
-                            left: 16,
-                            right: 16,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("DREAMWALKER"),
-                                Text(
-                                  "\"DO BRONX\"",
+                          left: 16,
+                          right: 16,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Text(
+                                "DREAMWALKER",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
                                 ),
-                              ],
-                            )),
+                              ),
+                              Text(
+                                "\"DO BRONX\"",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                         Positioned(
                           left: 0,
                           top: 32,
@@ -57,7 +69,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                             transform: Matrix4.rotationY(pi),
                             child: Image.network(
                               "https://cdn.pixabay.com/photo/2019/08/04/06/06/boxing-4383119_960_720.jpg",
-                              width: 240,
+                              width: 300,
                               fit: BoxFit.fitHeight,
                             ),
                           ),
@@ -70,7 +82,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
               ),
               Expanded(
                   child: Column(
-                children: [],
+                children: const [],
               )),
             ],
           ),
