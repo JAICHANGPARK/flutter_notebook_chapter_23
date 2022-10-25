@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1313_a_new_look_for_the_ufc_app/src/ui/ufc_appbar_widget.dart';
+import 'package:flutter_notebook_chapter_23/ep1313_a_new_look_for_the_ufc_app/src/ui/ufc_label_widget.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
@@ -159,27 +160,16 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStat
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
-                    ),
+  const                   ),
                   ),
                   Expanded(
                     child: Stack(
                       children: [
-                        Positioned(
+                        const Positioned(
                           left: 0,
                           right: 0,
                           bottom: 0,
-                          child: Container(
-                            height: 64,
-                            color: Color.fromRGBO(208, 9, 8, 1),
-                            child: Align(
-                              alignment: Alignment.centerRight,
-                              child: Image.network(
-                                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/1280px-UFC_logo.svg.png",
-                                width: 84,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
+                          child: UfcLabelWidget(),
                         ),
                         Positioned(
                           right: -32,
