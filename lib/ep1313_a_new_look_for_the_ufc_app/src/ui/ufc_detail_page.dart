@@ -90,20 +90,24 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 color: Colors.black,
                               ),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [
                                   Text(
                                     "Record",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 20,
                                       color: Colors.white,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
                                   ),
                                   Text(
                                     "33-8-0",
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                             
+                                      fontSize: 18,
                                       color: Colors.white,
                                     ),
                                   )
