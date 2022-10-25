@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1313_a_new_look_for_the_ufc_app/src/ui/ufc_appbar_widget.dart';
 import 'package:flutter_notebook_chapter_23/ep1313_a_new_look_for_the_ufc_app/src/ui/ufc_label_widget.dart';
@@ -47,10 +49,14 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                           left: 0,
                           top: 32,
                           bottom: 0,
-                          child: Image.network(
-                            "https://cdn.pixabay.com/photo/2019/08/04/06/06/boxing-4383119_960_720.jpg",
-                            width: 200,
-                            fit: BoxFit.fitHeight,
+                          child: Transform(
+                            alignment: Alignment.center,
+                            transform: Matrix4.rotationY(pi),
+                            child: Image.network(
+                              "https://cdn.pixabay.com/photo/2019/08/04/06/06/boxing-4383119_960_720.jpg",
+                              width: 240,
+                              fit: BoxFit.fitHeight,
+                            ),
                           ),
                         )
                       ],
