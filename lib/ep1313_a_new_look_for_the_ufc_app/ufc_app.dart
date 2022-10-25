@@ -16,8 +16,8 @@ class NewUfcApp extends StatelessWidget {
         },
         routes: [
           GoRoute(
-            path: "/detail",
-            builder: (context, state) => UfcDetailPage(),
+            path: "detail",
+            builder: (context, state) => const UfcDetailPage(),
           ),
         ],
       ),
