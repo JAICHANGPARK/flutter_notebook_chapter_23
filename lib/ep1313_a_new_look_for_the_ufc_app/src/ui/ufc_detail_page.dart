@@ -121,16 +121,16 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("Most Finishes"),
-                                Text(
+                                const Text("Most Finishes"),
+                                const Text(
                                   "19",
                                 ),
-                                Text("Most Submissions"),
-                                Text(
+                                const Text("Most Submissions"),
+                                const Text(
                                   "19",
                                 ),
-                                Text("Most Bounuses"),
-                                Text(
+                                const Text("Most Bounuses"),
+                                const Text(
                                   "19",
                                 )
                               ],
