@@ -198,7 +198,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "UPCOMING FIGHT",
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
