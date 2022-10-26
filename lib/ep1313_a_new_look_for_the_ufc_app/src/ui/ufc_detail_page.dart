@@ -228,7 +228,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 horizontal: 8,
                                 vertical: 8,
                               ),
-                              child: Flexible(
+                              child: Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -239,6 +239,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                         style: TextStyle(
                                           fontWeight: FontWeight.w900,
                                           fontSize: 20,
+                                          overflow: TextOverflow.clip
                                         ),
                                       ),
                                     ),
@@ -247,7 +248,6 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 ),
                               ),
                             ),
-                            const Spacer(),
                             Container(
                               width: 48,
                               color: const Color.fromRGBO(208, 9, 8, 1),
