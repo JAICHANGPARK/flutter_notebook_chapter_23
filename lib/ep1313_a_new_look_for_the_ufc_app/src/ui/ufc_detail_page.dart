@@ -126,36 +126,45 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                   "Most Finishes",
                                   style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                                 ),
-                                Text(
-                                  "19",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 22,
-                                    color: Color.fromRGBO(208, 9, 8, 1),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 16),
+                                  child: Text(
+                                    "19",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 22,
+                                      color: Color.fromRGBO(208, 9, 8, 1),
+                                    ),
                                   ),
                                 ),
                                 Text(
                                   "Most Submissions",
                                   style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                                 ),
-                                Text(
-                                  "19",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 22,
-                                    color: Color.fromRGBO(208, 9, 8, 1),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 16),
+                                  child: Text(
+                                    "19",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 22,
+                                      color: Color.fromRGBO(208, 9, 8, 1),
+                                    ),
                                   ),
                                 ),
                                 Text(
                                   "Most Bonuses",
                                   style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                                 ),
-                                Text(
-                                  "19",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 22,
-                                    color: Color.fromRGBO(208, 9, 8, 1),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 16),
+                                  child: Text(
+                                    "19",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 22,
+                                      color: Color.fromRGBO(208, 9, 8, 1),
+                                    ),
                                   ),
                                 )
                               ],
