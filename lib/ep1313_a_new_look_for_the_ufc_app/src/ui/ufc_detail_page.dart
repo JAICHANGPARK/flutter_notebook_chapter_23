@@ -193,9 +193,10 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                 ),
               ),
               Expanded(
-                  child: Column(
-                children: const [],
-              )),
+                child: Column(
+                  children: const [],
+                ),
+              ),
             ],
           ),
         ),
