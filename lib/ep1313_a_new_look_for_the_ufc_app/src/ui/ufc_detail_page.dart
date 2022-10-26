@@ -232,7 +232,15 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  const Text("DREAM VS WALKER"),
+                                  Flexible(
+                                    child: const Text(
+                                      "DREAM VS WALKER",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                  ),
                                   const Text("Oct. 22. 2022"),
                                 ],
                               ),
