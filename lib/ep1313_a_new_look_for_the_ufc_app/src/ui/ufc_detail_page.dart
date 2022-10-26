@@ -237,18 +237,16 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Container(
-                                      child: Text(
-                                        "DREAM VS WALKER",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.w900,
-                                          fontSize: 18,
-                                          overflow: TextOverflow.fade,
-                                        ),
+                                  children: const [
+                                    Text(
+                                      "DREAM VS WALKER",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 18,
+                                        overflow: TextOverflow.fade,
                                       ),
                                     ),
-                                    const Text(
+                                    Text(
                                       "Oct. 22. 2022",
                                       style: TextStyle(
                                         fontWeight: FontWeight.w900,
