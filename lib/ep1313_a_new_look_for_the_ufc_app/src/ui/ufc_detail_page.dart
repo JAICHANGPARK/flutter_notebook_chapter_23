@@ -194,7 +194,18 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
               ),
               Expanded(
                 child: Column(
-                  children: const [],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("UPCOMING FIGHT"),
+                    Container(
+                      height: 100,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[100]!,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
             ],
