@@ -120,18 +120,30 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                             bottom: 0,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                const Text("Most Finishes"),
-                                const Text(
-                                  "19",
+                              children: const [
+                                Text(
+                                  "Most Finishes",
+                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                                 ),
-                                const Text("Most Submissions"),
-                                const Text(
+                                Text(
                                   "19",
+                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                                 ),
-                                const Text("Most Bounuses"),
-                                const Text(
+                                Text(
+                                  "Most Submissions",
+                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                ),
+                                Text(
                                   "19",
+                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                ),
+                                Text(
+                                  "Most Bonuses",
+                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                ),
+                                Text(
+                                  "19",
+                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
                                 )
                               ],
                             ),
