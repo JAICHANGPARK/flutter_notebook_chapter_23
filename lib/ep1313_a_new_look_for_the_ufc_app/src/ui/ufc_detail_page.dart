@@ -215,6 +215,16 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                             color: Colors.grey[100]!,
                           ),
                         ),
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
