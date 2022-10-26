@@ -115,10 +115,11 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                             ),
                           ),
                           Positioned(
-                            right: 16,
+                            right: 8,
                             top: 0,
                             bottom: 0,
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
                                 Text(
@@ -127,7 +128,11 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 ),
                                 Text(
                                   "19",
-                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 22,
+                                    color: Color.fromRGBO(208, 9, 8, 1),
+                                  ),
                                 ),
                                 Text(
                                   "Most Submissions",
@@ -135,7 +140,11 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 ),
                                 Text(
                                   "19",
-                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 22,
+                                    color: Color.fromRGBO(208, 9, 8, 1),
+                                  ),
                                 ),
                                 Text(
                                   "Most Bonuses",
@@ -143,7 +152,11 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 ),
                                 Text(
                                   "19",
-                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 22,
+                                    color: Color.fromRGBO(208, 9, 8, 1),
+                                  ),
                                 )
                               ],
                             ),
