@@ -239,7 +239,6 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
-                                      color: Colors.blue,
                                       child: Text(
                                         "DREAM VS WALKER",
                                         style: TextStyle(
