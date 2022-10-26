@@ -205,6 +205,9 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                           fontSize: 24,
                         ),
                       ),
+                      SizedBox(
+                        height: 24,
+                      ),
                       Container(
                         height: 100,
                         decoration: BoxDecoration(
