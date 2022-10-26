@@ -205,7 +205,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                           fontSize: 24,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                       Container(
@@ -219,16 +219,31 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                           children: [
                             Container(
                               width: 150,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.blueGrey,
                               ),
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("DREAM VS WALKER"),
-                                Text("Oct. 22. 2022"),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text("DREAM VS WALKER"),
+                                  const Text("Oct. 22. 2022"),
+                                ],
+                              ),
+                            ),
+                            const Spacer(),
+                            Container(
+                              width: 48,
+                              color: const Color.fromRGBO(208, 9, 8, 1),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.keyboard_arrow_right_outlined,
+                                  color: Colors.white,
+                                ),
+                              ),
                             )
                           ],
                         ),
