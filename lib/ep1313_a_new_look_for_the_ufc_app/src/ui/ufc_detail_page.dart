@@ -221,6 +221,11 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                               width: 140,
                               decoration: const BoxDecoration(
                                 color: Colors.blueGrey,
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2019/11/29/14/38/boxing-4661441__340.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                             Expanded(
