@@ -124,7 +124,10 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                               children: const [
                                 Text(
                                   "Most Finishes",
-                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 22,
+                                  ),
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(vertical: 16),
@@ -132,7 +135,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                     "19",
                                     style: TextStyle(
                                       fontWeight: FontWeight.w900,
-                                      fontSize: 22,
+                                      fontSize: 24,
                                       color: Color.fromRGBO(208, 9, 8, 1),
                                     ),
                                   ),
@@ -147,7 +150,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                     "19",
                                     style: TextStyle(
                                       fontWeight: FontWeight.w900,
-                                      fontSize: 22,
+                                      fontSize: 24,
                                       color: Color.fromRGBO(208, 9, 8, 1),
                                     ),
                                   ),
@@ -162,7 +165,7 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                     "19",
                                     style: TextStyle(
                                       fontWeight: FontWeight.w900,
-                                      fontSize: 22,
+                                      fontSize: 24,
                                       color: Color.fromRGBO(208, 9, 8, 1),
                                     ),
                                   ),
