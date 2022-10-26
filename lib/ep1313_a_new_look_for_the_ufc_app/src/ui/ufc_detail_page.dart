@@ -218,10 +218,17 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                         child: Row(
                           children: [
                             Container(
-                              width: 200,
+                              width: 150,
                               decoration: BoxDecoration(
                                 color: Colors.blueGrey,
                               ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("DREAM VS WALKER"),
+                                Text("Oct. 22. 2022"),
+                              ],
                             )
                           ],
                         ),
