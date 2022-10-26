@@ -218,19 +218,20 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                         child: Row(
                           children: [
                             Container(
-                              width: 150,
+                              width: 140,
                               decoration: const BoxDecoration(
                                 color: Colors.blueGrey,
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 8,
-                              ),
-                              child: Expanded(
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 8,
+                                ),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
                                       color: Colors.blue,
@@ -238,12 +239,19 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                         "DREAM VS WALKER",
                                         style: TextStyle(
                                           fontWeight: FontWeight.w900,
-                                          fontSize: 20,
-                                          overflow: TextOverflow.clip
+                                          fontSize: 18,
+                                          overflow: TextOverflow.fade,
                                         ),
                                       ),
                                     ),
-                                    const Text("Oct. 22. 2022"),
+                                    const Text(
+                                      "Oct. 22. 2022",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 18,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
