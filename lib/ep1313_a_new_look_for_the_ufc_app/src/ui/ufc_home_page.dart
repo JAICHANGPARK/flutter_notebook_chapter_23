@@ -74,14 +74,22 @@ class _NewUfcHomePageState extends State<NewUfcHomePage> with TickerProviderStat
                               ),
                               const Text(
                                 "Sat, Oct 22",
-                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
                               ),
                               const SizedBox(
                                 height: 12,
                               ),
                               const Text(
                                 "10:00 PM +04",
-                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
                               ),
                               const SizedBox(
                                 height: 16,
