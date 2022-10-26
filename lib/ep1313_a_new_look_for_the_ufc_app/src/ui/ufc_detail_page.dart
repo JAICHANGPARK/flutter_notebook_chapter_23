@@ -130,7 +130,9 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 16),
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 16,
+                                  ),
                                   child: Text(
                                     "19",
                                     style: TextStyle(
@@ -142,10 +144,15 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 ),
                                 Text(
                                   "Most Submissions",
-                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 22,
+                                  ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 16),
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 16,
+                                  ),
                                   child: Text(
                                     "19",
                                     style: TextStyle(
@@ -157,10 +164,15 @@ class _UfcDetailPageState extends State<UfcDetailPage> {
                                 ),
                                 Text(
                                   "Most Bonuses",
-                                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 22,
+                                  ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 16),
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 16,
+                                  ),
                                   child: Text(
                                     "19",
                                     style: TextStyle(
