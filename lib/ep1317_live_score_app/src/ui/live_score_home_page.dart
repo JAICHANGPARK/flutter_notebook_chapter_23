@@ -76,9 +76,48 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               ),
                             ),
                           ),
-                          const Expanded(child: Placeholder()),
-                          const Expanded(child: Placeholder()),
-                          const Expanded(child: Placeholder()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(32),
+                                color: Colors.white.withOpacity(0.2),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  '🏀',
+                                  style: TextStyle(fontSize: 32),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(32),
+                                color: Colors.white.withOpacity(0.2),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  '🏀',
+                                  style: TextStyle(fontSize: 32),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(32),
+                                color: Colors.white.withOpacity(0.2),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  '🏀',
+                                  style: TextStyle(fontSize: 32),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
