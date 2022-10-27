@@ -98,7 +98,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               ),
                               child: const Center(
                                 child: Text(
-                                  '🏀',
+                                  '🥎',
                                   style: TextStyle(fontSize: 32),
                                 ),
                               ),
@@ -112,7 +112,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               ),
                               child: const Center(
                                 child: Text(
-                                  '🏀',
+                                  '⚾',
                                   style: TextStyle(fontSize: 32),
                                 ),
                               ),
