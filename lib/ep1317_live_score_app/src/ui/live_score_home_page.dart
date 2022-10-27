@@ -45,13 +45,21 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                   children: [
                     Container(
                       height: 72,
-                      color: Colors.red,
                       child: Row(
                         children: [
-                          Expanded(child: Container(
+                          Expanded(
+                              child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(24),
-                              color: Colors.white.withOpacity(0.2)
+                              borderRadius: BorderRadius.circular(28),
+                              color: Colors.white.withOpacity(0.2),
+                            ),
+                            child: Center(
+                              child: IconButton(
+                                icon: Icon(Icons.menu),
+                                onPressed: () {},
+                                color: Colors.white,
+                                iconSize: 32,
+                              ),
                             ),
                           )),
                           Expanded(child: Placeholder()),
