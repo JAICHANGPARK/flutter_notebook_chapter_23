@@ -1,8 +1,15 @@
 # flutter_notebook_chapter_23
 
 ## S26
+### EP1317-
 
-### EP1313-
+- Live Score with Dynamic Island
+- by Happy Tri Milliarta for Odama
+- https://dribbble.com/shots/19735036-Live-Score-with-Dynamic-Island
+
+<img src="https://cdn.dribbble.com/userupload/3877267/file/original-58f3ad73f06735c0f88b75b81c3caf7b.png?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1313-1316
 
 - A new look for the UFC
 - by Giorgi J. for Ascended
