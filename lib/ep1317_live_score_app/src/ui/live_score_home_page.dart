@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LiveScoreHomePage extends StatefulWidget {
   const LiveScoreHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,18 @@ class LiveScoreHomePage extends StatefulWidget {
 class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: Container(),
+          ),
+        ],
+      ),
+    );
   }
 }
