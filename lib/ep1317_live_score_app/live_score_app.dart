@@ -8,7 +8,7 @@ class LiveScoreApp extends StatelessWidget {
   final _router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => LiveScoreHomePage(),
+      builder: (context, state) => const LiveScoreHomePage(),
     ),
   ]);
 
