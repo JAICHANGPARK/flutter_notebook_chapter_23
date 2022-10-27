@@ -44,13 +44,13 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 72,
+                      height: 68,
                       child: Row(
                         children: [
                           Expanded(
                               child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(28),
+                              borderRadius: BorderRadius.circular(32),
                               color: Colors.white.withOpacity(0.2),
                             ),
                             child: Center(
@@ -62,7 +62,20 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               ),
                             ),
                           )),
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(32),
+                                color: Colors.white
+                              ),
+                              child: Center(
+                                child: Text('⚽',
+                                style: TextStyle(
+                                  fontSize: 32
+                                ),)
+                              ),
+                            ),
+                          ),
                           Expanded(child: Placeholder()),
                           Expanded(child: Placeholder()),
                           Expanded(child: Placeholder()),
