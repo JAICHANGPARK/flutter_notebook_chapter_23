@@ -55,7 +55,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                             ),
                             child: Center(
                               child: IconButton(
-                                icon: Icon(Icons.menu),
+                                icon: const Icon(Icons.menu),
                                 onPressed: () {},
                                 color: Colors.white,
                                 iconSize: 32,
@@ -68,25 +68,26 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                 borderRadius: BorderRadius.circular(32),
                                 color: Colors.white,
                               ),
-                              child: Center(
-                                  child: Text(
-                                '⚽',
-                                style: TextStyle(fontSize: 32),
-                              )),
+                              child: const Center(
+                                child: Text(
+                                  '⚽',
+                                  style: TextStyle(fontSize: 32),
+                                ),
+                              ),
                             ),
                           ),
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
+                          const Expanded(child: Placeholder()),
+                          const Expanded(child: Placeholder()),
+                          const Expanded(child: Placeholder()),
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 64,
                       color: Colors.blue,
                     ),
-                    Expanded(child: Placeholder()),
+                    const Expanded(child: Placeholder()),
                   ],
                 ),
               ))
