@@ -35,6 +35,36 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
               ),
             ),
           ),
+          Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 8,
+              child: SafeArea(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 72,
+                      color: Colors.red,
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
+                      height: 64,
+                      color: Colors.blue,
+                    ),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
+              ))
         ],
       ),
     );
