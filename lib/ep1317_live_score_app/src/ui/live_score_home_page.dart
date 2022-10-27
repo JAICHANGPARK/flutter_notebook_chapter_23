@@ -65,15 +65,14 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(32),
-                                color: Colors.white
+                                borderRadius: BorderRadius.circular(32),
+                                color: Colors.white,
                               ),
                               child: Center(
-                                child: Text('⚽',
-                                style: TextStyle(
-                                  fontSize: 32
-                                ),)
-                              ),
+                                  child: Text(
+                                '⚽',
+                                style: TextStyle(fontSize: 32),
+                              )),
                             ),
                           ),
                           Expanded(child: Placeholder()),
