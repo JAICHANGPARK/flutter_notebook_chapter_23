@@ -18,7 +18,22 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
             right: 0,
             bottom: 0,
             top: 0,
-            child: Container(),
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.blueGrey,
+                    Colors.blueGrey[600]!,
+                    Colors.blueGrey[400]!,
+                    // Colors.blueGrey[300]!,
+                    Colors.brown[200]!,
+                    Colors.brown[200]!,
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),
