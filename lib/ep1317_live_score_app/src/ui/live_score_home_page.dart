@@ -48,7 +48,12 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                       color: Colors.red,
                       child: Row(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(24),
+                              color: Colors.white.withOpacity(0.2)
+                            ),
+                          )),
                           Expanded(child: Placeholder()),
                           Expanded(child: Placeholder()),
                           Expanded(child: Placeholder()),
