@@ -47,7 +47,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
               child: SafeArea(
                 child: Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 68,
                       child: Row(
                         children: [
