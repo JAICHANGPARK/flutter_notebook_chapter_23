@@ -216,8 +216,20 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                   Row(
                                     children: [
                                       CircleAvatar(),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
                                       CircleAvatar(),
-                                      Text("60'"),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      Text(
+                                        "60'",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.red,
+                                        ),
+                                      ),
                                       Spacer(),
                                       Container(
                                         decoration: BoxDecoration(
