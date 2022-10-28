@@ -10,6 +10,7 @@ class LiveScoreHomePage extends StatefulWidget {
 
 class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
   int selectedDate = 0;
+  int topMenuBarIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -137,7 +138,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                             ),
                           );
                           return Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
                             child: GestureDetector(
                               onTap: () {
                                 setState(() {
