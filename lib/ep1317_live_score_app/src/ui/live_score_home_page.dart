@@ -125,7 +125,6 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 64,
-                      color: Colors.blue,
                       child: ListView.builder(
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
@@ -135,12 +134,15 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               Duration(days: index),
                             ),
                           );
-                          return Center(
-                            child: Text(
-                              "$day",
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.grey,
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Center(
+                              child: Text(
+                                "$day",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.grey,
+                                ),
                               ),
                             ),
                           );
