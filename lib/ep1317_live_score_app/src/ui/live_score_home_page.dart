@@ -9,6 +9,8 @@ class LiveScoreHomePage extends StatefulWidget {
 }
 
 class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
+  int selectedDate = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -136,12 +138,20 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                           );
                           return Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 8),
-                            child: Center(
-                              child: Text(
-                                "$day",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.grey,
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  selectedDate = index;
+                                });
+                              },
+                              child: Center(
+                                child: Text(
+                                  "$day",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: selectedDate == index ? Colors.white : Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
                             ),
