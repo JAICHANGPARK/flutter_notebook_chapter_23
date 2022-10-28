@@ -118,62 +118,6 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                   .toList(),
                             ),
                           ),
-                          // Expanded(
-                          //   child: Container(
-                          //     decoration: BoxDecoration(
-                          //       borderRadius: BorderRadius.circular(32),
-                          //       color: Colors.white,
-                          //     ),
-                          //     child: const Center(
-                          //       child: Text(
-                          //         '⚽',
-                          //         style: TextStyle(fontSize: 32),
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Expanded(
-                          //   child: Container(
-                          //     decoration: BoxDecoration(
-                          //       borderRadius: BorderRadius.circular(32),
-                          //       color: Colors.white.withOpacity(0.2),
-                          //     ),
-                          //     child: const Center(
-                          //       child: Text(
-                          //         '🏀',
-                          //         style: TextStyle(fontSize: 32),
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Expanded(
-                          //   child: Container(
-                          //     decoration: BoxDecoration(
-                          //       borderRadius: BorderRadius.circular(32),
-                          //       color: Colors.white.withOpacity(0.2),
-                          //     ),
-                          //     child: const Center(
-                          //       child: Text(
-                          //         '🥎',
-                          //         style: TextStyle(fontSize: 32),
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Expanded(
-                          //   child: Container(
-                          //     decoration: BoxDecoration(
-                          //       borderRadius: BorderRadius.circular(32),
-                          //       color: Colors.white.withOpacity(0.2),
-                          //     ),
-                          //     child: const Center(
-                          //       child: Text(
-                          //         '⚾',
-                          //         style: TextStyle(fontSize: 32),
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
                         ],
                       ),
                     ),
@@ -212,7 +156,50 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                         },
                       ),
                     ),
-                    const Expanded(child: Placeholder()),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 8,
+                              ),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey[100],
+                                    child: const Text(
+                                      '⚽',
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
+                                        "Group B",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const Text("Champion League"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ))
