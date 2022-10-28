@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+class LiveScoreMenu {
+  int index;
+  String title;
+
+  LiveScoreMenu({
+    required this.index,
+    required this.title,
+  });
+}
+
 class LiveScoreHomePage extends StatefulWidget {
   const LiveScoreHomePage({Key? key}) : super(key: key);
 
@@ -12,11 +22,11 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
   int selectedDate = 0;
   int topMenuBarIndex = 0;
 
-  List<String> menuItems = [
-    '⚽',
-    '🏀',
-    '🥎',
-    '⚾',
+  List<LiveScoreMenu> menuItems = [
+    LiveScoreMenu(title: '⚽', index: 0),
+    LiveScoreMenu(title: '🏀', index: 1),
+    LiveScoreMenu(title: '🥎', index: 2),
+    LiveScoreMenu(title: '⚾', index: 3),
   ];
 
   @override
@@ -82,15 +92,20 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                   children: menuItems
                                       .map(
                                         (e) => Expanded(
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              borderRadius: BorderRadius.circular(32),
-                                              color: Colors.white,
-                                            ),
-                                            child: Center(
-                                              child: Text(
-                                                '$e',
-                                                style: TextStyle(fontSize: 32),
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              setState(() {});
+                                            },
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(32),
+                                                color: Colors.white,
+                                              ),
+                                              child: Center(
+                                                child: Text(
+                                                  '$e',
+                                                  style: TextStyle(fontSize: 32),
+                                                ),
                                               ),
                                             ),
                                           ),
