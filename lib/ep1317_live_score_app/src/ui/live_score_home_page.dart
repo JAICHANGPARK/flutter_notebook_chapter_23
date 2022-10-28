@@ -12,6 +12,13 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
   int selectedDate = 0;
   int topMenuBarIndex = 0;
 
+  List<String> menuItems = [
+    '⚽',
+    '🏀',
+    '🥎',
+    '⚾',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,76 +59,100 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                       child: Row(
                         children: [
                           Expanded(
-                              child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(32),
-                              color: Colors.white.withOpacity(0.2),
-                            ),
-                            child: Center(
-                              child: IconButton(
-                                icon: const Icon(Icons.menu),
-                                onPressed: () {},
-                                color: Colors.white,
-                                iconSize: 32,
+                              child: GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(32),
+                                color: Colors.white.withOpacity(0.2),
+                              ),
+                              child: Center(
+                                child: IconButton(
+                                  icon: const Icon(Icons.menu),
+                                  onPressed: () {},
+                                  color: Colors.white,
+                                  iconSize: 32,
+                                ),
                               ),
                             ),
                           )),
                           Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(32),
-                                color: Colors.white,
-                              ),
-                              child: const Center(
-                                child: Text(
-                                  '⚽',
-                                  style: TextStyle(fontSize: 32),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(32),
-                                color: Colors.white.withOpacity(0.2),
-                              ),
-                              child: const Center(
-                                child: Text(
-                                  '🏀',
-                                  style: TextStyle(fontSize: 32),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(32),
-                                color: Colors.white.withOpacity(0.2),
-                              ),
-                              child: const Center(
-                                child: Text(
-                                  '🥎',
-                                  style: TextStyle(fontSize: 32),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(32),
-                                color: Colors.white.withOpacity(0.2),
-                              ),
-                              child: const Center(
-                                child: Text(
-                                  '⚾',
-                                  style: TextStyle(fontSize: 32),
-                                ),
-                              ),
-                            ),
-                          ),
+                              flex: 4,
+                              child: Row(
+                                  children: menuItems
+                                      .map(
+                                        (e) => Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(32),
+                                              color: Colors.white,
+                                            ),
+                                            child: Center(
+                                              child: Text(
+                                                '$e',
+                                                style: TextStyle(fontSize: 32),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                      .toList())),
+                          // Expanded(
+                          //   child: Container(
+                          //     decoration: BoxDecoration(
+                          //       borderRadius: BorderRadius.circular(32),
+                          //       color: Colors.white,
+                          //     ),
+                          //     child: const Center(
+                          //       child: Text(
+                          //         '⚽',
+                          //         style: TextStyle(fontSize: 32),
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                          // Expanded(
+                          //   child: Container(
+                          //     decoration: BoxDecoration(
+                          //       borderRadius: BorderRadius.circular(32),
+                          //       color: Colors.white.withOpacity(0.2),
+                          //     ),
+                          //     child: const Center(
+                          //       child: Text(
+                          //         '🏀',
+                          //         style: TextStyle(fontSize: 32),
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                          // Expanded(
+                          //   child: Container(
+                          //     decoration: BoxDecoration(
+                          //       borderRadius: BorderRadius.circular(32),
+                          //       color: Colors.white.withOpacity(0.2),
+                          //     ),
+                          //     child: const Center(
+                          //       child: Text(
+                          //         '🥎',
+                          //         style: TextStyle(fontSize: 32),
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                          // Expanded(
+                          //   child: Container(
+                          //     decoration: BoxDecoration(
+                          //       borderRadius: BorderRadius.circular(32),
+                          //       color: Colors.white.withOpacity(0.2),
+                          //     ),
+                          //     child: const Center(
+                          //       child: Text(
+                          //         '⚾',
+                          //         style: TextStyle(fontSize: 32),
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
                         ],
                       ),
                     ),
