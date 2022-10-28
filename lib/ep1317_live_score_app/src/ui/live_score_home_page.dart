@@ -101,11 +101,13 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 borderRadius: BorderRadius.circular(32),
-                                                color: Colors.white,
+                                                color: e.index == topMenuBarIndex
+                                                    ? Colors.white
+                                                    : Colors.white.withOpacity(0.2),
                                               ),
                                               child: Center(
                                                 child: Text(
-                                                  '$e',
+                                                  '${e.title}',
                                                   style: TextStyle(fontSize: 32),
                                                 ),
                                               ),
