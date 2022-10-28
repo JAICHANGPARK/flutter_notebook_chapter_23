@@ -177,25 +177,30 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       '⚽',
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 8,
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      const Text(
+                                    children: const [
+                                      Text(
                                         "Group B",
                                         style: TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      const Text("Champion League"),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "Champion League",
+                                      ),
                                     ],
-                                  )
+                                  ),
                                 ],
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ),
