@@ -214,10 +214,37 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               child: Column(
                                 children: [
                                   Row(
-                                    children: const [
+                                    children: [
                                       CircleAvatar(),
                                       CircleAvatar(),
                                       Text("60'"),
+                                      Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(24),
+                                        ),
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 12,
+                                          vertical: 8,
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "View Detail",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                        child: Icon(Icons.notifications_none),
+                                        foregroundColor: Colors.white,
+                                      )
                                     ],
                                   )
                                 ],
