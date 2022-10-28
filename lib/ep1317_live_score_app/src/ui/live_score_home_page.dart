@@ -94,7 +94,9 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                         (e) => Expanded(
                                           child: GestureDetector(
                                             onTap: () {
-                                              setState(() {});
+                                              setState(() {
+                                                topMenuBarIndex = e.index;
+                                              });
                                             },
                                             child: Container(
                                               decoration: BoxDecoration(
