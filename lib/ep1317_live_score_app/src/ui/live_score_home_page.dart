@@ -87,35 +87,37 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                             ),
                           )),
                           Expanded(
-                              flex: 4,
-                              child: Row(
-                                  children: menuItems
-                                      .map(
-                                        (e) => Expanded(
-                                          child: GestureDetector(
-                                            onTap: () {
-                                              setState(() {
-                                                topMenuBarIndex = e.index;
-                                              });
-                                            },
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(32),
-                                                color: e.index == topMenuBarIndex
-                                                    ? Colors.white
-                                                    : Colors.white.withOpacity(0.2),
-                                              ),
-                                              child: Center(
-                                                child: Text(
-                                                  '${e.title}',
-                                                  style: TextStyle(fontSize: 32),
-                                                ),
-                                              ),
+                            flex: 4,
+                            child: Row(
+                              children: menuItems
+                                  .map(
+                                    (e) => Expanded(
+                                      child: GestureDetector(
+                                        onTap: () {
+                                          setState(() {
+                                            topMenuBarIndex = e.index;
+                                          });
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(32),
+                                            color: e.index == topMenuBarIndex
+                                                ? Colors.white
+                                                : Colors.white.withOpacity(0.2),
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              e.title,
+                                              style: const TextStyle(fontSize: 32),
                                             ),
                                           ),
                                         ),
-                                      )
-                                      .toList())),
+                                      ),
+                                    ),
+                                  )
+                                  .toList(),
+                            ),
+                          ),
                           // Expanded(
                           //   child: Container(
                           //     decoration: BoxDecoration(
@@ -197,7 +199,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                               },
                               child: Center(
                                 child: Text(
-                                  "$day",
+                                  day,
                                   style: TextStyle(
                                     fontSize: 18,
                                     color: selectedDate == index ? Colors.white : Colors.grey,
