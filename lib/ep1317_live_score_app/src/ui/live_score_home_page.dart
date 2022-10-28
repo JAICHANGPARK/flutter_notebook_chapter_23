@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class LiveScoreHomePage extends StatefulWidget {
   const LiveScoreHomePage({Key? key}) : super(key: key);
@@ -125,6 +126,26 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                       margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 64,
                       color: Colors.blue,
+                      child: ListView.builder(
+                        itemCount: 10,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          final day = DateFormat("dd MMM").format(
+                            DateTime.now().add(
+                              Duration(days: index),
+                            ),
+                          );
+                          return Center(
+                            child: Text(
+                              "$day",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                     const Expanded(child: Placeholder()),
                   ],
