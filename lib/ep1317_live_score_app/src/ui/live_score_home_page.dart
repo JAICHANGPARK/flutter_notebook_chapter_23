@@ -201,6 +201,28 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                 ],
                               ),
                             ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 8,
+                              ),
+                              margin: const EdgeInsets.symmetric(vertical: 4),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: const [
+                                      CircleAvatar(),
+                                      CircleAvatar(),
+                                      Text("60'"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       ),
