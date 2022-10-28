@@ -215,32 +215,32 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                 children: [
                                   Row(
                                     children: [
-                                      CircleAvatar(),
-                                      SizedBox(
+                                      const CircleAvatar(),
+                                      const SizedBox(
                                         width: 4,
                                       ),
-                                      CircleAvatar(),
-                                      SizedBox(
+                                      const CircleAvatar(),
+                                      const SizedBox(
                                         width: 4,
                                       ),
-                                      Text(
+                                      const Text(
                                         "60'",
                                         style: TextStyle(
                                           fontSize: 16,
                                           color: Colors.red,
                                         ),
                                       ),
-                                      Spacer(),
+                                      const Spacer(),
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.grey[100],
                                           borderRadius: BorderRadius.circular(24),
                                         ),
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                           horizontal: 12,
                                           vertical: 8,
                                         ),
-                                        child: Center(
+                                        child: const Center(
                                           child: Text(
                                             "View Detail",
                                             style: TextStyle(
@@ -249,13 +249,13 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                           ),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 4,
                                       ),
-                                      CircleAvatar(
+                                      const CircleAvatar(
                                         backgroundColor: Colors.black,
-                                        child: Icon(Icons.notifications_none),
                                         foregroundColor: Colors.white,
+                                        child: Icon(Icons.notifications_none),
                                       )
                                     ],
                                   )
