@@ -6,16 +6,18 @@ import 'package:go_router/go_router.dart';
 class LiveScoreApp extends StatelessWidget {
   LiveScoreApp({super.key});
 
-  final _router = GoRouter(routes: [
-    GoRoute(
-      path: "/",
-      builder: (context, state) => const LiveScoreHomePage(),
-    ),
-    GoRoute(
-      path: "/detail",
-      builder: (context, state) => const LiveScoreDetailPage(),
-    ),
-  ]);
+  final _router = GoRouter(
+    routes: [
+      GoRoute(
+        path: "/",
+        builder: (context, state) => const LiveScoreHomePage(),
+      ),
+      GoRoute(
+        path: "/detail",
+        builder: (context, state) => const LiveScoreDetailPage(),
+      ),
+    ],
+  );
 
   @override
   Widget build(BuildContext context) {
