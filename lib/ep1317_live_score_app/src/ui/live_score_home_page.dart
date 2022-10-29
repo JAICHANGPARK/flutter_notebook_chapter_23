@@ -280,7 +280,9 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 12,),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: Row(
@@ -299,7 +301,9 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 12,),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                 ],
                               ),
                             ),
@@ -382,7 +386,9 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 12,),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: Row(
@@ -401,10 +407,62 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 12,),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                 ],
                               ),
-                            )
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              margin: EdgeInsets.symmetric(vertical: 2),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 8,
+                              ),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey[100],
+                                    child: const Text(
+                                      '⚽',
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 8,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        "Group C",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "Champion League",
+                                      ),
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey[100],
+                                    child: const Icon(
+                                      Icons.keyboard_arrow_right_outlined,
+                                    ),
+                                    foregroundColor: Colors.grey,
+                                  )
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
