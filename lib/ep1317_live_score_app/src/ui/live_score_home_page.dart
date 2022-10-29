@@ -302,6 +302,108 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                   SizedBox(height: 12,),
                                 ],
                               ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 8,
+                              ),
+                              margin: const EdgeInsets.only(bottom: 2),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      const CircleAvatar(),
+                                      const SizedBox(
+                                        width: 4,
+                                      ),
+                                      const CircleAvatar(),
+                                      const SizedBox(
+                                        width: 4,
+                                      ),
+                                      const Text(
+                                        "60'",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.red,
+                                        ),
+                                      ),
+                                      const Spacer(),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(24),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 12,
+                                          vertical: 8,
+                                        ),
+                                        child: const Center(
+                                          child: Text(
+                                            "View Detail",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        width: 4,
+                                      ),
+                                      const CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                        foregroundColor: Colors.white,
+                                        child: Icon(Icons.notifications_none),
+                                      )
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: const [
+                                        Text(
+                                          "Arsenal FC",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        Text(
+                                          "2",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(height: 12,),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: const [
+                                        Text(
+                                          "Bayern Leverkusen",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        Text(
+                                          "1",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(height: 12,),
+                                ],
+                              ),
                             )
                           ],
                         ),
