@@ -280,7 +280,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                   Padding(
@@ -301,7 +301,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                 ],
@@ -386,7 +386,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                   Padding(
@@ -407,7 +407,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 12,
                                   ),
                                 ],
@@ -418,7 +418,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(12),
                               ),
-                              margin: EdgeInsets.symmetric(vertical: 2),
+                              margin: const EdgeInsets.symmetric(vertical: 2),
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 8,
@@ -452,7 +452,7 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
+                                  const Spacer(),
                                   CircleAvatar(
                                     backgroundColor: Colors.grey[100],
                                     child: const Icon(
