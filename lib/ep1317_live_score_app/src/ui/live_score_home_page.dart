@@ -259,33 +259,47 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                       )
                                     ],
                                   ),
-                                  SizedBox(height: 16,),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 8),
-                                    child: Row(
-                                      children: [
-                                        Text("Club Burgge", style: TextStyle(
-                                          fontSize: 24,
-                                        ),),
-                                        Text("2", style: TextStyle(
-                                          fontSize: 24
-                                        ),),
-                                      ],
-                                    ),
+                                  const SizedBox(
+                                    height: 16,
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: Row(
-                                      children: [
-                                        Text("Club Burgge", style: TextStyle(
-                                          fontSize: 24,
-                                        ),),
-                                        Text("2", style: TextStyle(
-                                            fontSize: 24
-                                        ),),
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: const [
+                                        Text(
+                                          "Club Burgge",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        Text(
+                                          "2",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
                                       ],
                                     ),
                                   ),
+                                  SizedBox(height: 12,),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: const [
+                                        Text(
+                                          "Atletico Madrid",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        Text(
+                                          "0",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(height: 12,),
                                 ],
                               ),
                             )
