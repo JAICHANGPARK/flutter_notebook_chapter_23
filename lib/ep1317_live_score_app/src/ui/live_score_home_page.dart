@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
 class LiveScoreMenu {
@@ -453,12 +454,17 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                     ],
                                   ),
                                   const Spacer(),
-                                  CircleAvatar(
-                                    backgroundColor: Colors.grey[100],
-                                    child: const Icon(
-                                      Icons.keyboard_arrow_right_outlined,
+                                  GestureDetector(
+                                    onTap: () {
+                                      context.push('/detail');
+                                    },
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.grey[100],
+                                      child: const Icon(
+                                        Icons.keyboard_arrow_right_outlined,
+                                      ),
+                                      foregroundColor: Colors.grey,
                                     ),
-                                    foregroundColor: Colors.grey,
                                   )
                                 ],
                               ),
