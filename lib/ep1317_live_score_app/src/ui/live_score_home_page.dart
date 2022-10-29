@@ -460,10 +460,10 @@ class _LiveScoreHomePageState extends State<LiveScoreHomePage> {
                                     },
                                     child: CircleAvatar(
                                       backgroundColor: Colors.grey[100],
+                                      foregroundColor: Colors.grey,
                                       child: const Icon(
                                         Icons.keyboard_arrow_right_outlined,
                                       ),
-                                      foregroundColor: Colors.grey,
                                     ),
                                   )
                                 ],
