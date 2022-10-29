@@ -43,7 +43,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                   Row(
                     children: [
                       GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           context.pop();
                         },
                         child: CircleAvatar(
@@ -54,14 +54,25 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                         ),
                       ),
                       Expanded(
-                          child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text("Group C"),
-                          Text("Champion League"),
-                        ],
-                      )),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Group C",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text("Champion League"),
+                          ],
+                        ),
+                      ),
                       CircleAvatar(
                         radius: 36,
                         backgroundColor: Colors.white.withOpacity(0.2),
@@ -69,7 +80,28 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                         child: Icon(Icons.notifications_none),
                       ),
                     ],
-                  )
+                  ),
+                  Container(
+                    height: 120,
+                    margin: EdgeInsets.symmetric(vertical: 18),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    height: 64,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 82,
+                    margin: EdgeInsets.symmetric(vertical: 18),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.white,
+                    ),
+                  ),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
