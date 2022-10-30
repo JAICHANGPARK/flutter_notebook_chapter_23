@@ -148,7 +148,12 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Text(_menus[index]);
+                        return Text(
+                          _menus[index],
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        );
                       },
                     ),
                   ),
