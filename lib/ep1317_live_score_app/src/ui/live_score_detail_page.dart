@@ -201,7 +201,64 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                       ],
                     ),
                   ),
-                  const Expanded(child: Placeholder()),
+                  Expanded(child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 8,
+                        ),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: Colors.grey[100],
+                              child: const Text(
+                                '⚽',
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "Group B",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Champion League",
+                                ),
+                              ],
+                            ),
+                            Text(
+                              "1 - 0",
+                              style: TextStyle(
+                                fontSize: 32,
+                              ),
+                            ),
+                            Spacer(),
+                            Text(
+                              "7'",
+                              style: TextStyle(
+                                fontSize: 32,
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    },
+                  )),
                 ],
               ),
             ),
