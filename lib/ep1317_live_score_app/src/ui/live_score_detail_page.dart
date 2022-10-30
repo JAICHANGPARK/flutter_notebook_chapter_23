@@ -91,34 +91,52 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     child: Row(
                       children: [
                         Expanded(
-                            child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CircleAvatar(),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text("FC Bayern"),
-                            Text("Muchen"),
-                          ],
-                        )),
-                        Expanded(
-                            child: Column(
-                          children: [
-                            Text(
-                              "5 VS 0",
-                              style: TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(),
+                              SizedBox(
+                                height: 8,
                               ),
-                            ),
-                            Text(
-                              "75'",
-                              style: TextStyle(color: Colors.red),
-                            )
-                          ],
-                        )),
-                        Expanded(child: Placeholder()),
+                              Text("FC Bayern"),
+                              Text("Muchen"),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "5 VS 0",
+                                style: TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "75'",
+                                style: TextStyle(color: Colors.red),
+                              )
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text("Viktoria"),
+                              Text("Pizen"),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
