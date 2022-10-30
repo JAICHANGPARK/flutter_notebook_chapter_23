@@ -143,7 +143,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     ),
                   ),
                   Container(
-                    height: 64,
+                    height: 54,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: _menus.length,
@@ -153,10 +153,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                           child: Center(
                             child: Text(
                               _menus[index],
-                              style: const TextStyle(
-                                color: Colors.grey,
-                                fontSize: 16
-                              ),
+                              style: const TextStyle(color: Colors.grey, fontSize: 16),
                             ),
                           ),
                         );
@@ -169,6 +166,18 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Center(
+                            child: Text("Events"),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                   const Expanded(child: Placeholder()),
