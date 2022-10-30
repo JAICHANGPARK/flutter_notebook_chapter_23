@@ -165,16 +165,22 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     margin: const EdgeInsets.symmetric(vertical: 18),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: Colors.white,
                     ),
                     child: Row(
                       children: [
                         Container(
+                          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(32),
                           ),
                           child: Center(
-                            child: Text("Events"),
+                            child: Text(
+                              "Events",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         )
                       ],
