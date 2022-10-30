@@ -9,6 +9,8 @@ class LiveScoreDetailPage extends StatefulWidget {
 }
 
 class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
+  List<String> _menus = ["Info", "Summary", "Stats", "Line-Ups", "Table", "H2H"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,7 +95,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                         Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               CircleAvatar(),
                               SizedBox(
                                 height: 8,
@@ -106,7 +108,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                         Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Text(
                                 "5 VS 0",
                                 style: TextStyle(
@@ -127,7 +129,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                         Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               CircleAvatar(),
                               SizedBox(
                                 height: 8,
@@ -146,7 +148,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Text("");
+                        return Text(_menus[index]);
                       },
                     ),
                   ),
