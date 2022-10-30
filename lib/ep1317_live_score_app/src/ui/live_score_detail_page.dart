@@ -90,7 +90,18 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     ),
                     child: Row(
                       children: [
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            CircleAvatar(),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text("FC Bayern"),
+                            Text("Muchen"),
+                          ],
+                        )),
                         Expanded(
                             child: Column(
                           children: [
@@ -101,9 +112,10 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Text("75'", style: TextStyle(
-                              color: Colors.red
-                            ),)
+                            Text(
+                              "75'",
+                              style: TextStyle(color: Colors.red),
+                            )
                           ],
                         )),
                         Expanded(child: Placeholder()),
