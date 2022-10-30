@@ -161,7 +161,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     ),
                   ),
                   Container(
-                    height: 82,
+                    height: 64,
                     margin: const EdgeInsets.symmetric(vertical: 18),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
@@ -169,7 +169,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                     child: Row(
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(32),
@@ -177,8 +177,23 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                           child: Center(
                             child: Text(
                               "Events",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Commentary",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                color: Colors.white,
                               ),
                             ),
                           ),
