@@ -143,6 +143,12 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                   Container(
                     height: 64,
                     color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Text("");
+                      },
+                    ),
                   ),
                   Container(
                     height: 82,
