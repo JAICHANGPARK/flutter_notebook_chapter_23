@@ -204,6 +204,7 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                   Expanded(child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Container(
+                        margin: EdgeInsets.only(bottom: 4),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
