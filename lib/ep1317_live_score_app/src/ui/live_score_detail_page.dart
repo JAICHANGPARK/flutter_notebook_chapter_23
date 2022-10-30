@@ -50,14 +50,14 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                           radius: 36,
                           backgroundColor: Colors.white.withOpacity(0.2),
                           foregroundColor: Colors.white,
-                          child: Icon(Icons.arrow_back),
+                          child: const Icon(Icons.arrow_back),
                         ),
                       ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             Text(
                               "Group C",
                               style: TextStyle(
@@ -77,16 +77,37 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                         radius: 36,
                         backgroundColor: Colors.white.withOpacity(0.2),
                         foregroundColor: Colors.white,
-                        child: Icon(Icons.notifications_none),
+                        child: const Icon(Icons.notifications_none),
                       ),
                     ],
                   ),
                   Container(
                     height: 120,
-                    margin: EdgeInsets.symmetric(vertical: 18),
+                    margin: const EdgeInsets.symmetric(vertical: 18),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.white,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Expanded(
+                            child: Column(
+                          children: [
+                            Text(
+                              "5 VS 0",
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text("75'", style: TextStyle(
+                              color: Colors.red
+                            ),)
+                          ],
+                        )),
+                        Expanded(child: Placeholder()),
+                      ],
                     ),
                   ),
                   Container(
@@ -95,13 +116,13 @@ class _LiveScoreDetailPageState extends State<LiveScoreDetailPage> {
                   ),
                   Container(
                     height: 82,
-                    margin: EdgeInsets.symmetric(vertical: 18),
+                    margin: const EdgeInsets.symmetric(vertical: 18),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.white,
                     ),
                   ),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Placeholder()),
                 ],
               ),
             ),
