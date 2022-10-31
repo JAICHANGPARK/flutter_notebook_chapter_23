@@ -16,7 +16,10 @@ class ModalComponentsApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-
+            ElevatedButton(
+              onPressed: () {},
+              child: Text("show modal"),
+            ),
           ],
         ),
       ),
