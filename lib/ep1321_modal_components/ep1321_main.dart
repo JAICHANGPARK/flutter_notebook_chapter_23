@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 main() {
   runApp(ModalComponentsApp());
@@ -117,20 +118,40 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                           padding: const EdgeInsets.all(16),
                           child: Row(
                             children: [
-                              Icon(Icons.code),
+                              Icon(
+                                Icons.code,
+                                color: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Text("Get Embed Code"),
-                              Icon(Icons.link_outlined),
+                              SizedBox(
+                                width: 12,
+                              ),
+                              Icon(
+                                Icons.link_outlined,
+                                color: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
                               Text("Copy Link"),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "Done",
-                                    style: TextStyle(
-                                      color: Colors.white,
+                              Spacer(),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                                  child: Center(
+                                    child: Text(
+                                      "Done",
+                                      style: TextStyle(color: Colors.white, fontSize: 16),
                                     ),
                                   ),
                                 ),
