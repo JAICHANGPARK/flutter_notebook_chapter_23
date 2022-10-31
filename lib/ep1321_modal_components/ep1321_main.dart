@@ -17,7 +17,15 @@ class ModalComponentsApp extends StatelessWidget {
         body: Column(
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) => Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                );
+              },
               child: Text("show modal"),
             ),
           ],
