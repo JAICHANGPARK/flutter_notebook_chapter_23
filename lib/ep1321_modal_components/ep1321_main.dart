@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 main() {
-  runApp(ModalComponentsApp());
+  runApp(const ModalComponentsApp());
 }
 
 class ModalComponentsApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class ModalComponentsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: ModelComponentPage(),
     );
   }
@@ -28,7 +28,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Model Components"),
+        title: const Text("Model Components"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -39,15 +39,15 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
             onPressed: () {
               showDialog(
                 context: context,
-                builder: (context) => AlertDialog(
+                builder: (context) => const AlertDialog(
                   title: Text("Test"),
                 ),
               );
             },
-            child: Text("Defalt Alert Dialog"),
+            child: const Text("Defalt Alert Dialog"),
           ),
           ElevatedButton.icon(
-            icon: Icon(Icons.share),
+            icon: const Icon(Icons.share),
             onPressed: () {
               showDialog(
                 context: context,
@@ -69,21 +69,21 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                           ),
                           child: Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Share Project",
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Card(
                                 elevation: 4,
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 16),
                                   child: Row(
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Manage",
                                         style: TextStyle(
                                           fontSize: 16,
@@ -92,7 +92,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                       ),
                                       IconButton(
                                           onPressed: () {},
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.settings,
                                           ))
                                     ],
@@ -103,51 +103,51 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                 elevation: 4,
                                 child: IconButton(
                                   onPressed: () {},
-                                  icon: Icon(Icons.more_vert),
+                                  icon: const Icon(Icons.more_vert),
                                 ),
                               )
                             ],
                           ),
                         ),
-                        Divider(),
-                        Expanded(child: SingleChildScrollView()),
-                        Divider(
+                        const Divider(),
+                        const Expanded(child: SingleChildScrollView()),
+                        const Divider(
                           height: 32,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16),
                           child: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.code,
                                 color: Colors.grey,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Get Embed Code",
                                 style: TextStyle(
                                   color: Colors.grey,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 12,
                               ),
-                              Icon(
+                              const Icon(
                                 Icons.link_outlined,
                                 color: Colors.grey,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Copy Link",
                                 style: TextStyle(
                                   color: Colors.grey,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               GestureDetector(
                                 onTap: () {
                                   Navigator.of(context).pop();
@@ -157,8 +157,8 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     color: Colors.blue,
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                                  child: Center(
+                                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                                  child: const Center(
                                     child: Text(
                                       "Done",
                                       style: TextStyle(color: Colors.white, fontSize: 16),
@@ -175,7 +175,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                 ),
               );
             },
-            label: Text("show share project modal"),
+            label: const Text("show share project modal"),
             // child: Text(""),
           ),
         ],
