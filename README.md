@@ -1,7 +1,18 @@
 # flutter_notebook_chapter_23
 
 ## S26
-### EP1317-
+
+### EP1321
+
+- Modal components
+- by Monty Hayton
+- https://dribbble.com/shots/19772253-Modal-components
+
+<img src="https://cdn.dribbble.com/userupload/3910821/file/original-3adeb3b9cabf99102bf3ba71d648c554.png?compress=1&resize=1600x1200" width="400px"/>
+
+
+
+### EP1317-1320
 
 - Live Score with Dynamic Island
 - by Happy Tri Milliarta for Odama
