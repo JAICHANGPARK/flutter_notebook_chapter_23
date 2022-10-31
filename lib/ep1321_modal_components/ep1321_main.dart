@@ -32,6 +32,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
         children: [
           ElevatedButton(
             onPressed: () {
@@ -44,7 +45,8 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
             },
             child: Text("Defalt Alert Dialog"),
           ),
-          ElevatedButton(
+          ElevatedButton.icon(
+            icon: Icon(Icons.share),
             onPressed: () {
               showDialog(
                 context: context,
@@ -57,7 +59,8 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                 ),
               );
             },
-            child: Text("show modal"),
+            label: Text("show share project modal"),
+            // child: Text(""),
           ),
         ],
       ),
