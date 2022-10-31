@@ -10,8 +10,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/3910821/file/original-3adeb3b9cabf99102bf3ba71d648c554.png?compress=1&resize=1600x1200" width="400px"/>
 
-
-
 ### EP1317-1320
 
 - Live Score with Dynamic Island
@@ -28,7 +26,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/3858410/file/original-e962ece67a644f6bbee470084475696d.png?compress=1&resize=1200x900" width="400px"/>
 
-
 ### EP1310-1312
 
 - Material Me — Material You Design system & 💬 Forms templates
@@ -36,7 +33,6 @@
 - https://dribbble.com/shots/18895046-Material-Me-Material-You-Design-system-Forms-templates/attachments/14070070?mode=media
 
 <img src="https://cdn.dribbble.com/users/1047314/screenshots/18895046/media/3a8e189efb0cdba805fec058a2db617c.jpg" width="400px"/>
-
 
 ### EP1305-1309
 
@@ -67,5 +63,5 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on
+mobile development, and a full API reference.
