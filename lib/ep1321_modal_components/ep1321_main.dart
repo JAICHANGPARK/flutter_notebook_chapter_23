@@ -125,7 +125,12 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                               SizedBox(
                                 width: 8,
                               ),
-                              Text("Get Embed Code"),
+                              Text(
+                                "Get Embed Code",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               SizedBox(
                                 width: 12,
                               ),
@@ -136,7 +141,12 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                               SizedBox(
                                 width: 8,
                               ),
-                              Text("Copy Link"),
+                              Text(
+                                "Copy Link",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               Spacer(),
                               GestureDetector(
                                 onTap: () {
