@@ -50,11 +50,48 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
             onPressed: () {
               showDialog(
                 context: context,
-                builder: (context) => Container(
-                  height: MediaQuery.of(context).size.height,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
+                builder: (context) => Material(
+                  child: Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("Share Project"),
+                            Card(
+                              elevation: 4,
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "Manage",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.settings,
+                                      ))
+                                ],
+                              ),
+                            ),
+                            Card(
+                              elevation: 4,
+                              child: IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.more_vert),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               );
