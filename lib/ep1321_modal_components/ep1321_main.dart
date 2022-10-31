@@ -73,7 +73,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                 "Share Project",
                                 style: TextStyle(
                                   fontSize: 24,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                               Spacer(),
