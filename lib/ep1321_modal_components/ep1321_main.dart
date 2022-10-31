@@ -109,6 +109,35 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                           ),
                         ),
                         Divider(),
+                        Expanded(child: SingleChildScrollView()),
+                        Divider(
+                          height: 32,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Row(
+                            children: [
+                              Icon(Icons.code),
+                              Text("Get Embed Code"),
+                              Icon(Icons.link_outlined),
+                              Text("Copy Link"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "Done",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
