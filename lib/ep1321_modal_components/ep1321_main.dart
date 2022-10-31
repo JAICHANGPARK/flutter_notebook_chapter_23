@@ -60,16 +60,22 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                     child: Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(left: 16, right: 16, top: 24),
+                          padding: const EdgeInsets.only(
+                            left: 16,
+                            right: 16,
+                            top: 24,
+                            bottom: 16,
+                          ),
                           child: Row(
                             children: [
                               Text(
                                 "Share Project",
                                 style: TextStyle(
-                                  fontSize: 28,
+                                  fontSize: 24,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              Spacer(),
                               Card(
                                 elevation: 4,
                                 child: Padding(
@@ -101,7 +107,8 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Divider(),
                       ],
                     ),
                   ),
