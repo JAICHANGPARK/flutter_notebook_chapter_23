@@ -155,7 +155,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(4),
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                   padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                                   child: const Center(
