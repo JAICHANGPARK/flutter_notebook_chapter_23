@@ -222,7 +222,13 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Recipients"),
+                                      Text(
+                                        "Recipients",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
                                       SizedBox(
                                         height: 12,
                                       ),
@@ -251,6 +257,141 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                                 children: [
                                                   const Text(
                                                     "Can edit",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  IconButton(
+                                                    onPressed: () {},
+                                                    icon: const Icon(
+                                                      Icons.keyboard_arrow_down,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 12,
+                                      ),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Dream Walker"),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
+                                              Text("dream@gmail.com"),
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Card(
+                                            elevation: 4,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: Row(
+                                                children: [
+                                                  const Text(
+                                                    "Can view",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  IconButton(
+                                                    onPressed: () {},
+                                                    icon: const Icon(
+                                                      Icons.keyboard_arrow_down,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 12,
+                                      ),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Dream Walker"),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
+                                              Text("dream@gmail.com"),
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Card(
+                                            elevation: 4,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: Row(
+                                                children: [
+                                                  const Text(
+                                                    "Can view",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  IconButton(
+                                                    onPressed: () {},
+                                                    icon: const Icon(
+                                                      Icons.keyboard_arrow_down,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 12,
+                                      ),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Dream Walker"),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
+                                              Text("dream@gmail.com"),
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Card(
+                                            elevation: 4,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: Row(
+                                                children: [
+                                                  const Text(
+                                                    "Can view",
                                                     style: TextStyle(
                                                       fontSize: 16,
                                                       fontWeight: FontWeight.bold,
