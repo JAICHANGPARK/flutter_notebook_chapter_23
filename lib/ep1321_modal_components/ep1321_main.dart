@@ -229,10 +229,16 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                       Row(
                                         children: [
                                           CircleAvatar(),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text("Justin Gouse"),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
                                               Text("justinxxx@gmail.com"),
                                             ],
                                           ),
