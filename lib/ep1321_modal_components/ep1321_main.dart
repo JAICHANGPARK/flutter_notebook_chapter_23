@@ -217,7 +217,54 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     ],
                                   ),
                                 ),
-                                Text("Recipients")
+                                Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Recipients"),
+                                      SizedBox(
+                                        height: 12,
+                                      ),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Justin Gouse"),
+                                              Text("justinxxx@gmail.com"),
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Card(
+                                            elevation: 4,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(left: 16),
+                                              child: Row(
+                                                children: [
+                                                  const Text(
+                                                    "Can edit",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  IconButton(
+                                                    onPressed: () {},
+                                                    icon: const Icon(
+                                                      Icons.keyboard_arrow_down,
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                           ),
