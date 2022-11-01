@@ -154,7 +154,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     ],
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
                                 Padding(
@@ -222,33 +222,38 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Recipients",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 12,
                                       ),
                                       Row(
                                         children: [
-                                          CircleAvatar(),
-                                          SizedBox(
+                                          const CircleAvatar(),
+                                          const SizedBox(
                                             width: 8,
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Justin Gouse"),
+                                            children: const [
+                                              Text(
+                                                "Justin Gouse",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               SizedBox(
                                                 height: 8,
                                               ),
                                               Text("justinxxx@gmail.com"),
                                             ],
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Card(
                                             elevation: 4,
                                             child: Padding(
@@ -274,26 +279,31 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 12,
                                       ),
                                       Row(
                                         children: [
-                                          CircleAvatar(),
-                                          SizedBox(
+                                          const CircleAvatar(),
+                                          const SizedBox(
                                             width: 8,
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Dream Walker"),
+                                            children: const [
+                                              Text(
+                                                "Dream Walker",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               SizedBox(
                                                 height: 8,
                                               ),
                                               Text("dream@gmail.com"),
                                             ],
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Card(
                                             elevation: 4,
                                             child: Padding(
@@ -319,26 +329,31 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 12,
                                       ),
                                       Row(
                                         children: [
-                                          CircleAvatar(),
-                                          SizedBox(
+                                          const CircleAvatar(),
+                                          const SizedBox(
                                             width: 8,
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Dream Walker"),
+                                            children: const [
+                                              Text(
+                                                "Dream Walker",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               SizedBox(
                                                 height: 8,
                                               ),
                                               Text("dream@gmail.com"),
                                             ],
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Card(
                                             elevation: 4,
                                             child: Padding(
@@ -364,26 +379,31 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 12,
                                       ),
                                       Row(
                                         children: [
-                                          CircleAvatar(),
-                                          SizedBox(
+                                          const CircleAvatar(),
+                                          const SizedBox(
                                             width: 8,
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Dream Walker"),
+                                            children: const [
+                                              Text(
+                                                "Dream Walker",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               SizedBox(
                                                 height: 8,
                                               ),
                                               Text("dream@gmail.com"),
                                             ],
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Card(
                                             elevation: 4,
                                             child: Padding(
