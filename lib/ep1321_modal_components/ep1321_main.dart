@@ -168,8 +168,14 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                               color: Colors.grey,
                                             ),
                                           ),
+                                          SizedBox(
+                                            width: 6,
+                                          ),
                                           CircleAvatar(
                                             radius: 8,
+                                            backgroundColor: Colors.grey[200],
+                                            child: Text("?"),
+                                            foregroundColor: Colors.grey,
                                           ),
                                           Spacer(),
                                           Text(
