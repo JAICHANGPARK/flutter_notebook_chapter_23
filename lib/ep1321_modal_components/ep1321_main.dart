@@ -110,7 +110,21 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                           ),
                         ),
                         const Divider(),
-                        const Expanded(child: SingleChildScrollView()),
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                         const Divider(
                           height: 32,
                         ),
