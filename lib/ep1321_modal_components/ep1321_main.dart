@@ -118,7 +118,14 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-
+                                    Text("Document Link"),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 )
                               ],
