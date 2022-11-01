@@ -115,18 +115,45 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text("Document Link"),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Document Link",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
                                           color: Colors.grey,
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.grey,
+                                          ),
+                                          borderRadius: BorderRadius.circular(4)
+                                        ),
+                                        padding: EdgeInsets.only(left: 12),
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Text("https://github.com/JAICHANGPARK"),
+                                            ),
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.copy,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
