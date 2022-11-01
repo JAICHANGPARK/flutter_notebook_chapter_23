@@ -202,6 +202,9 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                               child: TextField(
                                                 decoration: InputDecoration(
                                                   hintText: "Search for names or emails...",
+                                                  suffixIcon: Icon(
+                                                    Icons.keyboard_arrow_down,
+                                                  ),
                                                 ),
                                               ),
                                             ),
