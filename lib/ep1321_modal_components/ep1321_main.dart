@@ -199,14 +199,12 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                         child: Row(
                                           children: [
                                             Expanded(
-                                              child: Text("https://github.com/JAICHANGPARK"),
-                                            ),
-                                            IconButton(
-                                              onPressed: () {},
-                                              icon: Icon(
-                                                Icons.copy,
+                                              child: TextField(
+                                                decoration: InputDecoration(
+                                                  hintText: "Search for names or emails...",
+                                                ),
                                               ),
-                                            )
+                                            ),
                                           ],
                                         ),
                                       ),
