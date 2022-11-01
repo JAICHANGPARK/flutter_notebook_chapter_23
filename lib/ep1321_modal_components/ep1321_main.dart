@@ -128,15 +128,67 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: 4,
+                                        height: 6,
                                       ),
                                       Container(
                                         decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: Colors.grey,
-                                          ),
-                                          borderRadius: BorderRadius.circular(4)
+                                            border: Border.all(
+                                              color: Colors.grey,
+                                            ),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: EdgeInsets.only(left: 12),
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Text("https://github.com/JAICHANGPARK"),
+                                            ),
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.copy,
+                                              ),
+                                            )
+                                          ],
                                         ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Search Recipients",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          CircleAvatar(
+                                            radius: 8,
+                                          ),
+                                          Spacer(),
+                                          Text(
+                                            "Optional",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 6,
+                                      ),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.grey,
+                                            ),
+                                            borderRadius: BorderRadius.circular(4)),
                                         padding: EdgeInsets.only(left: 12),
                                         child: Row(
                                           children: [
