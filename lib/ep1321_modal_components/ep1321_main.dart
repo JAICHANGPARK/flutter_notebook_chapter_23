@@ -120,14 +120,14 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Document Link",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 6,
                                       ),
                                       Container(
@@ -136,15 +136,15 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                               color: Colors.grey,
                                             ),
                                             borderRadius: BorderRadius.circular(4)),
-                                        padding: EdgeInsets.only(left: 12),
+                                        padding: const EdgeInsets.only(left: 12),
                                         child: Row(
                                           children: [
-                                            Expanded(
+                                            const Expanded(
                                               child: Text("https://github.com/JAICHANGPARK"),
                                             ),
                                             IconButton(
                                               onPressed: () {},
-                                              icon: Icon(
+                                              icon: const Icon(
                                                 Icons.copy,
                                               ),
                                             )
@@ -154,6 +154,9 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     ],
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                                   child: Column(
@@ -161,24 +164,24 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     children: [
                                       Row(
                                         children: [
-                                          Text(
+                                          const Text(
                                             "Search Recipients",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: Colors.grey,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 6,
                                           ),
                                           CircleAvatar(
                                             radius: 8,
                                             backgroundColor: Colors.grey[200],
-                                            child: Text("?"),
+                                            child: const Text("?"),
                                             foregroundColor: Colors.grey,
                                           ),
-                                          Spacer(),
-                                          Text(
+                                          const Spacer(),
+                                          const Text(
                                             "Optional",
                                             style: TextStyle(
                                               color: Colors.grey,
@@ -186,7 +189,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 6,
                                       ),
                                       Container(
@@ -195,9 +198,9 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                               color: Colors.grey,
                                             ),
                                             borderRadius: BorderRadius.circular(4)),
-                                        padding: EdgeInsets.only(left: 12),
+                                        padding: const EdgeInsets.only(left: 12),
                                         child: Row(
-                                          children: [
+                                          children: const [
                                             Expanded(
                                               child: TextField(
                                                 decoration: InputDecoration(
@@ -213,7 +216,8 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                       ),
                                     ],
                                   ),
-                                )
+                                ),
+                                Text("Recipients")
                               ],
                             ),
                           ),
