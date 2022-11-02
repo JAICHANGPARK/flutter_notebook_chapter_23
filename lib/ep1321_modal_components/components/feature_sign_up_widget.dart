@@ -25,6 +25,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                   ),
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -36,9 +37,12 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                           child: Text("New"),
-                        )
+                        ),
                       ],
-                    )
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    ),
                   ],
                 )
               ],
