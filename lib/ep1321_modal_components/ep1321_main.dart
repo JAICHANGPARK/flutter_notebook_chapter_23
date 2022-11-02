@@ -431,7 +431,16 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                       )
                                     ],
                                   ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                                  child: Column(
+                                    children: [
+                                      Text("Settings",)
+                                    ],
+                                  ),
                                 )
+
                               ],
                             ),
                           ),
@@ -482,11 +491,17 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     color: Colors.blue,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 24,
+                                    vertical: 12,
+                                  ),
                                   child: const Center(
                                     child: Text(
                                       "Done",
-                                      style: TextStyle(color: Colors.white, fontSize: 16),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                   ),
                                 ),
