@@ -446,9 +446,12 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                           Text.rich(
                                             TextSpan(
                                               children: [
-                                                TextSpan(text: "Anyone at"),
+                                                TextSpan(text: "Anyone at "),
                                                 TextSpan(
                                                   text: "Company Co.",
+                                                  style: TextStyle(
+                                                    color: Colors.blue,
+                                                  ),
                                                 ),
                                                 TextSpan(
                                                   text: "can view and edit",
