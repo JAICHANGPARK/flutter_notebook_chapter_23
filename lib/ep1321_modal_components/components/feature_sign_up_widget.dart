@@ -258,9 +258,19 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
               ),
               Expanded(child: Placeholder()),
               Container(
-                height: 72,
+                height: 54,
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  color: Colors.grey[200],
+                ),
+                child: Row(
+                  children: [
+                    Text("Are you looking for something else?"),
+                    Text("Click here"),
+                    Icon(
+                      Icons.arrow_forward,
+                      size: 16,
+                    ),
+                  ],
                 ),
               )
             ],
