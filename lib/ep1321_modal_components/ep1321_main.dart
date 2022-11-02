@@ -446,7 +446,19 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                             TextSpan(
                                               children: [
                                                 TextSpan(text: "Anyone at"),
+                                                TextSpan(
+                                                  text: "Company Co.",
+                                                ),
+                                                TextSpan(
+                                                  text: "can view and edit",
+                                                ),
                                               ],
+                                            ),
+                                          ),
+                                          TextButton(
+                                            onPressed: () async {},
+                                            child: Text(
+                                              "Change Access",
                                             ),
                                           )
                                         ],
