@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class FeatureSignUpWidget extends StatefulWidget {
   const FeatureSignUpWidget({Key? key}) : super(key: key);
 
@@ -12,6 +10,12 @@ class FeatureSignUpWidget extends StatefulWidget {
 class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
