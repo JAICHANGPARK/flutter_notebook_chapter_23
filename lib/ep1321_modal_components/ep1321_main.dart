@@ -441,7 +441,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                         "Settings",
                                       ),
                                       SizedBox(
-                                        height: 8,
+                                        height: 12,
                                       ),
                                       Wrap(
                                         children: [
