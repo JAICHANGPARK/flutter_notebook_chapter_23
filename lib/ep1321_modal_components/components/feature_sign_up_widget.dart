@@ -13,7 +13,37 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Text("Features"),
+            Row(
+              children: [
+                Container(
+                  height: 64,
+                  width: 64,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ),
+                Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text("Getting started"),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blue[100],
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                          child: Text("New"),
+                        )
+                      ],
+                    )
+                  ],
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
