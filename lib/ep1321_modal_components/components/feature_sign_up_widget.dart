@@ -22,6 +22,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                   horizontal: 16,
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
                       "Features",
