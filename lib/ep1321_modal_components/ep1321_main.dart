@@ -440,9 +440,15 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                       Text(
                                         "Settings",
                                       ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
                                       Wrap(
                                         children: [
                                           Icon(Icons.person),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Text.rich(
                                             TextSpan(
                                               children: [
