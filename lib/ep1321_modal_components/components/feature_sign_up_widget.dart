@@ -19,7 +19,13 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
             children: [
               const Text(
                 "Features",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+              SizedBox(
+                height: 16,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
