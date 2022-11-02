@@ -262,13 +262,27 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   children: [
-                    Text("Are you looking for something else?"),
-                    Text("Click here"),
+                    Text("Are you looking for something else?",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(width: 6,),
+                    Text(
+                      "Click here",
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(width: 6,),
                     Icon(
                       Icons.arrow_forward,
                       size: 16,
+                      color: Colors.blue,
                     ),
                   ],
                 ),
