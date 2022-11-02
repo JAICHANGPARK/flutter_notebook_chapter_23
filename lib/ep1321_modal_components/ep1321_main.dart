@@ -439,6 +439,10 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                     children: [
                                       Text(
                                         "Settings",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey,
+                                        ),
                                       ),
                                       SizedBox(
                                         height: 12,
