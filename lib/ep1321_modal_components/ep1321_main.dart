@@ -435,6 +435,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                 Padding(
                                   padding: const EdgeInsets.symmetric(horizontal: 16),
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "Settings",
