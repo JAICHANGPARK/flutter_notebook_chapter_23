@@ -437,23 +437,23 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Settings",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.grey,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 12,
                                       ),
                                       Wrap(
                                         children: [
-                                          Icon(Icons.person),
-                                          SizedBox(
+                                          const Icon(Icons.person),
+                                          const SizedBox(
                                             width: 8,
                                           ),
-                                          Text.rich(
+                                          const Text.rich(
                                             TextSpan(
                                               children: [
                                                 TextSpan(text: "Anyone at "),
@@ -471,8 +471,30 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                           ),
                                           TextButton(
                                             onPressed: () async {},
-                                            child: Text(
+                                            child: const Text(
                                               "Change Access",
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          const Icon(Icons.public),
+                                          const SizedBox(
+                                            width: 8,
+                                          ),
+                                          const Text.rich(
+                                            TextSpan(
+                                              children: [
+                                                TextSpan(text: "Anyone on with the link can edit"),
+                                              ],
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          TextButton(
+                                            onPressed: () async {},
+                                            child: const Text(
+                                              "Set Password",
                                             ),
                                           )
                                         ],
