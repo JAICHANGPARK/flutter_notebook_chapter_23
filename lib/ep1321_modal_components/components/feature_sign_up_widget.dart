@@ -98,7 +98,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                           Row(
                             children: [
                               const Text(
-                                "Getting started",
+                                "How to",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -106,19 +106,19 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                               const SizedBox(
                                 width: 6,
                               ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100],
-                                  borderRadius: BorderRadius.circular(2),
-                                ),
-                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                child: const Text(
-                                  "New",
-                                  style: TextStyle(
-                                    color: Colors.blue,
-                                  ),
-                                ),
-                              ),
+                              // Container(
+                              //   decoration: BoxDecoration(
+                              //     color: Colors.blue[100],
+                              //     borderRadius: BorderRadius.circular(2),
+                              //   ),
+                              //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                              //   child: const Text(
+                              //     "New",
+                              //     style: TextStyle(
+                              //       color: Colors.blue,
+                              //     ),
+                              //   ),
+                              // ),
                             ],
                           ),
                           const Text(
@@ -153,7 +153,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                           Row(
                             children: [
                               const Text(
-                                "Getting started",
+                                "How to",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -161,19 +161,19 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                               const SizedBox(
                                 width: 6,
                               ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100],
-                                  borderRadius: BorderRadius.circular(2),
-                                ),
-                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                child: const Text(
-                                  "New",
-                                  style: TextStyle(
-                                    color: Colors.blue,
-                                  ),
-                                ),
-                              ),
+                              // Container(
+                              //   decoration: BoxDecoration(
+                              //     color: Colors.blue[100],
+                              //     borderRadius: BorderRadius.circular(2),
+                              //   ),
+                              //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                              //   child: const Text(
+                              //     "New",
+                              //     style: TextStyle(
+                              //       color: Colors.blue,
+                              //     ),
+                              //   ),
+                              // ),
                             ],
                           ),
                           const Text(
@@ -208,7 +208,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                           Row(
                             children: [
                               const Text(
-                                "Getting started",
+                                "How to",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -216,19 +216,19 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                               const SizedBox(
                                 width: 6,
                               ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100],
-                                  borderRadius: BorderRadius.circular(2),
-                                ),
-                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                child: const Text(
-                                  "New",
-                                  style: TextStyle(
-                                    color: Colors.blue,
-                                  ),
-                                ),
-                              ),
+                              // Container(
+                              //   decoration: BoxDecoration(
+                              //     color: Colors.blue[100],
+                              //     borderRadius: BorderRadius.circular(2),
+                              //   ),
+                              //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                              //   child: const Text(
+                              //     "New",
+                              //     style: TextStyle(
+                              //       color: Colors.blue,
+                              //     ),
+                              //   ),
+                              // ),
                             ],
                           ),
                           const Text(
@@ -240,7 +240,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                     )
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
