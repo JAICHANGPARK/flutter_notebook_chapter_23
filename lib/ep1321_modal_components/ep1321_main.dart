@@ -439,7 +439,7 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                       Text(
                                         "Settings",
                                       ),
-                                      Row(
+                                      Wrap(
                                         children: [
                                           Icon(Icons.person),
                                           Text.rich(
