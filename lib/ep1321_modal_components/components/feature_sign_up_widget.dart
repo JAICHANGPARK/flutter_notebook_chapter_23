@@ -13,240 +13,256 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(top: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                "Features",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
-              ),
-              SizedBox(
-                height: 16,
-              ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                ),
+                child: Column(
                   children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(4),
+                    const Text(
+                      "Features",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
                       ),
                     ),
                     const SizedBox(
-                      width: 12,
+                      height: 16,
                     ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Row(
                         children: [
-                          Row(
-                            children: [
-                              const Text(
-                                "Getting started",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100],
-                                  borderRadius: BorderRadius.circular(2),
-                                ),
-                                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                child: const Text(
-                                  "New",
-                                  style: TextStyle(
-                                    color: Colors.blue,
-                                  ),
-                                ),
-                              ),
-                            ],
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                           ),
-                          const Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                            overflow: TextOverflow.ellipsis,
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    const Text(
+                                      "Getting started",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      width: 6,
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue[100],
+                                        borderRadius: BorderRadius.circular(2),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                      child: const Text(
+                                        "New",
+                                        style: TextStyle(
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  overflow: TextOverflow.ellipsis,
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
-                    )
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
                     ),
-                    const SizedBox(
-                      width: 12,
-                    ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Row(
                         children: [
-                          Row(
-                            children: [
-                              const Text(
-                                "How to",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              // Container(
-                              //   decoration: BoxDecoration(
-                              //     color: Colors.blue[100],
-                              //     borderRadius: BorderRadius.circular(2),
-                              //   ),
-                              //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                              //   child: const Text(
-                              //     "New",
-                              //     style: TextStyle(
-                              //       color: Colors.blue,
-                              //     ),
-                              //   ),
-                              // ),
-                            ],
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                           ),
-                          const Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                            overflow: TextOverflow.ellipsis,
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "How to",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 6,
+                                    ),
+                                    // Container(
+                                    //   decoration: BoxDecoration(
+                                    //     color: Colors.blue[100],
+                                    //     borderRadius: BorderRadius.circular(2),
+                                    //   ),
+                                    //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                    //   child: const Text(
+                                    //     "New",
+                                    //     style: TextStyle(
+                                    //       color: Colors.blue,
+                                    //     ),
+                                    //   ),
+                                    // ),
+                                  ],
+                                ),
+                                const Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  overflow: TextOverflow.ellipsis,
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
-                    )
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
                     ),
-                    const SizedBox(
-                      width: 12,
-                    ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Row(
                         children: [
-                          Row(
-                            children: [
-                              const Text(
-                                "How to",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              // Container(
-                              //   decoration: BoxDecoration(
-                              //     color: Colors.blue[100],
-                              //     borderRadius: BorderRadius.circular(2),
-                              //   ),
-                              //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                              //   child: const Text(
-                              //     "New",
-                              //     style: TextStyle(
-                              //       color: Colors.blue,
-                              //     ),
-                              //   ),
-                              // ),
-                            ],
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                           ),
-                          const Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                            overflow: TextOverflow.ellipsis,
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "How to",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 6,
+                                    ),
+                                    // Container(
+                                    //   decoration: BoxDecoration(
+                                    //     color: Colors.blue[100],
+                                    //     borderRadius: BorderRadius.circular(2),
+                                    //   ),
+                                    //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                    //   child: const Text(
+                                    //     "New",
+                                    //     style: TextStyle(
+                                    //       color: Colors.blue,
+                                    //     ),
+                                    //   ),
+                                    // ),
+                                  ],
+                                ),
+                                const Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  overflow: TextOverflow.ellipsis,
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
-                    )
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
                     ),
-                    const SizedBox(
-                      width: 12,
-                    ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Row(
                         children: [
-                          Row(
-                            children: [
-                              const Text(
-                                "How to",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              // Container(
-                              //   decoration: BoxDecoration(
-                              //     color: Colors.blue[100],
-                              //     borderRadius: BorderRadius.circular(2),
-                              //   ),
-                              //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                              //   child: const Text(
-                              //     "New",
-                              //     style: TextStyle(
-                              //       color: Colors.blue,
-                              //     ),
-                              //   ),
-                              // ),
-                            ],
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                           ),
-                          const Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                            overflow: TextOverflow.ellipsis,
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "How to",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 6,
+                                    ),
+                                    // Container(
+                                    //   decoration: BoxDecoration(
+                                    //     color: Colors.blue[100],
+                                    //     borderRadius: BorderRadius.circular(2),
+                                    //   ),
+                                    //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                    //   child: const Text(
+                                    //     "New",
+                                    //     style: TextStyle(
+                                    //       color: Colors.blue,
+                                    //     ),
+                                    //   ),
+                                    // ),
+                                  ],
+                                ),
+                                const Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                                  overflow: TextOverflow.ellipsis,
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
+              Expanded(child: Placeholder()),
+              Container(
+                height: 72,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+              )
             ],
           ),
         ),
