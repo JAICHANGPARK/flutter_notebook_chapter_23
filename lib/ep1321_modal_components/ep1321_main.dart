@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1321_modal_components/components/feature_sign_up_widget.dart';
 import 'package:flutter_notebook_chapter_23/ep1321_modal_components/components/share_project_widget.dart';
 
 main() {
@@ -60,7 +61,13 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                 // child: Text(""),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => FeatureSignUpWidget(),
+                    ),
+                  );
+                },
                 child: Text("Feature & Sign UP"),
               ),
             ],
