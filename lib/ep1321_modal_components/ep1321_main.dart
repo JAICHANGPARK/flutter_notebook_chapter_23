@@ -30,34 +30,42 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
       appBar: AppBar(
         title: const Text("Model Components"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => const AlertDialog(
-                  title: Text("Test"),
-                ),
-              );
-            },
-            child: const Text("Defalt Alert Dialog"),
+      body: SafeArea(
+        child: SizedBox(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => const AlertDialog(
+                      title: Text("Test"),
+                    ),
+                  );
+                },
+                child: const Text("Defalt Alert Dialog"),
+              ),
+              ElevatedButton.icon(
+                icon: const Icon(Icons.share),
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => ShareProjectModal(),
+                  );
+                },
+                label: const Text("show share project modal"),
+                // child: Text(""),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Feature & Sign UP"),
+              ),
+            ],
           ),
-          ElevatedButton.icon(
-            icon: const Icon(Icons.share),
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => ShareProjectModal(),
-              );
-            },
-            label: const Text("show share project modal"),
-            // child: Text(""),
-          ),
-        ],
+        ),
       ),
     );
   }
