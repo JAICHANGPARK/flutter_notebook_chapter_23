@@ -436,11 +436,24 @@ class _ModelComponentPageState extends State<ModelComponentPage> {
                                   padding: const EdgeInsets.symmetric(horizontal: 16),
                                   child: Column(
                                     children: [
-                                      Text("Settings",)
+                                      Text(
+                                        "Settings",
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.person),
+                                          Text.rich(
+                                            TextSpan(
+                                              children: [
+                                                TextSpan(text: "Anyone at"),
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      )
                                     ],
                                   ),
-                                )
-
+                                ),
                               ],
                             ),
                           ),
