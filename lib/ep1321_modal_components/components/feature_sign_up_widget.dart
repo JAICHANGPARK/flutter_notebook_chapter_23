@@ -174,19 +174,6 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                     SizedBox(
                                       width: 6,
                                     ),
-                                    // Container(
-                                    //   decoration: BoxDecoration(
-                                    //     color: Colors.blue[100],
-                                    //     borderRadius: BorderRadius.circular(2),
-                                    //   ),
-                                    //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                    //   child: const Text(
-                                    //     "New",
-                                    //     style: TextStyle(
-                                    //       color: Colors.blue,
-                                    //     ),
-                                    //   ),
-                                    // ),
                                   ],
                                 ),
                                 const Text(
@@ -221,7 +208,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                 Row(
                                   children: const [
                                     Text(
-                                      "How to",
+                                      "FAQ's",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -266,12 +253,15 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   children: [
-                    Text("Are you looking for something else?",
+                    Text(
+                      "Are you looking for something else?",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(width: 6,),
+                    SizedBox(
+                      width: 6,
+                    ),
                     Text(
                       "Click here",
                       style: TextStyle(
@@ -279,7 +269,9 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(width: 6,),
+                    SizedBox(
+                      width: 6,
+                    ),
                     Icon(
                       Icons.arrow_forward,
                       size: 16,
