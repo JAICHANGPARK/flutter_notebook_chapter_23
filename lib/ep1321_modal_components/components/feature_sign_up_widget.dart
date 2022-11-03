@@ -251,7 +251,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             Expanded(
@@ -259,7 +259,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                 children: [
                                   Row(
                                     children: [
-                                      Expanded(
+                                      const Expanded(
                                         child: Text(
                                           "How to bring your designs to life with "
                                           "interactive animation",
