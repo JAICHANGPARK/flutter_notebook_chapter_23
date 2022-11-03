@@ -236,37 +236,47 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
               ),
               const Expanded(child: Placeholder()),
               Container(
-                height: 54,
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Row(
-                  children: const [
-                    Text(
-                      "Are you looking for something else?",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 6,
-                    ),
-                    Text(
-                      "Click here",
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 6,
-                    ),
-                    Icon(
-                      Icons.arrow_forward,
-                      size: 16,
-                      color: Colors.blue,
-                    ),
+                  children: [
+                    Expanded(child: Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        const Text(
+                          "Are you looking for something else?",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 6,
+                        ),
+                        const Text(
+                          "Click here",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 6,
+                        ),
+                        const Icon(
+                          Icons.arrow_forward,
+                          size: 16,
+                          color: Colors.blue,
+                        ),
+                      ],
+                    )),
+
+                    ElevatedButton(
+                      child: const Text("Sign Up"),
+                      onPressed: () {},
+                    )
                   ],
                 ),
               )
