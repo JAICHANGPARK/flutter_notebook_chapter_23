@@ -263,7 +263,10 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                         child: Text(
                                           "How to bring your designs to life with "
                                           "interactive animation",
-                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
                                         ),
                                       ),
                                       Container(
@@ -271,7 +274,10 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                           color: Colors.blue[50],
                                           borderRadius: BorderRadius.circular(2),
                                         ),
-                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 4,
+                                        ),
                                         child: const Text(
                                           "New",
                                           style: TextStyle(
@@ -281,7 +287,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                         ),
                                       ),
                                     ],
-                                  )
+                                  ),
                                 ],
                               ),
                             )
