@@ -216,19 +216,6 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                     SizedBox(
                                       width: 6,
                                     ),
-                                    // Container(
-                                    //   decoration: BoxDecoration(
-                                    //     color: Colors.blue[100],
-                                    //     borderRadius: BorderRadius.circular(2),
-                                    //   ),
-                                    //   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                                    //   child: const Text(
-                                    //     "New",
-                                    //     style: TextStyle(
-                                    //       color: Colors.blue,
-                                    //     ),
-                                    //   ),
-                                    // ),
                                   ],
                                 ),
                                 const Text(
@@ -244,15 +231,15 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                   ],
                 ),
               ),
-              Expanded(child: Placeholder()),
+              const Expanded(child: Placeholder()),
               Container(
                 height: 54,
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
-                  children: [
+                  children: const [
                     Text(
                       "Are you looking for something else?",
                       style: TextStyle(
