@@ -248,15 +248,46 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                 border: Border.all(
                                   color: Colors.grey,
                                 ),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                          child: Text("How to bring your designs to life with "
+                                              "interactive animation")),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue[50],
+                                          borderRadius: BorderRadius.circular(2),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                        child: const Text(
+                                          "New",
+                                          style: TextStyle(
+                                            color: Colors.blue,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  )
+                                ],
                               ),
                             )
                           ],
                         ),
                       ),
                       Expanded(
-                          child: Row(
-                        children: [],
-                      ))
+                        child: Row(
+                          children: [],
+                        ),
+                      )
                     ],
                   ),
                 ),
