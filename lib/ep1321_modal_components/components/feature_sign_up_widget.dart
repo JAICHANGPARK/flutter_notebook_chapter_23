@@ -66,7 +66,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.blue[100],
+                                        color: Colors.blue[50],
                                         borderRadius: BorderRadius.circular(2),
                                       ),
                                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
