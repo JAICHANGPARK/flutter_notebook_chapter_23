@@ -250,6 +250,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                           "Are you looking for something else?",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 15
                           ),
                         ),
                         const SizedBox(
@@ -261,9 +262,6 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                             color: Colors.blue,
                             fontWeight: FontWeight.bold,
                           ),
-                        ),
-                        const SizedBox(
-                          width: 6,
                         ),
                         const Icon(
                           Icons.arrow_forward,
