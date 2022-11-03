@@ -289,8 +289,9 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                     ],
                                   ),
                                   Text(
-                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-                                          .substring(0, 150)),
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+                                        .substring(0, 150),
+                                  ),
                                   Row(
                                     children: const [
                                       Text(
@@ -302,8 +303,8 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                       CircleAvatar(
                                         radius: 12,
                                         backgroundColor: Colors.blue,
-                                        child: Icon(Icons.play_arrow),
                                         foregroundColor: Colors.white,
+                                        child: Icon(Icons.play_arrow),
                                       )
                                     ],
                                   )
