@@ -256,6 +256,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                             ),
                             Expanded(
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Row(
                                     children: [
@@ -291,6 +292,11 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                   Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
                                         .substring(0, 150),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.grey,
+                                      height: 1.4,
+                                    ),
                                   ),
                                   Row(
                                     children: const [
