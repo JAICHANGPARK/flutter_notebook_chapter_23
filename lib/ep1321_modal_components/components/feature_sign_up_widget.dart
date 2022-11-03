@@ -288,6 +288,25 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                       ),
                                     ],
                                   ),
+                                  Text(
+                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+                                          .substring(0, 150)),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        "Read more",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                        radius: 12,
+                                        backgroundColor: Colors.blue,
+                                        child: Icon(Icons.play_arrow),
+                                        foregroundColor: Colors.white,
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             )
@@ -296,7 +315,7 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                       ),
                       Expanded(
                         child: Row(
-                          children: [],
+                          children: const [],
                         ),
                       )
                     ],
@@ -314,22 +333,22 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                         child: Wrap(
                       spacing: 8,
                       runSpacing: 8,
-                      children: [
-                        const Text(
+                      children: const [
+                        Text(
                           "Are you looking for something else?",
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 6,
                         ),
-                        const Text(
+                        Text(
                           "Click here",
                           style: TextStyle(
                             color: Colors.blue,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        const Icon(
+                        Icon(
                           Icons.arrow_forward,
                           size: 16,
                           color: Colors.blue,
