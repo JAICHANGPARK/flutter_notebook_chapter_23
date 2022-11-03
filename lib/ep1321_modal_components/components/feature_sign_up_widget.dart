@@ -298,14 +298,19 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                         "Read more",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          color: Colors.blue,
+                                          fontSize: 18,
                                         ),
+                                      ),
+                                      SizedBox(
+                                        width: 8,
                                       ),
                                       CircleAvatar(
                                         radius: 12,
                                         backgroundColor: Colors.blue,
                                         foregroundColor: Colors.white,
                                         child: Icon(Icons.play_arrow),
-                                      )
+                                      ),
                                     ],
                                   )
                                 ],
