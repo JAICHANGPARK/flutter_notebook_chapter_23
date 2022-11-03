@@ -234,7 +234,33 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                   ],
                 ),
               ),
-              const Expanded(child: Placeholder()),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 160,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                          child: Row(
+                        children: [],
+                      ))
+                    ],
+                  ),
+                ),
+              ),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
@@ -242,16 +268,14 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Row(
                   children: [
-                    Expanded(child: Wrap(
+                    Expanded(
+                        child: Wrap(
                       spacing: 8,
                       runSpacing: 8,
                       children: [
                         const Text(
                           "Are you looking for something else?",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                         ),
                         const SizedBox(
                           width: 6,
@@ -270,7 +294,6 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                         ),
                       ],
                     )),
-
                     ElevatedButton(
                       child: const Text("Sign Up"),
                       onPressed: () {},
