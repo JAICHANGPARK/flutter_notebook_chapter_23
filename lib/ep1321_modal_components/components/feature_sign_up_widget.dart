@@ -260,18 +260,23 @@ class _FeatureSignUpWidgetState extends State<FeatureSignUpWidget> {
                                   Row(
                                     children: [
                                       Expanded(
-                                          child: Text("How to bring your designs to life with "
-                                              "interactive animation")),
+                                        child: Text(
+                                          "How to bring your designs to life with "
+                                          "interactive animation",
+                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                        ),
+                                      ),
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.blue[50],
                                           borderRadius: BorderRadius.circular(2),
                                         ),
-                                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         child: const Text(
                                           "New",
                                           style: TextStyle(
                                             color: Colors.blue,
+                                            fontWeight: FontWeight.bold,
                                           ),
                                         ),
                                       ),
