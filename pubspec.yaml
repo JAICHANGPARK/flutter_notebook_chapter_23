@@ -19,6 +19,7 @@ dependencies:
   flutter_svg: any
 
   intl: ^0.17.0
+  flutter_adaptive_scaffold: any
 
 dev_dependencies:
   flutter_test:
