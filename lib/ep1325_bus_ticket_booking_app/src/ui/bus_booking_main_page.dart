@@ -12,6 +12,7 @@ class _BusBookingMainPageState extends State<BusBookingMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.red,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
