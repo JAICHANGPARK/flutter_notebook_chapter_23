@@ -8,6 +8,7 @@ class BusBookingMainPage extends StatefulWidget {
 }
 
 class _BusBookingMainPageState extends State<BusBookingMainPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +17,7 @@ class _BusBookingMainPageState extends State<BusBookingMainPage> {
         child: BottomNavigationBar(
           elevation: 4,
           selectedItemColor: Colors.red,
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.search,
