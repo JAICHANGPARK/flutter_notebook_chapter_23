@@ -2,7 +2,7 @@
 
 ## S26
 
-### EP1325
+### EP1325-
 
 - Bus Ticket Booking 🚌 - Mobile App
 - by Aleksandr Shchilkin
