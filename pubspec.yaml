@@ -20,6 +20,7 @@ dependencies:
 
   intl: ^0.17.0
   flutter_adaptive_scaffold: any
+  flutter_riverpod: ^2.1.1
 
 dev_dependencies:
   flutter_test:
