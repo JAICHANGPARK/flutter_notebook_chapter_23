@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1321
+### EP1325
+
+- Bus Ticket Booking 🚌 - Mobile App
+- by Aleksandr Shchilkin
+- https://dribbble.com/shots/19806705-Bus-Ticket-Booking-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/3938193/file/original-a7b97f5b3284d3edfa368e34f5054d2a.png?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1321-1324
 
 - Modal components
 - by Monty Hayton
