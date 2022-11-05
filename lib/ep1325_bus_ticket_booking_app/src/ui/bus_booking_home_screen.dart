@@ -12,7 +12,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      padding: const EdgeInsets.fromLTRB(16, 24, 16, 16),
       child: Column(
         children: [
           Text(
@@ -27,7 +27,18 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
-          )
+          ),
+          Container(
+            height: 72,
+            decoration: BoxDecoration(
+              color: Colors.grey,
+            ),
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          TextField(),
+          TextField(),
         ],
       ),
     );
