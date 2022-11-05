@@ -37,8 +37,40 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
           SizedBox(
             height: 16,
           ),
-          TextField(),
-          TextField(),
+          Container(
+            decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(6)),
+            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+            child: Row(
+              children: [
+                Text(
+                  "From",
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(
+                  width: 14,
+                ),
+                Expanded(
+                  child: TextField(
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              enabledBorder: OutlineInputBorder(),
+            ),
+          ),
         ],
       ),
     );
