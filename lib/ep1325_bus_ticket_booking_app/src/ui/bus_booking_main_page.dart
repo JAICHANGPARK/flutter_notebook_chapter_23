@@ -17,17 +17,19 @@ class _BusBookingMainPageState extends State<BusBookingMainPage> {
     return Consumer(builder: (context, ref, _) {
       final index = ref.watch(busTicketAppMenuIndex);
       return Scaffold(
-        body: IndexedStack(
-          index: index,
-          children: [
-            const BusBookingHomeScreen(),
-            Center(
-              child: Text("$index"),
-            ),
-            Center(
-              child: Text("$index"),
-            )
-          ],
+        body: SafeArea(
+          child: IndexedStack(
+            index: index,
+            children: [
+              const BusBookingHomeScreen(),
+              Center(
+                child: Text("$index"),
+              ),
+              Center(
+                child: Text("$index"),
+              )
+            ],
+          ),
         ),
         bottomNavigationBar: SizedBox(
           height: 80,
