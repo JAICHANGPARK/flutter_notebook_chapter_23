@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 class BusBookingHomeScreen extends StatefulWidget {
   const BusBookingHomeScreen({Key? key}) : super(key: key);
@@ -13,7 +13,11 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+        Text(
+          "Book tickets for your",
+          style: GoogleFonts.montserrat(),
+        ),
+        Text("next trip")
       ],
     );
   }
