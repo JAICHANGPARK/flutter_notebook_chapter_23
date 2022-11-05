@@ -15,9 +15,17 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
       children: [
         Text(
           "Book tickets for your",
-          style: GoogleFonts.montserrat(),
+          style: GoogleFonts.montserrat(
+            fontSize: 24,
+          ),
         ),
-        Text("next trip")
+        Text(
+          "next trip",
+          style: GoogleFonts.montserrat(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        )
       ],
     );
   }
