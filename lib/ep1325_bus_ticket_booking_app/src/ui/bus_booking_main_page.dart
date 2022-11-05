@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1325_bus_ticket_booking_app/src/ui/bus_booking_home_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final busTicketAppMenuIndex = StateProvider<int>((ref) => 0);
@@ -19,9 +20,7 @@ class _BusBookingMainPageState extends State<BusBookingMainPage> {
         body: IndexedStack(
           index: index,
           children: [
-            Center(
-              child: Text("$index"),
-            ),
+            BusBookingHomeScreen(),
             Center(
               child: Text("$index"),
             ),
