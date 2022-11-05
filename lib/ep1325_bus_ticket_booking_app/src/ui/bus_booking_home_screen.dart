@@ -11,22 +11,25 @@ class BusBookingHomeScreen extends StatefulWidget {
 class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          "Book tickets for your",
-          style: GoogleFonts.montserrat(
-            fontSize: 24,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      child: Column(
+        children: [
+          Text(
+            "Book tickets for your",
+            style: GoogleFonts.montserrat(
+              fontSize: 24,
+            ),
           ),
-        ),
-        Text(
-          "next trip",
-          style: GoogleFonts.montserrat(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        )
-      ],
+          Text(
+            "next trip",
+            style: GoogleFonts.montserrat(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
