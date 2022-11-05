@@ -22,7 +22,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               fontSize: 24,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Text(
@@ -34,26 +34,29 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
           ),
           Center(
             child: Container(
-              margin: EdgeInsets.symmetric(vertical: 32),
+              margin: const EdgeInsets.symmetric(vertical: 32),
               height: 64,
               width: MediaQuery.of(context).size.width - 160,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.grey,
               ),
               child: Row(
-                children: [],
+                children: const [],
               ),
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 8),
-            decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(6)),
-            padding: EdgeInsets.symmetric(
+            margin: const EdgeInsets.only(bottom: 8),
+            decoration: BoxDecoration(
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            padding: const EdgeInsets.symmetric(
               horizontal: 8,
               vertical: 4,
             ),
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "From",
                   style: TextStyle(
@@ -78,14 +81,17 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 8),
-            decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(6)),
-            padding: EdgeInsets.symmetric(
+            margin: const EdgeInsets.only(bottom: 8),
+            decoration: BoxDecoration(
+              border: Border.all(),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            padding: const EdgeInsets.symmetric(
               horizontal: 8,
               vertical: 4,
             ),
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "To",
                   style: TextStyle(
