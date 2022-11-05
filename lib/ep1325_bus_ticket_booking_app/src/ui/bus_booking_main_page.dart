@@ -18,6 +18,7 @@ class _BusBookingMainPageState extends State<BusBookingMainPage> {
       final index = ref.watch(busTicketAppMenuIndex);
       return Scaffold(
         body: SafeArea(
+          top: true,
           child: IndexedStack(
             index: index,
             children: [
