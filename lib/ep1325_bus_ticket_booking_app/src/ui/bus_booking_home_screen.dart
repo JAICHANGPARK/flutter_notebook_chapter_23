@@ -115,6 +115,22 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               ],
             ),
           ),
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text('Date'),
+                  Text("01.11.2022"),
+                ],
+              ),
+              Column(
+                children: [
+                  Text('Returning'),
+                  Text("Set date"),
+                ],
+              )
+            ],
+          )
         ],
       ),
     );
