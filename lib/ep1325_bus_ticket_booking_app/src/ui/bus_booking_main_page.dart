@@ -20,7 +20,7 @@ class _BusBookingMainPageState extends State<BusBookingMainPage> {
         body: IndexedStack(
           index: index,
           children: [
-            BusBookingHomeScreen(),
+            const BusBookingHomeScreen(),
             Center(
               child: Text("$index"),
             ),
