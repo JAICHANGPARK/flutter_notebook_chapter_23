@@ -278,7 +278,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             ],
           ),
           SizedBox(
-            height: 32,
+            height: 48,
           ),
           Text(
             "Do you have promocode?",
@@ -288,7 +288,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             ),
           ),
           SizedBox(
-            height: 32,
+            height: 48,
           ),
           Container(
             decoration: BoxDecoration(
