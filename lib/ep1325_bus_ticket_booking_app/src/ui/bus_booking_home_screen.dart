@@ -55,29 +55,30 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                       },
                       child: tripType
                           ? Container(
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(32),
-                        ),
-                        child: const Center(
-                          child: Text(
-                            "One Way",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      )
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "One Way",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            )
                           : const Center(
-                        child: Text("One Way",
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
+                              child: Text(
+                                "One Way",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
                     ),
                   ),
                   Expanded(
@@ -105,7 +106,8 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                               ),
                             )
                           : const Center(
-                              child: Text("Round Trip",
+                              child: Text(
+                                "Round Trip",
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -209,6 +211,18 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               const Text("Passengers"),
               Container(
                 height: 42,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(32),
+                    border: Border.all(
+                      color: Colors.red,
+                    )),
+                child: Row(
+                  children: [
+                    IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
+                    Text("1"),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+                  ],
+                ),
               )
             ],
           )
