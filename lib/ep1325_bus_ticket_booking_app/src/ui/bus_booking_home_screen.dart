@@ -10,8 +10,9 @@ class BusBookingHomeScreen extends StatefulWidget {
 
 class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
   bool tripType = false;
-  TextEditingController _fromTec = TextEditingController();
-  TextEditingController _toTec = TextEditingController();
+  int _counter = 0;
+  final TextEditingController _fromTec = TextEditingController();
+  final TextEditingController _toTec = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -315,20 +316,28 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 child: Row(
                   children: [
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        _counter--;
+                        if (_counter <= 1) _counter = 1;
+                        setState(() {});
+                      },
                       icon: const Icon(
                         Icons.remove,
                       ),
                     ),
-                    const Text(
-                      "1",
-                      style: TextStyle(
+                    Text(
+                      "$_counter",
+                      style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        setState(() {
+                          _counter++;
+                        });
+                      },
                       icon: const Icon(
                         Icons.add,
                       ),
