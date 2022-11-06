@@ -209,11 +209,20 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                   right: 16,
                   bottom: 16,
                   top: 16,
-                  child: Center(
-                    child: CircleAvatar(
-                      radius: 32,
-                      backgroundColor: Colors.red,
-                      foregroundColor: Colors.white,
+                  child: GestureDetector(
+                    onTap: (){
+                      
+                    },
+                    child: Center(
+                      child: CircleAvatar(
+                        radius: 32,
+                        backgroundColor: Colors.red,
+                        foregroundColor: Colors.white,
+                        child: Icon(
+                          Icons.sync,
+
+                        ),
+                      ),
                     ),
                   ),
                 ),
