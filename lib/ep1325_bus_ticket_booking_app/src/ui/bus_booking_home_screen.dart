@@ -121,72 +121,85 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             ),
           ),
           Container(
-            margin: const EdgeInsets.only(bottom: 8),
-            decoration: BoxDecoration(
-              border: Border.all(),
-              borderRadius: BorderRadius.circular(6),
-            ),
-            padding: const EdgeInsets.symmetric(
-              horizontal: 8,
-              vertical: 4,
-            ),
-            child: Row(
-              children: const [
-                Text(
-                  "From",
-                  style: TextStyle(
-                    fontSize: 16,
+            height: 200,
+            child: Stack(
+              children: [
+                Positioned(
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 8),
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 4,
+                        ),
+                        child: Row(
+                          children: const [
+                            Text(
+                              "From",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 14,
+                            ),
+                            Expanded(
+                              child: TextField(
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 8),
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 4,
+                        ),
+                        child: Row(
+                          children: const [
+                            Text(
+                              "To",
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 14,
+                            ),
+                            Expanded(
+                              child: TextField(
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                SizedBox(
-                  width: 14,
-                ),
-                Expanded(
-                  child: TextField(
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.only(bottom: 8),
-            decoration: BoxDecoration(
-              border: Border.all(),
-              borderRadius: BorderRadius.circular(6),
-            ),
-            padding: const EdgeInsets.symmetric(
-              horizontal: 8,
-              vertical: 4,
-            ),
-            child: Row(
-              children: const [
-                Text(
-                  "To",
-                  style: TextStyle(
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(
-                  width: 14,
-                ),
-                Expanded(
-                  child: TextField(
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                    ),
-                  ),
-                ),
+                )
               ],
             ),
           ),
@@ -197,8 +210,8 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
+                    children: const [
+                      Text(
                         'Date',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -209,7 +222,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                       SizedBox(
                         height: 16,
                       ),
-                      const Text(
+                      Text(
                         "01.11.2022",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -222,8 +235,8 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
+                    children: const [
+                      Text(
                         'Returning',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -234,7 +247,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                       SizedBox(
                         height: 16,
                       ),
-                      const Text(
+                      Text(
                         "Set date",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -269,31 +282,41 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 ),
                 child: Row(
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
-                    Text(
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.remove,
+                      ),
+                    ),
+                    const Text(
                       "1",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.add,
+                      ),
+                    ),
                   ],
                 ),
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 48,
           ),
-          Text(
+          const Text(
             "Do you have promocode?",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 48,
           ),
           Container(
@@ -301,10 +324,10 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               color: Colors.red,
               borderRadius: BorderRadius.circular(48),
             ),
-            padding: EdgeInsets.symmetric(vertical: 24),
+            padding: const EdgeInsets.symmetric(vertical: 24),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Icon(Icons.search),
                 SizedBox(
                   width: 12,
