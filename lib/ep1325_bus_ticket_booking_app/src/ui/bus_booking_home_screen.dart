@@ -85,7 +85,12 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                               ),
                             )
                           : Center(
-                              child: Text("Round Trip"),
+                              child: Text("Round Trip",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                     ),
                   ),
