@@ -192,17 +192,41 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
           ),
           Row(
             children: [
-              Column(
-                children: [
-                  const Text('Date'),
-                  const Text("01.11.2022"),
-                ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Date'),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    const Text(
+                      "01.11.2022",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  const Text('Returning'),
-                  const Text("Set date"),
-                ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Returning'),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    const Text(
+                      "Set date",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
@@ -212,10 +236,12 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               Container(
                 height: 42,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(32),
-                    border: Border.all(
-                      color: Colors.red,
-                    )),
+                  borderRadius: BorderRadius.circular(32),
+                  border: Border.all(
+                    color: Colors.red,
+                    width: 1.5,
+                  ),
+                ),
                 child: Row(
                   children: [
                     IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
