@@ -130,6 +130,14 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 ],
               )
             ],
+          ),
+          Row(
+            children: [
+              Text("Passengers"),
+              Container(
+                height: 42,
+              )
+            ],
           )
         ],
       ),
