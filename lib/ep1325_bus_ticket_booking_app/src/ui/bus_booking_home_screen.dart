@@ -191,7 +191,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 24),
+            padding: const EdgeInsets.symmetric(vertical: 32),
             child: Row(
               children: [
                 Expanded(
@@ -254,7 +254,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 "Passengers",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 16,
+                  fontSize: 18,
                   color: Colors.grey,
                 ),
               ),
@@ -270,7 +270,13 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 child: Row(
                   children: [
                     IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
-                    Text("1"),
+                    Text(
+                      "1",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     IconButton(onPressed: () {}, icon: Icon(Icons.add)),
                   ],
                 ),
