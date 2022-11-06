@@ -121,11 +121,16 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             ),
           ),
           Container(
-            height: 200,
+            height: 140,
             child: Stack(
               children: [
                 Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  top: 0,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
                         margin: const EdgeInsets.only(bottom: 8),
@@ -163,7 +168,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(bottom: 8),
+                        margin: const EdgeInsets.only(bottom: 0),
                         decoration: BoxDecoration(
                           border: Border.all(),
                           borderRadius: BorderRadius.circular(6),
@@ -199,7 +204,19 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                       ),
                     ],
                   ),
-                )
+                ),
+                Positioned(
+                  right: 16,
+                  bottom: 16,
+                  top: 16,
+                  child: Center(
+                    child: CircleAvatar(
+                      radius: 32,
+                      backgroundColor: Colors.red,
+                      foregroundColor: Colors.white,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
