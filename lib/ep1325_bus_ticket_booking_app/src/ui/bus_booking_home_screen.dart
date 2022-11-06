@@ -10,6 +10,8 @@ class BusBookingHomeScreen extends StatefulWidget {
 
 class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
   bool tripType = false;
+  TextEditingController _fromTec = TextEditingController();
+  TextEditingController _toTec = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -143,7 +145,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                           vertical: 4,
                         ),
                         child: Row(
-                          children: const [
+                          children: [
                             Text(
                               "From",
                               style: TextStyle(
@@ -155,6 +157,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                             ),
                             Expanded(
                               child: TextField(
+                                controller: _fromTec,
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
@@ -178,7 +181,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                           vertical: 4,
                         ),
                         child: Row(
-                          children: const [
+                          children: [
                             Text(
                               "To",
                               style: TextStyle(
@@ -190,6 +193,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                             ),
                             Expanded(
                               child: TextField(
+                                controller: _toTec,
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
@@ -210,9 +214,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                   bottom: 16,
                   top: 16,
                   child: GestureDetector(
-                    onTap: (){
-                      
-                    },
+                    onTap: () {},
                     child: Center(
                       child: CircleAvatar(
                         radius: 32,
@@ -220,7 +222,6 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                         foregroundColor: Colors.white,
                         child: Icon(
                           Icons.sync,
-
                         ),
                       ),
                     ),
