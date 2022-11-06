@@ -14,7 +14,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 48, 16, 16),
+      padding: const EdgeInsets.fromLTRB(16, 64, 16, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -280,19 +280,29 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
           SizedBox(
             height: 32,
           ),
-          Text("Do you have promocode?"),
+          Text(
+            "Do you have promocode?",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
           SizedBox(
             height: 32,
           ),
           Container(
             decoration: BoxDecoration(
               color: Colors.red,
-              borderRadius: BorderRadius.circular(32),
+              borderRadius: BorderRadius.circular(48),
             ),
+            padding: EdgeInsets.symmetric(vertical: 24),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.search),
+                SizedBox(
+                  width: 12,
+                ),
                 Text("Search for Trips"),
               ],
             ),
