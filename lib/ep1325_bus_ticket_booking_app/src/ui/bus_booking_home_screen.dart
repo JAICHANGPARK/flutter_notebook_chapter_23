@@ -9,6 +9,8 @@ class BusBookingHomeScreen extends StatefulWidget {
 }
 
 class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
+  bool tripType = false;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -41,8 +43,53 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 color: Colors.grey[300],
                 borderRadius: BorderRadius.circular(32),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
               child: Row(
-                children: const [],
+                children: [
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          tripType = true;
+                        });
+                      },
+                      child: tripType
+                          ? Container()
+                          : Center(
+                              child: Text("One Way"),
+                            ),
+                    ),
+                  ),
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          tripType = false;
+                        });
+                      },
+                      child: !tripType
+                          ? Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Round Trip",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            )
+                          : Center(
+                              child: Text("Round Trip"),
+                            ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
