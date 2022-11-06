@@ -214,7 +214,14 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                   bottom: 16,
                   top: 16,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      final tmpText = _fromTec.text;
+                      _fromTec.text = _toTec.text;
+                      _toTec.text = tmpText;
+                      setState(() {
+
+                      });
+                    },
                     child: Center(
                       child: CircleAvatar(
                         radius: 32,
