@@ -37,8 +37,9 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               margin: const EdgeInsets.symmetric(vertical: 32),
               height: 64,
               width: MediaQuery.of(context).size.width - 160,
-              decoration: const BoxDecoration(
-                color: Colors.grey,
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(32),
               ),
               child: Row(
                 children: const [],
