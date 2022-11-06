@@ -190,47 +190,66 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               ],
             ),
           ),
-          Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('Date'),
-                    SizedBox(
-                      height: 16,
-                    ),
-                    const Text(
-                      "01.11.2022",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Date',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.grey,
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('Returning'),
-                    SizedBox(
-                      height: 16,
-                    ),
-                    const Text(
-                      "Set date",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                      SizedBox(
+                        height: 16,
                       ),
-                    ),
-                  ],
+                      const Text(
+                        "01.11.2022",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              )
-            ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Returning',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      const Text(
+                        "Set date",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
+
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text("Passengers"),
               Container(
