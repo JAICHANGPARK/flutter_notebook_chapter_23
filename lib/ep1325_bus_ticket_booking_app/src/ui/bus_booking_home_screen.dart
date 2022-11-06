@@ -247,11 +247,17 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
               ],
             ),
           ),
-
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text("Passengers"),
+              const Text(
+                "Passengers",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: Colors.grey,
+                ),
+              ),
               Container(
                 height: 42,
                 decoration: BoxDecoration(
