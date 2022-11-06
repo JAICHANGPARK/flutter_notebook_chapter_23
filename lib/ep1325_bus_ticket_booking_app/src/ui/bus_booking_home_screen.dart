@@ -146,23 +146,23 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                         ),
                         child: Row(
                           children: [
-                            Text(
+                            const Text(
                               "From",
                               style: TextStyle(
                                 fontSize: 16,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 14,
                             ),
                             Expanded(
                               child: TextField(
                                 controller: _fromTec,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
                                 ),
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   border: InputBorder.none,
                                 ),
                               ),
@@ -182,23 +182,23 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                         ),
                         child: Row(
                           children: [
-                            Text(
+                            const Text(
                               "To",
                               style: TextStyle(
                                 fontSize: 16,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 14,
                             ),
                             Expanded(
                               child: TextField(
                                 controller: _toTec,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
                                 ),
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   border: InputBorder.none,
                                 ),
                               ),
@@ -218,11 +218,9 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                       final tmpText = _fromTec.text;
                       _fromTec.text = _toTec.text;
                       _toTec.text = tmpText;
-                      setState(() {
-
-                      });
+                      setState(() {});
                     },
-                    child: Center(
+                    child: const Center(
                       child: CircleAvatar(
                         radius: 32,
                         backgroundColor: Colors.red,
@@ -362,11 +360,21 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Icon(Icons.search),
+                Icon(
+                  Icons.search,
+                  color: Colors.white,
+                ),
                 SizedBox(
                   width: 12,
                 ),
-                Text("Search for Trips"),
+                Text(
+                  "Search for Trips",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
           )
