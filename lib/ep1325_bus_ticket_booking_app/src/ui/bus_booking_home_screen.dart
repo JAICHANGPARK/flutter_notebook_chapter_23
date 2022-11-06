@@ -43,7 +43,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                 color: Colors.grey[300],
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
               child: Row(
                 children: [
                   Expanded(
@@ -54,10 +54,30 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                         });
                       },
                       child: tripType
-                          ? Container()
-                          : Center(
-                              child: Text("One Way"),
+                          ? Container(
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "One Way",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
                             ),
+                          ),
+                        ),
+                      )
+                          : const Center(
+                        child: Text("One Way",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Expanded(
@@ -73,7 +93,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(32),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Round Trip",
                                   style: TextStyle(
@@ -84,7 +104,7 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                                 ),
                               ),
                             )
-                          : Center(
+                          : const Center(
                               child: Text("Round Trip",
                                 style: TextStyle(
                                   fontSize: 16,
@@ -172,21 +192,21 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             children: [
               Column(
                 children: [
-                  Text('Date'),
-                  Text("01.11.2022"),
+                  const Text('Date'),
+                  const Text("01.11.2022"),
                 ],
               ),
               Column(
                 children: [
-                  Text('Returning'),
-                  Text("Set date"),
+                  const Text('Returning'),
+                  const Text("Set date"),
                 ],
               )
             ],
           ),
           Row(
             children: [
-              Text("Passengers"),
+              const Text("Passengers"),
               Container(
                 height: 42,
               )
