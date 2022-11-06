@@ -321,8 +321,9 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
                         if (_counter <= 1) _counter = 1;
                         setState(() {});
                       },
-                      icon: const Icon(
+                      icon: Icon(
                         Icons.remove,
+                        color: _counter == 1 ? Colors.grey : Colors.black,
                       ),
                     ),
                     Text(
