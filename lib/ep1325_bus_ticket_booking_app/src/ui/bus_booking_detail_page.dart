@@ -17,7 +17,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
         centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.red,
-        title: Text(
+        title: const Text(
           "Dream > Walker",
           style: TextStyle(
             color: Colors.black,
@@ -32,7 +32,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
             color: Colors.blue,
           ),
           Container(
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             height: 64,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
@@ -45,11 +45,11 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.filter_list_outlined,
                   ),
                 ),
-                Text(
+                const Text(
                   "Search for Trips",
                   style: TextStyle(
                     fontSize: 18,
@@ -59,8 +59,8 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
               ],
             ),
           ),
-          Divider(),
-          Expanded(child: SingleChildScrollView()),
+          const Divider(),
+          const Expanded(child: SingleChildScrollView()),
         ],
       ),
     );
