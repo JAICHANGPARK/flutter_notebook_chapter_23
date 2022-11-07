@@ -65,7 +65,6 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
               child: Column(
                 children: [
                   Container(
-                    height: 230,
                     decoration: BoxDecoration(
                       color: Colors.cyan,
                     ),
@@ -136,14 +135,43 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 32),
+                          padding: const EdgeInsets.symmetric(vertical: 24),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.accessible),
-                              Icon(Icons.work),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Icon(Icons.work),
+                              ),
                               Icon(Icons.electrical_services),
                             ],
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          child: Center(
+                            child: Text.rich(
+                              TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: "12.90 €",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: "per ticket",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
                         )
                       ],
