@@ -25,6 +25,23 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
           ),
         ),
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 64,
+            color: Colors.blue,
+          ),
+          Container(
+            height: 64,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(4),
+              border: Border.all(
+                color: Colors.grey,
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
