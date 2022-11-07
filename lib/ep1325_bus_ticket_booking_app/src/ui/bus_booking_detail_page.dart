@@ -60,7 +60,20 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
             ),
           ),
           const Divider(),
-          const Expanded(child: SingleChildScrollView()),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.cyan,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
