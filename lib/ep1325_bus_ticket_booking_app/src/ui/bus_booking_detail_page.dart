@@ -178,7 +178,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                       ],
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                   Container(
                     padding: const EdgeInsets.all(16),
                     child: Column(
@@ -293,7 +293,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                       ],
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                   Container(
                     padding: const EdgeInsets.all(16),
                     child: Column(
@@ -408,7 +408,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                       ],
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                   Container(
                     padding: const EdgeInsets.all(16),
                     child: Column(
@@ -523,7 +523,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                       ],
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                   Container(
                     padding: const EdgeInsets.all(16),
                     child: Column(
@@ -638,7 +638,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                       ],
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                 ],
               ),
             ),
