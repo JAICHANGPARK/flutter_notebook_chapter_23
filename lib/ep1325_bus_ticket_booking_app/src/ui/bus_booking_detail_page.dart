@@ -11,11 +11,20 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-
-        title: Text("Dream > Walker"),
+        elevation: 0,
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.red,
+        title: Text(
+          "Dream > Walker",
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
-
     );
   }
 }
