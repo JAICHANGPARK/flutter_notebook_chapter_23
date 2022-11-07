@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BusBookingHomeScreen extends StatefulWidget {
@@ -362,31 +363,36 @@ class _BusBookingHomeScreenState extends State<BusBookingHomeScreen> {
             const SizedBox(
               height: 48,
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(48),
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 24),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(
-                    Icons.search,
-                    color: Colors.white,
-                  ),
-                  SizedBox(
-                    width: 12,
-                  ),
-                  Text(
-                    "Search for Trips",
-                    style: TextStyle(
-                      fontSize: 18,
+            GestureDetector(
+              onTap: () {
+                context.push("/detail");
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(48),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.search,
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Text(
+                      "Search for Trips",
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           ],

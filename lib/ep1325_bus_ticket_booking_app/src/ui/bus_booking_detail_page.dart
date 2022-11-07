@@ -11,6 +11,10 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+        title: Text("Dream > Walker"),
+      ),
 
     );
   }

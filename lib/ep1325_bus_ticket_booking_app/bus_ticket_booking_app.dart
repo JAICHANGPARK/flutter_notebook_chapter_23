@@ -13,7 +13,7 @@ class BusTicketBookingApp extends StatelessWidget {
         routes: [
           GoRoute(
             path: "detail",
-            builder: (context, state) => BusBookingDetailPage(),
+            builder: (context, state) => const BusBookingDetailPage(),
           ),
         ],
       ),
