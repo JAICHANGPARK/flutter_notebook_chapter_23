@@ -65,10 +65,10 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
               child: Column(
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.cyan,
                     ),
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Row(
@@ -139,12 +139,12 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.accessible),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
+                              const Icon(Icons.accessible),
+                              const Padding(
+                                padding: EdgeInsets.all(8.0),
                                 child: Icon(Icons.work),
                               ),
-                              Icon(Icons.electrical_services),
+                              const Icon(Icons.electrical_services),
                             ],
                           ),
                         ),
@@ -153,8 +153,8 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(vertical: 16),
-                          child: Center(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: const Center(
                             child: Text.rich(
                               TextSpan(
                                 children: [
@@ -168,7 +168,10 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                                   ),
                                   TextSpan(
                                     text: " per ticket",
-                                    style: TextStyle(color: Colors.white, fontSize: 20),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                    ),
                                   )
                                 ],
                               ),
