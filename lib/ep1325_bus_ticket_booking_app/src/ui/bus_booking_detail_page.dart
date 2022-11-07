@@ -32,6 +32,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
             color: Colors.blue,
           ),
           Container(
+            margin: EdgeInsets.all(16),
             height: 64,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
@@ -39,7 +40,27 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                 color: Colors.grey,
               ),
             ),
-          )
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.filter_list_outlined,
+                  ),
+                ),
+                Text(
+                  "Search for Trips",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Divider(),
+          Expanded(child: SingleChildScrollView()),
         ],
       ),
     );
