@@ -149,9 +149,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(
-                            color: Colors.red,
-                          ),
+                          decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(32)),
                           padding: EdgeInsets.symmetric(vertical: 16),
                           child: Center(
                             child: Text.rich(
@@ -161,12 +159,15 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                                     text: "12.90 €",
                                     style: TextStyle(
                                       color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24
                                     ),
                                   ),
                                   TextSpan(
-                                    text: "per ticket",
+                                    text: " per ticket",
                                     style: TextStyle(
-                                      color: Colors.white,
+                                        color: Colors.white,
+                                        fontSize: 20
                                     ),
                                   )
                                 ],
