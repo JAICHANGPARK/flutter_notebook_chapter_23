@@ -65,9 +65,34 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
               child: Column(
                 children: [
                   Container(
-                    height: 300,
+                    height: 230,
                     decoration: BoxDecoration(
                       color: Colors.cyan,
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Departure"),
+                                Text("6:30"),
+                                Text("Dream"),
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text("Arrival"),
+                                Text("12:40"),
+                                Text("Walker Station"),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   )
                 ],
