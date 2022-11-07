@@ -77,39 +77,74 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Departure"),
+                              children: const [
+                                Text(
+                                  "Departure",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 8,
+                                  ),
                                   child: Text(
                                     "6:30",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
-                                Text("Dream"),
+                                Text(
+                                  "Dream",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text("Arrival"),
+                              children: const [
+                                Text(
+                                  "Arrival",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 8,
+                                  ),
                                   child: Text(
                                     "12:30",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16,
+                                      fontSize: 20,
                                     ),
                                   ),
                                 ),
-                                Text("Walker Station"),
+                                Text(
+                                  "Walker Station",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
                               ],
                             )
                           ],
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 32),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.accessible),
+                              Icon(Icons.work),
+                              Icon(Icons.electrical_services),
+                            ],
+                          ),
                         )
                       ],
                     ),
