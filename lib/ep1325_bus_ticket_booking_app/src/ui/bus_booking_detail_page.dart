@@ -69,6 +69,7 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.cyan,
                     ),
+                    padding: EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Row(
@@ -78,7 +79,16 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Departure"),
-                                Text("6:30"),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                  child: Text(
+                                    "6:30",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                ),
                                 Text("Dream"),
                               ],
                             ),
@@ -86,7 +96,16 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text("Arrival"),
-                                Text("12:40"),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                  child: Text(
+                                    "12:30",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                ),
                                 Text("Walker Station"),
                               ],
                             )
