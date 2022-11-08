@@ -47,7 +47,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
-                Text(
+                const Text(
                   "Standard",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
-                Text(
+                const Text(
                   "Premium",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -76,13 +76,13 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                     color: Colors.grey[400],
                     borderRadius: BorderRadius.circular(4),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.clear,
                     ),
                   ),
                 ),
-                Text(
+                const Text(
                   "Taken",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -91,7 +91,16 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                 ),
               ],
             ),
-          )
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: SizedBox(
