@@ -37,7 +37,10 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
         child: BottomAppBar(
           elevation: 64,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 16,
+            ),
             child: Row(
               children: [
                 const Text(
