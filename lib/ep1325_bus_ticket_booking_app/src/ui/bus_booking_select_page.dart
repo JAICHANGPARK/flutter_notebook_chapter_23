@@ -35,15 +35,22 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Row(
               children: [
-                const Text("Seat: 1/1"),
+                const Text(
+                  "Seat: 1/1",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
                 const SizedBox(
                   width: 24,
                 ),
                 Expanded(
                   child: Container(
                     height: 54,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       color: Colors.red,
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     child: const Center(
                       child: Text(
