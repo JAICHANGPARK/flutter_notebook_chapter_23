@@ -15,7 +15,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: const Text("Select Sear"),
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
           fontSize: 28,
           fontWeight: FontWeight.w900,
           color: Colors.black,
