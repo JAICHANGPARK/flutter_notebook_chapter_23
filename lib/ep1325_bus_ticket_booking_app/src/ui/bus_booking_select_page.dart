@@ -20,11 +20,31 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
           onPressed: () {
             context.pop();
           },
+          color: Colors.red,
         ),
         backgroundColor: Colors.grey[200],
         elevation: 0,
         foregroundColor: Colors.black,
         centerTitle: true,
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 84,
+        child: BottomAppBar(
+          elevation: 64,
+          child: Row(
+            children: [
+              Text("Seat: 1/1"),
+              Expanded(
+                child: Container(
+                  height: 54,
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
