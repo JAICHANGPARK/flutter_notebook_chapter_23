@@ -15,6 +15,11 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: const Text("Select Sear"),
+        titleTextStyle: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.w900,
+          color: Colors.black,
+        ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios),
           onPressed: () {
