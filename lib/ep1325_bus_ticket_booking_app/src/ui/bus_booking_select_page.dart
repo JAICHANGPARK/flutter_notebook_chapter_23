@@ -94,7 +94,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
           ),
           Expanded(
             child: Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8),
