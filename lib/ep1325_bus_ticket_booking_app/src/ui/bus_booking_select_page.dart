@@ -31,18 +31,24 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
         height: 84,
         child: BottomAppBar(
           elevation: 64,
-          child: Row(
-            children: [
-              Text("Seat: 1/1"),
-              Expanded(
-                child: Container(
-                  height: 54,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                  ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+            child: Row(
+              children: [
+                const Text("Seat: 1/1"),
+                const SizedBox(
+                  width: 24,
                 ),
-              )
-            ],
+                Expanded(
+                  child: Container(
+                    height: 54,
+                    decoration: const BoxDecoration(
+                      color: Colors.red,
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
