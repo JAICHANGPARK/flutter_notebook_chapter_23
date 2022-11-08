@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 class BusBookingDetailPage extends StatefulWidget {
   const BusBookingDetailPage({Key? key}) : super(key: key);
 
@@ -145,32 +145,37 @@ class _BusBookingDetailPageState extends State<BusBookingDetailPage> {
                             ],
                           ),
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.red,
-                            borderRadius: BorderRadius.circular(32),
-                          ),
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          child: const Center(
-                            child: Text.rich(
-                              TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: "12.90 €",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20,
+                        GestureDetector(
+                          onTap: (){
+                            context.push("/seat");
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: const Center(
+                              child: Text.rich(
+                                TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "12.90 €",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
                                     ),
-                                  ),
-                                  TextSpan(
-                                    text: " per ticket",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                    ),
-                                  )
-                                ],
+                                    TextSpan(
+                                      text: " per ticket",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
