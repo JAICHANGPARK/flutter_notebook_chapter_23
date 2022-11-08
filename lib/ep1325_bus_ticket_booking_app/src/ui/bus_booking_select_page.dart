@@ -45,6 +45,16 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                     decoration: const BoxDecoration(
                       color: Colors.red,
                     ),
+                    child: const Center(
+                      child: Text(
+                        "Confirm",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 )
               ],
