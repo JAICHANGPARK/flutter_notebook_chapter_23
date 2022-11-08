@@ -37,8 +37,8 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
           Row(
             children: [
               Container(
-                height: 38,
-                width: 38,
+                height: 32,
+                width: 32,
                 decoration: BoxDecoration(
                   color: Colors.red,
                   borderRadius: BorderRadius.circular(4),
@@ -46,8 +46,8 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
               ),
               Text("Standard"),
               Container(
-                height: 38,
-                width: 38,
+                height: 32,
+                width: 32,
                 decoration: BoxDecoration(
                   color: Colors.orange,
                   borderRadius: BorderRadius.circular(4),
@@ -55,8 +55,8 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
               ),
               Text("Premium"),
               Container(
-                height: 38,
-                width: 38,
+                height: 32,
+                width: 32,
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(4),
