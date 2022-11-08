@@ -32,6 +32,46 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
         foregroundColor: Colors.black,
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 38,
+                width: 38,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              Text("Standard"),
+              Container(
+                height: 38,
+                width: 38,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              Text("Premium"),
+              Container(
+                height: 38,
+                width: 38,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Center(
+                  child: Icon(
+                    Icons.clear,
+                  ),
+                ),
+              ),
+              Text("Taken"),
+            ],
+          )
+        ],
+      ),
       bottomNavigationBar: SizedBox(
         height: 84,
         child: BottomAppBar(
