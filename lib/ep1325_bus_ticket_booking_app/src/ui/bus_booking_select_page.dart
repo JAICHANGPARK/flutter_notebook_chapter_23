@@ -35,6 +35,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
       body: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 height: 32,
