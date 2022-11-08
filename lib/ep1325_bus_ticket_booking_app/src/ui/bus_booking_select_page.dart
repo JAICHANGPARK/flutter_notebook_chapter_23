@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BusBookingSelectPage extends StatefulWidget {
   const BusBookingSelectPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,14 @@ class BusBookingSelectPage extends StatefulWidget {
 class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Select Sear"),
+        backgroundColor: Colors.grey[100],
+        elevation: 0,
+        foregroundColor: Colors.black,
+        centerTitle: true,
+      ),
+    );
   }
 }
