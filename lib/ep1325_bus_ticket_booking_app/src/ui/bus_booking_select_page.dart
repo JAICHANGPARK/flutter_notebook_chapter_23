@@ -105,13 +105,50 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                     Row(
                       children: [
                         Container(
-                          height: 48,
-                          width: 48,
+                          height: 42,
+                          width: 42,
+                          margin: EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.red,
+                              width: 3,
+                            ),
+                            borderRadius: BorderRadius.circular(6)
+                          ),
+                        ),
+                        Container(
+                          height: 42,
+                          width: 42,
                           decoration: BoxDecoration(
                               border: Border.all(
-                            color: Colors.red,
-                                width: 2
-                          )),
+                                color: Colors.red,
+                                width: 3,
+                              ),
+                              borderRadius: BorderRadius.circular(6)
+                          ),
+                        ),
+
+                        Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.red,
+                                width: 3,
+                              ),
+                              borderRadius: BorderRadius.circular(6)
+                          ),
+                        ),
+                        Container(
+                          height: 42,
+                          width: 42,
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.red,
+                                width: 3,
+                              ),
+                              borderRadius: BorderRadius.circular(6)
+                          ),
                         )
                       ],
                     )
