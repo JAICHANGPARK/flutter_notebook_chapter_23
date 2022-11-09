@@ -120,7 +120,10 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                             child: Center(
                               child: Text(
                                 "1",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
                               ),
                             ),
                           ),
@@ -136,7 +139,10 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                             child: Center(
                               child: Text(
                                 "2",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
                               ),
                             ),
                           ),
@@ -151,6 +157,15 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
+                            child: Center(
+                              child: Text(
+                                "3",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
                           ),
                           Container(
                             height: 48,
@@ -161,6 +176,15 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
+                            child: Center(
+                              child: Text(
+                                "4",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       )
