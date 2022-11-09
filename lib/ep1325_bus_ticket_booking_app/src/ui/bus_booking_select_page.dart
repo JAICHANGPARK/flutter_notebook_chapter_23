@@ -385,18 +385,18 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                         height: 16,
                       ),
                       Row(
-                        children: [
-                          const _GeneralSeatComponent(
+                        children: const [
+                          _GeneralSeatComponent(
                             borderColor: Colors.red,
                             title: "13",
                             marginRight: 16,
                           ),
-                          const _GeneralSeatComponent(
+                          _GeneralSeatComponent(
                             borderColor: Colors.red,
                             title: "14",
                             marginRight: 0,
                           ),
-                          const Spacer(),
+                          Spacer(),
                           _TakenSeatComponent(
                             marginRight: 16,
                           ),
