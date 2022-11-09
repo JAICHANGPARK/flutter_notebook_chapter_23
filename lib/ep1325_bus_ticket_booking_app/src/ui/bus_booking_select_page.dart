@@ -188,7 +188,9 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                           )
                         ],
                       ),
-                      SizedBox(height: 16,),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Row(
                         children: [
                           Container(
@@ -236,9 +238,8 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               margin: const EdgeInsets.only(right: 16),
                               height: 48,
                               width: 48,
-                              decoration: BoxDecoration(
-                                  color: Colors.grey[400]!,
-                                  borderRadius: BorderRadius.circular(6)),
+                              decoration:
+                                  BoxDecoration(color: Colors.grey[400]!, borderRadius: BorderRadius.circular(6)),
                               child: Center(
                                 child: Icon(
                                   Icons.clear,
@@ -249,13 +250,13 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                             width: 48,
                             decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.red,
+                                  color: Colors.orange,
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
                             child: const Center(
                               child: Text(
-                                "4",
+                                "8",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -315,6 +316,40 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                 )
               ],
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _GeneralSeatComponent extends StatelessWidget {
+  final String? title;
+  final Color borderColor;
+
+  const _GeneralSeatComponent({
+    Key? key,
+    this.title,
+    this.borderColor = Colors.red,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 48,
+      width: 48,
+      decoration: BoxDecoration(
+          border: Border.all(
+            color: borderColor,
+            width: 3,
+          ),
+          borderRadius: BorderRadius.circular(6)),
+      child: Center(
+        child: Text(
+          "${title}",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
           ),
         ),
       ),
