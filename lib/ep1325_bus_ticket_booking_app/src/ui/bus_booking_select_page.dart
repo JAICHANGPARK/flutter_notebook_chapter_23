@@ -310,7 +310,64 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                             ),
                           )
                         ],
-                      )
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            margin: const EdgeInsets.only(right: 16),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.orange,
+                                width: 3,
+                              ),
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.orange,
+                            title: "10",
+                          ),
+                          const Spacer(),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.orange,
+                            title: "11",
+                          ),
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.orange,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
+                            child: const Center(
+                              child: Text(
+                                "8",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -384,11 +441,12 @@ class _GeneralSeatComponent extends StatelessWidget {
       height: 48,
       width: 48,
       decoration: BoxDecoration(
-          border: Border.all(
-            color: borderColor,
-            width: 3,
-          ),
-          borderRadius: BorderRadius.circular(6)),
+        border: Border.all(
+          color: borderColor,
+          width: 3,
+        ),
+        borderRadius: BorderRadius.circular(6),
+      ),
       child: Center(
         child: Text(
           "${title}",
