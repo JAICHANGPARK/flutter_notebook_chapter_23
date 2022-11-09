@@ -281,17 +281,17 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               color: Colors.grey[400],
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Table",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 16
+                                  fontSize: 16,
                                 ),
                               ),
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             height: 48,
                             width: 96 + 12,
@@ -299,12 +299,12 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               color: Colors.grey[400],
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Table",
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
                                 ),
                               ),
                             ),
