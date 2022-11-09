@@ -109,7 +109,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                           Container(
                             height: 48,
                             width: 48,
-                            margin: EdgeInsets.only(right: 16),
+                            margin: const EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.red,
@@ -117,7 +117,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               ),
                               borderRadius: BorderRadius.circular(6),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "1",
                                 style: TextStyle(
@@ -136,7 +136,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "2",
                                 style: TextStyle(
@@ -146,9 +146,9 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               ),
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Container(
-                            margin: EdgeInsets.only(right: 16),
+                            margin: const EdgeInsets.only(right: 16),
                             height: 48,
                             width: 48,
                             decoration: BoxDecoration(
@@ -157,7 +157,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "3",
                                 style: TextStyle(
@@ -176,7 +176,84 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
-                            child: Center(
+                            child: const Center(
+                              child: Text(
+                                "4",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 16,),
+                      Row(
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            margin: const EdgeInsets.only(right: 16),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.orange,
+                                width: 3,
+                              ),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "5",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.orange,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
+                            child: const Center(
+                              child: Text(
+                                "6",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Spacer(),
+                          Container(
+                              margin: const EdgeInsets.only(right: 16),
+                              height: 48,
+                              width: 48,
+                              decoration: BoxDecoration(
+                                  color: Colors.grey[400]!,
+                                  borderRadius: BorderRadius.circular(6)),
+                              child: Center(
+                                child: Icon(
+                                  Icons.clear,
+                                ),
+                              )),
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.red,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
+                            child: const Center(
                               child: Text(
                                 "4",
                                 style: TextStyle(
