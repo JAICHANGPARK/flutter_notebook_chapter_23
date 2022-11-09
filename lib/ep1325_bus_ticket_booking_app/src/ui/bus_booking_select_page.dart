@@ -290,6 +290,24 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                 ),
                               ),
                             ),
+                          ),
+                          Spacer(),
+                          Container(
+                            height: 48,
+                            width: 96 + 12,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[400],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Table",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       )
