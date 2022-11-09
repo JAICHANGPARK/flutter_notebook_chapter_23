@@ -381,6 +381,28 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                           ),
                         ],
                       ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: [
+                          const _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "13",
+                            marginRight: 16,
+                          ),
+                          const _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "14",
+                            marginRight: 0,
+                          ),
+                          const Spacer(),
+                          _TakenSeatComponent(
+                            marginRight: 16,
+                          ),
+                          _TakenSeatComponent(),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -432,6 +454,32 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _TakenSeatComponent extends StatelessWidget {
+  const _TakenSeatComponent({
+    Key? key,
+    this.marginRight = 0.0,
+  }) : super(key: key);
+  final double? marginRight;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(right: marginRight ?? 0),
+      height: 48,
+      width: 48,
+      decoration: BoxDecoration(
+        color: Colors.grey[400]!,
+        borderRadius: BorderRadius.circular(6),
+      ),
+      child: const Center(
+        child: Icon(
+          Icons.clear,
         ),
       ),
     );
