@@ -188,7 +188,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
@@ -235,16 +235,19 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                           ),
                           const Spacer(),
                           Container(
-                              margin: const EdgeInsets.only(right: 16),
-                              height: 48,
-                              width: 48,
-                              decoration:
-                                  BoxDecoration(color: Colors.grey[400]!, borderRadius: BorderRadius.circular(6)),
-                              child: Center(
-                                child: Icon(
-                                  Icons.clear,
-                                ),
-                              )),
+                            margin: const EdgeInsets.only(right: 16),
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[400]!,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: const Center(
+                              child: Icon(
+                                Icons.clear,
+                              ),
+                            ),
+                          ),
                           Container(
                             height: 48,
                             width: 48,
@@ -347,7 +350,7 @@ class _GeneralSeatComponent extends StatelessWidget {
       child: Center(
         child: Text(
           "${title}",
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
