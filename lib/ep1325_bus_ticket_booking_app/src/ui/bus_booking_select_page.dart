@@ -338,34 +338,47 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               ),
                             ),
                           ),
-                          _GeneralSeatComponent(
+                          const _GeneralSeatComponent(
                             borderColor: Colors.orange,
                             title: "10",
                           ),
                           const Spacer(),
-                          _GeneralSeatComponent(
-                            borderColor: Colors.orange,
-                            title: "11",
-                          ),
                           Container(
                             height: 48,
                             width: 48,
+                            margin: const EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.orange,
-                                  width: 3,
-                                ),
-                                borderRadius: BorderRadius.circular(6)),
+                              border: Border.all(
+                                color: Colors.orange,
+                                width: 3,
+                              ),
+                              // color: Colors.orange,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
                             child: const Center(
                               child: Text(
-                                "8",
+                                "11",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
                                 ),
                               ),
                             ),
-                          )
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 0),
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[400]!,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: const Center(
+                              child: Icon(
+                                Icons.clear,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ],
@@ -428,11 +441,13 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
 class _GeneralSeatComponent extends StatelessWidget {
   final String? title;
   final Color borderColor;
+  final double? marginRight;
 
   const _GeneralSeatComponent({
     Key? key,
     this.title,
     this.borderColor = Colors.red,
+    this.marginRight = 0.0,
   }) : super(key: key);
 
   @override
@@ -446,6 +461,9 @@ class _GeneralSeatComponent extends StatelessWidget {
           width: 3,
         ),
         borderRadius: BorderRadius.circular(6),
+      ),
+      margin: EdgeInsets.only(
+        right: marginRight ?? 0,
       ),
       child: Center(
         child: Text(
