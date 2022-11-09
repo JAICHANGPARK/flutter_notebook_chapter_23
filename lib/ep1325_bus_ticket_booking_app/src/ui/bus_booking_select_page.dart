@@ -460,6 +460,35 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                           ),
                         ],
                       ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: const [
+
+
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "29",
+                            marginRight: 16,
+                          ),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "30",
+                            marginRight: 0,
+                          ),
+
+                          Spacer(),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "31",
+                            marginRight: 16,
+                          ),
+                          _TakenSeatComponent(
+                            marginRight: 0,
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
