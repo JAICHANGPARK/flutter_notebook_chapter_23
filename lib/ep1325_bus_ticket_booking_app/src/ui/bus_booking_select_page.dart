@@ -100,59 +100,60 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          height: 42,
-                          width: 42,
-                          margin: EdgeInsets.only(right: 8),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.red,
-                              width: 3,
-                            ),
-                            borderRadius: BorderRadius.circular(6)
+                child: Padding(
+                  padding: const EdgeInsets.all(36.0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            margin: EdgeInsets.only(right: 16),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.red,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
                           ),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.red,
-                                width: 3,
-                              ),
-                              borderRadius: BorderRadius.circular(6)
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.red,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
                           ),
-                        ),
+                          Spacer(),
+                          Container(
+                            margin: EdgeInsets.only(right: 16),
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.red,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
+                          ),
 
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.red,
-                                width: 3,
-                              ),
-                              borderRadius: BorderRadius.circular(6)
-                          ),
-                        ),
-                        Container(
-                          height: 42,
-                          width: 42,
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.red,
-                                width: 3,
-                              ),
-                              borderRadius: BorderRadius.circular(6)
-                          ),
-                        )
-                      ],
-                    )
-                  ],
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.red,
+                                  width: 3,
+                                ),
+                                borderRadius: BorderRadius.circular(6)),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
