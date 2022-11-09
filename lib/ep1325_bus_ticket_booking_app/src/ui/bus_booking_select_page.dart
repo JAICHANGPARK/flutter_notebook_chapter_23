@@ -99,6 +99,25 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8),
               ),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 48,
+                          width: 48,
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                            color: Colors.red,
+                                width: 2
+                          )),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             ),
           ),
         ],
