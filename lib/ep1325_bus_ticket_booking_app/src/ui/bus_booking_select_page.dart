@@ -365,20 +365,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                               ),
                             ),
                           ),
-                          Container(
-                            margin: const EdgeInsets.only(right: 0),
-                            height: 48,
-                            width: 48,
-                            decoration: BoxDecoration(
-                              color: Colors.grey[400]!,
-                              borderRadius: BorderRadius.circular(6),
-                            ),
-                            child: const Center(
-                              child: Icon(
-                                Icons.clear,
-                              ),
-                            ),
-                          ),
+                          _TakenSeatComponent(),
                         ],
                       ),
                       const SizedBox(
@@ -401,6 +388,76 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                             marginRight: 16,
                           ),
                           _TakenSeatComponent(),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: const [
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "17",
+                            marginRight: 16,
+                          ),
+                          _TakenSeatComponent(),
+                          Spacer(),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "19",
+                            marginRight: 16,
+                          ),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "20",
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: const [
+                          _TakenSeatComponent(
+                            marginRight: 16,
+                          ),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "22",
+                            marginRight: 0,
+                          ),
+                          Spacer(),
+                          _TakenSeatComponent(
+                            marginRight: 16,
+                          ),
+                          _TakenSeatComponent(
+                            marginRight: 0,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        children: const [
+                          _TakenSeatComponent(
+                            marginRight: 16,
+                          ),
+                          _TakenSeatComponent(
+                            marginRight: 0,
+                          ),
+
+                          Spacer(),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "27",
+                            marginRight: 16,
+                          ),
+                          _GeneralSeatComponent(
+                            borderColor: Colors.red,
+                            title: "28",
+                            marginRight: 0,
+                          ),
                         ],
                       ),
                     ],
