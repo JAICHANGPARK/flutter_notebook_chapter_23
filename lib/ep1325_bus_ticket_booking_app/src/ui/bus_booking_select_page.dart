@@ -101,7 +101,7 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
               ),
               child: SingleChildScrollView(
                 child: Padding(
-                  padding: const EdgeInsets.all(36.0),
+                  padding: const EdgeInsets.all(42.0),
                   child: Column(
                     children: [
                       Row(
@@ -111,11 +111,18 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                             width: 48,
                             margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.red,
-                                  width: 3,
-                                ),
-                                borderRadius: BorderRadius.circular(6)),
+                              border: Border.all(
+                                color: Colors.red,
+                                width: 3,
+                              ),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "1",
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),
+                              ),
+                            ),
                           ),
                           Container(
                             height: 48,
@@ -126,6 +133,12 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                   width: 3,
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
+                            child: Center(
+                              child: Text(
+                                "2",
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16,),
+                              ),
+                            ),
                           ),
                           Spacer(),
                           Container(
@@ -139,7 +152,6 @@ class _BusBookingSelectPageState extends State<BusBookingSelectPage> {
                                 ),
                                 borderRadius: BorderRadius.circular(6)),
                           ),
-
                           Container(
                             height: 48,
                             width: 48,
