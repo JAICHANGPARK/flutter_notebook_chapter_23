@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1331_property_rental_app/src/ui/property_rental_home_page.dart';
+import 'package:go_router/go_router.dart';
 
 class PropertyRentalApp extends StatelessWidget {
-  const PropertyRentalApp({Key? key}) : super(key: key);
+  PropertyRentalApp({Key? key}) : super(key: key);
+  final _router = GoRouter(routes: [
+    ShellRoute(
+        routes: [],
+        builder: (context, state, child) {
+          return PropertyRentalHomePage();
+        })
+  ]);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp.router(
+      routerConfig: _router,
+    );
   }
 }
