@@ -13,22 +13,23 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Let's find your"),
-            Text("dream home."),
+            const Text("Let's find your"),
+            const Text("dream home."),
             Container(
               height: 54,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.grey,
               ),
             ),
-            Text("Previously Viewed"),
+            const Text("Previously Viewed"),
             Container(
               height: 240,
               color: Colors.pink,
             ),
-            Text("Our Recommendations"),
-            Expanded(
+            const Text("Our Recommendations"),
+            const Expanded(
               child: Placeholder(),
             ),
           ],
