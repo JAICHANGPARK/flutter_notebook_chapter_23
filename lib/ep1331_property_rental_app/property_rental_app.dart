@@ -6,7 +6,13 @@ class PropertyRentalApp extends StatelessWidget {
   PropertyRentalApp({Key? key}) : super(key: key);
   final _router = GoRouter(routes: [
     ShellRoute(
-        routes: [],
+        routes: [
+          GoRoute(
+              path: "/",
+              builder: (context, state) {
+                return PropertyRentalHomePage();
+              }),
+        ],
         builder: (context, state, child) {
           return PropertyRentalHomePage();
         })
