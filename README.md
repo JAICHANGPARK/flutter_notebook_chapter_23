@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1325-
+### EP1331 - 
+
+- Property Rental App
+- by Tanuj agarwal for Nickelfox
+- https://dribbble.com/shots/19857568-Property-Rental-App
+
+<img src="https://cdn.dribbble.com/users/5701416/screenshots/19857568/media/b3798bdb76a80792994a0c4198e7e652.png?compress=1&resize=1000x750&vertical=top" width="400px"/>
+
+### EP1325-1330
 
 - Bus Ticket Booking 🚌 - Mobile App
 - by Aleksandr Shchilkin
