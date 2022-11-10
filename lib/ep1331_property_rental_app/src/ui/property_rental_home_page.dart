@@ -10,6 +10,10 @@ class PropertyRentalHomePage extends StatefulWidget {
 class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(),
+      ),
+    );
   }
 }
