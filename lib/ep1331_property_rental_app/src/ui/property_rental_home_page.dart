@@ -12,7 +12,27 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          children: [
+            Text("Let's find your"),
+            Text("dream home."),
+            Container(
+              height: 54,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+              ),
+            ),
+            Text("Previously Viewed"),
+            Container(
+              height: 240,
+              color: Colors.pink,
+            ),
+            Text("Our Recommendations"),
+            Expanded(
+              child: Placeholder(),
+            ),
+          ],
+        ),
       ),
     );
   }
