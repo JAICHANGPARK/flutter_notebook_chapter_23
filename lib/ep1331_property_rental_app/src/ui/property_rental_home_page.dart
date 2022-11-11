@@ -98,13 +98,13 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                   ),
                                 ),
                                 child: Stack(
-                                  children: [
-                                    const Positioned(
+                                  children: const [
+                                    Positioned(
                                       right: 8,
                                       top: 8,
                                       child: CircleAvatar(
                                         radius: 16,
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.favorite_border,
                                         ),
                                         foregroundColor: Colors.white,
