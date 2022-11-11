@@ -183,7 +183,12 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                           Container(
                             height: 200,
                             color: Colors.blueGrey,
-                          )
+                          ),
+                          Row(
+                            children: [],
+                          ),
+                          Row(),
+                          Text("30m")
                         ],
                       ),
                     );
