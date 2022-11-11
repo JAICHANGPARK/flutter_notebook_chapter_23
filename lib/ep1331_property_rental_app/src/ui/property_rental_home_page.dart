@@ -15,9 +15,20 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text("Let's find your"),
-            const Text("dream home."),
+            Column(
+              children: [
+                const Text("Let's find your"),
+                const Text(
+                  "dream home.",
+                  style: TextStyle(
+                    color: Color(0xff6e38e0),
+                  ),
+                ),
+              ],
+            ),
+
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
               height: 54,
               decoration: const BoxDecoration(
                 color: Colors.grey,
