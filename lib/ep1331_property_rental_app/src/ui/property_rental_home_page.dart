@@ -45,8 +45,8 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                 color: Colors.grey[200]!,
                 borderRadius: BorderRadius.circular(4),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Center(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const Center(
                 child: TextField(
                   decoration: InputDecoration(
                     icon: Icon(Icons.search),
@@ -73,7 +73,6 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                   ),
                   Container(
                     height: 210,
-                    color: Colors.pink,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
@@ -88,29 +87,41 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             children: [
                               Container(
                                 height: 130,
-                                decoration:
-                                    BoxDecoration(color: Colors.blueGrey, borderRadius: BorderRadius.circular(4)),
+                                decoration: BoxDecoration(
+                                  color: Colors.blueGrey,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 8,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Treasure Cove"),
+                                  const Text(
+                                    "Treasure Cove",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 4),
                                     child: Row(
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           Icons.location_on,
                                           color: Colors.grey,
                                         ),
-                                        Text("449. Black B/136,Arenja Corner Hotel")
+                                        Text(
+                                          "449. Black B/136,Arenja Corner Hotel",
+                                          style: TextStyle(
+                                            color: Colors.grey[400],
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ),
-                                  Text(
+                                  const Text(
                                     "\$1,000,000/month",
                                     style: TextStyle(
                                       color: Color(0xff6e38e0),
