@@ -172,9 +172,25 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
               ),
             ),
             Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: ListView.separated(
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 200,
+                            color: Colors.blueGrey,
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                  separatorBuilder: (_, __) => Divider(
+                    color: Colors.grey,
+                  ),
                 ),
               ),
             ),
