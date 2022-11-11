@@ -79,15 +79,16 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                 height: 130,
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey,
+                                  borderRadius: BorderRadius.circular(4)
                                 ),
                               ),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-
                                 children: [
                                   Text("Treasure Cove"),
-
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 4),
                                     child: Row(
