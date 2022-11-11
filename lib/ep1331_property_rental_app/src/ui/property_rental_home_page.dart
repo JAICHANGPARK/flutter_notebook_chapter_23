@@ -71,7 +71,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                   const SizedBox(
                     height: 16,
                   ),
-                  Container(
+                  SizedBox(
                     height: 210,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -80,9 +80,9 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                         return Container(
                           width: MediaQuery.of(context).size.width / 1.6,
                           margin: const EdgeInsets.only(right: 16),
-                          decoration: const BoxDecoration(
-                            color: Colors.orange,
-                          ),
+                          // decoration: const BoxDecoration(
+                          //   color: Colors.orange,
+                          // ),
                           child: Column(
                             children: [
                               Container(
@@ -90,6 +90,28 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey,
                                   borderRadius: BorderRadius.circular(4),
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2019/09/12/15/21/resort-4471852__340.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    const Positioned(
+                                      right: 8,
+                                      top: 8,
+                                      child: CircleAvatar(
+                                        radius: 16,
+                                        child: Icon(
+                                          Icons.favorite_border,
+                                        ),
+                                        foregroundColor: Colors.white,
+                                        backgroundColor: Colors.black,
+                                      ),
+                                    )
+                                  ],
                                 ),
                               ),
                               const SizedBox(
@@ -105,7 +127,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                    padding: const EdgeInsets.symmetric(vertical: 6),
                                     child: Row(
                                       children: [
                                         const Icon(
