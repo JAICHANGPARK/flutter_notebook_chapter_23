@@ -133,6 +133,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                         const Icon(
                                           Icons.location_on,
                                           color: Colors.grey,
+                                          size: 16,
                                         ),
                                         Text(
                                           "449. Black B/136,Arenja Corner Hotel",
@@ -160,9 +161,22 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                 ],
               ),
             ),
-            const Text("Our Recommendations"),
-            const Expanded(
-              child: Placeholder(),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: const Text(
+                "Our Recommendations",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [],
+                ),
+              ),
             ),
           ],
         ),
