@@ -41,8 +41,19 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
               height: 54,
-              decoration: const BoxDecoration(
-                color: Colors.grey,
+              decoration: BoxDecoration(
+                color: Colors.grey[200]!,
+                borderRadius: BorderRadius.circular(4),
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Center(
+                child: TextField(
+                  decoration: InputDecoration(
+                    icon: Icon(Icons.search),
+                    hintText: "Search any city, area, landmark...",
+                    border: InputBorder.none,
+                  ),
+                ),
               ),
             ),
             Padding(
@@ -77,10 +88,8 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             children: [
                               Container(
                                 height: 130,
-                                decoration: BoxDecoration(
-                                  color: Colors.blueGrey,
-                                  borderRadius: BorderRadius.circular(4)
-                                ),
+                                decoration:
+                                    BoxDecoration(color: Colors.blueGrey, borderRadius: BorderRadius.circular(4)),
                               ),
                               SizedBox(
                                 height: 8,
