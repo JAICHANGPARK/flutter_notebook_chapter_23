@@ -20,17 +20,23 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
-                  Text("Let's find your"),
+                  Text(
+                    "Let's find your",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Text(
                     "dream home.",
                     style: TextStyle(
                       color: Color(0xff6e38e0),
+                      fontSize: 20,
                     ),
                   ),
                 ],
               ),
             ),
-
             Container(
               margin: EdgeInsets.symmetric(horizontal: 16),
               height: 54,
