@@ -15,16 +15,20 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              children: [
-                const Text("Let's find your"),
-                const Text(
-                  "dream home.",
-                  style: TextStyle(
-                    color: Color(0xff6e38e0),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 24, 16, 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text("Let's find your"),
+                  Text(
+                    "dream home.",
+                    style: TextStyle(
+                      color: Color(0xff6e38e0),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
 
             Container(
