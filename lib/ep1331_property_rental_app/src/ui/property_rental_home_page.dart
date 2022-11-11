@@ -16,7 +16,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 24, 16, 8),
+              padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
@@ -32,6 +32,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                     style: TextStyle(
                       color: Color(0xff6e38e0),
                       fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
@@ -44,10 +45,15 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                 color: Colors.grey,
               ),
             ),
-            const Text("Previously Viewed"),
-            Container(
-              height: 240,
-              color: Colors.pink,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text("Previously Viewed"),
+                Container(
+                  height: 240,
+                  color: Colors.pink,
+                )
+              ],
             ),
             const Text("Our Recommendations"),
             const Expanded(
