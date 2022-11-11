@@ -39,21 +39,46 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               height: 54,
               decoration: const BoxDecoration(
                 color: Colors.grey,
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text("Previously Viewed"),
-                Container(
-                  height: 240,
-                  color: Colors.pink,
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 0, 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    "Previously Viewed",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  Container(
+                    height: 240,
+                    color: Colors.pink,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: MediaQuery.of(context).size.width / 1.5,
+                          margin: const EdgeInsets.only(right: 16),
+                          decoration: const BoxDecoration(
+                            color: Colors.orange,
+                          ),
+                        );
+                      },
+                    ),
+                  )
+                ],
+              ),
             ),
             const Text("Our Recommendations"),
             const Expanded(
