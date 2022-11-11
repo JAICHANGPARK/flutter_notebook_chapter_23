@@ -10,11 +10,11 @@ class PropertyRentalApp extends StatelessWidget {
           GoRoute(
               path: "/",
               builder: (context, state) {
-                return PropertyRentalHomePage();
+                return const PropertyRentalHomePage();
               }),
         ],
         builder: (context, state, child) {
-          return PropertyRentalHomePage();
+          return const PropertyRentalHomePage();
         })
   ]);
 
