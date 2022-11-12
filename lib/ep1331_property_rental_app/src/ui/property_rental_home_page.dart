@@ -177,26 +177,29 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                 child: ListView.separated(
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                    return Container(
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 200,
-                            color: Colors.blueGrey,
+                    return Column(
+                      children: [
+                        Container(
+                          height: 200,
+                          color: Colors.blueGrey,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage()
+                            )
                           ),
-                          Row(
-                            children: [
-                              Text("The White Abode"),
-                              Text(
-                                "\$8,000,000/month",
-                                style: TextStyle(),
-                              )
-                            ],
-                          ),
-                          Row(),
-                          Text("30m")
-                        ],
-                      ),
+                        ),
+                        Row(
+                          children: [
+                            Text("The White Abode"),
+                            Text(
+                              "\$8,000,000/month",
+                              style: TextStyle(),
+                            )
+                          ],
+                        ),
+                        Row(),
+                        Text("30m")
+                      ],
                     );
                   },
                   separatorBuilder: (_, __) => Divider(
