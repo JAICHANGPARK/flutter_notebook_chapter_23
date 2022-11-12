@@ -28,7 +28,24 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                 SizedBox(
                   width: 16,
                 ),
-                Expanded(child: Placeholder()),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurpleAccent,
+                      minimumSize: Size(
+                        double.infinity,
+                        double.infinity,
+                      ),
+                      textStyle: TextStyle(
+                        fontSize: 18
+                      )
+                    ),
+                    child: Text(
+                      "Book a Visit",
+                    ),
+                  ),
+                ),
               ],
             ),
           )
