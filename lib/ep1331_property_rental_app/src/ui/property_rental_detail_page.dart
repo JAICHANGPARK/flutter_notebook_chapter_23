@@ -22,6 +22,22 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.pink,
                     ),
+                  ),
+                  Row(
+                    children: [],
+                  ),
+                  Divider(),
+                  Text("About"),
+                  Text("lorem"),
+                  Divider(),
+                  Text("OverView"),
+                  Wrap(
+                    children: [],
+                  ),
+                  Divider(),
+                  Text("Location"),
+                  Container(
+                    height: 200,
                   )
                 ],
               ),
