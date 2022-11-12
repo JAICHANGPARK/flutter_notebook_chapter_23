@@ -185,7 +185,13 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             color: Colors.blueGrey,
                           ),
                           Row(
-                            children: [],
+                            children: [
+                              Text("The White Abode"),
+                              Text(
+                                "\$8,000,000/month",
+                                style: TextStyle(),
+                              )
+                            ],
                           ),
                           Row(),
                           Text("30m")
