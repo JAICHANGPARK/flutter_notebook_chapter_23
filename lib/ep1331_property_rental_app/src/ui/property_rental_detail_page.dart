@@ -38,8 +38,9 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                         double.infinity,
                       ),
                       textStyle: TextStyle(
-                        fontSize: 18
-                      )
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     child: Text(
                       "Book a Visit",
