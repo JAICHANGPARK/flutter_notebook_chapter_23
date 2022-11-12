@@ -205,7 +205,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 6),
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: const [
@@ -224,19 +224,27 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                           children: [
                             Icon(
                               Icons.location_on,
-                              color: Colors.grey[300],
+                              color: Colors.grey[600],
                               size: 18,
                             ),
                             Text(
                               "33, Laxmi Places, S V Road, Near Sony Mony Borivali, Mu..",
                               overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                color: Colors.grey[600]!,
+                              ),
                             ),
                           ],
                         ),
                         SizedBox(
-                          height: 8,
+                          height: 12,
                         ),
-                        const Text("30BHK - Semi-Furnished - 1100 sq.ft"),
+                        Text(
+                          "30BHK - Semi-Furnished - 1100 sq.ft",
+                          style: TextStyle(
+                            color: Colors.grey[600],
+                          ),
+                        ),
                       ],
                     );
                   },
