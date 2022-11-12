@@ -33,18 +33,23 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           children: [],
                         ),
                         Divider(
-                          color: Colors.grey[600],
+                          color: Colors.grey[500],
                           height: 42,
                         ),
-
                         Text("About"),
                         Text("lorem"),
-                        Divider(),
+                        Divider(
+                          color: Colors.grey[500],
+                          height: 42,
+                        ),
                         Text("OverView"),
                         Wrap(
                           children: [],
                         ),
-                        Divider(),
+                        Divider(
+                          color: Colors.grey[500],
+                          height: 42,
+                        ),
                         Text("Location"),
                         Container(
                           height: 200,
