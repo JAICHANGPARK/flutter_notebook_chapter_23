@@ -178,6 +178,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           height: 220,
@@ -211,13 +212,16 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                               const Text(
                                 "The White Abode",
                                 style: TextStyle(
-
-                                  fontSize: 16
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 18
                                 ),
                               ),
                               const Text(
                                 "\$8,000,000/month",
-                                style: TextStyle(),
+                                style: TextStyle(
+                                  color: Color(0xff6e38e0),
+                                  fontSize: 18
+                                ),
                               )
                             ],
                           ),
