@@ -161,9 +161,9 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: Text(
                 "Our Recommendations",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                       children: [
                         Container(
                           height: 220,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.blueGrey,
                             image: DecorationImage(
                               image: NetworkImage(
@@ -189,23 +189,39 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                right: 8,
+                                top: 8,
+                                child: CircleAvatar(
+                                  child: Icon(Icons.favorite_border),
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                        Row(
-                          children: [
-                            Text("The White Abode"),
-                            Text(
-                              "\$8,000,000/month",
-                              style: TextStyle(),
-                            )
-                          ],
+
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6),
+                          child: Row(
+                            children: [
+                              const Text("The White Abode"),
+                              const Text(
+                                "\$8,000,000/month",
+                                style: TextStyle(),
+                              )
+                            ],
+                          ),
                         ),
                         Row(),
-                        Text("30m")
+                        const Text("30m")
                       ],
                     );
                   },
-                  separatorBuilder: (_, __) => Divider(
+                  separatorBuilder: (_, __) => const Divider(
                     color: Colors.grey,
                   ),
                 ),
