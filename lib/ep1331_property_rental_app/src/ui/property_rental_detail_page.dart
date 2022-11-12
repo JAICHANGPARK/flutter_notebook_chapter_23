@@ -13,7 +13,20 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-          const Expanded(child: Placeholder()),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.pink,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
           Container(
             height: 80,
             padding: const EdgeInsets.all(16),
