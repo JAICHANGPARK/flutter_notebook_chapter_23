@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class PropertyRentalHomePage extends StatefulWidget {
   const PropertyRentalHomePage({Key? key}) : super(key: key);
@@ -77,82 +78,84 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: MediaQuery.of(context).size.width / 1.6,
-                          margin: const EdgeInsets.only(right: 16),
-                          // decoration: const BoxDecoration(
-                          //   color: Colors.orange,
-                          // ),
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 130,
-                                decoration: BoxDecoration(
-                                  color: Colors.blueGrey,
-                                  borderRadius: BorderRadius.circular(4),
-                                  image: const DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2019/09/12/15/21/resort-4471852__340.jpg",
+                        return GestureDetector(
+                          onTap: (){
+                            context.push("/detail");
+                          },
+                          child: Container(
+                            width: MediaQuery.of(context).size.width / 1.6,
+                            margin: const EdgeInsets.only(right: 16),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 130,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blueGrey,
+                                    borderRadius: BorderRadius.circular(4),
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2019/09/12/15/21/resort-4471852__340.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
                                     ),
-                                    fit: BoxFit.cover,
+                                  ),
+                                  child: Stack(
+                                    children: const [
+                                      Positioned(
+                                        right: 8,
+                                        top: 8,
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                          child: const Icon(
+                                            Icons.favorite_border,
+                                          ),
+                                          foregroundColor: Colors.white,
+                                          backgroundColor: Colors.black,
+                                        ),
+                                      )
+                                    ],
                                   ),
                                 ),
-                                child: Stack(
-                                  children: const [
-                                    Positioned(
-                                      right: 8,
-                                      top: 8,
-                                      child: CircleAvatar(
-                                        radius: 16,
-                                        child: const Icon(
-                                          Icons.favorite_border,
-                                        ),
-                                        foregroundColor: Colors.white,
-                                        backgroundColor: Colors.black,
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Text(
+                                      "Treasure Cove",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 6),
+                                      child: Row(
+                                        children: [
+                                          const Icon(
+                                            Icons.location_on,
+                                            color: Colors.grey,
+                                            size: 16,
+                                          ),
+                                          Text(
+                                            "449. Black B/136,Arenja Corner Hotel",
+                                            style: TextStyle(
+                                              color: Colors.grey[400],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    const Text(
+                                      "\$1,000,000/month",
+                                      style: TextStyle(
+                                        color: Color(0xff6e38e0),
                                       ),
                                     )
                                   ],
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 8,
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    "Treasure Cove",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 6),
-                                    child: Row(
-                                      children: [
-                                        const Icon(
-                                          Icons.location_on,
-                                          color: Colors.grey,
-                                          size: 16,
-                                        ),
-                                        Text(
-                                          "449. Black B/136,Arenja Corner Hotel",
-                                          style: TextStyle(
-                                            color: Colors.grey[400],
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  const Text(
-                                    "\$1,000,000/month",
-                                    style: TextStyle(
-                                      color: Color(0xff6e38e0),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
                         );
                       },
