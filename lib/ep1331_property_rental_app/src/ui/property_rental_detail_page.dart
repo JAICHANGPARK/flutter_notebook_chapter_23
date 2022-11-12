@@ -10,6 +10,30 @@ class PropertyRentalDetailPage extends StatefulWidget {
 class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Placeholder()),
+          Container(
+            height: 80,
+            padding: EdgeInsets.all(16),
+            child: Row(
+              children: [
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: () {},
+                    child: Text("Contact Agent"),
+                  ),
+                ),
+                SizedBox(
+                  width: 16,
+                ),
+                Expanded(child: Placeholder()),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
