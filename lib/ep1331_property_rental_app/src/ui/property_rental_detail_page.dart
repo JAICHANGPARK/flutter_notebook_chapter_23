@@ -13,19 +13,30 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
+          const Expanded(child: Placeholder()),
           Container(
             height: 80,
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Row(
               children: [
                 Expanded(
                   child: OutlinedButton(
                     onPressed: () {},
-                    child: Text("Contact Agent"),
+                    child: const Text("Contact Agent"),
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(
+                        double.infinity,
+                        double.infinity,
+                      ),
+                      foregroundColor: Colors.black,
+                      textStyle: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 16,
                 ),
                 Expanded(
@@ -33,16 +44,16 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurpleAccent,
-                      minimumSize: Size(
+                      minimumSize: const Size(
                         double.infinity,
                         double.infinity,
                       ),
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Book a Visit",
                     ),
                   ),
