@@ -211,11 +211,17 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             children: const [
                               Text(
                                 "The White Abode",
-                                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 18,
+                                ),
                               ),
                               Text(
                                 "\$8,000,000/month",
-                                style: TextStyle(color: Color(0xff6e38e0), fontSize: 18),
+                                style: TextStyle(
+                                  color: Color(0xff6e38e0),
+                                  fontSize: 18,
+                                ),
                               )
                             ],
                           ),
