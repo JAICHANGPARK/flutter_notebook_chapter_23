@@ -224,7 +224,8 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                           children: [
                             Icon(
                               Icons.location_on,
-                              color: Colors.grey[200],
+                              color: Colors.grey[300],
+                              size: 18,
                             ),
                             Text(
                               "33, Laxmi Places, S V Road, Near Sony Mony Borivali, Mu..",
@@ -232,7 +233,10 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             ),
                           ],
                         ),
-                        const Text("30m")
+                        SizedBox(
+                          height: 8,
+                        ),
+                        const Text("30BHK - Semi-Furnished - 1100 sq.ft"),
                       ],
                     );
                   },
