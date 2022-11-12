@@ -203,12 +203,18 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             ],
                           ),
                         ),
-
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 6),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const Text("The White Abode"),
+                              const Text(
+                                "The White Abode",
+                                style: TextStyle(
+
+                                  fontSize: 16
+                                ),
+                              ),
                               const Text(
                                 "\$8,000,000/month",
                                 style: TextStyle(),
