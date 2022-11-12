@@ -25,14 +25,18 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [],
                         ),
-                        Divider(),
+                        Divider(
+                          color: Colors.grey[600],
+                          height: 42,
+                        ),
+
                         Text("About"),
                         Text("lorem"),
                         Divider(),
