@@ -211,22 +211,27 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             children: const [
                               Text(
                                 "The White Abode",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 18
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
                               ),
                               Text(
                                 "\$8,000,000/month",
-                                style: TextStyle(
-                                  color: Color(0xff6e38e0),
-                                  fontSize: 18
-                                ),
+                                style: TextStyle(color: Color(0xff6e38e0), fontSize: 18),
                               )
                             ],
                           ),
                         ),
-                        Row(),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              color: Colors.grey[200],
+                            ),
+                            Text(
+                              "33, Laxmi Places, S V Road, Near Sony Mony Borivali, Mu..",
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ),
                         const Text("30m")
                       ],
                     );
