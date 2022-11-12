@@ -180,13 +180,16 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                     return Column(
                       children: [
                         Container(
-                          height: 200,
-                          color: Colors.blueGrey,
+                          height: 220,
                           decoration: BoxDecoration(
+                            color: Colors.blueGrey,
                             image: DecorationImage(
-                              image: NetworkImage()
-                            )
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2018/02/13/09/39/modern-minimalist-bathroom-3150293_960_720.jpg"),
+                              fit: BoxFit.cover,
+                            ),
                           ),
+                          
                         ),
                         Row(
                           children: [
