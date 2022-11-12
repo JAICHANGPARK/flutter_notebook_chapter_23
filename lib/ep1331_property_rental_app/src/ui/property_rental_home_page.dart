@@ -191,7 +191,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             ),
                           ),
                           child: Stack(
-                            children: [
+                            children: const [
                               Positioned(
                                 right: 8,
                                 top: 8,
@@ -208,15 +208,15 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                           padding: const EdgeInsets.symmetric(vertical: 6),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 "The White Abode",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 18
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 "\$8,000,000/month",
                                 style: TextStyle(
                                   color: Color(0xff6e38e0),
