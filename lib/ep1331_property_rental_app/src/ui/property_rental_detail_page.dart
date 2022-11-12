@@ -16,6 +16,7 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 300,
@@ -23,21 +24,29 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                       color: Colors.pink,
                     ),
                   ),
-                  Row(
-                    children: [],
-                  ),
-                  Divider(),
-                  Text("About"),
-                  Text("lorem"),
-                  Divider(),
-                  Text("OverView"),
-                  Wrap(
-                    children: [],
-                  ),
-                  Divider(),
-                  Text("Location"),
-                  Container(
-                    height: 200,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [],
+                        ),
+                        Divider(),
+                        Text("About"),
+                        Text("lorem"),
+                        Divider(),
+                        Text("OverView"),
+                        Wrap(
+                          children: [],
+                        ),
+                        Divider(),
+                        Text("Location"),
+                        Container(
+                          height: 200,
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
