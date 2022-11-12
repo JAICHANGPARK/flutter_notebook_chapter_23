@@ -7,21 +7,15 @@ import 'src/ui/property_rental_detail_page.dart';
 class PropertyRentalApp extends StatelessWidget {
   PropertyRentalApp({Key? key}) : super(key: key);
   final _router = GoRouter(routes: [
-    ShellRoute(
-        routes: [
-          GoRoute(
-              path: "/",
-              builder: (context, state) {
-                return const PropertyRentalHomePage();
-              }),
-          GoRoute(
-              path: "detail",
-              builder: (context, state) {
-                return const PropertyRentalDetailPage();
-              })
-        ],
-        builder: (context, state, child) {
+    GoRoute(
+        path: "/",
+        builder: (context, state) {
           return const PropertyRentalHomePage();
+        }),
+    GoRoute(
+        path: "/detail",
+        builder: (context, state) {
+          return const PropertyRentalDetailPage();
         })
   ]);
 
