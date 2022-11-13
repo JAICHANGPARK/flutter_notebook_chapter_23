@@ -22,6 +22,7 @@ dependencies:
   flutter_adaptive_scaffold: any
   flutter_riverpod: ^2.1.1
   google_fonts: any
+  dots_indicator: any
 
 dev_dependencies:
   flutter_test:
