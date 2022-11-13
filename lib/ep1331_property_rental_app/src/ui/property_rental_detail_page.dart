@@ -44,6 +44,17 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           ),
                         ),
                         Positioned(
+                          left: 8,
+                          top: 64,
+                          child: CircleAvatar(
+                            backgroundColor: Colors.black.withOpacity(0.4),
+                            foregroundColor: Colors.white,
+                            child: Icon(
+                              Icons.arrow_back,
+                            ),
+                          ),
+                        ),
+                        Positioned(
                           right: 8,
                           bottom: 8,
                           child: Container(
