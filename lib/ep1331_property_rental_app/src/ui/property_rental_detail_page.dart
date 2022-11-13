@@ -89,9 +89,12 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                       ],
                     ),
                   ),
-                  Center(
-                    child: DotsIndicator(
-                      dotsCount: 5,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Center(
+                      child: DotsIndicator(
+                        dotsCount: 5,
+                      ),
                     ),
                   ),
                   Padding(
@@ -103,7 +106,29 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
-                          children: const [],
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              "Regal Heaven",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16
+                              ),
+                            ),
+                            Text("\$900,000/month"),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Row(
+                          children: const [
+                            Icon(
+                              Icons.location_on,
+                              size: 16,
+                            ),
+                            Text("100 / Thayar Sahib St Anna Road Ho. South-ex Delhi"),
+                          ],
                         ),
                         Divider(
                           color: Colors.grey[500],
