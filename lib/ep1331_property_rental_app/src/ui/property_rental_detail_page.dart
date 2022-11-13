@@ -31,23 +31,38 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           bottom: 0,
                           top: 0,
                           child: PageView(
-                            children: const [],
+                            children: [
+                              Image.network(
+                                "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_960_720.jpg",
+                                fit: BoxFit.cover,
+                              ),
+                              Image.network(
+                                "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg",
+                                fit: BoxFit.cover,
+                              ),
+                            ],
                           ),
                         ),
                         Positioned(
-                          left: 0,
-                          right: 0,
-                          bottom: 0,
-                          top: 0,
+                          right: 8,
+                          bottom: 8,
                           child: Container(
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Colors.black,
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 4,
+                              vertical: 4,
                             ),
                             child: Row(
                               children: const [
                                 Icon(
                                   Icons.view_in_ar,
                                   color: Colors.white,
+                                ),
+                                SizedBox(
+                                  width: 4,
                                 ),
                                 Text(
                                   "Take Virtual Tour",
