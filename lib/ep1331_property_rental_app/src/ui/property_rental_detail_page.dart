@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class PropertyRentalDetailPage extends StatefulWidget {
@@ -86,6 +87,11 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           ),
                         )
                       ],
+                    ),
+                  ),
+                  Center(
+                    child: DotsIndicator(
+                      dotsCount: 5,
                     ),
                   ),
                   Padding(
