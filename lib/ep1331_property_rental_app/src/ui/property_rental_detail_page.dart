@@ -50,7 +50,7 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           child: CircleAvatar(
                             backgroundColor: Colors.black.withOpacity(0.4),
                             foregroundColor: Colors.white,
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_back,
                             ),
                           ),
@@ -125,7 +125,7 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
                         Row(
@@ -143,30 +143,58 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                         ),
                         const Text(
                           "About",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                           style: TextStyle(
-                            color: Colors.grey[200]!,
+                            color: Colors.grey[500]!,
                           ),
                         ),
                         Divider(
                           color: Colors.grey[500],
                           height: 42,
                         ),
-                        const Text("OverView"),
+                        const Text(
+                          "OverView",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        SizedBox(height: 16,),
                         Wrap(
-                          children: const [],
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.grey[600]!,
+                                  ),
+                                  borderRadius: BorderRadius.circular(24)),
+                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                              child: Text(
+                                "Fully-furnished",
+                              ),
+                            )
+                          ],
                         ),
                         Divider(
                           color: Colors.grey[500],
                           height: 42,
                         ),
-                        const Text("Location"),
+                        const Text(
+                          "Location",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         Container(
                           height: 200,
                         )
