@@ -20,37 +20,78 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                 children: [
                   Container(
                     height: 300,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.pink,
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 0,
+                          child: PageView(
+                            children: const [],
+                          ),
+                        ),
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 0,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.black,
+                            ),
+                            child: Row(
+                              children: const [
+                                Icon(
+                                  Icons.view_in_ar,
+                                  color: Colors.white,
+                                ),
+                                Text(
+                                  "Take Virtual Tour",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 16,
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
-                          children: [],
+                          children: const [],
                         ),
                         Divider(
                           color: Colors.grey[500],
                           height: 42,
                         ),
-                        Text("About"),
-                        Text("lorem"),
+                        const Text("About"),
+                        const Text("lorem"),
                         Divider(
                           color: Colors.grey[500],
                           height: 42,
                         ),
-                        Text("OverView"),
+                        const Text("OverView"),
                         Wrap(
-                          children: [],
+                          children: const [],
                         ),
                         Divider(
                           color: Colors.grey[500],
                           height: 42,
                         ),
-                        Text("Location"),
+                        const Text("Location"),
                         Container(
                           height: 200,
                         )
