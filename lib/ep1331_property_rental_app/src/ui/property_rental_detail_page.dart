@@ -168,16 +168,85 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                             fontSize: 18,
                           ),
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Wrap(
+                          runSpacing: 8,
+                          spacing: 8,
                           children: [
+
                             Container(
                               decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.grey[600]!,
-                                  ),
-                                  borderRadius: BorderRadius.circular(24)),
-                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                border: Border.all(
+                                  color: Colors.grey[600]!,
+                                ),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 8,
+                              ),
+                              child: Text(
+                                "Fully-furnished",
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[600]!,
+                                ),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 8,
+                              ),
+                              child: Text(
+                                "Fully-furnished",
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[600]!,
+                                ),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 8,
+                              ),
+                              child: Text(
+                                "Fully-furnished",
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[600]!,
+                                ),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 8,
+                              ),
+                              child: Text(
+                                "Fully-furnished",
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[600]!,
+                                ),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 8,
+                              ),
                               child: Text(
                                 "Fully-furnished",
                               ),
