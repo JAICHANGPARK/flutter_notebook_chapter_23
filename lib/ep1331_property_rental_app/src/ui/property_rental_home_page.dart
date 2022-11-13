@@ -79,7 +79,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             context.push("/detail");
                           },
                           child: Container(
