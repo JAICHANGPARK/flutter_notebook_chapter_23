@@ -245,7 +245,7 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
                         Text(
