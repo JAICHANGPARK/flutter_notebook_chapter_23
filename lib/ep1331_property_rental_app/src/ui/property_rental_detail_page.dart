@@ -112,14 +112,21 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                               "Regal Heaven",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16
+                                fontSize: 18,
                               ),
                             ),
-                            Text("\$900,000/month"),
+                            Text(
+                              "\$900,000/month",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Color(0xff6e38e0),
+                              ),
+                            ),
                           ],
                         ),
                         SizedBox(
-                          height: 8,
+                          height: 12,
                         ),
                         Row(
                           children: const [
@@ -134,7 +141,13 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           color: Colors.grey[500],
                           height: 42,
                         ),
-                        const Text("About"),
+                        const Text(
+                          "About",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18
+                          ),
+                        ),
                         const Text("lorem"),
                         Divider(
                           color: Colors.grey[500],
