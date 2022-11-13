@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class PropertyRentalDetailPage extends StatefulWidget {
   const PropertyRentalDetailPage({Key? key}) : super(key: key);
@@ -47,11 +48,14 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                         Positioned(
                           left: 8,
                           top: 64,
-                          child: CircleAvatar(
-                            backgroundColor: Colors.black.withOpacity(0.4),
-                            foregroundColor: Colors.white,
-                            child: const Icon(
-                              Icons.arrow_back,
+                          child: GestureDetector(
+                            onTap: () => context.pop(),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black.withOpacity(0.4),
+                              foregroundColor: Colors.white,
+                              child: const Icon(
+                                Icons.arrow_back,
+                              ),
                             ),
                           ),
                         ),
@@ -175,7 +179,6 @@ class _PropertyRentalDetailPageState extends State<PropertyRentalDetailPage> {
                           runSpacing: 8,
                           spacing: 8,
                           children: [
-
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
