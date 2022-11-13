@@ -106,11 +106,11 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                         top: 8,
                                         child: CircleAvatar(
                                           radius: 16,
-                                          child: const Icon(
-                                            Icons.favorite_border,
-                                          ),
                                           foregroundColor: Colors.white,
                                           backgroundColor: Colors.black,
+                                          child: Icon(
+                                            Icons.favorite_border,
+                                          ),
                                         ),
                                       )
                                     ],
@@ -199,9 +199,9 @@ class _PropertyRentalHomePageState extends State<PropertyRentalHomePage> {
                                 right: 8,
                                 top: 8,
                                 child: CircleAvatar(
-                                  child: Icon(Icons.favorite_border),
                                   backgroundColor: Colors.black,
                                   foregroundColor: Colors.white,
+                                  child: Icon(Icons.favorite_border),
                                 ),
                               )
                             ],
