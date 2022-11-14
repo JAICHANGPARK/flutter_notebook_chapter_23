@@ -16,22 +16,32 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 42,
-                  width: 42,
-                ),
-                Expanded(child: Center(child: Text("Discover", style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                ),),)),
-                Container(
-                  height: 42,
-                  width: 42,
-                ),
-
-              ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
+              child: Row(
+                children: [
+                  Container(
+                    height: 64,
+                    width: 64,
+                    color: Colors.yellow,
+                  ),
+                  Expanded(
+                      child: Center(
+                    child: Text(
+                      "Discover",
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )),
+                  Container(
+                    height: 64,
+                    width: 64,
+                    color: Colors.lightGreenAccent,
+                  ),
+                ],
+              ),
             )
           ],
         ),
