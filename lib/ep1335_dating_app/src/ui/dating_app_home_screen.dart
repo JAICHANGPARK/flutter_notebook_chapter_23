@@ -73,6 +73,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       ),
                       Container(
                         height: 120,
+                        margin: EdgeInsets.only(left: 16, bottom: 8),
                         color: Colors.pink,
                       )
                     ],
