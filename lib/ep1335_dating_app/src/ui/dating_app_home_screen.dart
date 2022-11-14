@@ -66,6 +66,39 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       )
                     ],
                   ),
+                ),
+                Container(
+                  height: 120,
+                  color: Colors.pink,
+                )
+              ],
+            ),
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 12),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Your Dates",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View more",
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 160,
+                  color: Colors.pink,
                 )
               ],
             )
