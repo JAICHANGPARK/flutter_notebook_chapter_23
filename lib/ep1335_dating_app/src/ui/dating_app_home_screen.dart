@@ -44,64 +44,102 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                 ],
               ),
             ),
-            Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Column(
                     children: [
-                      Text(
-                        "New Matched",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "New Matched",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "View more",
+                              ),
+                            )
+                          ],
                         ),
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View more",
-                        ),
+                      Container(
+                        height: 120,
+                        color: Colors.pink,
                       )
                     ],
                   ),
-                ),
-                Container(
-                  height: 120,
-                  color: Colors.pink,
-                )
-              ],
-            ),
-            Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 12),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Column(
                     children: [
-                      Text(
-                        "Your Dates",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 12),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Your Dates",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "View more",
+                              ),
+                            )
+                          ],
                         ),
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View more",
-                        ),
+                      Container(
+                        height: 160,
+                        margin: EdgeInsets.only(left: 16, bottom: 8),
+                        color: Colors.pink,
                       )
                     ],
                   ),
-                ),
-                Container(
-                  height: 160,
-                  color: Colors.pink,
-                )
-              ],
-            )
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 12),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Near You",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "View more",
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 300,
+                        margin: EdgeInsets.only(left: 16, bottom: 32),
+                        color: Colors.pink,
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ))
           ],
         ),
       ),
