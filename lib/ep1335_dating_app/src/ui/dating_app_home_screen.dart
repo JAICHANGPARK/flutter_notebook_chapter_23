@@ -15,19 +15,43 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                Container(
+                  height: 42,
+                  width: 42,
+                ),
+                Expanded(child: Center(child: Text("Discover", style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                ),),)),
+                Container(
+                  height: 42,
+                  width: 42,
+                ),
+
+              ],
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
         color: bottomPurpleColor,
         child: Container(
           height: 80,
-          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          padding: EdgeInsets.symmetric(
+            horizontal: 24,
+            vertical: 16,
+          ),
           child: Row(
             children: [
               Expanded(
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   child: Center(
                     child: Icon(
                       Icons.home_filled,
