@@ -27,18 +27,30 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
             children: [
               Expanded(
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                  ),
+                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
                   child: Center(
                     child: Icon(
                       Icons.home_filled,
                       color: bottomPurpleColor,
+                      size: 32,
                     ),
                   ),
                 ),
               ),
-              Expanded(child: Container()),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                      // color: Colors.black,
+                      borderRadius: BorderRadius.circular(8)),
+                  child: Center(
+                    child: Icon(
+                      Icons.favorite_border,
+                      color: Colors.black,
+                      size: 32,
+                    ),
+                  ),
+                ),
+              ),
               Expanded(child: Container()),
               Expanded(child: Container()),
             ],
