@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1331 - 
+### EP1335
+
+- Dating App Design Mobile App
+- by lazy kar for LazyInterface | UI UX Team
+- https://dribbble.com/shots/19877932-Dating-App-Design-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/3997306/file/original-dafa3f7f3ebdb5c38032b5c954c14d5f.png?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1331-1334
 
 - Property Rental App
 - by Tanuj agarwal for Nickelfox
