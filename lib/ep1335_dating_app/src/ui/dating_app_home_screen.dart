@@ -8,7 +8,7 @@ class DatingAppHomeScreen extends StatefulWidget {
 }
 
 class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
-  Color bottomPurpleColor = Color.fromRGBO(190, 161, 255, 1);
+  Color bottomPurpleColor = const Color.fromRGBO(190, 161, 255, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
               child: Row(
                 children: [
                   Container(
@@ -25,16 +25,17 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                     width: 64,
                     color: Colors.yellow,
                   ),
-                  Expanded(
-                      child: Center(
-                    child: Text(
-                      "Discover",
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
+                  const Expanded(
+                    child: Center(
+                      child: Text(
+                        "Discover",
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                  )),
+                  ),
                   Container(
                     height: 64,
                     width: 64,
@@ -42,6 +43,31 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   ),
                 ],
               ),
+            ),
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "New Matched",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View more",
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
             )
           ],
         ),
@@ -50,7 +76,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
         color: bottomPurpleColor,
         child: Container(
           height: 80,
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 24,
             vertical: 16,
           ),
@@ -76,7 +102,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   decoration: BoxDecoration(
                       // color: Colors.black,
                       borderRadius: BorderRadius.circular(8)),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.favorite_border,
                       color: Colors.black,
@@ -90,7 +116,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   decoration: BoxDecoration(
                       // color: Colors.black,
                       borderRadius: BorderRadius.circular(8)),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.message_outlined,
                       color: Colors.black,
@@ -104,7 +130,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   decoration: BoxDecoration(
                       // color: Colors.black,
                       borderRadius: BorderRadius.circular(8)),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.perm_identity,
                       color: Colors.black,
