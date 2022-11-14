@@ -19,6 +19,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        color: bottomPurpleColor,
         child: Container(
           height: 80,
           padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
@@ -32,7 +33,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   child: Center(
                     child: Icon(
                       Icons.home_filled,
-                      color: Colors.white,
+                      color: bottomPurpleColor,
                     ),
                   ),
                 ),
