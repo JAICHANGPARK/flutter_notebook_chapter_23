@@ -120,10 +120,25 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                           left: 16,
                           bottom: 8,
                         ),
-                        color: Colors.pink,
-                        child: ListView.builder(itemBuilder: (context, index) {
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
                           return Column(
-                            children: [],
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.pink,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 16,
+                              ),
+                              Text("Dream Walker"),
+                            ],
                           );
                         }),
                       )
