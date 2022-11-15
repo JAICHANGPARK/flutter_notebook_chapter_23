@@ -104,11 +104,11 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                             ),
                             TextButton(
                               onPressed: () {},
-                              child: const Text(
-                                "View more",
-                              ),
                               style: TextButton.styleFrom(
                                 foregroundColor: const Color.fromRGBO(211, 160, 114, 1),
+                              ),
+                              child: const Text(
+                                "View more",
                               ),
                             )
                           ],
