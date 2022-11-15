@@ -200,7 +200,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         ),
                       ),
                       Container(
-                        height: 160,
+                        height: 170,
                         margin: const EdgeInsets.only(left: 16, bottom: 8),
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
@@ -225,6 +225,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                 ],
                               ),
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
                                     height: 72,
@@ -260,7 +261,11 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                       fontSize: 15,
                                     ),
                                   ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(
                                         Icons.location_on,
