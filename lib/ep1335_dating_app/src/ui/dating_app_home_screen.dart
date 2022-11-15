@@ -23,7 +23,18 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   Container(
                     height: 64,
                     width: 64,
-                    color: Color.fromRGBO(225, 203, 6, 1),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(225, 203, 6, 1),
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          spreadRadius: 2,
+                          blurRadius: 0,
+                          offset: Offset(2, 4),
+                        ),
+                      ],
+                    ),
                   ),
                   const Expanded(
                     child: Center(
