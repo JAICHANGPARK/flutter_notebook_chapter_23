@@ -30,8 +30,12 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         BoxShadow(
                           color: Colors.black,
                           spreadRadius: 2,
-                          blurRadius: 0,
-                          offset: Offset(2, 4),
+                          offset: Offset(0, 0),
+                        ),
+                        BoxShadow(
+                          color: Colors.black,
+                          spreadRadius: 2,
+                          offset: Offset(3, 3),
                         ),
                       ],
                     ),
