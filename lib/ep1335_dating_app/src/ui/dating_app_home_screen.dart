@@ -121,6 +121,11 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                           bottom: 8,
                         ),
                         color: Colors.pink,
+                        child: ListView.builder(itemBuilder: (context, index) {
+                          return Column(
+                            children: [],
+                          );
+                        }),
                       )
                     ],
                   ),
@@ -148,7 +153,6 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                               style: TextButton.styleFrom(
                                 foregroundColor: const Color.fromRGBO(211, 160, 114, 1),
                               ),
-
                               child: const Text(
                                 "View more",
                               ),
