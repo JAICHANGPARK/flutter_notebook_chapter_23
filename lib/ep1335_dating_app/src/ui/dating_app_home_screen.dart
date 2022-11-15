@@ -172,10 +172,10 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(
-                          top: 16,
+                          top: 8,
                           left: 16,
                           right: 16,
-                          bottom: 12,
+                          bottom: 8,
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -202,7 +202,35 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       Container(
                         height: 160,
                         margin: const EdgeInsets.only(left: 16, bottom: 8),
-                        color: Colors.pink,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 130,
+                              margin: EdgeInsets.only(
+                                right: 12,
+                                bottom: 2,
+                                top: 2,
+                              ),
+                              decoration: BoxDecoration(
+                                color: Colors.teal[200],
+                                borderRadius: BorderRadius.circular(4),
+                                boxShadow: [
+                                  // BoxShadow(color: Colors.black, spreadRadius: 1),
+                                  BoxShadow(
+                                    color: Colors.black,
+                                    spreadRadius: 1,
+                                    offset: Offset(
+                                      2,
+                                      2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       )
                     ],
                   ),
