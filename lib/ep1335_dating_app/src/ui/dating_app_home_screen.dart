@@ -115,32 +115,56 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         ),
                       ),
                       Container(
-                        height: 120,
-                        margin: const EdgeInsets.only(
-                          left: 16,
-                          bottom: 8,
-                        ),
+                        height: 130,
+                        margin: const EdgeInsets.only(left: 16, bottom: 8),
                         child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
+                            shrinkWrap: true,
+                            scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              Container(
-                                height: 64,
-                                width: 64,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Colors.pink,
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      height: 72,
+                                      width: 72,
+                                      decoration: const BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        color: Colors.pink,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.black,
+                                            spreadRadius: 2,
+                                          ),
+                                          BoxShadow(
+                                            color: Colors.black,
+                                            spreadRadius: 2,
+                                            offset: Offset(2, 2),
+                                          ),
+                                        ],
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://thispersondoesnotexist.com/image",
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 16,
+                                    ),
+                                    const Text(
+                                      "Dream Walker",
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ),
-                              SizedBox(
-                                height: 16,
-                              ),
-                              Text("Dream Walker"),
-                            ],
-                          );
-                        }),
+                              );
+                            }),
                       )
                     ],
                   ),
