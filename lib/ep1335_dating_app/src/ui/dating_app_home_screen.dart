@@ -23,7 +23,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   Container(
                     height: 64,
                     width: 64,
-                    color: Colors.yellow,
+                    color: Color.fromRGBO(225, 203, 6, 1),
                   ),
                   const Expanded(
                     child: Center(
@@ -39,7 +39,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   Container(
                     height: 64,
                     width: 64,
-                    color: Colors.lightGreenAccent,
+                    color: Color.fromRGBO(205, 238, 45, 1),
                   ),
                 ],
               ),
@@ -55,7 +55,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               "New Matched",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                             ),
                             TextButton(
                               onPressed: () {},
-                              child: Text(
+                              child: const Text(
                                 "View more",
                               ),
                             )
@@ -73,7 +73,10 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       ),
                       Container(
                         height: 120,
-                        margin: EdgeInsets.only(left: 16, bottom: 8),
+                        margin: const EdgeInsets.only(
+                          left: 16,
+                          bottom: 8,
+                        ),
                         color: Colors.pink,
                       )
                     ],
@@ -81,11 +84,16 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 12),
+                        padding: const EdgeInsets.only(
+                          top: 16,
+                          left: 16,
+                          right: 16,
+                          bottom: 12,
+                        ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               "Your Dates",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -94,7 +102,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                             ),
                             TextButton(
                               onPressed: () {},
-                              child: Text(
+                              child: const Text(
                                 "View more",
                               ),
                             )
@@ -103,7 +111,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       ),
                       Container(
                         height: 160,
-                        margin: EdgeInsets.only(left: 16, bottom: 8),
+                        margin: const EdgeInsets.only(left: 16, bottom: 8),
                         color: Colors.pink,
                       )
                     ],
@@ -115,7 +123,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               "Near You",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -124,7 +132,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                             ),
                             TextButton(
                               onPressed: () {},
-                              child: Text(
+                              child: const Text(
                                 "View more",
                               ),
                             )
@@ -133,7 +141,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       ),
                       Container(
                         height: 300,
-                        margin: EdgeInsets.only(left: 16, bottom: 32),
+                        margin: const EdgeInsets.only(left: 16, bottom: 32),
                         color: Colors.pink,
                       )
                     ],
