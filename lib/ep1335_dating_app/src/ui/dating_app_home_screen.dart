@@ -115,7 +115,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         ),
                       ),
                       Container(
-                        height: 130,
+                        height: 120,
                         margin: const EdgeInsets.only(left: 16, bottom: 8),
                         child: ListView.builder(
                             shrinkWrap: true,
