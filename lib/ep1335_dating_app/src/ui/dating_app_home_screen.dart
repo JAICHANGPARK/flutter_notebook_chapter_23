@@ -24,9 +24,9 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                     height: 64,
                     width: 64,
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(225, 203, 6, 1),
+                      color: const Color.fromRGBO(225, 203, 6, 1),
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
                           spreadRadius: 2,
@@ -39,7 +39,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         ),
                       ],
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.menu,
                         size: 34,
@@ -61,9 +61,9 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                     height: 64,
                     width: 64,
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(205, 238, 45, 1),
+                      color: const Color.fromRGBO(205, 238, 45, 1),
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
                           spreadRadius: 2,
@@ -76,7 +76,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                         ),
                       ],
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.search,
                       size: 34,
                     ),
