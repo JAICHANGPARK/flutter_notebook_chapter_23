@@ -208,22 +208,69 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 130,
-                              margin: EdgeInsets.only(
-                                right: 12,
-                                bottom: 2,
-                                top: 2,
-                                left: 2
-                              ),
+                              margin: const EdgeInsets.only(right: 12, bottom: 3, top: 2, left: 2),
                               decoration: BoxDecoration(
                                 color: Colors.teal[200],
                                 borderRadius: BorderRadius.circular(4),
-                                boxShadow: [
-                                  BoxShadow(color: Colors.black, spreadRadius: 1),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Colors.black,
+                                    spreadRadius: 1,
+                                  ),
                                   BoxShadow(
                                     color: Colors.black,
                                     spreadRadius: 2,
                                     offset: Offset(2, 2),
                                   ),
+                                ],
+                              ),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 72,
+                                    width: 72,
+                                    decoration: const BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Colors.pink,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.black,
+                                          spreadRadius: 2,
+                                        ),
+                                        BoxShadow(
+                                          color: Colors.black,
+                                          spreadRadius: 2,
+                                          offset: Offset(2, 2),
+                                        ),
+                                      ],
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://thispersondoesnotexist.com/image",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  const Text(
+                                    "Dream Walker",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.location_on,
+                                        size: 16,
+                                      ),
+                                      Text(
+                                        "South Korea",
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             );
