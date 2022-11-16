@@ -355,7 +355,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 20,
                                   ),
                                   Row(
@@ -364,20 +364,25 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            const Text("Dream Walker, 00"),
-                                            SizedBox(
+                                            const Text(
+                                              "Dream Walker, 00",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            const SizedBox(
                                               height: 8,
                                             ),
                                             Row(
-                                              children: [
-                                                const Icon(
+                                              children: const [
+                                                Icon(
                                                   Icons.location_pin,
                                                   size: 16,
                                                 ),
                                                 SizedBox(
                                                   width: 8,
                                                 ),
-                                                const Text(
+                                                Text(
                                                   "Seoul, South Korea",
                                                 )
                                               ],
