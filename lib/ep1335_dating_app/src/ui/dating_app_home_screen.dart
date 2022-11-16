@@ -336,6 +336,20 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                   ),
                                 ],
                               ),
+                              padding: EdgeInsets.all(12),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 200,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.black,
+                                        width: 2,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             );
                           },
                         ),
