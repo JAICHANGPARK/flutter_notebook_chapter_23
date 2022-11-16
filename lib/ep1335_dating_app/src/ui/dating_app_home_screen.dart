@@ -354,6 +354,26 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                         fit: BoxFit.cover,
                                       ),
                                     ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                          child: Column(
+                                        children: [
+                                          Text("Dream Walker, 00"),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.location_pin,
+                                              ),
+                                              Text(
+                                                "Seoul, South Korea",
+                                              )
+                                            ],
+                                          ),
+                                        ],
+                                      ))
+                                    ],
                                   )
                                 ],
                               ),
