@@ -321,11 +321,13 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 240,
+                              margin: EdgeInsets.only(right: 20),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(
-                                color: Colors.black,
-                              )),
+                                border: Border.all(
+                                  color: Colors.black,
+                                ),
+                              ),
                             );
                           },
                         ),
