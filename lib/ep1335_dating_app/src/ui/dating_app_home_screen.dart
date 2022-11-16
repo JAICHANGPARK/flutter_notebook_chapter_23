@@ -355,24 +355,36 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                       ),
                                     ),
                                   ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
                                   Row(
                                     children: [
                                       Expanded(
-                                          child: Column(
-                                        children: [
-                                          Text("Dream Walker, 00"),
-                                          Row(
-                                            children: [
-                                              Icon(
-                                                Icons.location_pin,
-                                              ),
-                                              Text(
-                                                "Seoul, South Korea",
-                                              )
-                                            ],
-                                          ),
-                                        ],
-                                      ))
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            const Text("Dream Walker, 00"),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Row(
+                                              children: [
+                                                const Icon(
+                                                  Icons.location_pin,
+                                                  size: 16,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                const Text(
+                                                  "Seoul, South Korea",
+                                                )
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],
