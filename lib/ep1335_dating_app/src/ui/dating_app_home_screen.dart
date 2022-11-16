@@ -366,7 +366,8 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                             const Text(
                                               "Dream Walker, 00",
                                               style: TextStyle(
-                                                fontWeight: FontWeight.bold,
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 18
                                               ),
                                             ),
                                             const SizedBox(
