@@ -319,7 +319,14 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index) {
-                            return Container();
+                            return Container(
+                              width: 240,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                color: Colors.black,
+                              )),
+                            );
                           },
                         ),
                       )
