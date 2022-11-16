@@ -314,7 +314,6 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                       Container(
                         height: 310,
                         margin: const EdgeInsets.only(left: 16, bottom: 32),
-                        color: Colors.pink,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
