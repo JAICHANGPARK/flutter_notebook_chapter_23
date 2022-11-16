@@ -323,11 +323,18 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                               width: 240,
                               margin: EdgeInsets.only(right: 20),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all(
-                                  color: Colors.black,
-                                ),
-                              ),
+                                color: Colors.orangeAccent[100],
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: Colors.black,
+                                    width: 2,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black,
+                                      offset: Offset(2, 2),
+                                    ),
+                                  ]),
                             );
                           },
                         ),
