@@ -208,7 +208,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                           itemBuilder: (context, index) {
                             return Container(
                               width: 130,
-                              margin: const EdgeInsets.only(right: 12, bottom: 3, top: 2, left: 2),
+                              margin: const EdgeInsets.only(right: 20, bottom: 3, top: 2, left: 2),
                               decoration: BoxDecoration(
                                 color: Colors.teal[200],
                                 borderRadius: BorderRadius.circular(4),
