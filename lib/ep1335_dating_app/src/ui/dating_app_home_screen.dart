@@ -267,7 +267,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                   ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
+                                    children: const [
                                       Icon(
                                         Icons.location_on,
                                         size: 16,
