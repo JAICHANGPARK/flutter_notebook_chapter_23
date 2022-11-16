@@ -336,15 +336,22 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                   ),
                                 ],
                               ),
-                              padding: EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(12),
                               child: Column(
                                 children: [
                                   Container(
                                     height: 200,
                                     decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6),
                                       border: Border.all(
                                         color: Colors.black,
                                         width: 2,
+                                      ),
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/11/10/12/32/model-1814199_960_720.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
                                   )
