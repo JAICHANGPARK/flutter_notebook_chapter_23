@@ -83,19 +83,16 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
             ),
             Expanded(
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(176, 211, 167, 1),
-                  borderRadius: BorderRadius.circular(16),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      offset: Offset(
-                        4, 6
-                      )
-                    )
-                  ]
-                ),
+                    color: const Color.fromRGBO(176, 211, 167, 1),
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      const BoxShadow(
+                        color: Colors.black,
+                        offset: Offset(4, 6),
+                      ),
+                    ]),
               ),
             ),
             Padding(
