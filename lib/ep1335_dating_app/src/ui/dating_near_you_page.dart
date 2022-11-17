@@ -82,32 +82,41 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
               ),
             ),
             Expanded(child: Placeholder()),
-            Row(
-              children: [
-                Container(
-                  height: 84,
-                  width: 84,
-                  decoration: BoxDecoration(
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Container(
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.black,
                         width: 2,
                       ),
                       color: Colors.orange[200],
-                      boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 2))]),
-                ),
-                Container(
-                  height: 72,
-                  width: 72,
-                ),
-                Container(
-                  height: 72,
-                  width: 72,
-                ),
-                Container(
-                  height: 72,
-                  width: 72,
-                )
-              ],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 72,
+                    width: 72,
+                  ),
+                  Container(
+                    height: 72,
+                    width: 72,
+                  ),
+                  Container(
+                    height: 72,
+                    width: 72,
+                  )
+                ],
+              ),
             )
           ],
         ),
