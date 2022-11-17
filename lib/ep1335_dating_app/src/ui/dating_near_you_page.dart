@@ -85,6 +85,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     height: 84,
@@ -94,6 +95,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         color: Colors.black,
                         width: 2,
                       ),
+                      borderRadius: BorderRadius.circular(8),
                       color: Colors.orange[200],
                       boxShadow: [
                         BoxShadow(
@@ -104,17 +106,59 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                     ),
                   ),
                   Container(
-                    height: 72,
-                    width: 72,
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.orange[200],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
-                    height: 72,
-                    width: 72,
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.orange[200],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
-                    height: 72,
-                    width: 72,
-                  )
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.orange[200],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
