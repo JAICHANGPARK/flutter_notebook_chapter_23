@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class DatingNearYouPage extends StatefulWidget {
   const DatingNearYouPage({Key? key}) : super(key: key);
@@ -19,27 +20,30 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
               child: Row(
                 children: [
-                  Container(
-                    height: 64,
-                    width: 64,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(225, 203, 6, 1),
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(
-                        color: Colors.black,
-                      ),
-                      boxShadow: const [
-                        BoxShadow(
+                  GestureDetector(
+                    onTap: () => context.pop(),
+                    child: Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
                           color: Colors.black,
-                          spreadRadius: 2,
-                          offset: Offset(3, 3),
                         ),
-                      ],
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.menu,
-                        size: 34,
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black,
+                            spreadRadius: 2,
+                            offset: Offset(3, 3),
+                          ),
+                        ],
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.arrow_back,
+                          size: 34,
+                        ),
                       ),
                     ),
                   ),
