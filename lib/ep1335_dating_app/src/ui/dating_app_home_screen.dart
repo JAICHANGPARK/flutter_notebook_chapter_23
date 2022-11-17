@@ -365,10 +365,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                           children: [
                                             const Text(
                                               "Dream Walker, 00",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.w500,
-                                                fontSize: 18
-                                              ),
+                                              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
                                             ),
                                             const SizedBox(
                                               height: 8,
@@ -397,14 +394,14 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                                           borderRadius: BorderRadius.circular(8),
                                           color: Colors.pink[100],
                                           border: Border.all(color: Colors.black, width: 2),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Colors.black,
                                               offset: Offset(2, 2),
                                             ),
                                           ],
                                         ),
-                                        child: Center(
+                                        child: const Center(
                                           child: Icon(
                                             Icons.favorite,
                                             color: Colors.red,
