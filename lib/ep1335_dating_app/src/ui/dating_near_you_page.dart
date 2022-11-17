@@ -30,11 +30,12 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(
                           color: Colors.black,
+                          width: 2
                         ),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.black,
-                            spreadRadius: 2,
+                            spreadRadius: 1,
                             offset: Offset(1, 2),
                           ),
                         ],
