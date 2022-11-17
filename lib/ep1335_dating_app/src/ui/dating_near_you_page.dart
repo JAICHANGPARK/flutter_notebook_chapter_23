@@ -23,8 +23,8 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                   GestureDetector(
                     onTap: () => context.pop(),
                     child: Container(
-                      height: 64,
-                      width: 64,
+                      height: 54,
+                      width: 54,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
@@ -51,7 +51,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                   const Expanded(
                     child: Center(
                       child: Text(
-                        "Discover",
+                        "Near You",
                         style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
@@ -60,10 +60,10 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                     ),
                   ),
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 54,
+                    width: 54,
                     decoration: BoxDecoration(
-                      color: const Color.fromRGBO(205, 238, 45, 1),
+                      color: const Color.fromRGBO(225, 203, 6, 1),
                       borderRadius: BorderRadius.circular(8),
                       boxShadow: const [
                         BoxShadow(
@@ -78,9 +78,11 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         ),
                       ],
                     ),
-                    child: const Icon(
-                      Icons.search,
-                      size: 34,
+                    child: const Center(
+                      child: Icon(
+                        Icons.menu,
+                        size: 34,
+                      ),
                     ),
                   ),
                 ],
