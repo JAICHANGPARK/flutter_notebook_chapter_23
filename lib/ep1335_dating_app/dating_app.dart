@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1335_dating_app/src/ui/dating_app_home_screen.dart';
+import 'package:flutter_notebook_chapter_23/ep1335_dating_app/src/ui/dating_near_you_page.dart';
 import 'package:go_router/go_router.dart';
 
 class DatingApp extends StatelessWidget {
@@ -12,7 +13,11 @@ class DatingApp extends StatelessWidget {
         routes: [
           GoRoute(
             path: "/",
-            builder: (context, state) => DatingAppHomeScreen(),
+            builder: (context, state) => const DatingAppHomeScreen(),
+          ),
+          GoRoute(
+            path: "/near_you",
+            builder: (context, state) => const DatingNearYouPage(),
           ),
         ],
       ),
