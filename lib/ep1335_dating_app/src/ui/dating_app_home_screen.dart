@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class DatingAppHomeScreen extends StatefulWidget {
   const DatingAppHomeScreen({Key? key}) : super(key: key);
@@ -301,7 +302,7 @@ class _DatingAppHomeScreenState extends State<DatingAppHomeScreen> {
                             ),
                             TextButton(
                               onPressed: () {
-
+                                context.push("/near_you");
                               },
                               style: TextButton.styleFrom(
                                 foregroundColor: const Color.fromRGBO(211, 160, 114, 1),
