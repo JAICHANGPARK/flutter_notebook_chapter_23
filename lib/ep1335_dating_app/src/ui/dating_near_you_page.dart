@@ -28,10 +28,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 2
-                        ),
+                        border: Border.all(color: Colors.black, width: 2),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.black,
@@ -65,16 +62,12 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                     decoration: BoxDecoration(
                       color: const Color.fromRGBO(225, 203, 6, 1),
                       borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: Colors.black, width: 2),
                       boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
-                          spreadRadius: 2,
-                          offset: Offset(0, 0),
-                        ),
-                        BoxShadow(
-                          color: Colors.black,
-                          spreadRadius: 2,
-                          offset: Offset(3, 3),
+                          spreadRadius: 1,
+                          offset: Offset(2, 2),
                         ),
                       ],
                     ),
@@ -88,6 +81,23 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                 ],
               ),
             ),
+            Expanded(child: Placeholder()),
+            Row(
+              children: [
+                Container(
+                  height: 72,width: 72,
+                ),
+                Container(
+                  height: 72,width: 72,
+                ),
+                Container(
+                  height: 72,width: 72,
+                ),
+                Container(
+                  height: 72,width: 72,
+                )
+              ],
+            )
           ],
         ),
       ),
