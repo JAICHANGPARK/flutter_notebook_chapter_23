@@ -104,6 +104,13 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         ),
                       ],
                     ),
+                    child: Center(
+                      child: Icon(
+                        Icons.flash_on,
+                        color: Colors.red,
+                        size: 32,
+                      ),
+                    ),
                   ),
                   Container(
                     height: 84,
@@ -114,7 +121,32 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.orange[200],
+                      color: Colors.orange[50],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.star,
+                        color: Colors.orangeAccent,
+                        size: 32,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.orange[50],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black,
@@ -132,25 +164,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         width: 2,
                       ),
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.orange[200],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          offset: Offset(2, 2),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 84,
-                    width: 84,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 2,
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                      color: Colors.orange[200],
+                      color: Colors.orange[50],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black,
