@@ -35,7 +35,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                           BoxShadow(
                             color: Colors.black,
                             spreadRadius: 2,
-                            offset: Offset(2, 2),
+                            offset: Offset(1, 2),
                           ),
                         ],
                       ),
