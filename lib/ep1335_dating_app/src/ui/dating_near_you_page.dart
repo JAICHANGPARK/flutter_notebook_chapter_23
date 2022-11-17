@@ -81,7 +81,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
@@ -97,14 +97,14 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                       ),
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.orange[200],
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
-                          offset: Offset(2, 2),
+                          offset: Offset(3, 3),
                         ),
                       ],
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.flash_on,
                         color: Colors.red,
@@ -122,14 +122,14 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                       ),
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.orange[50],
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
-                          offset: Offset(2, 2),
+                          offset: Offset(3, 3),
                         ),
                       ],
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.star,
                         color: Colors.orangeAccent,
@@ -147,12 +147,19 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                       ),
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.orange[50],
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
-                          offset: Offset(2, 2),
+                          offset: Offset(3, 3),
                         ),
                       ],
+                    ),
+                    child: const Center(
+                      child: Icon(
+                        Icons.chat,
+                        color: Colors.blue,
+                        size: 32,
+                      ),
                     ),
                   ),
                   Container(
@@ -165,12 +172,19 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                       ),
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.orange[50],
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           color: Colors.black,
-                          offset: Offset(2, 2),
+                          offset: Offset(3, 3),
                         ),
                       ],
+                    ),
+                    child: const Center(
+                      child: Icon(
+                        Icons.redeem,
+                        color: Colors.green,
+                        size: 32,
+                      ),
                     ),
                   ),
                 ],
