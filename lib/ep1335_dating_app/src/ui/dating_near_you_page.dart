@@ -85,16 +85,27 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
             Row(
               children: [
                 Container(
-                  height: 72,width: 72,
+                  height: 84,
+                  width: 84,
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                      color: Colors.orange[200],
+                      boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 2))]),
                 ),
                 Container(
-                  height: 72,width: 72,
+                  height: 72,
+                  width: 72,
                 ),
                 Container(
-                  height: 72,width: 72,
+                  height: 72,
+                  width: 72,
                 ),
                 Container(
-                  height: 72,width: 72,
+                  height: 72,
+                  width: 72,
                 )
               ],
             )
