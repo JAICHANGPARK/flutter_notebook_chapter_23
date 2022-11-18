@@ -183,11 +183,32 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               color: Colors.orange[50],
                               boxShadow: [
                                 BoxShadow(
-                                    color: Colors.black,
-                                    offset: Offset(
-                                      2.5,
-                                      3,
-                                    ))
+                                  color: Colors.black,
+                                  offset: Offset(
+                                    2.5,
+                                    3,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 84,
+                            width: 84,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.orange[50],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black,
+                                  offset: Offset(
+                                    2.5,
+                                    3,
+                                  ),
+                                )
                               ],
                             ),
                           )
