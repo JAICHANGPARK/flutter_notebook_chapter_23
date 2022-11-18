@@ -108,6 +108,14 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               decoration: BoxDecoration(
                                 color: Colors.green,
                                 borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_960_720.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                                border: Border.all(
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),
@@ -118,7 +126,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children: const [
                                   Text(
                                     "Dream, 29",
                                     style: TextStyle(
@@ -144,7 +152,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                   border: Border.all(
                                     color: Colors.black,
                                   ),
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       color: Colors.black,
                                       offset: Offset(2.5, 2.5),
