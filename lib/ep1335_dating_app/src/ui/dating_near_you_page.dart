@@ -171,6 +171,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                       bottom: 110,
                       right: 0,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             height: 84,
@@ -192,6 +193,9 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               ],
                             ),
                           ),
+                          SizedBox(
+                            width: 32,
+                          ),
                           Container(
                             height: 84,
                             width: 84,
@@ -200,7 +204,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                 width: 2,
                               ),
                               borderRadius: BorderRadius.circular(8),
-                              color: Colors.orange[50],
+                              color: Colors.pink[200],
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.black,
@@ -210,6 +214,11 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                   ),
                                 )
                               ],
+                            ),
+                            child: Icon(
+                              Icons.favorite,
+                              color: Colors.pink,
+                              size: 32,
                             ),
                           )
                         ],
