@@ -99,7 +99,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                     Positioned(
                       left: 12,
                       right: 12,
-                      bottom: 24,
+                      bottom: 32,
                       top: 12,
                       child: Column(
                         children: [
@@ -108,18 +108,16 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               decoration: BoxDecoration(
                                 color: Colors.green,
                                 borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_960_720.jpg"),
                                   fit: BoxFit.cover,
                                 ),
-                                border: Border.all(
-                                  color: Colors.black,
-                                ),
+                                border: Border.all(color: Colors.black, width: 2),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 24,
                           ),
                           Row(
@@ -141,9 +139,9 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                   ),
                                 ],
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
-                                margin: EdgeInsets.only(right: 16),
+                                margin: const EdgeInsets.only(right: 16),
                                 height: 54,
                                 width: 54,
                                 decoration: BoxDecoration(
@@ -159,7 +157,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                     )
                                   ],
                                 ),
-                                child: Center(
+                                child: const Center(
                                   child: Icon(Icons.arrow_downward),
                                 ),
                               )
@@ -168,6 +166,34 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                         ],
                       ),
                     ),
+                    Positioned(
+                      left: 0,
+                      bottom: 110,
+                      right: 0,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 84,
+                            width: 84,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.orange[50],
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black,
+                                    offset: Offset(
+                                      2.5,
+                                      3,
+                                    ))
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
