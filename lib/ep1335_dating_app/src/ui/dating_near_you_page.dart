@@ -99,7 +99,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                     Positioned(
                       left: 12,
                       right: 12,
-                      bottom: 12,
+                      bottom: 24,
                       top: 12,
                       child: Column(
                         children: [
@@ -116,12 +116,21 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Dream, 29"),
+                                  Text(
+                                    "Dream, 29",
+                                    style: TextStyle(
+                                      fontSize: 38,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
                                   Text(
                                     "Seoul, South Korea",
                                   ),
                                 ],
                               ),
+                              Spacer(),
                               Container(
                                 height: 48,
                                 width: 48,
