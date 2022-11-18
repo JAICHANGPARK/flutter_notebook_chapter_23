@@ -94,6 +94,47 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                     ),
                   ],
                 ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 12,
+                      right: 12,
+                      bottom: 12,
+                      top: 12,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.green,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Dream, 29"),
+                                  Text("Seoul, South Korea")
+                                ],
+                              ),
+                              Container(
+                                height: 48,
+                                width: 48,
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(176, 211, 167, 1),
+                            ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             Padding(
