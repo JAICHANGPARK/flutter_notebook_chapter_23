@@ -182,7 +182,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               ),
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.orange[50],
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   color: Colors.black,
                                   offset: Offset(
@@ -192,10 +192,12 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                 )
                               ],
                             ),
-                            child: Icon(Icons.clear,
-                            size: 32,),
+                            child: const Icon(
+                              Icons.clear,
+                              size: 32,
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 32,
                           ),
                           Container(
@@ -207,7 +209,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               ),
                               borderRadius: BorderRadius.circular(8),
                               color: Colors.pink[200],
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   color: Colors.black,
                                   offset: Offset(
@@ -217,7 +219,7 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                 )
                               ],
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.favorite,
                               color: Colors.pink,
                               size: 32,
