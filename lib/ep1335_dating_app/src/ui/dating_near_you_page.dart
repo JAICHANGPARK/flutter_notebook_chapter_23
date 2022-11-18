@@ -192,6 +192,8 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                 )
                               ],
                             ),
+                            child: Icon(Icons.clear,
+                            size: 32,),
                           ),
                           SizedBox(
                             width: 32,
