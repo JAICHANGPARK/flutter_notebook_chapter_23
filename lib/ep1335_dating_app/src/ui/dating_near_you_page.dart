@@ -109,7 +109,6 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                 color: Colors.green,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              
                             ),
                           ),
                           Row(
@@ -118,15 +117,27 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("Dream, 29"),
-                                  Text("Seoul, South Korea")
+                                  Text(
+                                    "Seoul, South Korea",
+                                  ),
                                 ],
                               ),
                               Container(
                                 height: 48,
                                 width: 48,
-                            decoration: BoxDecoration(
-                              color: const Color.fromRGBO(176, 211, 167, 1),
-                            ),
+                                decoration: BoxDecoration(
+                                  color: const Color.fromRGBO(176, 211, 167, 1),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.black,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black,
+                                      offset: Offset(2.5, 2.5),
+                                    )
+                                  ],
+                                ),
                               )
                             ],
                           )
