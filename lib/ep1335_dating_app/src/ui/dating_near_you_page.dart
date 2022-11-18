@@ -111,6 +111,9 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               ),
                             ),
                           ),
+                          SizedBox(
+                            height: 24,
+                          ),
                           Row(
                             children: [
                               Column(
@@ -132,8 +135,9 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                               ),
                               Spacer(),
                               Container(
-                                height: 48,
-                                width: 48,
+                                margin: EdgeInsets.only(right: 16),
+                                height: 54,
+                                width: 54,
                                 decoration: BoxDecoration(
                                   color: const Color.fromRGBO(176, 211, 167, 1),
                                   shape: BoxShape.circle,
@@ -146,6 +150,9 @@ class _DatingNearYouPageState extends State<DatingNearYouPage> {
                                       offset: Offset(2.5, 2.5),
                                     )
                                   ],
+                                ),
+                                child: Center(
+                                  child: Icon(Icons.arrow_downward),
                                 ),
                               )
                             ],
