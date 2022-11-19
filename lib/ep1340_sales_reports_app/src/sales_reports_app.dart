@@ -16,8 +16,13 @@ class SalesReportsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: _router,
-      theme: ThemeData.fallback(
+      theme: ThemeData.light().copyWith(
         useMaterial3: true,
+        scaffoldBackgroundColor: Color.fromRGBO(225, 252, 186, 1),
+        colorScheme: ColorScheme.fromSeed(
+          primaryContainer: Color.fromRGBO(40, 49, 62, 1),
+          seedColor: Color.fromRGBO(225, 252, 186, 1),
+        ),
       ),
       darkTheme: ThemeData.dark(
         useMaterial3: true,
