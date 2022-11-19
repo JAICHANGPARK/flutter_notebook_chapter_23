@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 
 class SalesReportsApp extends StatelessWidget {
-  const SalesReportsApp({Key? key}) : super(key: key);
+  SalesReportsApp({Key? key}) : super(key: key);
+
+  final _router = GoRouter(routes: [
+    GoRoute(
+      path: "/",
+    ),
+  ]);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp.router(
+      routerConfig: _router,
+    );
   }
 }
