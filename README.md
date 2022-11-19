@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1335
+### EP1340
+
+- Sales Reports App
+- by Awsmd
+- https://dribbble.com/shots/19928539-Sales-Reports-App
+
+<img src="https://cdn.dribbble.com/userupload/4027431/file/original-4603765b2b5eb9752f13ff7bf5d7acb3.png?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1335-1339
 
 - Dating App Design Mobile App
 - by lazy kar for LazyInterface | UI UX Team
