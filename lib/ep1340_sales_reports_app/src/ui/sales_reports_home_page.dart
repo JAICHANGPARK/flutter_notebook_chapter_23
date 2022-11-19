@@ -84,6 +84,11 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                   child: Text("View all"),
                 )
               ],
+            ),
+            Container(
+              height: 240,
+              color: Colors.pink,
+              child: ListView(),
             )
           ],
         ),
