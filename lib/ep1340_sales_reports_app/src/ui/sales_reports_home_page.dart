@@ -59,7 +59,10 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               "Create",
               style: Theme.of(context).textTheme.headlineLarge,
             ),
-            Text("New Report"),
+            Text(
+              "New Report",
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
             Container(
               margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               decoration: BoxDecoration(
@@ -115,10 +118,11 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 )
               ],
             ),
-            Container(
-              height: 240,
-              color: Colors.pink,
-              child: ListView(),
+            Expanded(
+              child: Container(
+                color: Colors.pink,
+                child: ListView(),
+              ),
             )
           ],
         ),
