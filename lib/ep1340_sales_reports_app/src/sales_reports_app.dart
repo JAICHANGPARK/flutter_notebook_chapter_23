@@ -8,7 +8,7 @@ class SalesReportsApp extends StatelessWidget {
   final _router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => SalesReportHomePage(),
+      builder: (context, state) => const SalesReportHomePage(),
     ),
   ]);
 
@@ -18,10 +18,10 @@ class SalesReportsApp extends StatelessWidget {
       routerConfig: _router,
       theme: ThemeData.light().copyWith(
         useMaterial3: true,
-        scaffoldBackgroundColor: Color.fromRGBO(225, 252, 186, 1),
+        scaffoldBackgroundColor: const Color.fromRGBO(225, 252, 186, 1),
         colorScheme: ColorScheme.fromSeed(
-          primaryContainer: Color.fromRGBO(40, 49, 62, 1),
-          seedColor: Color.fromRGBO(225, 252, 186, 1),
+          primaryContainer: const Color.fromRGBO(40, 49, 62, 1),
+          seedColor: const Color.fromRGBO(225, 252, 186, 1),
         ),
       ),
       darkTheme: ThemeData.dark(
