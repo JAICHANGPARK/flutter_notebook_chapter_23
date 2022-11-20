@@ -57,12 +57,14 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
             Text("Create"),
             Text("New Report"),
             Container(
+              margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
               child: TextField(),
             ),
             Container(
+              margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
@@ -70,8 +72,22 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
             ),
             Row(
               children: [
-                Expanded(child: Container()),
-                Expanded(child: Container()),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: TextField(),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: TextField(),
+                  ),
+                ),
               ],
             ),
             Container(
