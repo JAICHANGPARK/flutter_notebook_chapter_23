@@ -23,12 +23,12 @@ class SalesReportsApp extends StatelessWidget {
           primaryContainer: const Color.fromRGBO(40, 49, 62, 1),
           seedColor: const Color.fromRGBO(225, 252, 186, 1),
         ),
-        textTheme: const TextTheme(
-          headlineLarge: TextStyle(
-            fontSize: 60,
-            color: Color.fromRGBO(40, 49, 62, 1),
-          ),
-        ),
+        textTheme: Theme.of(context).textTheme.copyWith(
+              headlineLarge: TextStyle(
+                fontSize: 60,
+                color: Color.fromRGBO(40, 49, 62, 1),
+              ),
+            ),
       ),
       darkTheme: ThemeData.dark(
         useMaterial3: true,
