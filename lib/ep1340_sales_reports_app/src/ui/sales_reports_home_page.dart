@@ -14,6 +14,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(
               height: 16,
@@ -54,7 +55,10 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               indent: 16,
               height: 32,
             ),
-            Text("Create"),
+            Text(
+              "Create",
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
             Text("New Report"),
             Container(
               margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
