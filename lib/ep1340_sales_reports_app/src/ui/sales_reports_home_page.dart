@@ -56,8 +56,18 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
             ),
             Text("Create"),
             Text("New Report"),
-            Container(),
-            Container(),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              child: TextField(),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              child: TextField(),
+            ),
             Row(
               children: [
                 Expanded(child: Container()),
