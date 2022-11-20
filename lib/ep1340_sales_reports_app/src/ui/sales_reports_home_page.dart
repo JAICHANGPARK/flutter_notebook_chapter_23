@@ -95,25 +95,33 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 ),
               ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: TextField(),
                     ),
-                    child: TextField(),
                   ),
-                ),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: TextField(),
                     ),
-                    child: TextField(),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Container(
               height: 100,
