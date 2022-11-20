@@ -14,27 +14,24 @@ class SalesReportsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTextStyle(
-      style: TextStyle(),
-      child: MaterialApp.router(
-        routerConfig: _router,
-        theme: ThemeData.light().copyWith(
-          useMaterial3: true,
-          scaffoldBackgroundColor: const Color.fromRGBO(225, 252, 186, 1),
-          colorScheme: ColorScheme.fromSeed(
-            primaryContainer: const Color.fromRGBO(40, 49, 62, 1),
-            seedColor: const Color.fromRGBO(225, 252, 186, 1),
-          ),
-          textTheme: const TextTheme(
-            headlineLarge: TextStyle(
-              fontSize: 60,
-              color: Color.fromRGBO(40, 49, 62, 1),
-            ),
+    return MaterialApp.router(
+      routerConfig: _router,
+      theme: ThemeData.light().copyWith(
+        useMaterial3: true,
+        scaffoldBackgroundColor: const Color.fromRGBO(225, 252, 186, 1),
+        colorScheme: ColorScheme.fromSeed(
+          primaryContainer: const Color.fromRGBO(40, 49, 62, 1),
+          seedColor: const Color.fromRGBO(225, 252, 186, 1),
+        ),
+        textTheme: const TextTheme(
+          headlineLarge: TextStyle(
+            fontSize: 60,
+            color: Color.fromRGBO(40, 49, 62, 1),
           ),
         ),
-        darkTheme: ThemeData.dark(
-          useMaterial3: true,
-        ),
+      ),
+      darkTheme: ThemeData.dark(
+        useMaterial3: true,
       ),
     );
   }
