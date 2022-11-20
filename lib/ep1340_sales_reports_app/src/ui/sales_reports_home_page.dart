@@ -112,7 +112,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Lastest Reports",
+                  "Latest Reports",
                   style: Theme.of(context).textTheme.labelMedium,
                 ),
                 TextButton(
