@@ -73,24 +73,24 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
-              child: TextField(
+              child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
                 ),
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
-              child: TextField(
+              child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
                 ),
@@ -106,10 +106,14 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: TextField(),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                      ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
@@ -118,16 +122,31 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: TextField(),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
             Container(
+              margin: EdgeInsets.only(left: 16, right: 16, top: 16),
               height: 100,
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color.fromRGBO(40, 49, 62, 1),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Center(
+                child: Text(
+                  "Create",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 32,
+                  ),
+                ),
               ),
             ),
             const Divider(
@@ -146,14 +165,14 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("View all"),
+                    child: const Text("View all"),
                   )
                 ],
               ),
             ),
             Expanded(
               child: Container(
-                margin: EdgeInsets.only(left: 16, bottom: 16),
+                margin: const EdgeInsets.only(left: 16, bottom: 16),
                 color: Colors.pink,
                 child: ListView(),
               ),
