@@ -55,13 +55,21 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               indent: 16,
               height: 32,
             ),
-            Text(
-              "Create",
-              style: Theme.of(context).textTheme.headlineLarge,
-            ),
-            Text(
-              "New Report",
-              style: Theme.of(context).textTheme.headlineLarge,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Create",
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ),
+                  Text(
+                    "New Report",
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ),
+                ],
+              ),
             ),
             Container(
               margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
@@ -108,21 +116,25 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               indent: 16,
               height: 32,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Latest Reports",
-                  style: Theme.of(context).textTheme.labelMedium,
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text("View all"),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Latest Reports",
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("View all"),
+                  )
+                ],
+              ),
             ),
             Expanded(
               child: Container(
+                margin: EdgeInsets.only(left: 16, bottom: 16),
                 color: Colors.pink,
                 child: ListView(),
               ),
