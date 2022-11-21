@@ -241,7 +241,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                     Container(
                       width: 300,
                       margin: const EdgeInsets.only(right: 16),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: const Color.fromRGBO(40, 49, 62, 1),
