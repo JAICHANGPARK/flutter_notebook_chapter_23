@@ -200,6 +200,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                       padding: EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -229,6 +230,10 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                           ),
                           Text(
                             "2nd Quartely Sales Report 2022",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                            ),
                           )
                         ],
                       ),
