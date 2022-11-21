@@ -197,6 +197,36 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                         color: const Color.fromRGBO(40, 49, 62, 1),
                         borderRadius: BorderRadius.circular(16),
                       ),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: const Color.fromRGBO(225, 252, 186, 1),
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: Text("2022, Q2"),
+                              ),
+                              Container(
+                                padding: EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       width: 300,
