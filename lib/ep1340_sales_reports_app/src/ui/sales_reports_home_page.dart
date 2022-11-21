@@ -78,7 +78,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
@@ -92,7 +92,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
@@ -106,7 +106,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
@@ -127,7 +127,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                   ),
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
@@ -191,13 +191,13 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(right: 16),
+                      margin: const EdgeInsets.only(right: 16),
                       width: 300,
                       decoration: BoxDecoration(
                         color: const Color.fromRGBO(40, 49, 62, 1),
                         borderRadius: BorderRadius.circular(16),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -210,25 +210,25 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                                   color: const Color.fromRGBO(225, 252, 186, 1),
                                   borderRadius: BorderRadius.circular(24),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                child: Text("2022, Q2"),
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: const Text("2022, Q2"),
                               ),
                               Container(
-                                padding: EdgeInsets.all(8),
+                                padding: const EdgeInsets.all(8),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   border: Border.all(
                                     color: Colors.grey,
                                   ),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.arrow_forward,
                                   color: Colors.grey,
                                 ),
                               )
                             ],
                           ),
-                          Text(
+                          const Text(
                             "2nd Quartely Sales Report 2022",
                             style: TextStyle(
                               color: Colors.white,
@@ -240,12 +240,105 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                     ),
                     Container(
                       width: 300,
-                      margin: EdgeInsets.only(right: 16),
+                      margin: const EdgeInsets.only(right: 16),
+                      padding: EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: const Color.fromRGBO(40, 49, 62, 1),
                         ),
                         borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: const Color.fromRGBO(40, 49, 62, 1),
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: const Text(
+                                  "2022, Q2",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                child: const Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          ),
+                          const Text(
+                            "2nd Quartely Sales Report 2022",
+                            style: TextStyle(
+                              color: const Color.fromRGBO(40, 49, 62, 1),
+                              fontSize: 30,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(40, 49, 62, 1),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      margin: const EdgeInsets.only(right: 16),
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: const Color.fromRGBO(225, 252, 186, 1),
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: const Text("2022, Q2"),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                child: const Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          ),
+                          const Text(
+                            "2nd Quartely Sales Report 2022",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ],
