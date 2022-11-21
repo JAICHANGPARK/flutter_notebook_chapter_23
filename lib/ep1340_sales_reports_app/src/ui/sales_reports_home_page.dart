@@ -229,7 +229,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                             ],
                           ),
                           const Text(
-                            "2nd Quartely Sales Report 2022",
+                            "2nd Quarterly Sales Report 2022",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 30,
@@ -264,7 +264,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                                 child: const Text(
                                   "2022, Q2",
                                   style: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
@@ -284,7 +284,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                             ],
                           ),
                           const Text(
-                            "2nd Quartely Sales Report 2022",
+                            "1st Quarterly Sales Report 2022",
                             style: TextStyle(
                               color: const Color.fromRGBO(40, 49, 62, 1),
                               fontSize: 30,
