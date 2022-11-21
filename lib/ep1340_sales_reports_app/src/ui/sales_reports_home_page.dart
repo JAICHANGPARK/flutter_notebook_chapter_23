@@ -81,6 +81,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
+                  hintText: "Type name here",
                 ),
               ),
             ),
@@ -93,6 +94,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
+                  hintText: "Select field",
                 ),
               ),
             ),
@@ -109,6 +111,10 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                       child: const TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
+                          hintText: "Year",
+                          suffixIcon: Icon(
+                            Icons.keyboard_arrow_down,
+                          ),
                         ),
                       ),
                     ),
