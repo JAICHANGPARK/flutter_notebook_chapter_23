@@ -126,7 +126,6 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                     width: 16,
                   ),
                   Expanded(
-
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
@@ -189,7 +188,18 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               child: Container(
                 margin: const EdgeInsets.only(left: 16, bottom: 16),
                 color: Colors.pink,
-                child: ListView(),
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(40, 49, 62, 1),
+
+                      ),
+                    )
+                  ],
+                ),
               ),
             )
           ],
