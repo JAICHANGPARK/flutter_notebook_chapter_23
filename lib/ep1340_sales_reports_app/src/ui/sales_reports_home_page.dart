@@ -78,6 +78,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
@@ -91,6 +92,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: const TextField(
                 decoration: InputDecoration(
                   border: InputBorder.none,
@@ -104,6 +106,7 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                 children: [
                   Expanded(
                     child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
@@ -123,7 +126,9 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                     width: 16,
                   ),
                   Expanded(
+
                     child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
@@ -131,6 +136,10 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
                       child: const TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
+                          hintText: "Quarter",
+                          suffixIcon: Icon(
+                            Icons.keyboard_arrow_down,
+                          ),
                         ),
                       ),
                     ),
