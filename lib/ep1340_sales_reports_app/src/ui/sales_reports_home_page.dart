@@ -187,17 +187,27 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
             Expanded(
               child: Container(
                 margin: const EdgeInsets.only(left: 16, bottom: 16),
-                color: Colors.pink,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
+                      margin: EdgeInsets.only(right: 16),
                       width: 300,
                       decoration: BoxDecoration(
                         color: const Color.fromRGBO(40, 49, 62, 1),
-
+                        borderRadius: BorderRadius.circular(16),
                       ),
-                    )
+                    ),
+                    Container(
+                      width: 300,
+                      margin: EdgeInsets.only(right: 16),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: const Color.fromRGBO(40, 49, 62, 1),
+                        ),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                    ),
                   ],
                 ),
               ),
