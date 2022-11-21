@@ -133,13 +133,13 @@ class _SalesReportHomePageState extends State<SalesReportHomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 16, right: 16, top: 16),
+              margin: const EdgeInsets.only(left: 16, right: 16, top: 16),
               height: 100,
               decoration: BoxDecoration(
-                color: Color.fromRGBO(40, 49, 62, 1),
+                color: const Color.fromRGBO(40, 49, 62, 1),
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   "Create",
                   style: TextStyle(
