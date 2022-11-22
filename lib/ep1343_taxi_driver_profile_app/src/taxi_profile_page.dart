@@ -40,7 +40,9 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
       body: Column(
         children: [
           Container(
-            height: 250,
+            padding: EdgeInsets.only(
+              bottom: 32,top: 24
+            ),
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
@@ -61,9 +63,21 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                   height: 100,
                   color: Colors.black,
                 ),
-                Text("It's all good!"),
-                Text("You are driving better than anyone."),
-                Text("Good job, just keep it up"),
+                Text(
+                  "It's all good!",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 32,
+                  ),
+                ),
+                Text(
+                  "You are driving better than anyone.",
+                  style: TextStyle(height: 2, fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                ),
+                Text(
+                  "Good job, just keep it up",
+                  style: TextStyle(height: 2, fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                ),
               ],
             ),
           ),
