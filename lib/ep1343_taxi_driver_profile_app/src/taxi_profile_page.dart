@@ -51,6 +51,21 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                 )
               ],
             ),
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    vertical: 24,
+                  ),
+                  height: 100,
+                  color: Colors.black,
+                ),
+                Text("It's all good!"),
+                Text("You are driving better than anyone."),
+                Text("Good job, just keep it up"),
+              ],
+            ),
           ),
           Expanded(
             child: Container(
