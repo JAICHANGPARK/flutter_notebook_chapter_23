@@ -37,6 +37,31 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
           ],
         ),
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 250,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey[400]!,
+                  spreadRadius: 1,
+                  blurRadius: 2,
+                )
+              ],
+            ),
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.only(top: 12),
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
