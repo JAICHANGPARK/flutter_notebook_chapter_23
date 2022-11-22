@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1340
+### EP1343
+
+- Sales Reports App
+- by Awsmd
+- https://dribbble.com/shots/19922240-Taxi-App-Driver-s-Profile
+
+<img src="https://cdn.dribbble.com/userupload/4025425/file/original-8e8389e1bd85b11edf4ab19c25394577.png?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1340-1342
 
 - Sales Reports App
 - by Awsmd
