@@ -174,15 +174,16 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                             )
                           ],
                         ),
-                        
+                        SizedBox(
+                          height: 16,
+                        ),
                         Row(
                           children: [
                             CircleAvatar(
-                              radius: 32,
-                              backgroundColor: Colors.grey[200],
-                              foregroundColor: Colors.black,
-                              child:Icon(Icons.info_outline)
-                            ),
+                                radius: 32,
+                                backgroundColor: Colors.grey[200],
+                                foregroundColor: Colors.black,
+                                child: Icon(Icons.info_outline)),
                             SizedBox(
                               width: 16,
                             ),
@@ -198,26 +199,22 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                             )
                           ],
                         ),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Row(
                           children: [
                             CircleAvatar(
-                              radius: 32,
-                              backgroundColor: Colors.grey[200],
-                              foregroundColor: Colors.black,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text("200"),
-                                  Text("km"),
-                                ],
-                              ),
-                            ),
+                                radius: 32,
+                                backgroundColor: Colors.grey[200],
+                                foregroundColor: Colors.black,
+                                child: Icon(Icons.arrow_circle_up)),
                             SizedBox(
                               width: 16,
                             ),
                             Expanded(
                               child: Text(
-                                "On the driving style for the last 200km, not for one trip",
+                                "For regular speeding. Up to 20 km/h - not included",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   height: 1.4,
