@@ -98,14 +98,27 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Not safe trips"),
                       TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "See all",
-                          ))
+                        onPressed: () {},
+                        child: Text(
+                          "See all",
+                        ),
+                      )
                     ],
+                  ),
+                  Container(
+                    height: 100,
+                    color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
+                    ),
                   )
                 ],
               ),
