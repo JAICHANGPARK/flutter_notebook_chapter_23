@@ -127,6 +127,9 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       },
                     ),
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
@@ -138,20 +141,28 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       ),
                     ),
                   ),
-                  Row(
+                  Column(
                     children: [
-                      CircleAvatar(
-                        radius: 32,
-                        backgroundColor: Colors.grey[200],
-                      ),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: Text(
-                          "On the driving style for the last 200km, not for one trip",
-                          style: TextStyle(fontWeight: FontWeight.bold, height: 1.4, fontSize: 18),
-                        ),
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 32,
+                            backgroundColor: Colors.grey[200],
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
+                            child: Text(
+                              "On the driving style for the last 200km, not for one trip",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                height: 1.4,
+                                fontSize: 18,
+                              ),
+                            ),
+                          )
+                        ],
                       )
                     ],
                   )
