@@ -95,19 +95,24 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
+
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Not safe trips"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "See all",
-                        ),
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Not safe trips"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     height: 100,
@@ -138,11 +143,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       Expanded(
                         child: Text(
                           "On the driving style for the last 200km, not for one trip",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            height: 1.4,
-                            fontSize: 18
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, height: 1.4, fontSize: 18),
                         ),
                       )
                     ],
