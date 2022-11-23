@@ -121,23 +121,29 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                     ),
                   ),
                   Container(
-                    height: 84,
+                    height: 100,
                     color: Colors.blue,
+                    margin: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container();
+                        return Container(
+                          width: 300,
+                          margin: EdgeInsets.only(right: 16),
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        );
                       },
                     ),
                   ),
-                  const SizedBox(
-                    height: 16,
-                  ),
+
                   const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      "What ar we lookg at",
+                      "What are we looking at",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.grey,
