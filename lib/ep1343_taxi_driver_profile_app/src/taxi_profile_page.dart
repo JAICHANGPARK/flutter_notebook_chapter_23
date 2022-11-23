@@ -121,25 +121,44 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                     ),
                   ),
                   Container(
-                    height: 100,
-                    color: Colors.blue,
-                    margin: EdgeInsets.only(left: 16),
+                    height: 92,
+                    margin: EdgeInsets.only(
+                      left: 16,
+                    ),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 300,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: EdgeInsets.only(
+                            right: 16,
+                          ),
                           decoration: BoxDecoration(
                             border: Border.all(),
                             borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 120,
+                                color: Colors.pink,
+                              ),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [Text("Yesterday, 4:25"), Text("Food Focus")],
+                              )
+                            ],
                           ),
                         );
                       },
                     ),
                   ),
-
                   const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
