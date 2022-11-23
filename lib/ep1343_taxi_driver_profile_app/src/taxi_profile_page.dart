@@ -70,11 +70,21 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                 ),
                 const Text(
                   "You are driving better than anyone.",
-                  style: TextStyle(height: 2, fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                  style: TextStyle(
+                    height: 2,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey,
+                    fontSize: 16,
+                  ),
                 ),
                 const Text(
                   "Good job, just keep it up",
-                  style: TextStyle(height: 2, fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                  style: TextStyle(
+                    height: 2,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey,
+                    fontSize: 16,
+                  ),
                 ),
               ],
             ),
@@ -84,6 +94,20 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               margin: const EdgeInsets.only(top: 12),
               decoration: const BoxDecoration(
                 color: Colors.white,
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Not safe trips"),
+                      TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ))
+                    ],
+                  )
+                ],
               ),
             ),
           )
