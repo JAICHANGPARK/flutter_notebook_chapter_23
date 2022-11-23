@@ -131,7 +131,8 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       CircleAvatar(
                         radius: 20,
                         backgroundColor: Colors.grey[400],
-                      )
+                      ),
+                      Expanded(child: Text("On the driving style for the last 200km, not for one trip"))
                     ],
                   )
                 ],
