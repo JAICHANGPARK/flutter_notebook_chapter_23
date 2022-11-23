@@ -105,7 +105,11 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       children: [
                         Text(
                           "Not safe trips",
-                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                            fontSize: 16,
+                          ),
                         ),
                         TextButton(
                           onPressed: () {},
