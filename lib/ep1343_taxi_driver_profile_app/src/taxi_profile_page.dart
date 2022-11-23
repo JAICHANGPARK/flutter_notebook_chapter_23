@@ -57,11 +57,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Container(
-                  margin: const EdgeInsets.symmetric(
-                    vertical: 8,
-                  ),
                   height: 100,
-                  color: Colors.black,
                   child: PageView(
                     controller: pageController,
                     children: [
@@ -88,6 +84,9 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       ),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 24,
                 ),
                 const Text(
                   "It's all good!",
