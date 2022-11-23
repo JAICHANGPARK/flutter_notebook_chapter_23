@@ -18,16 +18,16 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
         centerTitle: true,
         title: Column(
           children: [
-            Text(
+            const Text(
               "Driving Profile",
               style: TextStyle(
                 fontWeight: FontWeight.w900,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            Text(
+            const Text(
               "Updated today at 5:03",
               style: TextStyle(
                 fontSize: 12,
@@ -40,9 +40,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(
-              bottom: 32,top: 24
-            ),
+            padding: const EdgeInsets.only(bottom: 32, top: 24),
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
@@ -57,24 +55,24 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(
+                  margin: const EdgeInsets.symmetric(
                     vertical: 24,
                   ),
                   height: 100,
                   color: Colors.black,
                 ),
-                Text(
+                const Text(
                   "It's all good!",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 32,
                   ),
                 ),
-                Text(
+                const Text(
                   "You are driving better than anyone.",
                   style: TextStyle(height: 2, fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
                 ),
-                Text(
+                const Text(
                   "Good job, just keep it up",
                   style: TextStyle(height: 2, fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
                 ),
@@ -83,8 +81,8 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
           ),
           Expanded(
             child: Container(
-              margin: EdgeInsets.only(top: 12),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.only(top: 12),
+              decoration: const BoxDecoration(
                 color: Colors.white,
               ),
             ),
