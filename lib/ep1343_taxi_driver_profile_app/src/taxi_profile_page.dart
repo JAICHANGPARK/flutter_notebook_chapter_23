@@ -69,19 +69,23 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                         margin: EdgeInsets.symmetric(horizontal: 8),
                         decoration: BoxDecoration(
                           color: Colors.grey,
+                          borderRadius: BorderRadius.circular(16),
                         ),
                       ),
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 8),
                         decoration: BoxDecoration(
-                        color: Colors.grey,
-
-                      ),),
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 8),
                         decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),),
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
                     ],
                   ),
                 ),
