@@ -129,10 +129,22 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                   Row(
                     children: [
                       CircleAvatar(
-                        radius: 20,
-                        backgroundColor: Colors.grey[400],
+                        radius: 32,
+                        backgroundColor: Colors.grey[200],
                       ),
-                      Expanded(child: Text("On the driving style for the last 200km, not for one trip"))
+                      SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(
+                        child: Text(
+                          "On the driving style for the last 200km, not for one trip",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            height: 1.4,
+                            fontSize: 18
+                          ),
+                        ),
+                      )
                     ],
                   )
                 ],
