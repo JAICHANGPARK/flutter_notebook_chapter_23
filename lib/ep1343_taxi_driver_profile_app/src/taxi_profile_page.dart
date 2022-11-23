@@ -119,6 +119,20 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                         return Container();
                       },
                     ),
+                  ),
+                  Text(
+                    "What ar we lookg at",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundColor: Colors.grey[400],
+                      )
+                    ],
                   )
                 ],
               ),
