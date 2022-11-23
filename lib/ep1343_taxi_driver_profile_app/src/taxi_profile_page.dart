@@ -103,7 +103,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Not safe trips",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "See all",
                           ),
                         )
@@ -131,11 +131,11 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       },
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Text(
                       "What ar we lookg at",
                       style: TextStyle(
@@ -158,15 +158,15 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text("200"),
-                                  Text("km"),
+                                  const Text("200"),
+                                  const Text("km"),
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Text(
                                 "On the driving style for the last 200km, not for one trip",
                                 style: TextStyle(
@@ -178,7 +178,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Row(
@@ -187,11 +187,11 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                                 foregroundColor: Colors.black,
-                                child: Icon(Icons.info_outline)),
-                            SizedBox(
+                                child: const Icon(Icons.info_outline)),
+                            const SizedBox(
                               width: 16,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Text(
                                 "On sharp maneuvers, acceleration and braking, dangerous turns.",
                                 style: TextStyle(
@@ -203,7 +203,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Row(
@@ -212,11 +212,11 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                                 foregroundColor: Colors.black,
-                                child: Icon(Icons.arrow_circle_up)),
-                            SizedBox(
+                                child: const Icon(Icons.arrow_circle_up)),
+                            const SizedBox(
                               width: 16,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Text(
                                 "For regular speeding. Up to 20 km/h - not included",
                                 style: TextStyle(
