@@ -95,16 +95,18 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
-
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Not safe trips"),
+                        Text(
+                          "Not safe trips",
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 16),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text(
@@ -125,10 +127,15 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       },
                     ),
                   ),
-                  Text(
-                    "What ar we lookg at",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      "What ar we lookg at",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                   Row(
