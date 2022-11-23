@@ -151,7 +151,13 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [Text("Yesterday, 4:25"), Text("Food Focus")],
+                                children: [
+                                  Text("Yesterday, 4:25"),
+                                  SizedBox(
+                                    height: 12,
+                                  ),
+                                  Text("Food Focus"),
+                                ],
                               )
                             ],
                           ),
