@@ -8,6 +8,8 @@ class TaxiProfilePage extends StatefulWidget {
 }
 
 class _TaxiProfilePageState extends State<TaxiProfilePage> {
+  PageController pageController = PageController(initialPage: 1, viewportFraction: 0.8);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,6 +62,28 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                   ),
                   height: 100,
                   color: Colors.black,
+                  child: PageView(
+                    controller: pageController,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        decoration: BoxDecoration(
+                        color: Colors.grey,
+
+                      ),),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),),
+                    ],
+                  ),
                 ),
                 const Text(
                   "It's all good!",
