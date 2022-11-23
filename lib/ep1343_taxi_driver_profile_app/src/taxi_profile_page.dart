@@ -141,30 +141,41 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                       ),
                     ),
                   ),
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          CircleAvatar(
-                            radius: 32,
-                            backgroundColor: Colors.grey[200],
-                          ),
-                          SizedBox(
-                            width: 16,
-                          ),
-                          Expanded(
-                            child: Text(
-                              "On the driving style for the last 200km, not for one trip",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                height: 1.4,
-                                fontSize: 18,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.grey[200],
+                              foregroundColor: Colors.black,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text("200"),
+                                  Text("km"),
+                                ],
                               ),
                             ),
-                          )
-                        ],
-                      )
-                    ],
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Expanded(
+                              child: Text(
+                                "On the driving style for the last 200km, not for one trip",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.4,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
