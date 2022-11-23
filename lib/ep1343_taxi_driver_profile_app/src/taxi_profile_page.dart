@@ -117,7 +117,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                     ),
                   ),
                   Container(
-                    height: 100,
+                    height: 84,
                     color: Colors.blue,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -145,6 +145,59 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
                     child: Column(
                       children: [
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.grey[200],
+                              foregroundColor: Colors.black,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text("200"),
+                                  Text("km"),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Expanded(
+                              child: Text(
+                                "On the driving style for the last 200km, not for one trip",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.4,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.grey[200],
+                              foregroundColor: Colors.black,
+                              child:Icon(Icons.info_outline)
+                            ),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Expanded(
+                              child: Text(
+                                "On sharp maneuvers, acceleration and braking, dangerous turns.",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  height: 1.4,
+                                  fontSize: 18,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                         Row(
                           children: [
                             CircleAvatar(
