@@ -56,7 +56,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
               children: [
                 Container(
                   margin: const EdgeInsets.symmetric(
-                    vertical: 24,
+                    vertical: 8,
                   ),
                   height: 100,
                   color: Colors.black,
