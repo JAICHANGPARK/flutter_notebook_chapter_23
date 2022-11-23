@@ -17,17 +17,17 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
         elevation: 0,
         centerTitle: true,
         title: Column(
-          children: [
-            const Text(
+          children: const [
+            Text(
               "Driving Profile",
               style: TextStyle(
                 fontWeight: FontWeight.w900,
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 8,
             ),
-            const Text(
+            Text(
               "Updated today at 5:03",
               style: TextStyle(
                 fontSize: 12,
@@ -151,7 +151,7 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text("Yesterday, 4:25"),
                                   SizedBox(
                                     height: 12,
@@ -188,9 +188,9 @@ class _TaxiProfilePageState extends State<TaxiProfilePage> {
                               foregroundColor: Colors.black,
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const Text("200"),
-                                  const Text("km"),
+                                children: const [
+                                  Text("200"),
+                                  Text("km"),
                                 ],
                               ),
                             ),
