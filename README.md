@@ -2,7 +2,15 @@
 
 ## S26
 
-### EP1343
+### EP1345
+
+- Shopink - E-Commerce
+- by Rizal🔥 for Kretya
+- https://dribbble.com/shots/19972519-Shopink-E-Commerce
+
+<img src="https://cdn.dribbble.com/userupload/4051770/file/original-033e11fd233020a4a9807133f513a380.png?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1343-1344
 
 - Sales Reports App
 - by Awsmd
