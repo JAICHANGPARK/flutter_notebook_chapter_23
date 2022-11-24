@@ -11,7 +11,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
