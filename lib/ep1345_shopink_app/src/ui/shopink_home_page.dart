@@ -47,6 +47,14 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              height: 140,
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              decoration: BoxDecoration(
+                color: Colors.red[100],
+                
+              ),
             )
           ],
         ),
