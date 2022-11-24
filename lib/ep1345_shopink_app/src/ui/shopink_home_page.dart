@@ -40,7 +40,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                   CircleAvatar(
                     radius: 26,
                     child: const Icon(
-                      Icons.menu,
+                      Icons.notifications_none,
                     ),
                     foregroundColor: Colors.black,
                     backgroundColor: Colors.grey[300],
