@@ -20,13 +20,13 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                 children: [
                   CircleAvatar(
                     radius: 26,
-                    child: Icon(
+                    child: const Icon(
                       Icons.menu,
                     ),
                     foregroundColor: Colors.black,
                     backgroundColor: Colors.grey[300],
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Shopink",
@@ -39,6 +39,11 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                   ),
                   CircleAvatar(
                     radius: 26,
+                    child: const Icon(
+                      Icons.menu,
+                    ),
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.grey[300],
                   ),
                 ],
               ),
