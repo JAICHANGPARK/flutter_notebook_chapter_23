@@ -53,8 +53,21 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               decoration: BoxDecoration(
                 color: Colors.red[100],
-                
+                borderRadius: BorderRadius.circular(20),
               ),
+            ),
+            Row(
+              children: [
+                Text("New Arrival"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See all"),
+                ),
+              ],
+            ),
+            Container(
+              height: 200,
+              color: Colors.red[100],
             )
           ],
         ),
