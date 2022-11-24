@@ -122,15 +122,22 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                     ),
                     Container(
                       height: 64,
-                      margin: EdgeInsets.only(
-                        left: 16,
-                      ),
+                      margin: EdgeInsets.only(left: 16, bottom: 16),
                       color: Colors.orangeAccent,
                     ),
                     GridView.count(
                       crossAxisCount: 2,
                       shrinkWrap: true,
-                      children: [],
+                      mainAxisSpacing: 16,
+                      crossAxisSpacing: 16,
+                      children: [
+                        Container(
+                          color: Colors.blue,
+                        ),
+                        Container(
+                          color: Colors.red,
+                        ),
+                      ],
                     )
                   ],
                 ),
