@@ -52,7 +52,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
             ),
             Container(
               height: 140,
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               decoration: BoxDecoration(
                 color: Colors.red[100],
                 borderRadius: BorderRadius.circular(20),
@@ -67,7 +67,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "New Arrival",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -76,7 +76,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "See all",
                               style: TextStyle(
                                 fontSize: 16,
@@ -89,7 +89,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                     ),
                     Container(
                       height: 220,
-                      margin: EdgeInsets.only(left: 16),
+                      margin: const EdgeInsets.only(left: 16),
                       color: Colors.red[100],
                     ),
                     Padding(
@@ -102,7 +102,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Best Seller",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -111,7 +111,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "See all",
                               style: TextStyle(
                                 fontSize: 16,
@@ -124,7 +124,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                     ),
                     Container(
                       height: 64,
-                      margin: EdgeInsets.only(left: 16, bottom: 16),
+                      margin: const EdgeInsets.only(left: 16, bottom: 16),
                       color: Colors.orangeAccent,
                     ),
                     Padding(
@@ -155,7 +155,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
         final index = ref.watch(shopinkMenuIndex);
         return BottomAppBar(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 32),
+            padding: const EdgeInsets.symmetric(horizontal: 32),
             height: 84,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -168,11 +168,11 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                       size: 32,
                       color: index == 0 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     index == 0
-                        ? CircleAvatar(
+                        ? const CircleAvatar(
                             radius: 3,
                             backgroundColor: Colors.black,
                           )
@@ -187,11 +187,11 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                       size: 32,
                       color: index == 1 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     index == 1
-                        ? CircleAvatar(
+                        ? const CircleAvatar(
                             radius: 3,
                             backgroundColor: Colors.black,
                           )
@@ -206,11 +206,11 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                       size: 32,
                       color: index == 2 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     index == 2
-                        ? CircleAvatar(
+                        ? const CircleAvatar(
                             radius: 3,
                             backgroundColor: Colors.black,
                           )
@@ -225,11 +225,11 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                       size: 32,
                       color: index == 3 ? Colors.black : Colors.grey,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     index == 3
-                        ? CircleAvatar(
+                        ? const CircleAvatar(
                             radius: 3,
                             backgroundColor: Colors.black,
                           )
