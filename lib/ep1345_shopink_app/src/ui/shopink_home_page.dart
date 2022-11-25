@@ -158,7 +158,13 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
             padding: EdgeInsets.symmetric(horizontal: 16),
             height: 80,
             child: Row(
-              children: [],
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.home),
+                  ],
+                )
+              ],
             ),
           ),
         );
