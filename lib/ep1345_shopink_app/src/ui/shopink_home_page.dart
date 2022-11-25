@@ -160,62 +160,77 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.home,
-                      size: 32,
-                      color: index == 0 ? Colors.black : Colors.grey,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    index == 0
-                        ? const CircleAvatar(
-                            radius: 3,
-                            backgroundColor: Colors.black,
-                          )
-                        : Container(),
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    ref.read(shopinkMenuIndex.notifier).state = 0;
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 32,
+                        color: index == 0 ? Colors.black : Colors.grey,
+                      ),
+                      const SizedBox(
+                        height: 4,
+                      ),
+                      index == 0
+                          ? const CircleAvatar(
+                              radius: 3,
+                              backgroundColor: Colors.black,
+                            )
+                          : Container(),
+                    ],
+                  ),
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.shopping_cart_outlined,
-                      size: 32,
-                      color: index == 1 ? Colors.black : Colors.grey,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    index == 1
-                        ? const CircleAvatar(
-                            radius: 3,
-                            backgroundColor: Colors.black,
-                          )
-                        : Container(),
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    ref.read(shopinkMenuIndex.notifier).state = 1;
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.shopping_cart_outlined,
+                        size: 32,
+                        color: index == 1 ? Colors.black : Colors.grey,
+                      ),
+                      const SizedBox(
+                        height: 4,
+                      ),
+                      index == 1
+                          ? const CircleAvatar(
+                              radius: 3,
+                              backgroundColor: Colors.black,
+                            )
+                          : Container(),
+                    ],
+                  ),
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.favorite_border,
-                      size: 32,
-                      color: index == 2 ? Colors.black : Colors.grey,
-                    ),
-                    const SizedBox(
-                      height: 4,
-                    ),
-                    index == 2
-                        ? const CircleAvatar(
-                            radius: 3,
-                            backgroundColor: Colors.black,
-                          )
-                        : Container(),
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    ref.read(shopinkMenuIndex.notifier).state = 2;
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.favorite_border,
+                        size: 32,
+                        color: index == 2 ? Colors.black : Colors.grey,
+                      ),
+                      const SizedBox(
+                        height: 4,
+                      ),
+                      index == 2
+                          ? const CircleAvatar(
+                              radius: 3,
+                              backgroundColor: Colors.black,
+                            )
+                          : Container(),
+                    ],
+                  ),
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
