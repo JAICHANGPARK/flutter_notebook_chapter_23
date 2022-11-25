@@ -15,8 +15,11 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(child: Consumer(
+
         builder: (context, ref, _) {
+          final index = ref.watch(shopinkMenuIndex);
           return IndexedStack(
+            index: index,
             children: [
               Column(
                 children: [
@@ -154,6 +157,9 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                   )
                 ],
               ),
+              Center(child: Text(index.toString()),),
+              Center(child: Text(index.toString()),),
+              Center(child: Text(index.toString()),),
             ],
           );
         },
