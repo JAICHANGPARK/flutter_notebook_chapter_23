@@ -155,9 +155,10 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
         final index = ref.watch(shopinkMenuIndex);
         return BottomAppBar(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 24),
-            height: 80,
+            padding: EdgeInsets.symmetric(horizontal: 32),
+            height: 84,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -165,6 +166,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                     Icon(
                       Icons.home,
                       size: 32,
+                      color: index == 0 ? Colors.black : Colors.grey,
                     ),
                     SizedBox(
                       height: 4,
@@ -183,11 +185,50 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
                     Icon(
                       Icons.shopping_cart_outlined,
                       size: 32,
+                      color: index == 1 ? Colors.black : Colors.grey,
                     ),
                     SizedBox(
                       height: 4,
                     ),
                     index == 1
+                        ? CircleAvatar(
+                            radius: 3,
+                            backgroundColor: Colors.black,
+                          )
+                        : Container(),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.favorite_border,
+                      size: 32,
+                      color: index == 2 ? Colors.black : Colors.grey,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    index == 2
+                        ? CircleAvatar(
+                            radius: 3,
+                            backgroundColor: Colors.black,
+                          )
+                        : Container(),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.perm_identity,
+                      size: 32,
+                      color: index == 3 ? Colors.black : Colors.grey,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    index == 3
                         ? CircleAvatar(
                             radius: 3,
                             backgroundColor: Colors.black,
