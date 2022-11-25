@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ShopinkHomePage extends StatefulWidget {
   const ShopinkHomePage({Key? key}) : super(key: key);
@@ -149,15 +151,18 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 16),
-          height: 80,
-          child: Row(
-            children: [],
+      bottomNavigationBar: Consumer(builder: (context, ref, _) {
+        final index = ref.watch(shopinkMenuIndex);
+        return BottomAppBar(
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            height: 80,
+            child: Row(
+              children: [],
+            ),
           ),
-        ),
-      ),
+        );
+      }),
     );
   }
 }
