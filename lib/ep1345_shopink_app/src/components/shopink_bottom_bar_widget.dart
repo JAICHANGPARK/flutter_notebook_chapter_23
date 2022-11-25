@@ -87,24 +87,29 @@ class ShopinkBottomBarWidget extends ConsumerWidget {
                 ],
               ),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.perm_identity,
-                  size: 32,
-                  color: index == 3 ? Colors.black : Colors.grey,
-                ),
-                const SizedBox(
-                  height: 4,
-                ),
-                index == 3
-                    ? const CircleAvatar(
-                  radius: 3,
-                  backgroundColor: Colors.black,
-                )
-                    : Container(),
-              ],
+            GestureDetector(
+              onTap: () {
+                ref.read(shopinkMenuIndex.notifier).state = 3;
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.perm_identity,
+                    size: 32,
+                    color: index == 3 ? Colors.black : Colors.grey,
+                  ),
+                  const SizedBox(
+                    height: 4,
+                  ),
+                  index == 3
+                      ? const CircleAvatar(
+                    radius: 3,
+                    backgroundColor: Colors.black,
+                  )
+                      : Container(),
+                ],
+              ),
             )
           ],
         ),
