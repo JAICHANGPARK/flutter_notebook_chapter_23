@@ -155,18 +155,44 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
         final index = ref.watch(shopinkMenuIndex);
         return BottomAppBar(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: EdgeInsets.symmetric(horizontal: 24),
             height: 80,
             child: Row(
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.home, size: 28,),
-                    CircleAvatar(
-                      radius: 3,
-                      backgroundColor: Colors.black,
+                    Icon(
+                      Icons.home,
+                      size: 32,
                     ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    index == 0
+                        ? CircleAvatar(
+                            radius: 3,
+                            backgroundColor: Colors.black,
+                          )
+                        : Container(),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.shopping_cart_outlined,
+                      size: 32,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    index == 1
+                        ? CircleAvatar(
+                            radius: 3,
+                            backgroundColor: Colors.black,
+                          )
+                        : Container(),
                   ],
                 )
               ],
