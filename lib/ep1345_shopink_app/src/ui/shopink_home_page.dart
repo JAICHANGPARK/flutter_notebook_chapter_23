@@ -160,8 +160,13 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
             child: Row(
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.home),
+                    Icon(Icons.home, size: 28,),
+                    CircleAvatar(
+                      radius: 3,
+                      backgroundColor: Colors.black,
+                    ),
                   ],
                 )
               ],
