@@ -18,11 +18,11 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
             children: [
               CircleAvatar(
                 radius: 26,
+                foregroundColor: Colors.black,
+                backgroundColor: Colors.grey[300],
                 child: const Icon(
                   Icons.menu,
                 ),
-                foregroundColor: Colors.black,
-                backgroundColor: Colors.grey[300],
               ),
               const Expanded(
                 child: Center(
@@ -37,11 +37,11 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
               ),
               CircleAvatar(
                 radius: 26,
+                foregroundColor: Colors.black,
+                backgroundColor: Colors.grey[300],
                 child: const Icon(
                   Icons.notifications_none,
                 ),
-                foregroundColor: Colors.black,
-                backgroundColor: Colors.grey[300],
               ),
             ],
           ),
