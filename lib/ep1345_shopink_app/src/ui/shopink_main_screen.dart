@@ -8,6 +8,8 @@ class ShopinkMainScreen extends StatefulWidget {
 }
 
 class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
+  List<String> _tabItems = ["All", "Brend0", "Brend1", "Brend2", "Brend3", "Brend4"];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -97,7 +99,10 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                             children: [
                               Container(
                                 height: 120,
-                                decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(12)),
+                                decoration: BoxDecoration(
+                                  color: Colors.pink,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
                               ),
                               const SizedBox(
                                 height: 12,
@@ -197,6 +202,9 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                   height: 64,
                   margin: const EdgeInsets.only(left: 16, bottom: 16),
                   color: Colors.orangeAccent,
+                  child: ListView.builder(itemBuilder: (context, index) {
+                    return Container();
+                  }),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
