@@ -203,7 +203,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                 Consumer(builder: (context, ref, _) {
                   final selectedIndex = ref.watch(shopinkTabMenuIndex);
                   return Container(
-                    height: 64,
+                    height: 54,
                     margin: const EdgeInsets.only(left: 16, bottom: 16),
                     color: Colors.orangeAccent,
                     child: ListView.builder(
@@ -211,6 +211,10 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                       itemCount: _tabItems.length,
                       itemBuilder: (context, index) {
                         return Container(
+                          margin: EdgeInsets.only(right: 16, bottom: 4, top: 4),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.grey,
                           ),
