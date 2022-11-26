@@ -86,31 +86,70 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                 Container(
                   height: 220,
                   margin: const EdgeInsets.only(left: 16),
-                  color: Colors.red[100],
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 160,
-                          margin: EdgeInsets.only(right: 16),
-                          color: Colors.blue,
+                          margin: const EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
-                              Container(),
+                              Container(
+                                height: 100,
+                                decoration: const BoxDecoration(
+                                  color: Colors.pink,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 12,
+                              ),
                               Expanded(
                                 child: Stack(
                                   children: [
-                                    Column(
-                                      children: [
-                                        Text("Shoes Title Shoes Title Shoes Title,"),
-                                      ],
+                                    Positioned(
+                                      left: 0,
+                                      top: 0,
+                                      bottom: 0,
+                                      right: 0,
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: const [
+                                          Text(
+                                            "Shoes Title Shoes Title Shoes Title,",
+                                            maxLines: 2,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.symmetric(vertical: 8),
+                                            child: Text(
+                                              "Dream's Shoes",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ),
+                                          Text(
+                                            "\$120.11",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                     Positioned(
                                       child: CircleAvatar(
                                         backgroundColor: Colors.grey[200],
+                                        foregroundColor: Colors.grey,
                                         radius: 24,
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.favorite_border,
                                           size: 28,
                                         ),
