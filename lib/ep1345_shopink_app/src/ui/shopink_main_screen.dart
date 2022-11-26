@@ -210,15 +210,23 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                       scrollDirection: Axis.horizontal,
                       itemCount: _tabItems.length,
                       itemBuilder: (context, index) {
-                        return Container(
-                          margin: EdgeInsets.only(right: 16, bottom: 4, top: 4),
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 16,
+                        return GestureDetector(
+                          onTap: () {
+                            ref.read(shopinkTabMenuIndex.notifier).state = index;
+                          },
+                          child: AnimatedContainer(
+                            margin: EdgeInsets.only(right: 16, bottom: 4, top: 4),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 16,
+                            ),
+                            decoration: BoxDecoration(
+                              color: selectedIndex == index ? Colors.orange : Colors.grey[200],
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.easeIn,
+                            child: Center(child: Text("${_tabItems[index]}")),
                           ),
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                          ),
-                          child: Center(child: Text("${_tabItems[index]}")),
                         );
                       },
                     ),
