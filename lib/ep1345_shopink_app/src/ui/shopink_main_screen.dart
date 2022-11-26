@@ -174,7 +174,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                   padding: const EdgeInsets.only(
                     left: 16,
                     right: 16,
-                    bottom: 16,
+                    bottom: 4,
                     top: 16,
                   ),
                   child: Row(
@@ -214,20 +214,23 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                             ref.read(shopinkTabMenuIndex.notifier).state = index;
                           },
                           child: AnimatedContainer(
-                            margin: EdgeInsets.only(right: 16, bottom: 4, top: 4),
-                            padding: EdgeInsets.symmetric(
+                            margin: const EdgeInsets.only(right: 16, bottom: 4, top: 4),
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 16,
                             ),
                             decoration: BoxDecoration(
                               color: selectedIndex == index ? Colors.orange : Colors.grey[200],
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            duration: Duration(milliseconds: 250),
+                            duration: const Duration(milliseconds: 250),
                             curve: Curves.easeIn,
                             child: Center(
                                 child: Text(
                               "${_tabItems[index]}",
-                              style: TextStyle(),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: selectedIndex == index ? Colors.black : Colors.grey,
+                              ),
                             )),
                           ),
                         );
