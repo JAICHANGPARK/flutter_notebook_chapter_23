@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ShopinkMainScreen extends StatefulWidget {
   const ShopinkMainScreen({super.key});
@@ -198,23 +200,26 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                     ],
                   ),
                 ),
-                Container(
-                  height: 64,
-                  margin: const EdgeInsets.only(left: 16, bottom: 16),
-                  color: Colors.orangeAccent,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: _tabItems.length,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey,
-                        ),
-                        child: Text("${_tabItems[index]}"),
-                      );
-                    },
-                  ),
-                ),
+                Consumer(builder: (context, ref, _) {
+                  final selectedIndex = ref.watch(shopinkTabMenuIndex);
+                  return Container(
+                    height: 64,
+                    margin: const EdgeInsets.only(left: 16, bottom: 16),
+                    color: Colors.orangeAccent,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: _tabItems.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                          child: Center(child: Text("${_tabItems[index]}")),
+                        );
+                      },
+                    ),
+                  );
+                }),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: GridView.count(
