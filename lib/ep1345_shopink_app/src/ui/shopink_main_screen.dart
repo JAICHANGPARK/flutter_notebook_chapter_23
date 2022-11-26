@@ -205,7 +205,6 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                   return Container(
                     height: 54,
                     margin: const EdgeInsets.only(left: 16, bottom: 16),
-                    color: Colors.orangeAccent,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: _tabItems.length,
@@ -225,7 +224,11 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                             ),
                             duration: Duration(milliseconds: 250),
                             curve: Curves.easeIn,
-                            child: Center(child: Text("${_tabItems[index]}")),
+                            child: Center(
+                                child: Text(
+                              "${_tabItems[index]}",
+                              style: TextStyle(),
+                            )),
                           ),
                         );
                       },
