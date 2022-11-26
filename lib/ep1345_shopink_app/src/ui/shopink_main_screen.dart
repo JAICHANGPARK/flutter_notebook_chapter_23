@@ -202,9 +202,18 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                   height: 64,
                   margin: const EdgeInsets.only(left: 16, bottom: 16),
                   color: Colors.orangeAccent,
-                  child: ListView.builder(itemBuilder: (context, index) {
-                    return Container();
-                  }),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: _tabItems.length,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                        ),
+                        child: Text("${_tabItems[index]}"),
+                      );
+                    },
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
