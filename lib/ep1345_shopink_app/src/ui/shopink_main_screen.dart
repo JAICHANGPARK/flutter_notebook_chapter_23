@@ -84,22 +84,20 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                   ),
                 ),
                 Container(
-                  height: 220,
+                  height: 230,
                   margin: const EdgeInsets.only(left: 16),
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 160,
+                          width: 170,
                           margin: const EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
                               Container(
-                                height: 100,
-                                decoration: const BoxDecoration(
-                                  color: Colors.pink,
-                                ),
+                                height: 120,
+                                decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(12)),
                               ),
                               const SizedBox(
                                 height: 12,
@@ -121,7 +119,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                                             maxLines: 2,
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
-                                              fontSize: 18,
+                                              fontSize: 16,
                                             ),
                                           ),
                                           Padding(
@@ -138,13 +136,15 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                                             "\$120.11",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
-                                              fontSize: 18,
+                                              fontSize: 16,
                                             ),
                                           )
                                         ],
                                       ),
                                     ),
                                     Positioned(
+                                      right: 0,
+                                      bottom: 0,
                                       child: CircleAvatar(
                                         backgroundColor: Colors.grey[200],
                                         foregroundColor: Colors.grey,
@@ -154,8 +154,6 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                                           size: 28,
                                         ),
                                       ),
-                                      right: 0,
-                                      bottom: 0,
                                     )
                                   ],
                                 ),
