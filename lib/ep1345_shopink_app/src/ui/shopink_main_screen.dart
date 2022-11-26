@@ -87,6 +87,44 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                   height: 220,
                   margin: const EdgeInsets.only(left: 16),
                   color: Colors.red[100],
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 160,
+                          margin: EdgeInsets.only(right: 16),
+                          color: Colors.blue,
+                          child: Column(
+                            children: [
+                              Container(),
+                              Expanded(
+                                child: Stack(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text("Shoes Title Shoes Title Shoes Title,"),
+                                      ],
+                                    ),
+                                    Positioned(
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.grey[200],
+                                        radius: 24,
+                                        child: Icon(
+                                          Icons.favorite_border,
+                                          size: 28,
+                                        ),
+                                      ),
+                                      right: 0,
+                                      bottom: 0,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      }),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
