@@ -47,7 +47,23 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height / 2.5,
+              color: Colors.grey,
+            ),
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  )),
+              child: Column(
+                children: [],
+              ),
+            )),
           ],
         ),
       ),
