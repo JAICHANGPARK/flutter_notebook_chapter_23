@@ -95,6 +95,30 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       )
                     ],
                   ),
+                  Row(
+                    children: [
+                      Text("\$100.99"),
+                      Text(
+                        "\$110.00",
+                        style: TextStyle(
+                          decoration: TextDecoration.lineThrough,
+                        ),
+                      )
+                    ],
+                  ),
+                  Container(
+                    height: 72,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            child: Center(
+                              child: Text("${35 + index}"),
+                            ),
+                          );
+                        }),
+                  )
                 ],
               ),
             )),
