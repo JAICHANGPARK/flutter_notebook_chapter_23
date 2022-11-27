@@ -14,26 +14,39 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  radius: 24,
-                  child: Icon(
-                    Icons.keyboard_arrow_left_sharp,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: const [
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    radius: 24,
+                    child: Icon(
+                      Icons.keyboard_arrow_left_sharp,
+                    ),
                   ),
-                ),
-                Expanded(child: Center(child: Text("Details Products"),)),
-                CircleAvatar(
-                  radius: 24,
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  child: Icon(
-                    Icons.more_horiz,
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        "Details Products",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ],
+                  CircleAvatar(
+                    radius: 24,
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    child: Icon(
+                      Icons.more_horiz,
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
