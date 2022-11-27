@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -254,19 +256,25 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                         child: Stack(
                           children: [
                             Positioned(
-                              right: 0,
-                                top: 0,
-
-                                child: Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 16,
-                                  vertical: 8),
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                              ),
-                              child: Center(
-                                child: Text("10% off"),
-                              ),
-                            ))
+                                right: -24,
+                                top: 8,
+                                child: Transform.rotate(
+                                  angle: (35 * (pi / 180)),
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 42, vertical: 8),
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "10% off",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ))
                           ],
                         ),
                       ),
