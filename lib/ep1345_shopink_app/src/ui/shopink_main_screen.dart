@@ -102,7 +102,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                               Container(
                                 height: 120,
                                 decoration: BoxDecoration(
-                                  color: Colors.pink,
+                                  color: Colors.grey[200],
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                               ),
