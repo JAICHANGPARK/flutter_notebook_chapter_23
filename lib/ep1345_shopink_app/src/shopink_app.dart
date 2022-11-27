@@ -14,7 +14,7 @@ class ShopinkApp extends StatelessWidget {
         routes: [
           GoRoute(
             path: "detail",
-            builder: (context, state) => ShopinkDetailPage(),
+            builder: (context, state) => const ShopinkDetailPage(),
           )
         ],
       ),
