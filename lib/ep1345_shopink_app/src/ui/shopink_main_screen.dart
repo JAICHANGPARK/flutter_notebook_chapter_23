@@ -261,11 +261,14 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                                 child: Transform.rotate(
                                   angle: (35 * (pi / 180)),
                                   child: Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 42, vertical: 8),
-                                    decoration: BoxDecoration(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 42,
+                                      vertical: 8,
+                                    ),
+                                    decoration: const BoxDecoration(
                                       color: Colors.red,
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         "10% off",
                                         style: TextStyle(
@@ -275,7 +278,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                                     ),
                                   ),
                                 )),
-                            Positioned(
+                            const Positioned(
                               left: 12,
                               top: 12,
                               child: CircleAvatar(
@@ -290,7 +293,10 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                         ),
                       ),
                       Container(
-                        color: Colors.red,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                        ),
                       ),
                     ],
                   ),
