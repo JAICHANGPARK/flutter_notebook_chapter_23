@@ -54,7 +54,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
               color: Colors.grey,
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 200,
                   ),
                   SizedBox(
@@ -62,7 +62,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.grey,
                           ),
@@ -75,7 +75,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
             ),
             Expanded(
                 child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(16),
