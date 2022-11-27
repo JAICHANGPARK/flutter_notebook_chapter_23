@@ -11,6 +11,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: Column(
           children: [
@@ -51,6 +52,26 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
             Container(
               height: MediaQuery.of(context).size.height / 2.5,
               color: Colors.grey,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 200,
+                  ),
+                  SizedBox(
+                    height: 100,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.grey,
+                          ),
+                        );
+                      },
+                    ),
+                  )
+                ],
+              ),
             ),
             Expanded(
                 child: Container(
