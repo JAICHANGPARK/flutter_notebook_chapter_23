@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class ShopinkMainScreen extends StatefulWidget {
   const ShopinkMainScreen({super.key});
@@ -96,78 +97,81 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: 170,
-                          margin: const EdgeInsets.only(right: 16),
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 120,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(12),
+                        return GestureDetector(
+                          onTap: () => context.push("/detail"),
+                          child: Container(
+                            width: 170,
+                            margin: const EdgeInsets.only(right: 16),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 120,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(
-                                height: 12,
-                              ),
-                              Expanded(
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 0,
-                                      top: 0,
-                                      bottom: 0,
-                                      right: 0,
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: const [
-                                          Text(
-                                            "Shoes Title Shoes Title Shoes Title,",
-                                            maxLines: 2,
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.symmetric(vertical: 8),
-                                            child: Text(
-                                              "Dream's Shoes",
+                                const SizedBox(
+                                  height: 12,
+                                ),
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 0,
+                                        top: 0,
+                                        bottom: 0,
+                                        right: 0,
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: const [
+                                            Text(
+                                              "Shoes Title Shoes Title Shoes Title,",
+                                              maxLines: 2,
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                color: Colors.grey,
+                                                fontSize: 16,
                                               ),
                                             ),
-                                          ),
-                                          Text(
-                                            "\$120.11",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16,
+                                            Padding(
+                                              padding: EdgeInsets.symmetric(vertical: 8),
+                                              child: Text(
+                                                "Dream's Shoes",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
                                             ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    Positioned(
-                                      right: 0,
-                                      bottom: 0,
-                                      child: CircleAvatar(
-                                        backgroundColor: Colors.grey[200],
-                                        foregroundColor: Colors.grey,
-                                        radius: 24,
-                                        child: const Icon(
-                                          Icons.favorite_border,
-                                          size: 28,
+                                            Text(
+                                              "\$120.11",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
+                                            )
+                                          ],
                                         ),
                                       ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
+                                      Positioned(
+                                        right: 0,
+                                        bottom: 0,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.grey[200],
+                                          foregroundColor: Colors.grey,
+                                          radius: 24,
+                                          child: const Icon(
+                                            Icons.favorite_border,
+                                            size: 28,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         );
                       }),
