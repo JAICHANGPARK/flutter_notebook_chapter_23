@@ -274,7 +274,18 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                                       ),
                                     ),
                                   ),
-                                ))
+                                )),
+                            Positioned(
+                              left: 12,
+                              top: 12,
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                foregroundColor: Colors.red,
+                                child: Icon(
+                                  Icons.favorite,
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
