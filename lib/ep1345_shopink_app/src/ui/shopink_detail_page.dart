@@ -83,7 +83,19 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                 ),
               ),
               child: Column(
-                children: [],
+                children: [
+                  Text("Shoe Title"),
+                  Row(
+                    children: [
+                      Text("Dream's Shoes"),
+                      CircleAvatar(
+                        backgroundColor: Colors.grey[200],
+                        foregroundColor: Colors.red,
+                        child: Icon(Icons.favorite),
+                      )
+                    ],
+                  ),
+                ],
               ),
             )),
           ],
