@@ -297,6 +297,21 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        child: Stack(
+                          children: [
+                            const Positioned(
+                              left: 12,
+                              top: 12,
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                foregroundColor: Colors.black,
+                                child: Icon(
+                                  Icons.favorite_border,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ],
                   ),
