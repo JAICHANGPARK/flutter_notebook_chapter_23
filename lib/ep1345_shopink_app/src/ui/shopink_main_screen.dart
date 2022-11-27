@@ -226,7 +226,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                             curve: Curves.easeIn,
                             child: Center(
                                 child: Text(
-                              "${_tabItems[index]}",
+                              _tabItems[index],
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: selectedIndex == index ? Colors.black : Colors.grey,
