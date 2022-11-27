@@ -247,7 +247,16 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                     crossAxisSpacing: 16,
                     children: [
                       Container(
-                        color: Colors.blue,
+
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16)
+                        ),
+                        child: Stack(
+                          children: [
+                            
+                          ],
+                        ),
                       ),
                       Container(
                         color: Colors.red,
