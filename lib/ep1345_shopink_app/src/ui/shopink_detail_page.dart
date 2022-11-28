@@ -99,7 +99,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                 ref.read(shopinkImageIndex.notifier).state = index;
                               },
                               child: Container(
-                                margin: EdgeInsets.only(right: 16),
+                                margin: const EdgeInsets.only(right: 16),
                                 height: 64,
                                 width: 64,
                                 decoration: BoxDecoration(
@@ -134,7 +134,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                   topRight: Radius.circular(16),
                 ),
               ),
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -145,7 +145,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       fontSize: 24,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   Row(
@@ -159,7 +159,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   Row(
@@ -181,20 +181,51 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       )
                     ],
                   ),
-                  // SizedBox(
-                  //   height: 72,
-                  //   child: ListView.builder(
-                  //     scrollDirection: Axis.horizontal,
-                  //     itemCount: 10,
-                  //     itemBuilder: (context, index) {
-                  //       return Container(
-                  //         child: Center(
-                  //           child: Text("${35 + index}"),
-                  //         ),
-                  //       );
-                  //     },
-                  //   ),
-                  // )
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    child: SizedBox(
+                      height: 72,
+                      child: Consumer(builder: (context, ref, _) {
+                        final sIndex = ref.watch(shopinkShoeSizeIndex);
+                        return ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return GestureDetector(
+                              onTap: () {
+                                ref.read(shopinkShoeSizeIndex.notifier).state = index;
+                              },
+                              child: Container(
+                                margin: const EdgeInsets.only(right: 8),
+                                padding: const EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: sIndex == index ? Colors.black : Colors.grey, width: 2),
+                                ),
+                                child: Center(
+                                  child: Text("${35 + index}"),
+                                ),
+                              ),
+                            );
+                          },
+                        );
+                      }),
+                    ),
+                  ),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Read more..."),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                    ),
+                  ),
+                  Divider(),
+
                 ],
               ),
             )),
