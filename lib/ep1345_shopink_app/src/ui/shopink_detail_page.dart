@@ -84,19 +84,19 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
               ),
               child: Column(
                 children: [
-                  Text("Shoe Title"),
+                  const Text("Shoe Title"),
                   Row(
                     children: [
-                      Text("Dream's Shoes"),
+                      const Text("Dream's Shoes"),
                       CircleAvatar(
                         backgroundColor: Colors.grey[200],
                         foregroundColor: Colors.red,
-                        child: Icon(Icons.favorite),
+                        child: const Icon(Icons.favorite),
                       )
                     ],
                   ),
                   Row(
-                    children: [
+                    children: const [
                       Text("\$100.99"),
                       Text(
                         "\$110.00",
