@@ -1,4 +1,7 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ShopinkDetailPage extends StatefulWidget {
   const ShopinkDetailPage({Key? key}) : super(key: key);
@@ -8,6 +11,23 @@ class ShopinkDetailPage extends StatefulWidget {
 }
 
 class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
+  List<String> imgItems = [
+    "https://cdn.pixabay.com/photo/2016/06/03/17/35/shoes-1433925_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2014/05/21/14/54/feet-349687_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/04/09/18/54/shoes-2216498_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2016/12/10/16/57/shoes-1897708_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2016/06/03/17/35/shoes-1433925_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/06/21/21/53/skateboard-5326930_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2016/06/03/17/35/shoes-1433925_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2014/05/21/14/54/feet-349687_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/04/09/18/54/shoes-2216498_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2016/12/10/16/57/shoes-1897708_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2016/06/03/17/35/shoes-1433925_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2020/06/21/21/53/skateboard-5326930_960_720.jpg"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,22 +74,68 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
               color: Colors.grey,
               child: Column(
                 children: [
-                  const SizedBox(
-                    height: 200,
+                  Container(
+                    height: 250,
+                    width: double.infinity,
+                    color: Colors.blue,
+                    child: Consumer(builder: (context, ref, _) {
+                      final index = ref.watch(shopinkImageIndex);
+                      return CachedNetworkImage(
+                        imageUrl: '${imgItems[index]}',
+                        fit: BoxFit.cover,
+                      );
+                    }),
                   ),
-                  SizedBox(
-                    height: 100,
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Container(
-                          decoration: const BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.grey,
-                          ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Consumer(builder: (context, ref, _) {
+                        final selectedIndex = ref.watch(shopinkImageIndex);
+                        return ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: imgItems.length,
+                          itemBuilder: (context, index) {
+                            return GestureDetector(
+                              onTap: () {
+                                ref.read(shopinkImageIndex.notifier).state = index;
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 16),
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: index == selectedIndex ? Colors.orange : Colors.white,
+                                    width: 2,
+                                  ),
+                                  image: DecorationImage(
+                                    image: CachedNetworkImageProvider(
+                                      imgItems[index],
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
                         );
-                      },
+                      }),
                     ),
                   )
+                  // SizedBox(
+                  //   height: 100,
+                  //   child: ListView.builder(
+                  //     itemBuilder: (context, index) {
+                  //       return Container(
+                  //         decoration: const BoxDecoration(
+                  //           shape: BoxShape.circle,
+                  //           color: Colors.grey,
+                  //         ),
+                  //       );
+                  //     },
+                  //   ),
+                  // )
                 ],
               ),
             ),
@@ -106,20 +172,20 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       )
                     ],
                   ),
-                  SizedBox(
-                    height: 72,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 10,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          child: Center(
-                            child: Text("${35 + index}"),
-                          ),
-                        );
-                      },
-                    ),
-                  )
+                  // SizedBox(
+                  //   height: 72,
+                  //   child: ListView.builder(
+                  //     scrollDirection: Axis.horizontal,
+                  //     itemCount: 10,
+                  //     itemBuilder: (context, index) {
+                  //       return Container(
+                  //         child: Center(
+                  //           child: Text("${35 + index}"),
+                  //         ),
+                  //       );
+                  //     },
+                  //   ),
+                  // )
                 ],
               ),
             )),
