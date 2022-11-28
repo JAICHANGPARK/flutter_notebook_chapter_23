@@ -22,7 +22,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
           return IndexedStack(
             index: index,
             children: [
-              ShopinkMainScreen(),
+              const ShopinkMainScreen(),
               Center(
                 child: Text(index.toString()),
               ),
