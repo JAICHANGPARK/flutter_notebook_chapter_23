@@ -109,15 +109,16 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                   Container(
                     height: 72,
                     child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            child: Center(
-                              child: Text("${35 + index}"),
-                            ),
-                          );
-                        }),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          child: Center(
+                            child: Text("${35 + index}"),
+                          ),
+                        );
+                      },
+                    ),
                   )
                 ],
               ),
