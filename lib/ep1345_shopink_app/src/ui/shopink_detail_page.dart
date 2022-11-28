@@ -106,7 +106,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       )
                     ],
                   ),
-                  Container(
+                  SizedBox(
                     height: 72,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
