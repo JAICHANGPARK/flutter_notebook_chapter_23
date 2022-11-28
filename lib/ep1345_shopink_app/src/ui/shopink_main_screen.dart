@@ -98,7 +98,10 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: () => context.push("/detail"),
+                          onTap: () {
+                            print("tab");
+                          },
+                          // onTap: () => context.push("/detail"),
                           child: Container(
                             width: 170,
                             margin: const EdgeInsets.only(right: 16),
