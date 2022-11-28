@@ -71,7 +71,6 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
             ),
             Container(
               height: MediaQuery.of(context).size.height / 2.5,
-              color: Colors.grey,
               child: Column(
                 children: [
                   Container(
