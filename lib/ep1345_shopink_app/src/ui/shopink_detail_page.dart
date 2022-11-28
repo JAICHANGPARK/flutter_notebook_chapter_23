@@ -200,7 +200,10 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                 padding: const EdgeInsets.all(16),
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(color: sIndex == index ? Colors.black : Colors.grey, width: 2),
+                                  border: Border.all(
+                                    color: sIndex == index ? Colors.black : Colors.grey[300]!,
+                                    width: 2,
+                                  ),
                                 ),
                                 child: Center(
                                   child: Text("${35 + index}"),
@@ -212,20 +215,19 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       }),
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("Read more..."),
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.black,
                     ),
+                    child: const Text("Read more..."),
                   ),
-                  Divider(),
-
+                  const Divider(),
                 ],
               ),
             )),
