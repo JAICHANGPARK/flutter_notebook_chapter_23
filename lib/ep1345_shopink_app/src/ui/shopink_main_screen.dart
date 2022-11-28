@@ -100,6 +100,7 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                         return GestureDetector(
                           onTap: () {
                             print("tab");
+                            context.push("/detail");
                           },
                           // onTap: () => context.push("/detail"),
                           child: Container(
