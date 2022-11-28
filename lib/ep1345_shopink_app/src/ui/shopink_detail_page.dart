@@ -122,19 +122,6 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       }),
                     ),
                   )
-                  // SizedBox(
-                  //   height: 100,
-                  //   child: ListView.builder(
-                  //     itemBuilder: (context, index) {
-                  //       return Container(
-                  //         decoration: const BoxDecoration(
-                  //           shape: BoxShape.circle,
-                  //           color: Colors.grey,
-                  //         ),
-                  //       );
-                  //     },
-                  //   ),
-                  // )
                 ],
               ),
             ),
@@ -147,10 +134,22 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                   topRight: Radius.circular(16),
                 ),
               ),
+              padding: EdgeInsets.all(16),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("Shoe Title"),
+                  const Text(
+                    "Shoe Title Shoe Title Shoe Title",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text("Dream's Shoes"),
                       CircleAvatar(
@@ -160,13 +159,24 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       )
                     ],
                   ),
+                  SizedBox(
+                    height: 12,
+                  ),
                   Row(
                     children: const [
-                      Text("\$100.99"),
+                      Text(
+                        "\$100.99 ",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
                       Text(
                         "\$110.00",
                         style: TextStyle(
                           decoration: TextDecoration.lineThrough,
+                          color: Colors.red,
+                          fontWeight: FontWeight.bold,
                         ),
                       )
                     ],
