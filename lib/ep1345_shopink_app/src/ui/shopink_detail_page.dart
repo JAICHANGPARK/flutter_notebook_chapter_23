@@ -238,6 +238,17 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(32),
                             ),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 54,
+                                  width: 54,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           SizedBox(
                             width: 16,
@@ -245,15 +256,13 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.orangeAccent,
+                                color: Colors.yellow,
                                 borderRadius: BorderRadius.circular(32),
                               ),
                               child: Center(
                                 child: Text(
                                   "Add to cart",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                 ),
                               ),
                             ),
