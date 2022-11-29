@@ -248,7 +248,28 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                     shape: BoxShape.circle,
                                     border: Border.all(),
                                   ),
-                                )
+                                  child: Icon(
+                                    Icons.remove,
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Center(
+                                    child: Text("1"),
+                                  ),
+                                ),
+                                Container(
+                                  height: 54,
+                                  width: 54,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(),
+                                    color: Colors.black,
+                                  ),
+                                  child: Icon(
+                                    Icons.add,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
