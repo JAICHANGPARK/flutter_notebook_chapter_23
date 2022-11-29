@@ -68,8 +68,8 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Subtotal: "),
-                  Text("\$800.00"),
+                  Text("Delivery Fee: "),
+                  Text("\$10.00"),
                 ],
               )
             ],
