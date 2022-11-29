@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/components/shopink_bottom_bar_widget.dart';
 import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
+import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/ui/shopink_cart_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'shopink_main_screen.dart';
@@ -23,9 +24,7 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
             index: index,
             children: [
               const ShopinkMainScreen(),
-              Center(
-                child: Text(index.toString()),
-              ),
+              const ShopinkCartPage(),
               Center(
                 child: Text(index.toString()),
               ),
