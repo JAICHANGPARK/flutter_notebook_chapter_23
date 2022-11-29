@@ -56,7 +56,6 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
           ),
           Container(
             height: 350,
-            color: Colors.blue,
             child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (context, index) {
