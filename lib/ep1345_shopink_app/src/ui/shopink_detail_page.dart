@@ -229,11 +229,12 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                     ),
                     const Divider(),
                     SizedBox(
-                      height: 54,
+                      height: 52,
                       child: Row(
                         children: [
                           Container(
                             width: 140,
+                            padding: const EdgeInsets.all(4),
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
                               borderRadius: BorderRadius.circular(32),
@@ -245,13 +246,13 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                   width: 54,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
-                                    border: Border.all()
+                                    border: Border.all(),
                                   ),
                                 )
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
                           Expanded(
@@ -260,10 +261,13 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                 color: Colors.yellow,
                                 borderRadius: BorderRadius.circular(32),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Add to cart",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ),
                             ),
