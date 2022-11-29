@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_23/ep1345_shopink_app/src/controller/shopink_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class ShopinkDetailPage extends StatefulWidget {
   const ShopinkDetailPage({Key? key}) : super(key: key);
@@ -38,13 +39,18 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
-                children: const [
-                  CircleAvatar(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    radius: 24,
-                    child: Icon(
-                      Icons.keyboard_arrow_left_sharp,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      context.pop();
+                    },
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
+                      radius: 24,
+                      child: Icon(
+                        Icons.keyboard_arrow_left_sharp,
+                      ),
                     ),
                   ),
                   Expanded(
@@ -254,7 +260,12 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                 ),
                                 Expanded(
                                   child: Center(
-                                    child: Text("1"),
+                                    child: Text(
+                                      "1",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 Container(
