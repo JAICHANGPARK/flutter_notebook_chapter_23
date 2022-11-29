@@ -71,7 +71,10 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                   children: const [
                     Text(
                       "Subtotal: ",
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
                     ),
                     Text(
                       "\$800.00",
@@ -89,7 +92,10 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                   children: const [
                     Text(
                       "Delivery Fee: ",
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
                     ),
                     Text(
                       "\$10.00",
@@ -107,9 +113,18 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                   children: const [
                     Text(
                       "Discount: ",
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
                     ),
-                    Text("10%"),
+                    Text(
+                      "10%",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red,
+                      ),
+                    ),
                   ],
                 ),
                 Divider(
@@ -119,8 +134,19 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    Text("Total: "),
-                    Text("\$780.00"),
+                    Text(
+                      "Total: ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Text(
+                      "\$780.00",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
                 SizedBox(
