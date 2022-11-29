@@ -61,6 +61,9 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container(
+                    margin: EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
                     height: 120,
                     child: Row(
                       children: [
@@ -73,16 +76,34 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                           ),
                         ),
                         Expanded(
-                          child: Column(
-                            children: [
-                              Text("Shoe Title Shoe Title"),
-                              Text("Shoes"),
-                              Row(
-                                children: [
-                                  Text("\$100.99"),
-                                ],
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Shoe Title Shoe Title",
+                                ),
+                                Text("Shoes"),
+                                Row(
+                                  children: [
+                                    Text("\$100.99"),
+                                    Spacer(),
+                                    Container(
+                                      height: 42,
+                                      width: 100,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200],
+                                        borderRadius: BorderRadius.circular(32),
+                                      ),
+                                      child: Row(
+                                        children: [],
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
