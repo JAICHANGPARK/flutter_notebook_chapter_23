@@ -229,7 +229,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                     ),
                     const Divider(),
                     SizedBox(
-                      height: 60,
+                      height: 54,
                       child: Row(
                         children: [
                           Container(
@@ -245,6 +245,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                   width: 54,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
+                                    border: Border.all()
                                   ),
                                 )
                               ],
