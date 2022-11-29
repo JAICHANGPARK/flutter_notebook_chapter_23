@@ -306,8 +306,8 @@ class _ShopinkMainScreenState extends State<ShopinkMainScreen> {
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Stack(
-                          children: [
-                            const Positioned(
+                          children: const [
+                            Positioned(
                               left: 12,
                               top: 12,
                               child: CircleAvatar(
