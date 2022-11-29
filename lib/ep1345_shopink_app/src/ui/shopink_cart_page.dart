@@ -18,10 +18,8 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
             child: Row(
               children: [
                 GestureDetector(
-                  onTap: () {
-
-                  },
-                  child: CircleAvatar(
+                  onTap: () {},
+                  child: const CircleAvatar(
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.black,
                     radius: 24,
@@ -30,7 +28,7 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                     ),
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: Center(
                     child: Text(
                       "My Cart",
@@ -41,7 +39,7 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                     ),
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 24,
                   backgroundColor: Colors.white,
                   foregroundColor: Colors.black,
@@ -52,6 +50,31 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
               ],
             ),
           ),
+          Divider(),
+          Container(
+            height: 350,
+            color: Colors.blue,
+          ),
+          Divider(),
+          Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Subtotal: "),
+                  Text("\$800.00"),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Subtotal: "),
+                  Text("\$800.00"),
+                ],
+              )
+            ],
+          )
+
         ],
       ),
     );
