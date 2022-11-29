@@ -126,111 +126,145 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
               ),
             ),
             Expanded(
-                child: Container(
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(16),
-                  topRight: Radius.circular(16),
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
                 ),
-              ),
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    "Shoe Title Shoe Title Shoe Title",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text("Dream's Shoes"),
-                      CircleAvatar(
-                        backgroundColor: Colors.grey[200],
-                        foregroundColor: Colors.red,
-                        child: const Icon(Icons.favorite),
-                      )
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  Row(
-                    children: const [
-                      Text(
-                        "\$100.99 ",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "Shoe Title Shoe Title Shoe Title",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
                       ),
-                      Text(
-                        "\$110.00",
-                        style: TextStyle(
-                          decoration: TextDecoration.lineThrough,
-                          color: Colors.red,
-                          fontWeight: FontWeight.bold,
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text("Dream's Shoes"),
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[200],
+                          foregroundColor: Colors.red,
+                          child: const Icon(Icons.favorite),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      children: const [
+                        Text(
+                          "\$100.99 ",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
                         ),
-                      )
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    child: SizedBox(
-                      height: 72,
-                      child: Consumer(builder: (context, ref, _) {
-                        final sIndex = ref.watch(shopinkShoeSizeIndex);
-                        return ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: 10,
-                          itemBuilder: (context, index) {
-                            return GestureDetector(
-                              onTap: () {
-                                ref.read(shopinkShoeSizeIndex.notifier).state = index;
-                              },
-                              child: Container(
-                                margin: const EdgeInsets.only(right: 8),
-                                padding: const EdgeInsets.all(16),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: sIndex == index ? Colors.black : Colors.grey[300]!,
-                                    width: 2,
+                        Text(
+                          "\$110.00",
+                          style: TextStyle(
+                            decoration: TextDecoration.lineThrough,
+                            color: Colors.red,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: SizedBox(
+                        height: 72,
+                        child: Consumer(builder: (context, ref, _) {
+                          final sIndex = ref.watch(shopinkShoeSizeIndex);
+                          return ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return GestureDetector(
+                                onTap: () {
+                                  ref.read(shopinkShoeSizeIndex.notifier).state = index;
+                                },
+                                child: Container(
+                                  margin: const EdgeInsets.only(right: 8),
+                                  padding: const EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: sIndex == index ? Colors.black : Colors.grey[300]!,
+                                      width: 2,
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Text("${35 + index}"),
                                   ),
                                 ),
-                                child: Center(
-                                  child: Text("${35 + index}"),
+                              );
+                            },
+                          );
+                        }),
+                      ),
+                    ),
+                    const Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.black,
+                      ),
+                      child: const Text("Read more..."),
+                    ),
+                    const Divider(),
+                    SizedBox(
+                      height: 60,
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 140,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orangeAccent,
+                                borderRadius: BorderRadius.circular(32),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Add to cart",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
-                            );
-                          },
-                        );
-                      }),
-                    ),
-                  ),
-                  const Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.black,
-                    ),
-                    child: const Text("Read more..."),
-                  ),
-                  const Divider(),
-                ],
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-            )),
+            ),
           ],
         ),
       ),
