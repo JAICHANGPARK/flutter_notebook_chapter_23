@@ -56,25 +56,51 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
             color: Colors.blue,
           ),
           Divider(),
-          Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("Subtotal: "),
-                  Text("\$800.00"),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("Delivery Fee: "),
-                  Text("\$10.00"),
-                ],
-              )
-            ],
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Subtotal: "),
+                    Text("\$800.00"),
+                  ],
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Delivery Fee: "),
+                    Text("\$10.00"),
+                  ],
+                ),
+                SizedBox(
+                  height: 16,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Discount: "),
+                    Text("10%"),
+                  ],
+                ),
+                Divider(
+                  height: 32,
+                  color: Colors.grey[300],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Total: "),
+                    Text("\$780.00"),
+                  ],
+                ),
+              ],
+            ),
           )
-
         ],
       ),
     );
