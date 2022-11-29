@@ -44,7 +44,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                     onTap: () {
                       context.pop();
                     },
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       backgroundColor: Colors.white,
                       foregroundColor: Colors.black,
                       radius: 24,
@@ -53,7 +53,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       ),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Details Products",
@@ -64,7 +64,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                       ),
                     ),
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 24,
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.black,
@@ -254,11 +254,11 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                     shape: BoxShape.circle,
                                     border: Border.all(),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.remove,
                                   ),
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Center(
                                     child: Text(
                                       "1",
@@ -276,7 +276,7 @@ class _ShopinkDetailPageState extends State<ShopinkDetailPage> {
                                     border: Border.all(),
                                     color: Colors.black,
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.add,
                                     color: Colors.white,
                                   ),
