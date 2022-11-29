@@ -57,9 +57,38 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
           Container(
             height: 350,
             color: Colors.blue,
-            child: ListView.builder(itemBuilder: (context, index) {
-              return Container();
-            }),
+            child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    height: 120,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Text("Shoe Title Shoe Title"),
+                              Text("Shoes"),
+                              Row(
+                                children: [
+                                  Text("\$100.99"),
+                                ],
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  );
+                }),
           ),
           Divider(
             height: 32,
