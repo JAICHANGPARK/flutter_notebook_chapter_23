@@ -50,12 +50,18 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
               ],
             ),
           ),
-          Divider(),
+          Divider(
+            height: 24,
+            color: Colors.grey[300],
+          ),
           Container(
             height: 350,
             color: Colors.blue,
           ),
-          Divider(),
+          Divider(
+            height: 32,
+            color: Colors.grey[300],
+          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -63,8 +69,16 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    Text("Subtotal: "),
-                    Text("\$800.00"),
+                    Text(
+                      "Subtotal: ",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                    ),
+                    Text(
+                      "\$800.00",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -73,8 +87,16 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    Text("Delivery Fee: "),
-                    Text("\$10.00"),
+                    Text(
+                      "Delivery Fee: ",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                    ),
+                    Text(
+                      "\$10.00",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -83,12 +105,15 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    Text("Discount: "),
+                    Text(
+                      "Discount: ",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                    ),
                     Text("10%"),
                   ],
                 ),
                 Divider(
-                  height: 32,
+                  height: 42,
                   color: Colors.grey[300],
                 ),
                 Row(
@@ -98,9 +123,15 @@ class _ShopinkCartPageState extends State<ShopinkCartPage> {
                     Text("\$780.00"),
                   ],
                 ),
+                SizedBox(
+                  height: 24,
+                ),
                 Container(
                   height: 54,
-                  decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(24)),
+                  decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(24),
+                  ),
                   child: Center(
                     child: Text(
                       "Check out",
