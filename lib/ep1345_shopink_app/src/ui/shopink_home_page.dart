@@ -26,10 +26,14 @@ class _ShopinkHomePageState extends State<ShopinkHomePage> {
               const ShopinkMainScreen(),
               const ShopinkCartPage(),
               Center(
-                child: Text(index.toString()),
+                child: Text(
+                  index.toString(),
+                ),
               ),
               Center(
-                child: Text(index.toString()),
+                child: Text(
+                  index.toString(),
+                ),
               ),
             ],
           );
