@@ -2,7 +2,7 @@
 
 ## S26
 
-### EP1345
+### EP1345 -1350
 
 - Shopink - E-Commerce
 - by Rizal🔥 for Kretya
